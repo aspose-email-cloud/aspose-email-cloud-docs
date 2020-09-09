@@ -10,9 +10,9 @@ weight: 10
 ## **Introduction**
 The AI feature of Aspose.Email Cloud API enables you to compare the names to find out if they belong to the same person or not. As a result of the comparison, the answer is the similarity score and the list of mismatches.
 ## **Use Swagger UI**
-1. Open link <https://apireference.aspose.cloud/email/>
+1. Open [link](https://apireference.aspose.cloud/email/)
 1. Click *"Authorize"* button, enter your AppKey and AppSid, obtained from the [dashboard](https://dashboard.aspose.cloud/), click *"Authorize"* dialog button
-1. Open link <https://apireference.aspose.cloud/email/#/AiName/AiNameMatch> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/AiName/AiNameMatch) and click *"Try it out"* button
 1. Enter names, then click *"Execute"* button
 ## **Use SDK**
 **Compare names to find similarities**

@@ -5,7 +5,7 @@ url: /business-cards-recognition-api/
 weight: 10
 ---
 
-# **Introduction**
+## **Introduction**
 [VCF](https://wiki.fileformat.com/email/vcf/) (Virtual Card Format) or vCard is a digital file format for storing contact information and is a [file format](https://en.wikipedia.org/wiki/File_format) standard for electronic [business cards](https://en.wikipedia.org/wiki/Business_card). vCards are often attached to [e-mail](https://en.wikipedia.org/wiki/E-mail) messages but can be exchanged in other ways. The format is widely used for data interchange among popular information exchange applications. A vCard usually contains name and address information, telephone numbers, e-mail addresses, URLs, logos, photographs, and any audio clips. A vCard is used as a data interchange format in personal digital assistants (PDAs), personal information managers (PIMs) and customer relationship management (CRMs). 
 
 
@@ -23,12 +23,12 @@ The following image depicts a conversion flow from a business card to vCard form
 ![todo:image\_alt\_text](https://raw.githubusercontent.com/wiki/aspose-email-cloud/aspose-email-cloud-dotnet/images/bcr.jpg)
 
 
-# **Image located on Storage**
+## **Image located on Storage**
 Please try using AiBcrParseStorage method to recognize VCard from an image located on storage.
 ## **Parse business card from storage using Swagger UI**
-1. Open link of  <https://apireference.aspose.cloud/email/>
+1. Open [link](https://apireference.aspose.cloud/email/)
 1. Click the *"Authorize"* button, enter your AppKey and AppSid, obtained from the [dashboard](https://dashboard.aspose.cloud/), click *"Authorize"* dialog button
-1. Open link <https://apireference.aspose.cloud/email/#/AiBcr/AiBcrParseStorage> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/AiBcr/AiBcrParseStorage) and click *"Try it out"* button
 1. Edit JSON to specify images and out folder (were parsed VCards should be placed) location information
 1. Click *"Execute"* button
 1. You can download produced VCard files using our Contact/Storage API or using dashboard.
@@ -74,10 +74,11 @@ Please try using AiBcrParseStorage method to recognize VCard from an image loc
 {{< /tab >}}
 
 {{< /tabs >}}
-# **Image not located on Storage**
+
+## **Image not located on Storage**
 If an image is not located on storage, it can be converted to Base64 and parsed using AiBcrParse method.
 ## **Parse business cards using Swagger UI**
-1. Open link <https://apireference.aspose.cloud/email/#/AiBcr/AiBcrParse> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/AiBcr/AiBcrParse) and click *"Try it out"* button
 1. Convert business card image to Base64 string and add it to JSON
 1. Click *"Execute"* button
 ## **Parse business cards using SDK**

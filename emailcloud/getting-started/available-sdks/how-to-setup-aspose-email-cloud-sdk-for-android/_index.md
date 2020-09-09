@@ -6,7 +6,7 @@ weight: 80
 ---
 
 You can include the Aspose.Email Cloud SDK for Android in your android project from JCenter repository using Gradle in Android Studio.
-#### **Include Aspose.Email Cloud SDK for Android as dependency**
+## **Include Aspose.Email Cloud SDK for Android as dependency**
 ```java
 
 dependencies {
@@ -16,5 +16,5 @@ dependencies {
 }
 
 ```
-#### **Data**
+## **Data**
 In order to manipulate any files, you first need to upload them to the Aspose cloud storage or 3rd party cloud storage using [Aspose.Storage Cloud SDK for Android](https://github.com/asposetotal/Aspose_Total_Cloud/tree/master/SDKs/Aspose.Storage_Cloud_SDK_For_Android).

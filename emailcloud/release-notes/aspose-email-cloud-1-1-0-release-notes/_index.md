@@ -19,4 +19,3 @@ The launch version of Aspose.Email for Cloud API provides some basic features of
 - Set message properties
 - Get message property by name
 
-You can visit the Aspose.Email for Cloud documentation’s [Live Examples](https://docs.asposeptyltd.com/display/emailcloud/Aspose.Email+for+Cloud+REST+Live+Examples) page and try the click-to-go examples for a quick demonstration of various API features.

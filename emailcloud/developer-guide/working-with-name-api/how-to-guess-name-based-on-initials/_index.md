@@ -9,9 +9,9 @@ weight: 50
 ## **Introduction**
 Get the most probable names for given starting characters. The feature is similar to the recipient field in email client software. You start typing the name and based on initials provided, the possible names are listed. Please take a look over the following example where possible names starting with "**Dav**".
 ## **Using Swagger UI**
-1. Open link <https://apireference.aspose.cloud/email/>
+1. Open [link](https://apireference.aspose.cloud/email/)
 1. Click *"Authorize"* button, enter your AppKey and AppSid, obtained from the [dashboard](https://dashboard.aspose.cloud/), click *"Authorize"* dialog button
-1. Open link <https://apireference.aspose.cloud/email/#/AiName/AiNameComplete> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/AiName/AiNameComplete) and click *"Try it out"* button
 1. Enter starting characters, then click *"Execute"* button
 ## **Using SDK**
 **Guess name based on initials**

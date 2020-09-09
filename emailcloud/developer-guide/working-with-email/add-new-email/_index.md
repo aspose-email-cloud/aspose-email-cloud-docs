@@ -18,10 +18,15 @@ If you want to know more about working with emails — take a look at the Aspose
 ## **Resource**
 The following Aspose.Email for Cloud REST API resource has been used in the examples: [document](https://apireference.aspose.cloud/email/#!/Email/Email_PutCreateNewEmail).
 ## **REST Methods References**
-We're referring some common methods in the REST examples to perform general operations. These methods can be found at the following page: [REST API Methods](http://www.aspose.com/docs/display/rest/REST+API+Methods)
+We're referring some common methods in the REST examples to perform general operations. These methods can be found at the following page: [REST API Methods](https://apireference.aspose.cloud/email)
 ## **REST Examples**
-#### **C#**
-```java
+
+{{< tabs tabTotal="4" tabID="5" tabName1="C#" tabName2="Java" tabName3="Android" tabName4="Objective C" >}}
+
+
+{{< tab tabNum="1" >}}
+
+```csharp
 
 // Initialize variables being used
 
@@ -52,7 +57,9 @@ string apiUrl = string.Format(@"email/{0}?storage={1}&folder={2}", name, storage
 ServiceController.Put(apiUrl, appSid, appKey, JsonConvert.SerializeObject(emailDocumentPropertiesRequest));
 
 ```
-#### **VB.NET**
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
 ```java
 
 ' Initialize variables being used
@@ -90,49 +97,10 @@ Dim apiUrl As String = String.Format("email/{0}?storage={1}&folder={2}", name, s
 ServiceController.Put(apiUrl, appSid, appKey, JsonConvert.SerializeObject(emailDocumentPropertiesRequest))
 
 ```
-#### **Java**
-```java
+{{< /tab >}}
 
+{{< tab tabNum="3" >}}
 
-
-```
-#### **PHP**
-```java
-
-
-
-```
-#### **Ruby**
-```java
-
-
-
-```
-#### **Python**
-```java
-
-
-
-```
-#### **Perl**
-```perl
-
-
-
-```
-#### **Node.js**
-```javascript
-
-
-
-```
-#### **C++**
-```cpp
-
-
-
-```
-#### **Android**
 ```java
 
 AsposeApp.setAppKeyAndAppSID("Get it from https://cloud.aspose.com", "Get it from https://cloud.aspose.com");
@@ -229,7 +197,9 @@ if(addNewEmailResponse.getCode().equals("200") && addNewEmailResponse.getStatus(
 
 
 ```
-#### **Objective C (iOS)**
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
 ```java
 
 [ASPOSEApp setAppKey:@"Get it from https://cloud.aspose.com" andAppSID:@"Get it from https://cloud.aspose.com"];
@@ -334,6 +304,10 @@ if(responseData) {
 
 
 ```
+
+{{< /tab >}}
+{{< /tabs >}}
+
 ## **Setup Aspose.Email Cloud SDK**
 
 

@@ -6,7 +6,7 @@ description: " Create a new document using MAPI with Aspose.Email Cloud API. Ea
 weight: 20
 ---
 
-# **Create a new document**
+## **Create a new document**
 Aspose.Email Cloud API allows you to create a new MAPI file in your storage.
 ## **API Information**
 
@@ -14,7 +14,8 @@ Aspose.Email Cloud API allows you to create a new MAPI file in your storage.
 | :- | :- | :- | :- |
 |/email/Mapi/{name}|PUT|Create a new document|[**CreateMapi**](https://apireference.aspose.cloud/email/#/Mapi/CreateMapi)|
 ## **cURL Examples**
-You can try this here: [**CreateMapi](https://apireference.aspose.cloud/email/#/Mapi/CreateMapi)**.** Click on "*Try it out*" button to use this function. 
+You can try this here: [**CreateMapi**](https://apireference.aspose.cloud/email/#/Mapi/CreateMapi). 
+Click on "*Try it out*" button to use this function. 
 
 **Create a MAPI contact document with Swagger UI**
 
@@ -76,7 +77,7 @@ Use this JSON to create a MAPI contact document:
 
 {{< tab tabNum="1" >}}
 
-[**CreateMapi](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/EmailApi.md#createmapi) **-** Create a new document.
+[**CreateMapi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/EmailApi.md#createmapi) - Create a new document.
 
 [**HierarchicalObjectRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/HierarchicalObjectRequest.md) - Create document request.
 
@@ -86,7 +87,7 @@ Use this JSON to create a MAPI contact document:
 
 {{< tab tabNum="2" >}}
 
-[**createMapi](https://github.com/aspose-email-cloud/aspose-email-cloud-java/blob/master/docs/EmailApi.md#createmapi) **-** Create a new document.
+[**createMapi]**(https://github.com/aspose-email-cloud/aspose-email-cloud-java/blob/master/docs/EmailApi.md#createmapi) - Create a new document.
 
 [**HierarchicalObjectRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-java/blob/master/docs/HierarchicalObjectRequest.md) - Create document request.
 
@@ -96,7 +97,7 @@ Use this JSON to create a MAPI contact document:
 
 {{< tab tabNum="3" >}}
 
-[**createMapi](https://github.com/aspose-email-cloud/aspose-email-cloud-php/blob/3a5c2c35a31629493aa484b65870622165570db8/doc/EmailApi.md#createmapi) **-** Create a new document.
+[**createMapi**](https://github.com/aspose-email-cloud/aspose-email-cloud-php/blob/3a5c2c35a31629493aa484b65870622165570db8/doc/EmailApi.md#createmapi) - Create a new document.
 
 [**HierarchicalObjectRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-php/blob/3a5c2c35a31629493aa484b65870622165570db8/doc/HierarchicalObjectRequest.md) - Create document request.
 
@@ -106,7 +107,7 @@ Use this JSON to create a MAPI contact document:
 
 {{< tab tabNum="4" >}}
 
-[**create_mapi](https://github.com/aspose-email-cloud/aspose-email-cloud-python/blob/master/sdk/docs/EmailApi.md#create_mapi) **-** Create a new document.
+[**create_mapi**](https://github.com/aspose-email-cloud/aspose-email-cloud-python/blob/master/sdk/docs/EmailApi.md#create_mapi) - Create a new document.
 
 [**HierarchicalObjectRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-python/blob/master/sdk/docs/HierarchicalObjectRequest.md) - Create document request.
 
@@ -116,7 +117,7 @@ Use this JSON to create a MAPI contact document:
 
 {{< tab tabNum="5" >}}
 
-[**create_mapi](https://github.com/aspose-email-cloud/aspose-email-cloud-ruby/blob/master/docs/EmailApi.md#create_mapi) **-** Create a new document.
+[**create_mapi**](https://github.com/aspose-email-cloud/aspose-email-cloud-ruby/blob/master/docs/EmailApi.md#create_mapi) - Create a new document.
 
 [**HierarchicalObjectRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-ruby/blob/master/docs/HierarchicalObjectRequest.md) - Create document request.
 
@@ -126,7 +127,7 @@ Use this JSON to create a MAPI contact document:
 
 {{< tab tabNum="6" >}}
 
-[**createMapi](https://github.com/aspose-email-cloud/aspose-email-cloud-node/blob/master/doc/EmailApi.md#createmapi) **-** Create a new document.
+[**createMapi**](https://github.com/aspose-email-cloud/aspose-email-cloud-node/blob/master/doc/EmailApi.md#createmapi) - Create a new document.
 
 [**HierarchicalObjectRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-node/blob/master/doc/HierarchicalObjectRequest.md) - Create document request.
 

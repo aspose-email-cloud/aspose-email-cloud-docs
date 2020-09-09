@@ -7,7 +7,7 @@ description: "Aspose.Email Cloud is a REST API which allows creating email appli
 weight: 10
 ---
 
-# **Aspose.Email Cloud**
+## **Aspose.Email Cloud**
 [**Aspose.Email Cloud**](https://products.aspose.cloud/email/family) is a REST API which allows creating email applications that work with common email file formats in the cloud. This approach can save your resources by sending your data to the cloud. With Aspose.Email Cloud all data transfer is secure, you can process Outlook emails in your applications. [Aspose.Email Cloud ](https://products.aspose.cloud/email/family)has artificial intelligence functions: [Name API](/working-with-name-api/) and [Business Card Recognition API](/business-cards-recognition-api/) which allows to apply a modern approach of data recognition in your products. Using these AI functions you do not need to spend your time on developing them by yourself, instead of this, you can use our ready and accurate solutions. 
 
 
@@ -30,9 +30,9 @@ Aspose.Email Cloud API includes:
 
 **Downloading email’s attachment from a message** - process email’s attachments like files, photos, documents and others.
 
-**Calendar processing** -** you can easily add an [iCalendar Support](/icalendar-support-html/) to your applications. Aspose.Email Cloud API simplifies the product’s development. This API has numerous functions including managing Appointments, reading Calendar Attachment by name, reading[ ](/read-properties-for-a-calendar/)properties[ ](/read-properties-for-a-calendar/)for a Calendar and updating a Calendar Property and more. You can operate with iCalendar files in 2 ways via property sets or Model API which allows working with [.ics](https://wiki.fileformat.com/email/ics/) files directly in your program code.
+**Calendar processing** - you can easily add an [iCalendar Support](/icalendar-support/) to your applications. Aspose.Email Cloud API simplifies the product’s development. This API has numerous functions including managing Appointments, reading Calendar Attachment by name, reading[ ](/read-properties-for-a-calendar/)properties[ ](/read-properties-for-a-calendar/)for a Calendar and updating a Calendar Property and more. You can operate with iCalendar files in 2 ways via property sets or Model API which allows working with [.ics](https://wiki.fileformat.com/email/ics/) files directly in your program code.
 
-**Contact Cards processing** - you can easily [Operate VCard](/operate-vcard-html/) in your applications. With Aspose.Email Cloud API you can process VCards in your program code. It has a simple interface, which can save your development time. It has numerous functions including creating, saving and editing VCard. Also, this API allows to convert images of business cards with [Business cards recognition API](/business-cards-recognition-api/) into a vCard format, for later to be stored as contacts, it provides accurate recognition of all contact details. Using [Business cards recognition API](/business-cards-recognition-api/) you can be sure that AI automatically detects edges of VCard and cut the unwanted background to extract contacts information accurate.
+**Contact Cards processing** - you can easily [Operate VCard](/operate-vcard/) in your applications. With Aspose.Email Cloud API you can process VCards in your program code. It has a simple interface, which can save your development time. It has numerous functions including creating, saving and editing VCard. Also, this API allows to convert images of business cards with [Business cards recognition API](/business-cards-recognition-api/) into a vCard format, for later to be stored as contacts, it provides accurate recognition of all contact details. Using [Business cards recognition API](/business-cards-recognition-api/) you can be sure that AI automatically detects edges of VCard and cut the unwanted background to extract contacts information accurate.
 
 **Process names with AI functionality** - with [Name API](/working-with-name-api/) you can:
 
@@ -56,7 +56,7 @@ Aspose.Email Cloud has the following SDKs:
 - [Aspose.Email Cloud SDK for PHP](https://github.com/aspose-email-cloud/aspose-email-cloud-php)
 - [Aspose.Email Cloud SDK for Typescript](https://github.com/aspose-email-cloud/aspose-email-cloud-node)
 - [Aspose.Email Cloud SDK for Java](https://github.com/aspose-email-cloud/aspose-email-cloud-java)
-# **See also**
+## **See also**
 To find more about Aspose.Email Cloud methods and their usage take a look at:
 
 - [Developer Guide](/developer-guide/)

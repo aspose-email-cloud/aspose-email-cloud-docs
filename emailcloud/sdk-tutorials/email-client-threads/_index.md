@@ -6,7 +6,7 @@ description: "Aspose.Email Cloud SDK allows to manipulate message threads using 
 weight: 70
 ---
 
-Message Threads
+## Message Threads ##
 
 This tutorial is about **manipulating message threads using [Aspose.](https://products.aspose.cloud/email/net)[Email](https://products.aspose.cloud/email/net) build-in client.**
 
@@ -29,8 +29,8 @@ Using threads, you can easily structure emails in the mailbox. Instead of workin
 
 {{% alert color="primary" %}} 
 
-- Setup SDK, using tutorial: [**SDK setup**](/sdk-setup-html/).
-- Setup your email client accounts, using tutorial: **[Quick Start With Email Client**](/quick-start-with-email-client-html/)**.
+- Setup SDK, using tutorial: [**SDK setup**](/sdk-setup/).
+- Setup your email client accounts, using tutorial: [**Quick Start With Email Client**](/quick-start-with-email-client/).
 
 {{% /alert %}} 
 
@@ -91,7 +91,7 @@ To support threads using cache, you should provide cache location during email a
 {{< /tabs >}}
 
 
-
+\
 The **account.cache** file contains basic information about messages and threads (*folder, subject, message identifiers, dates* and *participants*).
 
 {{% alert color="primary" %}} 
@@ -150,7 +150,7 @@ To get the list of threads for a given folder (folder parameter is ignored for *
 {{< /tab >}}
 
 {{< /tabs >}}
-
+\
 Set parameter **updateFolderCache** to **false** if you don't need to sync threads cache with your email account.
 ## **Fetch Thread Messages**
 **ListEmailThreads** method returns all email threads from the folder. All threads contain a lists of messages. However, these messages contain only basic information: *MessageId, Date, Subject, Participants* (*From, To, CC*). Use **FetchEmailThreadMessages** method if you need to fetch full messages for a thread, including message bodies, attachments, alternate views, etc.

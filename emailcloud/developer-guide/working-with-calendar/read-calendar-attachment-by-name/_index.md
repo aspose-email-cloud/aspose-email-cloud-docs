@@ -23,31 +23,6 @@ Aspose.Email Cloud provides the following API:
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
 |/email/Calendar/{name}/attachments/{attachment}|GET|Read Calendar Attachment Properties|[GetCalendarAttachment](https://apireference.aspose.cloud/email/#/Calendar/GetCalendarAttachment)|
-## **cURL Example**
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```java
-
-
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-
-
-
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
 
 ## **Setup Aspose.Email Cloud SDK**
 Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Checkout our [GitHub repository](https://github.com/aspose-email-cloud) for a complete list of Aspose.Email SDKs along with working examples.

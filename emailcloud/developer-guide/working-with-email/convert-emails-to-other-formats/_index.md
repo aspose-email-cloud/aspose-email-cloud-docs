@@ -84,7 +84,7 @@ How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/sdk-setup/).
 {{< /tab >}}
 
 {{< /tabs >}}
-
+\
 Email message files can be downloaded from the Storage in any of the supported formats while using [GetEmailAsFile](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#GetEmailAsFile). 
 
 **Download Email Message from Storage**

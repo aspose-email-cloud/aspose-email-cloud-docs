@@ -26,9 +26,9 @@ If you want to know more about working with **VCard files** — take a look at t
 | :- | :- | :- | :- |
 |/email/ContactModel/{format}/{name}|PUT|Save contact.|[**SaveContactModel**](https://apireference.aspose.cloud/email/#/ContactModel/SaveContactModel)|
 ## **cURL Examples**
-You can try this here: [**SaveContactModel](https://apireference.aspose.cloud/email/#/ContactModel/SaveContactModel)**.** Click on "*Try it out*" button to use this function. 
+You can try this here: [**SaveContactModel**](https://apireference.aspose.cloud/email/#/ContactModel/SaveContactModel). Click on "*Try it out*" button to use this function. 
 
-![todo:image\_alt\_text](/images/icons/grey\_arrow\_down.png)
+
 
 Use this JSON to create a contact
 
@@ -104,22 +104,13 @@ JSON has 2 fields:
 
 ## **SDK Examples**
 **Create VCard file**
+[**ContactDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactDto.md) - The model contains contact’s properties.
 
 {{< tabs tabTotal="6" tabID="2" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" tabName6="Typescript" >}}
 
 {{< tab tabNum="1" >}}
 
-[**ContactDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactDto.md) **-** The model contains contact’s properties.
-
 {{< gist "aspose-cloud" "e50bc177cb788e499fd13c27b55d762e" "Examples-DotNET-CSharp-Create-VCard-1.cs" >}}
-
-Here EnumWithCustom is an enumeration with the custom value support. It has 2 fields: Valueand Description. Description field is used only if Value is "Custom". For example, if you want to create a phone number with the category "For friends":
-
-```csharp
-
-number.Category = new EnumWithCustomOfPhoneNumberCategory("Custom", "For friends")
-
-```
 
 {{< /tab >}}
 
@@ -168,6 +159,15 @@ number.Category = new EnumWithCustomOfPhoneNumberCategory("Custom", "For friends
 {{< /tab >}}
 
 {{< /tabs >}}
+
+\
+Here EnumWithCustom is an enumeration with the custom value support. It has 2 fields: Valueand Description. Description field is used only if Value is "Custom". For example, if you want to create a phone number with the category "For friends":
+
+```csharp
+
+number.Category = new EnumWithCustomOfPhoneNumberCategory("Custom", "For friends")
+
+```
 
 
 ## **Setup Aspose.Email Cloud SDK**

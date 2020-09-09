@@ -8,11 +8,16 @@ weight: 10
 ## **Introduction**
 This example allows you to retrieve an email's property using Aspose.Email for Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
 ## **Resource**
-The following Aspose.Email for Cloud REST API resource has been used in the examples:[properties](/pages/createpage.action?spaceKey=emailcloud&title=properties&linkCreation=true&fromPageId=5439535)
+The following Aspose.Email for Cloud REST API resource has been used in the examples:[properties](https://apireference.aspose.cloud/email/#/Email/GetEmailProperty)
 ## **REST Methods References**
-We're referring some common methods in the REST examples to perform general operations. These methods can be found at the following page: [REST API Methods](http://www.aspose.com/docs/display/rest/REST+API+Methods)
+We're referring some common methods in the REST examples to perform general operations. These methods can be found at the following page: [REST API Methods](https://apireference.aspose.cloud/email)
 ## **REST Examples**
-#### **C#**
+
+{{< tabs tabTotal="11" tabID="1" tabName1="C#" tabName2="VB.NET" tabName3="Java" tabName4="PHP" 
+tabName5="Ruby" tabName6="Python" tabName7="Perl" tabName8="Node.js" tabName9="C++" 
+tabName10="Android" tabName11="Objective C" >}}
+
+{{< tab tabNum="1" >}}
 ```java
 
 // Initialize variables being used
@@ -38,7 +43,9 @@ JObject jObject = JObject.Parse(ServiceController.Get(apiUrl, appSid, appKey));
 EmailDocumentPropertiesResponse emailDocumentPropertiesResponse = jObject.ToObject<EmailDocumentPropertiesResponse>();
 
 ```
-#### **VB.NET**
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
 ```java
 
 ' Initialize variables being used
@@ -64,13 +71,9 @@ Dim jObject As JObject = JObject.Parse(ServiceController.Get(apiUrl, appSid, app
 Dim emailDocumentPropertiesResponse As EmailDocumentPropertiesResponse = jObject.ToObject(Of EmailDocumentPropertiesResponse)()
 
 ```
-#### **Java**
+{{< /tab >}}
 
-
-
-
-
-
+{{< tab tabNum="3" >}}
 ```java
 
 import java.io.\*;
@@ -95,13 +98,9 @@ stream.close();
 
 
 ```
+{{< /tab >}}
 
-
-
-
-
-
-#### **PHP**
+{{< tab tabNum="4" >}}
 ```java
 
 use Aspose\Cloud\Common\AsposeApp;
@@ -128,7 +127,9 @@ var\_dump($response);
 
 
 ```
-#### **Ruby**
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
 ```java
 
 app\_sid = "..."
@@ -149,7 +150,9 @@ p response
 
 
 ```
-#### **Python**
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
 ```java
 
 import json
@@ -174,7 +177,9 @@ print response\_json
 
 
 ```
-#### **Perl**
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
 ```perl
 
 use Data::Dumper;
@@ -197,7 +202,9 @@ print Dumper($result);
 
 
 ```
-#### **Node.js**
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
 ```javascript
 
 var appSID = "...";
@@ -230,7 +237,9 @@ ProcessCommand(
 
 
 ```
-#### **C++**
+{{< /tab >}}
+
+{{< tab tabNum="9" >}}
 ```cpp
 
 std::string app\_sid = "...";
@@ -250,7 +259,9 @@ rapidjson::Document response = process\_command(method, signed\_url);
 std::cout << "Status: " << response["Status"].GetString() << std::endl;
 
 ```
-#### **Android**
+{{< /tab >}}
+
+{{< tab tabNum="10" >}}
 ```java
 
 AsposeApp.setAppKeyAndAppSID("Get it from https://cloud.aspose.com", "Get it from https://cloud.aspose.com")
@@ -287,7 +298,9 @@ if(emailPropertyResponse.getCode().equals("200") && emailPropertyResponse.getSta
 
 
 ```
-#### **Objective C (iOS)**
+{{< /tab >}}
+
+{{< tab tabNum="11" >}}
 ```java
 
 [ASPOSEApp setAppKey:@"Get it from https://cloud.aspose.com" andAppSID:@"Get it from https://cloud.aspose.com"];
@@ -330,6 +343,10 @@ if(responseData) {
 
 
 ```
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ## **Setup Aspose.Email Cloud SDK**
 Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Checkout our [GitHub repository](https://github.com/aspose-email-cloud) for a complete list of Aspose.Email SDKs along with working examples.
 

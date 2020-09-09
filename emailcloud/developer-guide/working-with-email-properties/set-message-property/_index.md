@@ -7,12 +7,12 @@ weight: 20
 
 ## **Introduction**
 This example allows you to set an email's property using Aspose.Email for Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-## **Resource**
-The following Aspose.Email for Cloud REST API resource has been used in the examples:[properties](/pages/createpage.action?spaceKey=emailcloud&title=properties&linkCreation=true&fromPageId=5439532)
 ## **REST Methods References**
-We're referring some common methods in the REST examples to perform general operations. These methods can be found at the following page: [REST API Methods](http://www.aspose.com/docs/display/rest/REST+API+Methods)
+We're referring some common methods in the REST examples to perform general operations. These methods can be found at the following page: [REST API Methods](https://apireference.aspose.cloud/email)
 ## **REST Examples**
-#### **C#**
+{{< tabs tabTotal="3" tabID="1" tabName1="C#" 
+tabName2="Android" tabName3="Objective C" >}}
+{{< tab tabNum="1" >}}
 ```java
 
 // Initialize variables being used
@@ -46,7 +46,9 @@ string apiUrl = string.Format(@"email/{0}/properties/{1}?storage={2}&folder={3}"
 ServiceController.Put(apiUrl, appSid, appKey, JsonConvert.SerializeObject(property));
 
 ```
-#### **VB.NET**
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
 ```java
 
 ' Initialize variables being used
@@ -88,49 +90,10 @@ Dim apiUrl As String = String.Format("email/{0}/properties/{1}?storage={2}&folde
 ServiceController.Put(apiUrl, appSid, appKey, JsonConvert.SerializeObject([property]))
 
 ```
-#### **Java**
-```java
 
+{{< /tab >}}
 
-
-```
-#### **PHP**
-```java
-
-
-
-```
-#### **Ruby**
-```java
-
-
-
-```
-#### **Python**
-```java
-
-
-
-```
-#### **Perl**
-```perl
-
-
-
-```
-#### **Node.js**
-```javascript
-
-
-
-```
-#### **C++**
-```cpp
-
-
-
-```
-#### **Android**
+{{< tab tabNum="3" >}}
 ```java
 
 AsposeApp.setAppKeyAndAppSID("Get it from https://cloud.aspose.com", "Get it from https://cloud.aspose.com");
@@ -183,7 +146,9 @@ if(emailPropertyResponse.getCode().equals("200") && emailPropertyResponse.getSta
 
 
 ```
-#### **Objective C (iOS)**
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
 ```java
 
 [ASPOSEApp setAppKey:@"Get it from https://cloud.aspose.com" andAppSID:@"Get it from https://cloud.aspose.com"];
@@ -238,6 +203,10 @@ if(responseData) {
 
 
 ```
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ## **Setup Aspose.Email Cloud SDK**
 Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Checkout our [GitHub repository](https://github.com/aspose-email-cloud) for a complete list of Aspose.Email SDKs along with working examples.
 

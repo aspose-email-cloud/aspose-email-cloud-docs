@@ -46,8 +46,8 @@ Aspose.Email Cloud API allows working with MAPI in your applications. 
 
 With Aspose.Email Cloud API you can:
 
-- [**Create a new document](/add-an-attachment-to-the-document/)**.**
-- [**Add an attachment to the document](/create-a-new-document/)**.**
-- [**Get document properties](/get-document-properties/)**.**
+- **[Create a new document](/add-an-attachment-to-the-document/)**.
+- **[Add an attachment to the document](/create-a-new-document/)**.
+- **[Get document properties](/get-document-properties/)**.
 
 You can also use all of the methods above asynchronous.

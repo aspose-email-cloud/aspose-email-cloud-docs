@@ -23,22 +23,25 @@ If you want to know more about working with **VCard files** — take a look at t
 | :- | :- | :- | :- |
 |/email/ContactModel/{format}/{name}|PUT|Save contact.|[**SaveContactModelAsync**](https://apireference.aspose.cloud/email/#/ContactModel/SaveContactModel)|
 ## **cURL Examples**
-You can try this here: [**SaveContactModelAsync](https://apireference.aspose.cloud/email/#/ContactModel/SaveContactModel)**.** Click on "*Try it out*" button to use this function. 
+You can try this here: [**SaveContactModelAsync**](https://apireference.aspose.cloud/email/#/ContactModel/SaveContactModel). Click on "*Try it out*" button to use this function. 
 
 **Create contact with Swagger UI**
 
+Use this JSON to create a contact:
+JSON has 2 fields:
+
+- **Value** represents **ContactDto**
+- **StorageFolder** represents file location on Storage
+
 {{< tabs tabTotal="1" tabID="1" tabName1="JSON" >}}
 
-Use this JSON to create a contact:
+
 
 
 
 {{< tab tabNum="1" >}}
 
-JSON has 2 fields:
 
-- **Value** represents **ContactDto**
-- **StorageFolder** represents file location on Storage
 
 ```javascript
 
@@ -110,15 +113,16 @@ JSON has 2 fields:
 ## **SDK Examples**
 **Save VCard file**
 
-{{< tabs tabTotal="6" tabID="3" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" tabName6="Typescript" >}}
-
-{{< tab tabNum="1" >}}
-
-[**SaveContactModelAsync](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/EmailApi.md#SaveContactModelAsync) **-** Save contact. Performs operation asynchronously. Not available on .NETFramework v2.0.
+[**SaveContactModelAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/EmailApi.md#SaveContactModelAsync) - Save contact. Performs operation asynchronously. Not available on .NETFramework v2.0.
 
 **SaveContactModelRequest** - Request model for [SaveContactModel](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/EmailApi.md#SaveContactModelAsync) operation.
 
 [**StorageModelRqOfContactDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/StorageModelRqOfContactDto.md) - Create contact request.
+
+
+{{< tabs tabTotal="6" tabID="3" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" tabName6="Typescript" >}}
+
+{{< tab tabNum="1" >}}
 
 {{< gist "aspose-cloud" "e50bc177cb788e499fd13c27b55d762e" "Examples-DotNET-CSharp-Save-VCard-To-Storage-1.cs" >}}
 

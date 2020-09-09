@@ -10,9 +10,9 @@ weight: 30
 ## **Introduction**
 The AI feature of API provides a unique feature to display the person's name into a list of possible alternatives.
 ## **Use Swagger UI**
-1. Open link <https://apireference.aspose.cloud/email/>
+1. Open [link](https://apireference.aspose.cloud/email/)
 1. Click *"Authorize"* button, enter your AppKey and AppSid, obtained from the [dashboard](https://dashboard.aspose.cloud/), click *"Authorize"* dialog button
-1. Open link <https://apireference.aspose.cloud/email/#/AiName/AiNameExpand> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/AiName/AiNameExpand) and click *"Try it out"* button
 1. Enter the name, then click *"Execute"* button
 ## **Use SDK**
 **Show possible alternatives for name**

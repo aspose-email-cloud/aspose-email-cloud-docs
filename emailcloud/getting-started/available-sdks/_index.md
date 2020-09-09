@@ -6,7 +6,6 @@ weight: 30
 ---
 
 ## **Aspose.Email Cloud SDKs**
-**Supported SDKs**
 
 {{< tabs tabTotal="6" tabID="1" tabName1=".NET" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Node.js" tabName6="Ruby" >}}
 

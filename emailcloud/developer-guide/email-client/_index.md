@@ -6,8 +6,8 @@ description: "Aspose.Email Cloud API provides email client which supports: POP3,
 weight: 110
 ---
 
-# **Email Client API**
-[**Aspose.Email Cloud API](https://products.aspose.cloud/email/family)** provides an email client API which supports:
+## **Email Client API**
+[**Aspose.Email Cloud API**](https://products.aspose.cloud/email/family) provides an email client API which supports:
 
 - POP3, IMAP, SMTP, Exchange, WebDav protocols.
 - OAuth and Basic authentication.
@@ -30,7 +30,4 @@ File with **.account** extension is used to store one email account. It contains
 File with **.multi.account** extension is used to store Virtual Multi-account. ou can find out more in [working with multi email account ](/multi-email-account-setup/)article.  
 
 All email client methods use one account or an account pair (firstAccount + secondAccount). For example, you can call an API method with a combination of IMAP and SMTP accounts. So the client will use the SMTP account to send and the IMAP account to receive messages.
-
-
-### **Articles in this section**
 

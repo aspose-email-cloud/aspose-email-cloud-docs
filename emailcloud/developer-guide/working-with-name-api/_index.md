@@ -6,7 +6,7 @@ description: "Process names with Artificial Intelligence functionality called Na
 weight: 70
 ---
 
-# **Introduction**
+## **Introduction**
 **Name API** is an AI feature developed by Aspose. This is a modern approach, which provides you with numerous useful functions to process names.
 
 [Aspose.Email Cloud ](https://products.aspose.cloud/email/family)now supports Artificial Intelligence functionalities and in the following articles, we are going to emphasize **Name API** features.
@@ -18,5 +18,4 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/sdk-setup/).
 
 {{% /alert %}} 
-### **Articles in this section**
 

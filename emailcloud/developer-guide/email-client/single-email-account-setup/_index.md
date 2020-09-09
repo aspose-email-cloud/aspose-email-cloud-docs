@@ -21,20 +21,17 @@ You don't need to create **\*.account** file directly, you can do it via Aspose
 
 {{% alert color="primary" %}} 
 
-If you want to know more about working with **Email Client** — take a look at the Aspose Email Cloud tutorial: [**Quick Start With Email Client**](/quick-start-with-email-client-html/).
+If you want to know more about working with **Email Client** — take a look at the Aspose Email Cloud tutorial: [**Quick Start With Email Client**](/quick-start-with-email-client/).
 
 {{% /alert %}} 
 ## **Save email account using Swagger-UI**
 You can test this functional by using [API reference service](https://apireference.aspose.cloud/email/). To save email account to the [Aspose Storage](https://apireference.aspose.cloud/storage/), you should follow these steps:
 
-1. Open link of  <https://apireference.aspose.cloud/email/>
+1. Open [link])https://apireference.aspose.cloud/email/)
 1. Click the *"Authorize"* button, enter your AppKey and AppSid, obtained from the [dashboard](https://dashboard.aspose.cloud/), click *"Authorize"* dialog button
-1. Open link <https://apireference.aspose.cloud/email/#/EmailClient/SaveEmailClientAccount> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/EmailClient/SaveEmailClientAccount) and click *"Try it out"* button
 1. Enter JSON with email account information and click *"Execute"* button
 
-{{% alert color="primary" %}} 
-
-![todo:image\_alt\_text](/images/icons/grey\_arrow\_down.png)
 
 You can use this JSON to save an email client account
 
@@ -78,11 +75,10 @@ You can use this JSON to save an email client account
 
 ```
 
-{{% /alert %}} 
 ## **Get email account from storage using Swagger-UI**
 You can get a saved .account file from storage and represent it as a JSON object:
 
-1. Open link <https://apireference.aspose.cloud/email/#/EmailClient/GetEmailClientAccount> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/EmailClient/GetEmailClientAccount) and click *"Try it out"* button
 1. Enter information about file location on storage and click *"Execute"* button
 ## **Save and get email account using SDK**
 **Save and get email account using SDK**

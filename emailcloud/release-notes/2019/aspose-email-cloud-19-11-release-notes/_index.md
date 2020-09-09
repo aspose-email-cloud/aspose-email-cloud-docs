@@ -5,12 +5,12 @@ url: /aspose-email-cloud-19-11-release-notes/
 weight: 20
 ---
 
-### **API changes**
+## **API changes**
 Aspose.Email Cloud 19.11 comes with new v3.0 API, which includes:
 
 - SaaSposeResponse model was removed.
 - ` `All POST, PUT, DELETE actions parameters were moved from query to the request`s body 
-### **New features**
+## **New features**
 Introducing new APIs for VCard, iCalendar ﬁles and MAPI messages
 
 - **VCard**, also known as VCF (Virtual Contact File), is a ﬁle format standard for electronic business cards, which is popular.  VCards are often attached to e-mail messages. They can contain name and address information, telephone numbers, e-mail addresses, URLs, logos, photographs, and audio clips. 
@@ -68,7 +68,7 @@ namespace Example {
 
 - **GetCalendarAsync** This method gets iCalendar ﬁles list in the folder on the storage.  To use this method you need to pass three requirement parameters: **folder path in the storage**, **items count on the page** and **page number**. 
 - **GetCalendarRequest** This method is intended to get calendar ﬁle properties. To use this method you should pass only one parameter – **calendar ﬁle name in the storage**.
-### **Storage APIs are included in Email**
+## **Storage APIs are included in Email**
 To provide a better user experience and uniﬁcation, we added storage APIs into Email. For example, to upload a ﬁle with .NET SDK, you just need to use EmailApi class. This approach makes developing easier.
 
 ```csharp
@@ -82,7 +82,7 @@ using(var stream = File.OpenRead("someFile.ext")) {
 }
 
 ```
-### **SDK changes**
+## **SDK changes**
 - PHP SDK package renamed to "aspose/aspose-email-cloud" 
 - Java SDK package renamed to "aspose-email-cloud"
 - Python SDK package renamed to "aspose-email-cloud" (old package is removed from PYPI)

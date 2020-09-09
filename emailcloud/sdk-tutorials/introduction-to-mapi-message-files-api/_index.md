@@ -6,20 +6,16 @@ description: " Instructions on how to use MAPI message files API in Aspose.Emai
 weight: 90
 ---
 
-# **Introduction to MAPI Message Files API**
 ## **MAPI Message Files**
 [Aspose.Email Cloud](https://products.aspose.cloud/email/family) supports files in Microsoft Outlook Email format ([MSG ](https://docs.fileformat.com/email/msg/)files).
 
 First of all, the MSG file could be represented as a list of properties. See this JSON example:
 
-{{% alert color="primary" %}} 
-
-![todo:image\_alt\_text](/images/icons/grey\_arrow\_down.png)
-
 MSG file properties list represented as a JSON array
 
-```javascript
-
+{{< tabs tabTotal="1" tabID="6" tabName1="JS" >}}
+{{< tab tabNum="1" >}}
+```java
 "properties": [
 
   {
@@ -551,26 +547,25 @@ MSG file properties list represented as a JSON array
   }
 
 ]
-
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
-{{% /alert %}} 
 
 These properties could contain different values. It could be integers, strings, bytes, multiple strings, and a lot of other data types. All properties are identified using property Descriptors. Aspose.Email Cloud supports different types of property descriptors:
 
 - MapiPidTagPropertyDescriptor - A property, identified by a tag, which consists of a combination of data type and identifier.
 - MapiPidLidPropertyDescriptor - A property, identified by a long id and a property set.
 - MapiPidNamePropertyDescriptor - A property, identified by a name and a property set.
-- MapiKnownPropertyDescriptor - This descriptor implies one of three previous descriptors. It is a property, that is known to Aspose.Email Cloud, so it can be fully identified by the property name. See all known properties here: <https://apireference.aspose.com/email/net/aspose.email.mapi/knownpropertylist/fields/index>
+- MapiKnownPropertyDescriptor - This descriptor implies one of three previous descriptors. It is a property, that is known to Aspose.Email Cloud, so it can be fully identified by the property name. 
+See all known properties [here](https://apireference.aspose.com/email/net/aspose.email.mapi/knownpropertylist/fields/index).
 
 Aspose.Email Cloud provides 3 different models to represent the MSG file. These models contain a list of all properties and extra fields for easier file operation. For example, MapiMessageDto has a string field named Subject, which contains a subject for an email message. But this field is just a copy of a property with a [TagSubject ](https://apireference.aspose.com/email/net/aspose.email.mapi/knownpropertylist/fields/tagsubject)descriptor:
 
-{{% alert color="primary" %}} 
-
-![todo:image\_alt\_text](/images/icons/grey\_arrow\_down.png)
-
 Part of MapiMessageDto JSON with subject
 
+{{< tabs tabTotal="1" tabID="6" tabName1="JS" >}}
+{{< tab tabNum="1" >}}
 ```java
 
 {
@@ -611,7 +606,8 @@ Part of MapiMessageDto JSON with subject
 
 ```
 
-{{% /alert %}} 
+{{< /tab >}}
+{{< /tabs >}}
 
 These 3 MAPI models are:
 
@@ -2130,7 +2126,7 @@ MapiContactDto mapiContact = new MapiContactDto
 
     PersonalInfo = new MapiContactPersonalInfoPropertySetDto
 
-        {BusinessHomePage = "www.aspose.com"},
+        {BusinessHomePage = ""},
 
     ProfessionalInfo = new MapiContactProfessionalPropertySetDto
 
@@ -2178,7 +2174,7 @@ MapiContactDto mapiContact = new MapiContactDto()
 
     .personalInfo(new MapiContactPersonalInfoPropertySetDto()
 
-        .businessHomePage("www.aspose.com"))
+        .businessHomePage(""))
 
     .professionalInfo(new MapiContactProfessionalPropertySetDto()
 

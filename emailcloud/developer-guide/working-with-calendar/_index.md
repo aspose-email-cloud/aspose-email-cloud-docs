@@ -14,7 +14,7 @@ weight: 50
 
 iCalendar was designed as an independent transport protocol. In other words, calendar files can be shared and edited by using a SyncML or WebDav server, the same as an event can be sent by traditional email. To distribute iCalendar data that contains information about an event, or to share a schedule of an individual - the simple web servers with HTTP protocol are usually used.
 
-iCalendar files have an [ICS](https://wiki.fileformat.com/email/ics/) extension type. [**Aspose.Email Cloud](https://products.aspose.cloud/email/family)** allows creating the software that processes all their data on the cloud. This can increase the speed of your applications’ work. Using iCalendar helps to create software, such as calendar applications or email readers, that makes it easier for recipients of an iCalendar data file to process them, counter-propose another meeting date/time or respond to the sender and more. 
+iCalendar files have an [ICS](https://wiki.fileformat.com/email/ics/) extension type. [**Aspose.Email Cloud**](https://products.aspose.cloud/email/family) allows creating the software that processes all their data on the cloud. This can increase the speed of your applications’ work. Using iCalendar helps to create software, such as calendar applications or email readers, that makes it easier for recipients of an iCalendar data file to process them, counter-propose another meeting date/time or respond to the sender and more. 
 
 The iCalendar file format is specified in a proposed internet standard (RFC 5545) for calendar data exchange, which means you can be confident that your application can be easily integrated with products that support iCalendar. This is a worldwide file format, supported by many popular products, including Apple Calendar (formerly iCal), Yahoo! Calendar, the Lightning extension for Mozilla Thunderbird and SeaMonkey, eM Client, Google Calendar,  Novell GroupWise, Microsoft Outlook, IBM Notes (formerly Lotus Notes). [Aspose.Email Cloud ](https://products.aspose.cloud/email/family)supports working with these products.
 
@@ -37,7 +37,7 @@ First of all, you need to setup [Aspose.Email Cloud SDK](https://products.aspos
 
 Don’t forget to check that everything is working before going ahead.
 ### **Work With iCalendar Files via MAPI**
-[Aspose.Email Cloud API](https://products.aspose.cloud/email/family) supports **MAPI**. Please, read more: [**Working with MAPI**](/working-with-mapi-html/).
+[Aspose.Email Cloud API](https://products.aspose.cloud/email/family) supports **MAPI**. Please, read more: [**Working with MAPI**](/working-with-mapi/).
 
 Using MAPI you are able to process email messages, contact cards and calendars. This approach can help you to unify your file processing with [**Aspose Storage**](https://dashboard.aspose.cloud/#/storages).
 ## **Work With iCalendar in Aspose.Email Cloud**
@@ -47,29 +47,29 @@ In **Model API** iCalendar files are represented using models.
 
 iCalendar Model API supports to:
 
-- Get iCalendar file from Storage as CalendarDto type with [**GetCalendarModel](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#GetCalendarModel)** method.
-- Save CalendarDto object to file on Storage with [**SaveCalendarModel](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#SaveCalendarModel)** method.
-- Get a list of iCalendar files from Storage folder with [**GetCalendarModelList](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#GetCalendarModelList)** method.
-- Get iCalendar file from Storage as AlternateView type with [**GetCalendarModelAsAlternate](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#GetCalendarModelAsAlternate)** method.
-- Convert CalendarDto to AlternateView with [**ConvertCalendarModelToAlternate](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#ConvertCalendarModelToAlternate)** method.
+- Get iCalendar file from Storage as CalendarDto type with [**GetCalendarModel**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#GetCalendarModel) method.
+- Save CalendarDto object to file on Storage with [**SaveCalendarModel**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#SaveCalendarModel) method.
+- Get a list of iCalendar files from Storage folder with [**GetCalendarModelList**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#GetCalendarModelList) method.
+- Get iCalendar file from Storage as AlternateView type with [**GetCalendarModelAsAlternate**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#GetCalendarModelAsAlternate) method.
+- Convert CalendarDto to AlternateView with [**ConvertCalendarModelToAlternate]**(https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#ConvertCalendarModelToAlternate) method.
 
 {{% alert color="primary" %}} 
 
-Find more examples here: [**How To Operate iCalendar Using Model API**](/how-to-operate-icalendar-using-model-api-html/).
+Find more examples here: [**How To Operate iCalendar Using Model API**](/how-to-operate-icalendar-using-model-api/).
 
 {{% /alert %}} 
 
 ### **Property Sets**
-Operating iCalendar files as property sets. For example, to create **iCalendar** file using the property set: [**Create iCalendar file using the property set](https://wiki.lutsk.dynabic.com/Aspose%20Email/Aspose.Email%20for%20Cloud/Aspose.Email%20for%20Cloud%20-%20Documentation%20improvements/2.%20Developer%20Guide/Working%20with%20Calendar/Create%20iCalendar%20file%20using%20the%20property%20set/)**.** 
+Operating iCalendar files as property sets. For example, to create **iCalendar** file using the property set: [**Create iCalendar file using the property set**](https://wiki.lutsk.dynabic.com/Aspose%20Email/Aspose.Email%20for%20Cloud/Aspose.Email%20for%20Cloud%20-%20Documentation%20improvements/2.%20Developer%20Guide/Working%20with%20Calendar/Create%20iCalendar%20file%20using%20the%20property%20set/).
 
 {{% alert color="primary" %}} Working with iCalendar files as **property sets is an outdated approach**. We advise you to **use Model API**, because of it’s usability and convenience. {{% /alert %}} 
 
 
 You can find more examples where uses the property set in the Developer Guide:
 
-- [**Read Calendar Attachment by name](https://wiki.lutsk.dynabic.com/Aspose%20Email/Aspose.Email%20for%20Cloud/Aspose.Email%20for%20Cloud%20-%20Documentation%20improvements/2.%20Developer%20Guide/Working%20with%20Calendar/Read%20Calendar%20Attachment%20by%20name/)**.**
-- [**Read properties for a Calendar](https://wiki.lutsk.dynabic.com/Aspose%20Email/Aspose.Email%20for%20Cloud/Aspose.Email%20for%20Cloud%20-%20Documentation%20improvements/2.%20Developer%20Guide/Working%20with%20Calendar/Read%20properties%20for%20a%20Calendar/)**.**
-- [**Update a Calendar Property](https://wiki.lutsk.dynabic.com/Aspose%20Email/Aspose.Email%20for%20Cloud/Aspose.Email%20for%20Cloud%20-%20Documentation%20improvements/2.%20Developer%20Guide/Working%20with%20Calendar/Update%20a%20Calendar%20Property/)**.**
+- [**Read Calendar Attachment by name**](https://wiki.lutsk.dynabic.com/Aspose%20Email/Aspose.Email%20for%20Cloud/Aspose.Email%20for%20Cloud%20-%20Documentation%20improvements/2.%20Developer%20Guide/Working%20with%20Calendar/Read%20Calendar%20Attachment%20by%20name/).
+- [**Read properties for a Calendar**](https://wiki.lutsk.dynabic.com/Aspose%20Email/Aspose.Email%20for%20Cloud/Aspose.Email%20for%20Cloud%20-%20Documentation%20improvements/2.%20Developer%20Guide/Working%20with%20Calendar/Read%20properties%20for%20a%20Calendar/).
+- [**Update a Calendar Property**](https://wiki.lutsk.dynabic.com/Aspose%20Email/Aspose.Email%20for%20Cloud/Aspose.Email%20for%20Cloud%20-%20Documentation%20improvements/2.%20Developer%20Guide/Working%20with%20Calendar/Update%20a%20Calendar%20Property/).
 
 
 ## **Setup Aspose.Email Cloud SDK**
@@ -87,9 +87,9 @@ How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/sdk-setup/).
 ## **Articles in This Section**
 Please take a look at the following examples to see how it works:
 
-- [CalendarDto Model To Represent iCalendar Files](/calendardto-model-to-represent-icalendar-files-html/)
-- [Create iCalendar File Using The Property Set](/create-icalendar-file-using-the-property-set-html/)
-- [iCalendar To AlternateView Converter](/icalendar-to-alternateview-converter-html/)
-- [Read Calendar Attachment By Name](/read-calendar-attachment-by-name-html/)
-- [Read Properties For a Calendar](/read-properties-for-a-calendar-html/)
-- [Update a Calendar Property](/update-a-calendar-property-html/)
+- [CalendarDto Model To Represent iCalendar Files](/calendardto-model-to-represent-icalendar-files/)
+- [Create iCalendar File Using The Property Set](/create-icalendar-file-using-the-property-set/)
+- [iCalendar To AlternateView Converter](/icalendar-to-alternateview-converter/)
+- [Read Calendar Attachment By Name](/read-calendar-attachment-by-name/)
+- [Read Properties For a Calendar](/read-properties-for-a-calendar/)
+- [Update a Calendar Property](/update-a-calendar-property/)

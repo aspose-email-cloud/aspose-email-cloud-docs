@@ -5,22 +5,22 @@ url: /read-email-properties-by-name/
 weight: 40
 ---
 
-# **Introduction**
+## **Introduction**
 Aspose.Email Cloud allows you to read properties from a Calendar Document uploaded to the Cloud. Aspose.Email Cloud provides the following API
 
 
 
 {{% alert color="primary" %}} 
 
-If you want to know more about working with emails — take a look at the Aspose Email Cloud tutorial: [**Email Message Files](/email-message-files/)**.**
+If you want to know more about working with emails — take a look at the Aspose Email Cloud tutorial: [**Email Message Files**](/email-message-files/).
 
 {{% /alert %}} 
-### **API Information**
+## **API Information**
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
 |/email/{fileName}/properties/{propertyName}|GET|Read Document Properties|[GetEmailProperty](https://apireference.aspose.cloud/email/#/Email/GetEmailProperty)|
-### **cURL Example**
+## **cURL Example**
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}

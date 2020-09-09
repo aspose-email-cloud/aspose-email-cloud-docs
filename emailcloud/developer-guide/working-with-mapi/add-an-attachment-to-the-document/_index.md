@@ -6,7 +6,7 @@ description: " Add an attachment to the document using MAPI with Aspose.Email C
 weight: 10
 ---
 
-# **Add an attachment to the document**
+## **Add an attachment to the document**
 Aspose.Email Cloud API allows you to add an attachment to the document using MAPI.
 ## **API Information**
 
@@ -14,15 +14,14 @@ Aspose.Email Cloud API allows you to add an attachment to the document using MA
 | :- | :- | :- | :- |
 |/email/Mapi/{name}/attachments/{attachment}|PUT|Add an attachment to document|[**AddMapiAttachment**](https://apireference.aspose.cloud/email/#/Mapi/AddMapiAttachment)|
 ## **cURL Examples**
-You can try this here: [**AddMapiAttachment](https://apireference.aspose.cloud/email/#/Mapi/AddMapiAttachment)**.** Click on "*Try it out*" button to use this function. 
+You can try this here: [**AddMapiAttachment**](https://apireference.aspose.cloud/email/#/Mapi/AddMapiAttachment). 
+Click on "*Try it out*" button to use this function. 
 
 **Specify storage folders for MAPI and attachment with Swagger UI**
 
-{{< tabs tabTotal="1" tabID="1" tabName1="JSON" >}}
-
 Use this JSON to specify storage folders for MAPI and attachment:
 
-
+{{< tabs tabTotal="1" tabID="1" tabName1="JSON" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -54,7 +53,7 @@ Use this JSON to specify storage folders for MAPI and attachment:
 
 {{< /tabs >}}
 
-SDK Examples
+## SDK Examples ##
 
 **Add an attachment to the document**
 

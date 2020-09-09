@@ -17,13 +17,15 @@ The SDKs support two different ways of operating with VCard files using property
 
 Let’s create a **ContactDto** object and save it to the Storage as **.vcf** or **.msg** file.
 
-To save **ContactDto** use [**SaveContactModelAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#SaveContactModelAsync) from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md). This method requires **1 parameter** — [**SaveContactModelRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/SaveContactModelRequest.cs), which is a request for this operation.
+To save **ContactDto** use [**SaveContactModelAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#SaveContactModelAsync) from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md). 
+This method requires **1 parameter** — [**SaveContactModelRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/SaveContactModelRequest.cs), which is a request for this operation.
 
-[**SaveContactModelRequest](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/SaveContactModelRequest.cs)** has **3 parameters**:
+[**SaveContactModelRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/SaveContactModelRequest.cs) has **3 parameters**:
 
 - *Format —* Contact document format. Enum, available values: VCard, WebDav, Msg.
 - *Name* — Contact document file name.
-- *Rq* — Create contact request. This parameter accepts [**StorageModelRqOfContactDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/Model/StorageModelRqOfContactDto.cs), to initialize this model you should define 2 parameters: *Value —* ContacDto object and *StorageFolder — [***StorageFolderLocation**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/StorageFolderLocation.cs)* object.* 
+- *Rq* — Create contact request. This parameter accepts [**StorageModelRqOfContactDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/Model/StorageModelRqOfContactDto.cs), 
+to initialize this model you should define 2 parameters: *Value —* ContacDto object and StorageFolder — [**StorageFolderLocation**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/StorageFolderLocation.cs) object. 
 
 **How to create ContactDto object and save it to the Storage?**
 
@@ -69,9 +71,11 @@ To save **ContactDto** use [**SaveContactModelAsync**](https://github.com/aspo
 ## **How to Download VCard File From Storage**
 You can find the saved file on [Aspose.Cloud Dashboard](https://dashboard.aspose.cloud/#/files), or download it using SDK.
 
-To find the contact card file on Storage use [**DownloadFileAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#DownloadFileAsync) from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md). This method requires **1 parameter** — [**DownloadFileRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/DownloadFileRequest.cs), which is a request for this operation.
+To find the contact card file on Storage use [**DownloadFileAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#DownloadFileAsync) 
+from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md). 
+This method requires **1 parameter** — [**DownloadFileRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/DownloadFileRequest.cs), which is a request for this operation.
 
-[**DownloadFileRequest](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/DownloadFileRequest.cs)** has **3 parameters**:
+[**DownloadFileRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/DownloadFileRequest.cs) has **3 parameters**:
 
 - *Path* — File path e.g. "/folder/contact\_card".
 - *StorageName* — Storage name.
@@ -123,7 +127,7 @@ Let's get this file from storage as a ContactDto object.
 
 To get a contact card file from Storage as **ContactDto** use [**GetContactModelAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#GetContactModelAsync) from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md). This method requires **1 parameter** — [**GetContactModelRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/GetContactModelRequest.cs), which is a request for this operation.
 
-[**GetContactModelRequest](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/GetContactModelRequest.cs)** has **4 parameters**:
+[**GetContactModelRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/GetContactModelRequest.cs) has **4 parameters**:
 
 - *Format —* Contact document format. Enum, available values: VCard, WebDav, Msg.
 - *Name* — VCard file name in storage.
@@ -174,7 +178,7 @@ To get a contact card file from Storage as **ContactDto** use [**GetContactMod
 
 You can change model fields and save it again. The file will be rewritten if you don't change file name and location.
 ## **How to Use Business Card Recognition API**
-{{% alert color="primary" %}} To get more information take a look at the [Business Cards Recognition API](/business-cards-recognition-api-html/). {{% /alert %}} 
+{{% alert color="primary" %}} To get more information take a look at the [Business Cards Recognition API](/business-cards-recognition-api/). {{% /alert %}} 
 
 Now, let's use our **Business Card Recognition API**.
 
@@ -188,11 +192,11 @@ To parse an image of a contact card use [**AiBcrParseModelAsync**](https://gith
 
 To initialize this request define [**AiBcrBase64Rq**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/AiBcrBase64Rq.cs) object.
 
-[**AiBcrBase64Rq](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/AiBcrBase64Rq.cs)** has **2 parameters**:
+[**AiBcrBase64Rq**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/AiBcrBase64Rq.cs) has **2 parameters**:
 
 - *Options —* Recognition options. [**AiBcrOptions**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/AiBcrOptions.cs) has **2 parameters**:
   - *Languages —* Comma-separated ISO-639 codes of languages (either 639-1 or 639-3; i.e. "it" or "ita" for Italian); it's "" by default.
-  - *Countries —* Comma-separated codes of countries.* 
+  - *Countries —* Comma-separated codes of countries.
 - *Images* — Vcard file name in storage.  List of [**AiBcrBase64Image**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/AiBcrBase64Image.cs) has **2 parameters**:
   - *IsSingle* — Determines that image contains single VCard or more. Ignored in the current version.
   - *Base64Data* — Image data in base64.
@@ -243,7 +247,7 @@ You can get a list of VCard files stored in one folder on storage using a single
 
 To get a list of VCard files use [**GetContactModelListAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#GetContactModelListAsync) from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md). This method requires **1 parameter** — [**GetContactModelListRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/GetContactModelListRequest.cs), which is a request for this operation.
 
-[**GetContactModelListRequest](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/GetContactModelListRequest.cs)** has **4 parameters**:
+[**GetContactModelListRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/GetContactModelListRequest.cs) has **4 parameters**:
 
 - *Format —* Contact document format. Enum, available values: VCard, WebDav, Msg.
 - *Folder* — Path to the folder in storage.

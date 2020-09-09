@@ -10,9 +10,9 @@ weight: 20
 ## **Introduction**
 Aspose.Email Cloud now supports Artificial Intelligence functionalities. With the help of these AI capabilities, you can parse the name of a person and try determining the gender. The API result contains a list of hypotheses about a person's gender. All hypotheses include score, so you can use the most scored version, which will be the first in a list.
 ## **Use Swagger UI**
-1. Open link <https://apireference.aspose.cloud/email/>
+1. Open [link](https://apireference.aspose.cloud/email/)
 1. Click *"Authorize"* button, enter your AppKey and AppSid, obtained from the [dashboard](https://dashboard.aspose.cloud/), click *"Authorize"* dialog button
-1. Open link <https://apireference.aspose.cloud/email/#/AiName/AiNameGenderize> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/AiName/AiNameGenderize) and click *"Try it out"* button
 1. Enter the name, then click *"Execute"* button
 ## **Use SDK**
 **Determine persons gender by name**

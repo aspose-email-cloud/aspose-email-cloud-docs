@@ -10,7 +10,7 @@ weight: 50
 ## **Detect disposable email**
 Disposable email allows users to receive emails at a temporary email address. Disposable emails are also known as 10minutemail, tempmail, fake-mail, throwaway email, trash-mail or temp-mail. Many websites, forums, blogs and web apps request visitors to register before they can interact with these websites. As disposable emails are used for the quick registration only, it may hurt emails’ statistics and clients’ analysis. To avoid this you can use [**Aspose.Email Cloud API**](https://products.aspose.cloud/email/family).  
 
-[**Aspose.Email Cloud API](https://products.aspose.cloud/email/family)** allows to detect whether an email address is disposable or not (for example "email@outlook.com" is not disposable, but "relgidar@mailcatch.com" is disposable).
+[**Aspose.Email Cloud API**](https://products.aspose.cloud/email/family) allows to detect whether an email address is disposable or not (for example "email@outlook.com" is not disposable, but "relgidar@mailcatch.com" is disposable).
 
 
 
@@ -23,10 +23,11 @@ If you want to know more about working with emails — take a look at the Aspose
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
-|/email/disposable/isDisposable/{address}|GET|Check email address is disposable|[**IsEmailAddressDisposable](https://apireference.aspose.cloud/email/#/DisposableEmail/IsEmailAddressDisposable)** |
+|/email/disposable/isDisposable/{address}|GET|Check email address is disposable|[**IsEmailAddressDisposable**](https://apireference.aspose.cloud/email/#/DisposableEmail/IsEmailAddressDisposable) |
 ## **Try Swagger-UI**
-You can try dispose email detection feature here: [**IsEmailAddressDisposable](https://apireference.aspose.cloud/email/#/DisposableEmail/IsEmailAddressDisposable)**.** Click on "*Try it out*" button to use this function, enter an email you want to check and click *"Execute"* (don't forget to authorize using your AppKey and AppSid from the [**Dashboard**](https://dashboard.aspose.cloud/)).
-# **SDK examples**
+You can try dispose email detection feature here: [**IsEmailAddressDisposable**](https://apireference.aspose.cloud/email/#/DisposableEmail/IsEmailAddressDisposable). 
+Click on "*Try it out*" button to use this function, enter an email you want to check and click *"Execute"* (don't forget to authorize using your AppKey and AppSid from the [**Dashboard**](https://dashboard.aspose.cloud/)).
+## **SDK examples**
 **Check email address is disposable**
 
 {{< tabs tabTotal="6" tabID="1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Typescript" tabName5="Ruby" tabName6="PHP" >}}
@@ -69,7 +70,10 @@ You can try dispose email detection feature here: [**IsEmailAddressDisposable](
 
 {{< /tabs >}}
 ## **Setup Aspose.Email Cloud SDK**
-Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Checkout our [GitHub repository](https://github.com/aspose-email-cloud) for a complete list of Aspose.Email SDKs along with working examples.
+Using an SDK (API client) is the quickest way for a developer to speed up the development. 
+An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing 
+code specific to your particular project. Checkout our [GitHub repository](https://github.com/aspose-email-cloud) for a 
+complete list of Aspose.Email SDKs along with working examples.
 
 {{% alert color="primary" %}} 
 

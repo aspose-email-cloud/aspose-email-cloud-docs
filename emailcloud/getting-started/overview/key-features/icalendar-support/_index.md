@@ -45,7 +45,7 @@ iCalendar Model API supports to:
 - **Get a calendar** file from [Storage](https://dashboard.aspose.cloud/#/storages) **as AlternateView type**. 
 - **Convert a calendar file to AlternateView**. A calendar file which is converted to AlternateView can be appended to the email.
 ### **Work With iCalendar File as Property Set**
-The second way is to operate a calendar file as a property set. For example, to create a **calendar** file using the property set: [**Create iCalendar file using the property set](/create-icalendar-file-using-the-property-set/)**.**
+The second way is to operate a calendar file as a property set. For example, to create a **calendar** file using the property set: **[Create iCalendar file using the property set](/create-icalendar-file-using-the-property-set/)**.
 
 **Note:** Using Model API is a more convenient and productive approach. 
 

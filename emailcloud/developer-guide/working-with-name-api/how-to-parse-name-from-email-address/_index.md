@@ -9,9 +9,9 @@ weight: 60
 ## **Introduction**
 The API enables you to determine the name of the person through an email address. It tries to identify the Firstname and Lastname while parsing the given email address.
 ## **Using Swagger UI**
-1. Open link <https://apireference.aspose.cloud/email/>
+1. Open [link](https://apireference.aspose.cloud/email/)
 1. Click *"Authorize"* button, enter your AppKey and AppSid, obtained from the [dashboard](https://dashboard.aspose.cloud/), click *"Authorize"* dialog button
-1. Open link <https://apireference.aspose.cloud/email/#/AiName/AiNameParseEmailAddress> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/AiName/AiNameParseEmailAddress) and click *"Try it out"* button
 1. Enter the email address, then click *"Execute"* button
 ## **Using SDK**
 **Parse name from email**
