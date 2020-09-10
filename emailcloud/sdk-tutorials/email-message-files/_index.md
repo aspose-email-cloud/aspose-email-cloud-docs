@@ -209,7 +209,7 @@ You can edit the EmailDto object and save it again. If file name and location wi
 ## **How to Download Email File From Storage**
 You can download files from the [Storage](https://dashboard.aspose.cloud/#/storages).
 
-[FileApi](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/FileApi.md) class has [DownloadFileAsync](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/FileApi.md#downloadfileasync) function which allows to download files from [Storage](https://dashboard.aspose.cloud/#/storages) asynchronous as a Stream. This function has one required parameter —  [*DownloadFileRequest*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/Model/DownloadFileRequest.cs). To define it you need to pass **2 parameters** into it: a file’s path as a string and a name of [Storage](https://dashboard.aspose.cloud/#/storages) you want to download from.
+[FileApi](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/FileApi.md) class has [DownloadFileAsync](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/FileApi.md#downloadfileasync) function which allows to download files from [Storage](https://dashboard.aspose.cloud/#/storages) asynchronous as a Stream. This function has one required parameter — [*DownloadFileRequest*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/Model/DownloadFileRequest.cs). To define it you need to pass **2 parameters** into it: a file’s path as a string and a name of [Storage](https://dashboard.aspose.cloud/#/storages) you want to download from.
 
 To download the file that we created in the previous step from the Storage, use the following steps:
 
@@ -318,7 +318,7 @@ file = api.email.get_as_file(models.EmailGetAsFileRequest(
 {{< tab tabNum="4" >}}
 
 ```ruby
-file = @api.email.get_as_file(EmailGetAsFileRequest.new(
+file = api.email.get_as_file(EmailGetAsFileRequest.new(
   file_name: email_file, format: 'Msg', storage: storage, folder: folder))
 ```
 
@@ -327,7 +327,7 @@ file = @api.email.get_as_file(EmailGetAsFileRequest.new(
 {{< tab tabNum="5" >}}
 
 ```typescript
-const file = await td.api().email.getAsFile(new EmailGetAsFileRequest(
+const file = await api.email.getAsFile(new EmailGetAsFileRequest(
     emailFile, 'Msg', storage, folder));
 ```
 
@@ -390,7 +390,7 @@ email_dto = api.email.get(models.EmailGetRequest(
 {{< tab tabNum="4" >}}
 
 ```ruby
-email_dto = @api.email.get(EmailGetRequest.new(
+email_dto = api.email.get(EmailGetRequest.new(
   format: 'Eml', file_name: email_file, folder: folder, storage: storage))
 ```
 
@@ -399,7 +399,7 @@ email_dto = @api.email.get(EmailGetRequest.new(
 {{< tab tabNum="5" >}}
 
 ```typescript
-const emailDto = await td.api().email.get(new EmailGetRequest(
+const emailDto = await api.email.get(new EmailGetRequest(
     'Eml', emailFile, folder, storage));
 ```
 
@@ -420,7 +420,7 @@ We can append this EmailDto object to the "INBOX" folder of an IMAP account:
 
 {{% alert color="primary" %}} 
 
-See how to setup and use email client in the [Quickstart with an email client](https://docs.aspose.cloud/display/LGIS/Quick+start+with+an+email+client)[ tutorial.](https://docs.aspose.cloud/display/LGIS/Quick+start+with+an+email+client)
+See how to setup and use email client in the [Quickstart with an email client tutorial](/quick-start-with-email-client/).
 
 {{% /alert %}} 
 

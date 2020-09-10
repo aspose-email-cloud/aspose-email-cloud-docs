@@ -346,7 +346,7 @@ $contactDto = api->contact()->get(new ContactGetRequest(
 You can change model fields and save it again. The file will be rewritten if you don't change file name and location.
 ## **How to Use Business Card Recognition API**
 
-{{% alert color="primary" %}} To get more information take a look at the [Business Cards Recognition API](/developer-guide/working-with-contact-cards/business-cards-recognition-api/). {{% /alert %}} 
+{{% alert color="primary" %}} To get more information take a look at the [Business Cards Recognition API](/business-cards-recognition-api/). {{% /alert %}} 
 
 Now, let's use our **Business Card Recognition API**.
 
@@ -356,7 +356,7 @@ First, we need an image of a business card. Something like this:
 
 This file should be placed somewhere on the disk, for example at "*/tmp/alex.png*".
 
-To parse an image of a contact card use [**ParseAsync**]https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AiBcrApi.md#ParseAsync) from [**AiBcrApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AiBcrApi.md). This method requires **1 parameter** — **AiBcrParseRequest**, which is a request for this operation.
+To parse an image of a contact card use [**ParseAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AiBcrApi.md#ParseAsync) from [**AiBcrApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AiBcrApi.md). This method requires **1 parameter** — **AiBcrParseRequest**, which is a request for this operation.
 
 **AiBcrParseRequest** has **4 parameters**:
 
@@ -425,7 +425,7 @@ const result = await api.ai.bcr.parse(
 {{< tab tabNum="6" >}}
 
 ```php
-$result = self::api()->ai()->bcr()->parse(
+$result = $api->ai()->bcr()->parse(
     new AiBcrParseRequest(new SplFileObject("alex.png"))
 );
 ```

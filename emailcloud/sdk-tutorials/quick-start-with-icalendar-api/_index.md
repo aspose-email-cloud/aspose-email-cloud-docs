@@ -7,7 +7,7 @@ weight: 40
 ---
 
 ## **iCalendar API**
-[Aspose.Email Cloud AP](https://products.aspose.cloud/email/family)I supports working with iCalendar files. You can use our API to read, edit and save iCalendar (.ics) files. Also, you can convert them to [**AlternateView**](/icalendar-to-alternateview-converter/) and add them to email messages.
+[Aspose.Email Cloud API](https://products.aspose.cloud/email/family) supports working with iCalendar files. You can use our API to read, edit and save iCalendar (.ics) files. Also, you can convert them to [**AlternateView**](/icalendar-to-alternateview-converter/) and add them to email messages.
 
 Our SDKs support two different ways of operating with iCalendar files using [property sets](/create-icalendar-file-using-the-property-set/) and data transfer object **CalendarDto**. This tutorial shows how to use **CalendarDto**.
 
