@@ -9,7 +9,7 @@ weight: 20
 # **How to Work With Email Message Files via Aspose.Email Cloud API**
 [Aspose.Email Cloud API](https://products.aspose.cloud/email/family) supports email message files with EML, MSG, MHTML and HTML format. We have API for creating, editing, converting such files. Also, email message files can be used in the [built-in email client](/email-client/).
 
-Our SDKs support two different ways of operating with email message files using MapiMessage and EmailDto. This tutorial shows how to use an **EmailDto**.
+Our SDKs support two different ways of operating with email message files using MapiMessageDto and EmailDto. This tutorial shows how to use an **EmailDto**.
 
 {{% alert color="primary" %}} To see how to setup SDKs use the [SDK setup tutorial](/sdk-setup/). {{% /alert %}} 
 ## **Email Message Files**
