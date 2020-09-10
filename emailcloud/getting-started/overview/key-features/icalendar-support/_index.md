@@ -25,7 +25,7 @@ With [**Aspose.Email Cloud**](https://products.aspose.cloud/email/family) you 
 1. Work with your files on [Storage](https://dashboard.aspose.cloud/#/storages): create, edit [ICS](https://wiki.fileformat.com/email/ics/) files, work with appointments, download & upload iCalendar files, update and remove calendar file’s properties.
 1. Convert calendar files to [AlternateView](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AlternateView.md). AlternateView allows appending iCalendar to an email for further sending.
 1. Work with calendar files’ attachments: edit them, search through them and more.
-1. Attach a calendar file ([ICS](https://wiki.fileformat.com/email/ics/)) to an email and send it using our build-in [Email Client](/emailcloud/email-client/)[.](http://client/)
+1. Attach a calendar file ([ICS](https://wiki.fileformat.com/email/ics/)) to an email and send it using our build-in [Email Client](/emailcloud/email-client/).
 
 
 
