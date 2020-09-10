@@ -20,7 +20,7 @@ VCards allows to make it easier for people to add contact information into thei
 
 Also, you can process multiple VCard files. You can import or export multiple contacts into one file. 
 
-[**Aspose.Email Cloud API](https://products.aspose.cloud/email/family)** allows to work with VCard files in your applications. Using the cloud approach helps to increase the processing speed of the applications, that are developed with Aspose.Email Cloud.
+[**Aspose.Email Cloud API**](https://products.aspose.cloud/email/family) allows to work with VCard files in your applications. Using the cloud approach helps to increase the processing speed of the applications, that are developed with Aspose.Email Cloud.
 
 
 ### **VCard With Aspose.Email Cloud API**
@@ -59,16 +59,16 @@ Also, using this approach allows you to scan any of the business cards and conve
 
 VCard **Model API** supports to:
 
-- Get VCard file from storage as ContactDto type with [**GetContactModel](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#GetContactModel)** method.
+- Get VCard file from storage as ContactDto type with [**GetContactModel**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#GetContactModel) method.
 - Save ContactDto object to Storage with [**SaveContactModel**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#SaveContactModel) method.
-- Get a list of VCard files from Storage folder with [**GetContactModelList](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#GetContactModelList)** method.
+- Get a list of VCard files from Storage folder with [**GetContactModelList**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#GetContactModelList) method.
 - Recognize VCard from image to ContactDto type with [**AI Business Card Recognition**](https://wiki.lutsk.dynabic.com/Aspose%20Email/Aspose.Email%20for%20Cloud/Aspose.Email%20for%20Cloud%20-%20Documentation%20improvements/Getting%20started/1.%20Overview/1.%20Key%20features%20/BCR/) functionality[ ](https://wiki.lutsk.dynabic.com/Aspose%20Email/Aspose.Email%20for%20Cloud/Aspose.Email%20for%20Cloud%20-%20Documentation%20improvements/Getting%20started/1.%20Overview/1.%20Key%20features%20/BCR/)([AiBcrParseModel](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#AiBcrParseModel)).
 
 
 
 {{% alert color="primary" %}} 
 
-Find more examples here: [**How To Operate VCard Using Model API**](/how-to-operate-vcard-using-model-api-html/).
+Find more examples here: [**How To Operate VCard Using Model API**](/how-to-operate-vcard-using-model-api/).
 
 {{% /alert %}} 
 ### **Operate VCard Using Property Sets**
@@ -94,8 +94,8 @@ How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/sdk-setup/).
 ## **Articles in This Section**
 Please take a look at the following examples to see how it works:
 
-- [Business Cards Recognition API](/business-cards-recognition-api-html/)
-- [Create VCard File](/create-vcard-file-html/)
-- [Parse Image To VCard File](/parse-image-to-vcard-file-html/)
-- [Read Contact Document Properties](/read-contact-document-properties-html/)
-- [Save VCard File](/save-vcard-file-html/)
+- [Business Cards Recognition API](/business-cards-recognition-api/)
+- [Create VCard File](/create-vcard-file/)
+- [Parse Image To VCard File](/parse-image-to-vcard-file/)
+- [Read Contact Document Properties](/read-contact-document-properties/)
+- [Save VCard File](/save-vcard-file/)

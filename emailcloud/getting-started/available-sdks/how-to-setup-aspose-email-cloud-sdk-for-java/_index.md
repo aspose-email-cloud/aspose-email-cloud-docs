@@ -8,7 +8,7 @@ weight: 10
 You can directly include the source code of Aspose.Email Cloud SDK for Java in your own project, the source code is available from <https://github.com/aspose-email/Aspose.Email-for-Cloud>.
 
 Alternatively, you can use Maven to include in your Java project. Below are the steps for Maven.
-#### **Aspose Maven Repository**
+## **Aspose Maven Repository**
 ```java
 
 <repositories>
@@ -26,7 +26,7 @@ Alternatively, you can use Maven to include in your Java project. Below are the 
 </repositories>
 
 ```
-#### **Maven Dependency**
+## **Maven Dependency**
 ```java
 
 <dependency>
@@ -40,8 +40,8 @@ Alternatively, you can use Maven to include in your Java project. Below are the 
 </dependency>
 
 ```
-### **Get Sources and Javadocs**
-#### **Maven**
+## **Get Sources and Javadocs**
+### **Maven**
 ```java
 
 $ mvn dependency:sources
@@ -49,7 +49,7 @@ $ mvn dependency:sources
 $ mvn dependency:resolve -Dclassifier=javadoc
 
 ```
-#### **Eclipse IDE**
+### **Eclipse IDE**
 ```java
 
 $ mvn eclipse:eclipse -DdownloadSources=true
@@ -57,7 +57,7 @@ $ mvn eclipse:eclipse -DdownloadSources=true
 $ mvn eclipse:eclipse -DdownloadSources=true -DdownloadJavadocs=false
 
 ```
-#### **pom.xml**
+### **pom.xml**
 ```java
 
   <build>
@@ -85,7 +85,7 @@ $ mvn eclipse:eclipse -DdownloadSources=true -DdownloadJavadocs=false
    </build>
 
 ```
-#### **Direct Download**
+## **Direct Download**
 <http://repository.aspose.cloud/repo/com/aspose/aspose-email-cloud/>
-#### **Data**
+## **Data**
 In order to manipulate any files, you first need to upload them to the Aspose cloud storage or 3th party cloud storage using [Aspose.Storage Cloud SDK for Java](https://github.com/asposemarketplace/Aspose.Storage_Cloud_SDK_For_Java).

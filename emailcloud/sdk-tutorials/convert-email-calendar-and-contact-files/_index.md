@@ -7,7 +7,7 @@ weight: 80
 ---
 
 ## **Convert Calendar (iCalendar) Files**
-{{% alert color="primary" %}} This tutorial describes only the file conversion API. To get more information about **iCalendar** API usage see [**iCalendar API Tutorial**](/quick-start-with-icalendar-api-html/). {{% /alert %}} 
+{{% alert color="primary" %}} This tutorial describes only the file conversion API. To get more information about **iCalendar** API usage see [**iCalendar API Tutorial**](/quick-start-with-icalendar-api/). {{% /alert %}} 
 
 **iCalendar** file can be reproduced as a **CalendarDto** object. This object can be converted to **iCalendar** or Microsoft Outlook **MSG** file.
 ### **Create CalendarDto Object**
@@ -185,7 +185,7 @@ All iCalendar files can be converted back to CalendarDto objects:
 
 {{< /tabs >}}
 ## **Convert Contact Card (VCard) Files**
-{{% alert color="primary" %}} This tutorial describes only the file conversion API. To get more information about VCard API usage see **[VCard API Tutorial**](/quick-start-with-vcard-api-html/)**. {{% /alert %}} 
+{{% alert color="primary" %}} This tutorial describes only the file conversion API. To get more information about VCard API usage see **[VCard API Tutorial**](/quick-start-with-vcard-api/)**. {{% /alert %}} 
 
 VCard files conversion API looks the same as iCalendar API. VCard file can be represented using a ContactDto object. This object can be converted to a VCard or MAPI contact file. Both contact formats can be converted to each other and back to the ContactDto object. You can see all the available methods in the examples below:
 
@@ -231,7 +231,7 @@ VCard files conversion API looks the same as iCalendar API. VCard file can be re
 
 {{< /tabs >}}
 ## **Convert Email Messages**
-{{% alert color="primary" %}} This tutorial describes only the file conversion API. To get more information about Email messages API usage see [**Email Message Files API Tutorial**](/email-message-files-html/). {{% /alert %}} 
+{{% alert color="primary" %}} This tutorial describes only the file conversion API. To get more information about Email messages API usage see [**Email Message Files API Tutorial**](/email-message-files/). {{% /alert %}} 
 
 The email message can be represented as an EmailDto object. This object can be converted into an EML, MSG, MHTM, HTML file. Files can be converted to each other and back to the EmailDto object. The code below demonstrates all email message conversion methods:
 

@@ -10,9 +10,9 @@ weight: 40
 ## **Introduction**
 Aspose.Email Cloud is also capable of formatting a person's name in a correct case and name order using options for formatting instructions. So based on the instructions provided, the name sequence and case format are adjusted.
 ## **Use Swagger UI**
-1. Open link <https://apireference.aspose.cloud/email/>
+1. Open [link](https://apireference.aspose.cloud/email/)
 1. Click *"Authorize"* button, enter your AppKey and AppSid, obtained from the [dashboard](https://dashboard.aspose.cloud/), click *"Authorize"* dialog button
-1. Open link <https://apireference.aspose.cloud/email/#/AiName/AiNameFormat> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/AiName/AiNameFormat) and click *"Try it out"* button
 1. Enter name and format, then click *"Execute"* button
 ## **Use SDK**
 **Format a person's name through defined format**

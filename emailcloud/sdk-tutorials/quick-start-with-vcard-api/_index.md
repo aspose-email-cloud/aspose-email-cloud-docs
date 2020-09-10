@@ -345,6 +345,7 @@ $contactDto = api->contact()->get(new ContactGetRequest(
 
 You can change model fields and save it again. The file will be rewritten if you don't change file name and location.
 ## **How to Use Business Card Recognition API**
+
 {{% alert color="primary" %}} To get more information take a look at the [Business Cards Recognition API](/developer-guide/working-with-contact-cards/business-cards-recognition-api/). {{% /alert %}} 
 
 Now, let's use our **Business Card Recognition API**.

@@ -6,7 +6,7 @@ weight: 30
 ---
 
 ## **Parse an image to VCard file**
-Aspose.Email Cloud API allows you to parse an image to VCard file using [**ContactDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactDto.md)** and [**The Business Card Recognition**](/business-cards-recognition-api/).
+Aspose.Email Cloud API allows you to parse an image to VCard file using [**ContactDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactDto.md) and [**The Business Card Recognition**](/business-cards-recognition-api/).
 
 {{% alert color="primary" %}} 
 
@@ -19,7 +19,7 @@ If you want to know more about working with **VCard files** — take a look at t
 | :- | :- | :- | :- |
 |/email/AiBcr/parse-model|POST|Parse images to vCard document models|[**AiBcrParseModel**](https://apireference.aspose.cloud/email/#/AiBcr/AiBcrParseModel)|
 ## **cURL Examples**
-You can try this here: [**AiBcrParseModel](https://apireference.aspose.cloud/email/#/AiBcr/AiBcrParseModel)**.** Click on "*Try it out*" button to use this function. 
+You can try this here: [**AiBcrParseModel**](https://apireference.aspose.cloud/email/#/AiBcr/AiBcrParseModel). Click on "*Try it out*" button to use this function. 
 
 **Parse an image with Swagger UI**
 
@@ -57,17 +57,18 @@ Use this JSON to parse an image:
 ## **SDK Examples**
 **Parse an image to VCard file**
 
-{{< tabs tabTotal="6" tabID="3" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" tabName6="Typescript" >}}
+[**AiBcrParseModel**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/EmailApi.md#AiBcrParseModel) - Parse images to vCard document models.
 
-{{< tab tabNum="1" >}}
-
-[**AiBcrParseModel](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/EmailApi.md#AiBcrParseModel) **-** Parse images to vCard document models.
-
-**AiBcrParseModelRequest -** Request model for aiBcrParseModel operation.
+**AiBcrParseModelRequest** - Request model for aiBcrParseModel operation.
 
 [**AiBcrBase64Rq**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/docs/AiBcrBase64Rq.md) - Request with base64 images data.
 
 [**AiBcrBase64Image**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/docs/AiBcrBase64Image.md) - Base64 images data.
+
+
+{{< tabs tabTotal="6" tabID="3" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" tabName6="Typescript" >}}
+
+{{< tab tabNum="1" >}}
 
 {{< gist "aspose-cloud" "e50bc177cb788e499fd13c27b55d762e" "Examples-DotNET-CSharp-Parse-Image-To-VCard-File-1.cs" >}}
 

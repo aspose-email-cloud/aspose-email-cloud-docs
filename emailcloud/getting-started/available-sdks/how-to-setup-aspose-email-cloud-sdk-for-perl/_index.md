@@ -5,7 +5,7 @@ url: /how-to-setup-aspose-email-cloud-sdk-for-perl/
 weight: 70
 ---
 
-### **Using CPAN**
+## **Using CPAN**
 First install [CPAN](https://metacpan.org/release/AsposeEmailCloud-EmailApi) module. For details [click here](http://www.cpan.org/modules/INSTALL.html).
 
 ```java
@@ -13,9 +13,9 @@ First install [CPAN](https://metacpan.org/release/AsposeEmailCloud-EmailApi) mod
 cpan AsposeEmailCloud::EmailApi
 
 ```
-### **Direct Method**
-\1. Download the latest package from [github](https://github.com/aspose-email/Aspose.Email-for-Cloud/archive/master.zip)
-\2. Unpack and run following command
+## **Direct Method**
+1. Download the latest package from [GitHub](https://github.com/aspose-email/Aspose.Email-for-Cloud/archive/master.zip)
+2. Unpack and run following command
 
 ```java
 

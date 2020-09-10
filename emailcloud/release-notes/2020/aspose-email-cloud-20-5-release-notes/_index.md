@@ -5,7 +5,7 @@ url: /aspose-email-cloud-20-5-release-notes/
 weight: 20
 ---
 
-# **New Features**
+## **New Features**
 ## **1. Email client conversation threads**
 An email [**conversation threads**](https://en.wikipedia.org/wiki/Conversation_threading) support has been added to Aspose.Email Cloud build-in client. Using conversation threads, you can get more structured emails in the mailbox. With the new API for conversation threads you can visually group your messages with their replies.
 
@@ -39,5 +39,5 @@ The most popular method in Aspose.Email Cloud API is ConvertEmail. This method c
 We hope you will like these new methods as much as you like ConvertEmail.
 
 More details are available in the [**Tutorial**](/convert-email-calendar-and-contact-files/).
-# **Documentation Improvements**
+## **Documentation Improvements**
 We have prepared new tutorials to help you get started with Aspose.Email Cloud SDK. All tutorials are available here: [**SDK Tutorials**](/sdk-tutorials/).

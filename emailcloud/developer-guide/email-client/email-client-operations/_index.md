@@ -21,7 +21,7 @@ Use SDK reference documentation to see all available API methods: [C#](https://
 
 {{% alert color="primary" %}} 
 
-If you want to know more about working with **Email Client** — take a look at the Aspose Email Cloud tutorial: [**Quick Start With Email Client**](/quick-start-with-email-client-html/).
+If you want to know more about working with **Email Client** — take a look at the Aspose Email Cloud tutorial: [**Quick Start With Email Client**](/quick-start-with-email-client/).
 
 {{% /alert %}} 
 ## **Send email**
@@ -30,14 +30,10 @@ Send email operation will throw an error if sending emails is not supported by s
 -----
 You can test this functional by using [API reference service](https://apireference.aspose.cloud/email/). You can send a test email. *To send an email, you should follow these steps*:
 
-1. Open link <https://apireference.aspose.cloud/email/>
+1. Open [link](https://apireference.aspose.cloud/email/)
 1. Click *"Authorize"* button, enter your AppKey and AppSid, obtained from the [dashboard](https://dashboard.aspose.cloud/), click *"Authorize"* dialog button
-1. Open link <https://apireference.aspose.cloud/email/#/EmailClient/SendEmailModel> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/EmailClient/SendEmailModel) and click *"Try it out"* button
 1. Enter JSON with an email message and account information, then click *"Execute"* button
-
-{{% alert color="primary" %}} 
-
-![todo:image\_alt\_text](/images/icons/grey\_arrow\_down.png)
 
 You can use this JSON to send an email
 
@@ -89,7 +85,6 @@ You can use this JSON to send an email
 
 File *"emailAccount.account"* should be available on storage in folder *"emailAccount/location/on/storage"*
 
-{{% /alert %}} 
 ### **Send email using SDK**
 -----
 **Send email using SDK**
@@ -141,7 +136,7 @@ Search message methods return only basic information about messages like from, t
 -----
 You can test this functional by using [API reference service](https://apireference.aspose.cloud/email/). To find email messages in your files in [Aspose Storage](https://apireference.aspose.cloud/storage/)*,* you should follow these steps:
 
-1. Open link <https://apireference.aspose.cloud/email/#/EmailClient/ListEmailModels> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/EmailClient/ListEmailModels) and click *"Try it out"* button
 1. Enter email folder, query, account file location
 1. You can set the *"recursive"* field to search in all child folders
 1. Click the *"Execute"* button
@@ -198,13 +193,10 @@ You can test this functional by using [API reference service](https://apirefere
 
 
 
-1. Open link <https://apireference.aspose.cloud/email/#/EmailClient/https://apireference.aspose.cloud/email/#/EmailClient/DeleteEmailMessage> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/EmailClient/) and click *"Try it out"* button
 1. Enter JSON to specify account and message to delete
 1. Click the *"Execute"* button
 
-{{% alert color="primary" %}} 
-
-![todo:image\_alt\_text](/images/icons/grey\_arrow\_down.png)
 
 You can use this JSON to delete a message
 
@@ -230,7 +222,6 @@ You can use this JSON to delete a message
 
 ```
 
-{{% /alert %}} 
 ### **Delete message using SDK**
 **Delete message using SDK**
 
@@ -283,7 +274,7 @@ You can test this functional by using [API reference service](https://apirefere
 
 
 
-1. Open link <https://apireference.aspose.cloud/email/#/EmailClient/FetchEmailModel> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/EmailClient/FetchEmailModel) and click *"Try it out"* button
 1. Enter message id and account file location
 1. Click the *"Execute"* button
 ### **Fetch message using SDK**
@@ -335,12 +326,9 @@ Email messages can be appended to any folder if it is supported by account. POP3
 -----
 You can test this functional by using [API reference service](https://apireference.aspose.cloud/email/). To append messages to any folder if it is supported by account*,* you should follow these steps:
 
-1. Open link <https://apireference.aspose.cloud/email/#/EmailClient/AppendEmailModelMessage> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/EmailClient/AppendEmailModelMessage) and click *"Try it out"* button
 1. Enter JSON with an email message, folder and account information, then click *"Execute"* button
 
-{{% alert color="primary" %}} 
-
-![todo:image\_alt\_text](/images/icons/grey\_arrow\_down.png)
 
 Use this JSON to append a message
 
@@ -394,7 +382,6 @@ Use this JSON to append a message
 
 ```
 
-{{% /alert %}} 
 ### **Append email using SDK**
 **Append email using SDK**
 
@@ -447,12 +434,9 @@ You can test this functional by using [API reference service](https://apirefere
 
 
 
-1. Open link <https://apireference.aspose.cloud/email/#/EmailClient/SetEmailReadFlag> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/EmailClient/SetEmailReadFlag) and click *"Try it out"* button
 1. Enter JSON with an email message, folder and account information, then click *"Execute"* button
 
-{{% alert color="primary" %}} 
-
-![todo:image\_alt\_text](/images/icons/grey\_arrow\_down.png)
 
 Use this JSON to mark message as unread
 
@@ -478,7 +462,6 @@ Use this JSON to mark message as unread
 
 ```
 
-{{% /alert %}} 
 ### **Mark message as read using SDK**
 **Mark message as read using SDK**
 
@@ -530,17 +513,14 @@ In multi-account, all folders are merged by name. So, if you have 3 accounts and
 #### **Get folders**
 You can test this functional by using [API reference service](https://apireference.aspose.cloud/email/). To get folders*,* you should follow these steps:
 
-1. Open link <https://apireference.aspose.cloud/email/#/EmailClient/ListEmailFolders> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/EmailClient/ListEmailFolders) and click *"Try it out"* button
 1. Enter parent folder name (if it is not a root folder) and account information, then click *"Execute"* button
 #### **Create folder**
 You can test this functional by using [API reference service](https://apireference.aspose.cloud/email/). To create folders*,* you should follow these steps:
 
-1. Open link <https://apireference.aspose.cloud/email/#/EmailClient/CreateEmailFolder> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/EmailClient/CreateEmailFolder) and click *"Try it out"* button
 1. Enter JSON and click *"Execute"* button
 
-{{% alert color="primary" %}} 
-
-![todo:image\_alt\_text](/images/icons/grey\_arrow\_down.png)
 
 Use this JSON to create a new folder
 
@@ -564,16 +544,12 @@ Use this JSON to create a new folder
 
 ```
 
-{{% /alert %}} 
 #### **Delete folder**
 You can test this functional by using [API reference service](https://apireference.aspose.cloud/email/). To delete folders*,* you should follow these steps:
 
-1. Open link <https://apireference.aspose.cloud/email/#/EmailClient/DeleteEmailFolder> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/EmailClient/DeleteEmailFolder) and click *"Try it out"* button
 1. Enter JSON and click *"Execute"* button
 
-{{% alert color="primary" %}} 
-
-![todo:image\_alt\_text](/images/icons/grey\_arrow\_down.png)
 
 Use this JSON to delete a folder from previous example
 
@@ -599,7 +575,6 @@ Use this JSON to delete a folder from previous example
 
 ```
 
-{{% /alert %}} 
 ### **Processing folders with SDK**
 -----
 **Processing folders with SDK**

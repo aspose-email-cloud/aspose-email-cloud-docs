@@ -5,7 +5,7 @@ url: /how-to-operate-email-using-model-api/
 weight: 30
 ---
 
-# **Introduction**
+## **Introduction**
 {{% alert color="primary" %}} [EML](https://wiki.fileformat.com/email/eml/) file format represents email messages saved using Outlook and other relevant applications. Almost all emailing clients support this file format for its compliance with RFC-822 Internet Message Format Standard. {{% /alert %}} 
 ## **Model API**
 When using Model API, the files are represented using models.

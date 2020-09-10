@@ -11,7 +11,7 @@ weight: 30
 
 {{% alert color="primary" %}} 
 
-To get more information about the built-in email client, take a look at the [Email Client](/email-client-html/) article. 
+To get more information about the built-in email client, take a look at the [Email Client](/email-client/) article. 
 
 {{% /alert %}} 
 
@@ -42,14 +42,13 @@ The **created email account will be saved on storage**, so you don't have to rep
 ### **Create Email Account File**
 You can create an email account online using Swagger UI or follow the instructions from these guides: [Single Email Account Setup](/single-email-account-setup/) and [Multi Email Account Setup](/multi-email-account-setup/).
 
-**Create email account file on Storage**
+1. Open [link](https://apireference.aspose.cloud/email/#/EmailClient/SaveEmailClientAccount) and click *"Try it out"* button
+1. Enter JSON with email account information and click *"Execute"* button
 
 {{< tabs tabTotal="1" tabID="1" tabName1="Swagger UI" >}}
 
 {{< tab tabNum="1" >}}
 
-1. Open link <https://apireference.aspose.cloud/email/#/EmailClient/SaveEmailClientAccount> and click *"Try it out"* button
-1. Enter JSON with email account information and click *"Execute"* button
 
 ```javascript
 
@@ -76,10 +75,6 @@ To save your email account use [**SaveEmailClientAccountAsync**](https://github.
 
 - *Value* — Object we want to save on Storage.
 - StorageFile — [**StorageFileLocation**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/StorageFileLocation.cs) object, which contains IMAP account’s file location information, including **storage name**, a path to an **account folder**, name of the file with **IMAP account’s** configurations.
-
-
-
-**Set up an email account for getting emails**
 
 {{< tabs tabTotal="6" tabID="3" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -127,13 +122,7 @@ To save your email account use [**SaveEmailClientAccountAsync**](https://github.
 
 Before you start, please try to search emails in your email account’s folders to see how it works. To do this use Swagger UI and follow instructions below:
 
-**Search Emails with Swagger UI**
-
-{{< tabs tabTotal="1" tabID="4" tabName1="Swagger UI" >}}
-
-{{< tab tabNum="1" >}}
-
-1. Open link <https://apireference.aspose.cloud/email/#/EmailClient/ListEmailModels> and click *"Try it out"* button
+1. Open [link](https://apireference.aspose.cloud/email/#/EmailClient/ListEmailModels) and click *"Try it out"* button
 1. Enter email folder, query, account file location:
    1. folder = "INBOX"
    1. firstAccount: "imap.account"
@@ -143,12 +132,6 @@ Before you start, please try to search emails in your email account’s folders 
    1. storageFolder: "folder/on/storage"
    1. recursive: true
 1. Click the *"Execute"* button.
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-
 
 **Search Emails Using Aspose.Email Cloud SDKs**
 
@@ -212,13 +195,7 @@ After that, you will get a list of messages matching your search criteria as [**
 
 Try to fetch email by its Id from your email account’s folders to see how it works. To do this use Swagger UI and follow instructions below:
 
-**Get Email By Id With Swagger UI**
-
-{{< tabs tabTotal="1" tabID="6" tabName1="Swagger UI" >}}
-
-{{< tab tabNum="1" >}}
-
-- Open link <https://apireference.aspose.cloud/email/#/EmailClient/FetchEmailModel> and click *"Try it out"* button
+- Open [link](https://apireference.aspose.cloud/email/#/EmailClient/FetchEmailModel) and click *"Try it out"* button
 - Enter message id and account file location
   - messageId: <message identifier>
   - firstAccount: "imap.account"
@@ -227,9 +204,6 @@ Try to fetch email by its Id from your email account’s folders to see how it w
   - storageFolder: "folder/on/storage"
 - Click the *"Execute"* button
 
-{{< /tab >}}
-
-{{< /tabs >}}
 
 
 
@@ -237,7 +211,9 @@ Try to fetch email by its Id from your email account’s folders to see how it w
 
 In the previous step, we have got a list of emails. Let’s fetch one of them by its Id.
 
-To do this you should use the **email’s Id**, obviously, and [**FetchEmailModelAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#FetchEmailModelAsync) method from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md). This method requires **1 parameter** — [**FetchEmailModelRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/FetchEmailModelRequest.cs), which is a request model for this operation. [**FetchEmailModelRequest](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/FetchEmailModelRequest.cs)** has the following parameters:
+To do this you should use the **email’s Id**, obviously, and [**FetchEmailModelAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#FetchEmailModelAsync) method from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md). This method requires **1 parameter** — [**FetchEmailModelRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/FetchEmailModelRequest.cs), 
+which is a request model for this operation. 
+[**FetchEmailModelRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/FetchEmailModelRequest.cs) has the following parameters:
 
 - *MessageId* — Message identifier. 
 - *FirstAccount* — Email account.
@@ -291,19 +267,13 @@ To do this you should use the **email’s Id**, obviously, and [**FetchEmailMode
 
 
 ### **Mark Message as Read**
-**Mark Message as Read With Swagger UI**
-
 Using API you are able to mark a message as read by its Id. Try to do this with **Swagger UI**:
 
-**Mark Email as Read By Id With Swagger UI**
+
+1. Open [link](https://apireference.aspose.cloud/email/#/EmailClient/SetEmailReadFlag) and click *"Try it out"* button.
+2. Use this JSON example in Swagger UI to do this operation:
 
 {{< tabs tabTotal="1" tabID="8" tabName1="JSON" >}}
-
-- Open link <https://apireference.aspose.cloud/email/#/EmailClient/SetEmailReadFlag> and click *"Try it out"* button
-- Enter JSON with an email message, folder and account information, then click *"Execute"* button
-
-Use this JSON example in Swagger UI to do this operation:
-
 {{< tab tabNum="1" >}}
 
 ```javascript
@@ -332,8 +302,7 @@ Use this JSON example in Swagger UI to do this operation:
 
 {{< /tabs >}}
 
-
-
+\
 **Mark Message as Read Using Aspose.Email Cloud SDKs**
 
 You need to know message’s Id to mark it as read. We have done it in previous steps.
@@ -410,14 +379,12 @@ The request accepts only **1 parameter** — [**SetMessageReadFlagAccountBaseRe
 
 In an attempt to manage your messages, you may need to delete some of them. Try to delete a message with Swagger UI:
 
-**Delete Email By Id With Swagger UI**
-
-{{< tabs tabTotal="1" tabID="11" tabName1="JSON" >}}
-
-- Open link <https://apireference.aspose.cloud/email/#/EmailClient/https://apireference.aspose.cloud/email/#/EmailClient/DeleteEmailMessage> and click *"Try it out"* button
+- Open [link](https://apireference.aspose.cloud/email/#/EmailClient/https://apireference.aspose.cloud/email/#/EmailClient/DeleteEmailMessage) and click *"Try it out"* button
 - Enter JSON to specify account, message to delete and click the *"Execute"* button
 
 Use this JSON example in Swagger UI to do this operation:
+
+{{< tabs tabTotal="1" tabID="11" tabName1="JSON" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -448,16 +415,16 @@ Use this JSON example in Swagger UI to do this operation:
 {{< /tabs >}}
 
 
-
+\
 **Delete Message Using Aspose.Email Cloud SDKs**
 
 To remove a message, you should know the Id of the email you want to delete.
 
 To delete email use from [**DeleteEmailMessageAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#DeleteEmailMessageAsync) from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md). This method requires **1 parameter** — [**DeleteEmailMessageRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/DeleteEmailMessageRequest.cs), which requests a model for this operation.
 
-To initialize [**DeleteEmailMessageRequest](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/DeleteEmailMessageRequest.cs)** you should pass **1 parameter** — [**DeleteMessageBaseRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/DeleteMessageBaseRequest.cs), which is a delete message request.
+To initialize [**DeleteEmailMessageRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/DeleteEmailMessageRequest.cs) you should pass **1 parameter** — [**DeleteMessageBaseRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/DeleteMessageBaseRequest.cs), which is a delete message request.
 
-[**DeleteMessageBaseRequest](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/DeleteMessageBaseRequest.cs)** requires the following parameters:
+[**DeleteMessageBaseRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/DeleteMessageBaseRequest.cs) requires the following parameters:
 
 - *FirstAccount* — First account storage file name for receiving emails (or universal one).
 - *SecondAccount* [**oprional**] — Second account storage file name for sending emails (ignored if first is universal).
@@ -515,14 +482,12 @@ To initialize [**DeleteEmailMessageRequest](https://github.com/aspose-email-clo
 
 Try to append a message to your email account with Swagger UI:
 
-**Delete Email By Id With Swagger UI**
-
-{{< tabs tabTotal="1" tabID="14" tabName1="JSON" >}}
-
-- Open link <https://apireference.aspose.cloud/email/#/EmailClient/AppendEmailModelMessage> and click *"Try it out"* button
+- Open [link](https://apireference.aspose.cloud/email/#/EmailClient/AppendEmailModelMessage) and click *"Try it out"* button
 - Enter JSON with an email message, folder and account information, then click *"Execute"* button.
 
 Use this JSON example in Swagger UI to do this operation:
+
+{{< tabs tabTotal="1" tabID="14" tabName1="JSON" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -581,14 +546,14 @@ Use this JSON example in Swagger UI to do this operation:
 {{< /tabs >}}
 
 
-
+\
 **Append New Message Using Aspose.Email Cloud SDKs**
 
 To append a new message to your email account — use [**AppendEmailModelMessageAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#AppendEmailModelMessageAsync) from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#AppendEmailModelMessageAsync). This method requires **1 parameter** — [**AppendEmailModelMessageRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/AppendEmailModelMessageRequest.cs), which requests a model for this operation.
 
 To initialize [](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/DeleteEmailMessageRequest.cs)[**AppendEmailModelMessageRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/AppendEmailModelMessageRequest.cs) you should pass **1 parameter** — [**AppendEmailModelRq**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/AppendEmailModelRq.cs), which is an append email request.
 
-[**AppendEmailModelRq](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/AppendEmailModelRq.cs)** requires the following parameters:
+[**AppendEmailModelRq**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/AppendEmailModelRq.cs) requires the following parameters:
 
 - *FirstAccount* — First account storage file name for receiving emails (or universal one).
 - *SecondAccount* [**oprional**] — Second account storage file name for sending emails (ignored if first is universal).
@@ -646,14 +611,12 @@ To initialize [](https://github.com/aspose-email-cloud/aspose-email-cloud-dotne
 
 Try to setup an account to send messages with Swagger UI:
 
-**Setup Account To Send Emails With Swagger UI**
-
-{{< tabs tabTotal="1" tabID="17" tabName1="JSON" >}}
-
-- Open link <https://apireference.aspose.cloud/email/#/EmailClient/SaveEmailClientAccount> and click *"Try it out"* button
+- Open [link](https://apireference.aspose.cloud/email/#/EmailClient/SaveEmailClientAccount) and click *"Try it out"* button
 - Enter JSON with email account information and click *"Execute"* button
 
 Use this JSON example in Swagger UI to do this operation:
+
+{{< tabs tabTotal="1" tabID="17" tabName1="JSON" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -702,14 +665,14 @@ Use this JSON example in Swagger UI to do this operation:
 {{< /tabs >}}
 
 
-
+\
 **Setup Email Account For Sending Messages Using Aspose.Email Cloud SDKs**
 
 All you have to do to setup your email account for sending messages is to use [**SaveEmailClientAccountAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#SaveEmailClientAccountAsync) from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md). This method requires **1 parameter** — [**SaveEmailClientAccountRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/SaveEmailClientAccountRequest.cs), which requests a model for this operation.
 
-To initialize [**SaveEmailClientAccountRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/SaveEmailClientAccountRequest.cs) you should pass **1 parameter** — [**StorageFileRqOfEmailClientAccount](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/StorageFileRqOfEmailClientAccount.cs)[.**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/StorageFileRqOfEmailClientAccount.cs)
+To initialize [**SaveEmailClientAccountRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/SaveEmailClientAccountRequest.cs) you should pass **1 parameter** — [**StorageFileRqOfEmailClientAccount**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/StorageFileRqOfEmailClientAccount.cs).
 
-[**StorageFileRqOfEmailClientAccount](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/StorageFileRqOfEmailClientAccount.cs)** requires the following parameters:
+[**StorageFileRqOfEmailClientAccount**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/StorageFileRqOfEmailClientAccount.cs) requires the following parameters:
 
 - Value — [**EmailClientAccount**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/EmailClientAccount.cs) object.
 - StorageFile — [**StorageFileLocation**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/StorageFileLocation.cs) object.
@@ -764,14 +727,13 @@ To initialize [**SaveEmailClientAccountRequest**](https://github.com/aspose-ema
 
 Try to send an email with Swagger UI:
 
-**Setup Account To Send Emails With Swagger UI**
 
-{{< tabs tabTotal="1" tabID="20" tabName1="JSON" >}}
-
-- Open link <https://apireference.aspose.cloud/email/#/EmailClient/SendEmailModel> and click *"Try it out"* button
+- Open (link)[https://apireference.aspose.cloud/email/#/EmailClient/SendEmailModel] and click *"Try it out"* button
 - Enter JSON with an email message and account information, then click *"Execute"* button
 
 Use this JSON example in Swagger UI to do this operation:
+
+{{< tabs tabTotal="1" tabID="20" tabName1="JSON" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -826,18 +788,18 @@ Use this JSON example in Swagger UI to do this operation:
 {{< /tabs >}}
 
 
-
+\
 **Send Message Using Aspose.Email Cloud SDKs**
 
 To append a new message to your email account — use [**SendEmailModelAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#SendEmailModelAsync) from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#AppendEmailModelMessageAsync). This method requires **1 parameter** — [**SendEmailModelRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/SendEmailModelRequest.cs), which requests a model for this operation.
 
-To initialize [](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/DeleteEmailMessageRequest.cs)[**SendEmailModelRequest](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/SendEmailModelRequest.cs)[**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/AppendEmailModelMessageRequest.cs) you should pass **1 parameter** — [**SendEmailModelRq**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/SendEmailModelRq.cs), which is an append email request.
+To initialize [](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/DeleteEmailMessageRequest.cs)[**SendEmailModelRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/SendEmailModelRequest.cs) you should pass **1 parameter** — [**SendEmailModelRq**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/SendEmailModelRq.cs), which is an append email request.
 
-[**SendEmailModelRq](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/SendEmailModelRq.cs)** requires the following parameters:
+[**SendEmailModelRq**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/SendEmailModelRq.cs) requires the following parameters:
 
 - *FirstAccount* — First account storage file name for receiving emails (or universal one).
 - *SecondAccount* [**oprional**] — Second account storage file name for sending emails (ignored if first is universal).
-- *StorageFolder* — Storage folder location of account files.
+- *StorageFolder* — Storage folder location of aup an email account for getticcount files.
 - *Message* — Email document.
 
 

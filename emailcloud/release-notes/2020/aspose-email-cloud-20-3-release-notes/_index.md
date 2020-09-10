@@ -5,7 +5,7 @@ url: /aspose-email-cloud-20-3-release-notes/
 weight: 30
 ---
 
-# **New features**
+## **New features**
 ## **1. Disposable email address detection**
 Disposable email hurts statistics collecting and clients analysis. To avoid this you can use [Aspose.Email Cloud API](https://products.aspose.cloud/email/family) to determine whether an email address is disposable or not:
 
@@ -76,7 +76,7 @@ var messages = await emailApi.ListEmailModelsAsync(new ListEmailModelsRequest(
 ```
 
 More languages and examples available in the [Developer Guide](/email-client/).
-# **Other improvements**
+## **Other improvements**
 We improved our [apireference](https://apireference.aspose.cloud/email/). For some endpoints, you can see prefilled example values, when you press *"Try it out"* button. We are going to add more examples in future. Now examples available for:
 
 - <https://apireference.aspose.cloud/email/#/EmailClient/SendEmailModel>

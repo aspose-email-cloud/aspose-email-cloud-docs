@@ -20,7 +20,7 @@ VCard Model API supports:
 ### **Create Contact Card — ContactDto Object**
 The first step is to create [ContactDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactDto.md) object:
 
-{{% alert color="primary" %}} If you want to know more about how to **create contact card files using different Aspose.Email Cloud SDKs**, please take a look at the article: [**Create VCard File**](/create-vcard-file-html/). {{% /alert %}} 
+{{% alert color="primary" %}} If you want to know more about how to **create contact card files using different Aspose.Email Cloud SDKs**, please take a look at the article: [**Create VCard File**](/create-vcard-file/). {{% /alert %}} 
 
 
 
@@ -41,7 +41,7 @@ number.Category = new EnumWithCustomOfPhoneNumberCategory("Custom", "For friends
 ### **Save Contact Card to Storage**
 Next step is to save the [ContactDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactDto.md) to the storage: 
 
-{{% alert color="primary" %}} If you want to know more about how to **save contact card files using different Aspose.Email Cloud SDKs**, take a look at the article: [**Save VCard File**](/save-vcard-file-html/). {{% /alert %}} 
+{{% alert color="primary" %}} If you want to know more about how to **save contact card files using different Aspose.Email Cloud SDKs**, take a look at the article: [**Save VCard File**](/save-vcard-file/). {{% /alert %}} 
 
 
 

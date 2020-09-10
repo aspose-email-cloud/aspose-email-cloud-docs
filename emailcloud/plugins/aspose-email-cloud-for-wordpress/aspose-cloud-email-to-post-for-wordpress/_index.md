@@ -57,7 +57,7 @@ Once downloaded, please follow these steps to install the module to your WordPre
 After you have installed Aspose Cloud Email To Post Plugin it is really simple to start using it on your website. Please follow these simple steps to get started.
 
 1. Make sure you are logged-in to a WordPress site as Admin level account.
-1. Make sure you have set up Aspose App Key & Id on the plugin configuration page. For further details on how to get app keys, [click here ](http://www.aspose.com/docs/display/rest/Creating+a+New+App+and+Getting+App+Key).
+1. Make sure you have set up Aspose App Key & Id on the plugin configuration page. For further details on how to get app keys, [click here ](https://docs.aspose.cloud/display/storagecloud/Create+New+App+and+Get+App+Key+and+SID).
 1. Navigate to the page or posts where you want to import contents from the Email using Aspose Email To Post Plugin.
 1. Click the \*Aspose Email Importer \*button.
 1. Click **Select Email File**. **\*It will show WordPress Media Gallery on popup. Either upload an Email file or choose from the \*Media Library**.

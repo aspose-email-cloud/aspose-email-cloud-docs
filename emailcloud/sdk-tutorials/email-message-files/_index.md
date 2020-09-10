@@ -6,7 +6,7 @@ description: " Aspose Email tutorial shows how to work with email files. Create
 weight: 20
 ---
 
-# **How to Work With Email Message Files via Aspose.Email Cloud API**
+## **How to Work With Email Message Files via Aspose.Email Cloud API**
 [Aspose.Email Cloud API](https://products.aspose.cloud/email/family) supports email message files with EML, MSG, MHTML and HTML format. We have API for creating, editing, converting such files. Also, email message files can be used in the [built-in email client](/email-client/).
 
 Our SDKs support two different ways of operating with email message files using MapiMessageDto and EmailDto. This tutorial shows how to use an **EmailDto**.
@@ -203,7 +203,8 @@ $api->email()->save(new EmailSaveRequest(
 {{< /tab >}}
 
 {{< /tabs >}}
-
+ 
+  
 You can edit the EmailDto object and save it again. If file name and location will be the same, the file will be overwritten.
 ## **How to Download Email File From Storage**
 You can download files from the [Storage](https://dashboard.aspose.cloud/#/storages).
@@ -422,8 +423,6 @@ We can append this EmailDto object to the "INBOX" folder of an IMAP account:
 See how to setup and use email client in the [Quickstart with an email client](https://docs.aspose.cloud/display/LGIS/Quick+start+with+an+email+client)[ tutorial.](https://docs.aspose.cloud/display/LGIS/Quick+start+with+an+email+client)
 
 {{% /alert %}} 
-
-
 
 To append an email to the "INBOX" folder of an IMAP account, **you should create \*.account file with IMAP account credentials at first**. Then you need to call [*AppendAsync*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageApi.md#AppendAsync) function from [ClientMessageApi](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageApi.md).
 

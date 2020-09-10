@@ -5,7 +5,7 @@ url: /how-to-setup-aspose-email-cloud-sdk-for-php/
 weight: 20
 ---
 
-### **Using Composer**
+## **Using Composer**
 Add the following line to your composer.json file:
 
 ```java

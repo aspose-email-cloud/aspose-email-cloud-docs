@@ -5,8 +5,8 @@ url: /get-email-document/
 weight: 30
 ---
 
-# **Introduction**
-Aspose.Email Cloud allows you to read properties from a Email Document uploaded to the Cloud. Aspose.Email Cloud provides the following API
+## **Introduction**
+Aspose.Email Cloud allows you to read properties from an Email Document uploaded to the Cloud. Aspose.Email Cloud provides the following API
 
 
 
@@ -15,12 +15,12 @@ Aspose.Email Cloud allows you to read properties from a Email Document uploaded 
 If you want to know more about working with emails — take a look at the Aspose Email Cloud tutorial: [**Email Message Files**](/email-message-files/).
 
 {{% /alert %}} 
-### **API Information**
+## **API Information**
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
 |/email/{fileName}|GET|Read Email Document Properties|[GetEmail](https://apireference.aspose.cloud/email/#/Email/GetEmail)|
-### **cURL Example**
+## **cURL Example**
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}

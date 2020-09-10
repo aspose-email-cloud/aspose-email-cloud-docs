@@ -11,8 +11,16 @@ weight: 10
 ## **Install SDK**
 SDK packages available at package repositories:
 
-|<p>{{% alert color="primary" %}} </p><p>- [NuGet](https://www.nuget.org/packages/Aspose.Email-Cloud/)</p><p>- [Maven artifactory](https://repository.aspose.cloud/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-email-cloud)</p><p>- [PYPI](https://pypi.org/project/aspose-email-cloud/)</p><p>- [RubyGems](https://rubygems.org/gems/aspose_email_cloud)</p><p>- [NPM](https://www.npmjs.com/package/@asposecloud/aspose-email-cloud)</p><p>- [Packagist](https://packagist.org/packages/aspose/aspose-email-cloud)</p><p>{{% /alert %}}</p>| | |
-| :- | :- | :- |
+{{% alert color="primary" %}} 
+- [NuGet](https://www.nuget.org/packages/Aspose.Email-Cloud/)
+- [Maven artifactory](https://repository.aspose.cloud/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-email-cloud)
+- [PYPI](https://pypi.org/project/aspose-email-cloud/)
+- [RubyGems](https://rubygems.org/gems/aspose_email_cloud)
+- [NPM](https://www.npmjs.com/package/@asposecloud/aspose-email-cloud)
+- [Packagist](https://packagist.org/packages/aspose/aspose-email-cloud)
+{{% /alert %}}
+
+
 Use your package manager to install an SDK:
 
 **How to install SDK?**
@@ -116,15 +124,18 @@ Here, you see the example of the apps’ statistics. In the APP column, you can 
 
 **App Key** and **app SID** are used to get the temporary **JWT token**, which provides access to the API methods of Aspose.Email Cloud. These tokens can be seen in curl requests generated in the [Swagger UI](https://apireference.aspose.cloud/email/).
 
-|<p>{{% alert color="primary" %}} </p><p>Here you can see a screenshot of the Curl with JWT token:</p><p>![Curl with JWT token](sdk-setup_3.png)</p><p>{{% /alert %}}</p>| | |
-| :- | :- | :- |
+{{% alert color="primary" %}}
+Here you can see a screenshot of the Curl with JWT token:
+![Curl with JWT token](sdk-setup_3.png)
+{{% /alert %}}
+
 Our SDKs do not require you to receive these tokens again and again as they become obsolete. Instead, the **EmailCloud** class stores **app Key** and **app SID** in itself and receive a token by itself. If the token is out of date, Aspose.Email SDKs automatically receive a new one.
 
 To get your **app Key** and **app SID** follow these steps:
 
 1. Open the link of [Aspose.Cloud Dashboard](https://dashboard.aspose.cloud/#/)
 1. Sign in or sign up
-1. Open link <https://dashboard.aspose.cloud/#/apps>
+1. Open [link](https://dashboard.aspose.cloud/#/apps)
 1. Now you can create a new app or use First App, which is already created for you.
 1. Get **App SID** and **App Key** for your application to use them in SDK (you can also use them in our [Swagger UI](https://apireference.aspose.cloud/email/))
 

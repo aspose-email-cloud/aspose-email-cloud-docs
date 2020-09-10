@@ -15,17 +15,22 @@ Our SDKs support two different ways of operating with iCalendar files using [pro
 
 
 ## **Create Calendar File Object and Save It to Storage**
-[**CalendarDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/Model/CalendarDto.cs)** object contains all information about an appointment including attendees, start date, end date, description and etc.
+[**CalendarDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/Model/CalendarDto.cs)
+ object contains all information about an appointment including attendees, start date, end date, description and etc.
 
 First, let’s create a **CalendarDto** object and save it to Storage.
 
-To save a **CalendarDto** to Storage use [**SaveCalendarModelAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#SaveCalendarModelAsync) from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md). This method requires **1 parameter** — [**SaveCalendarModelRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/SaveCalendarModelRequest.cs), which is a request model for this operation. 
+To save a **CalendarDto** to Storage use [**SaveCalendarModelAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#SaveCalendarModelAsync) 
+from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md). 
+This method requires **1 parameter** — 
+[**SaveCalendarModelRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/SaveCalendarModelRequest.cs), which is a request model for this operation. 
 
-[**SaveCalendarModelRequest](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/SaveCalendarModelRequest.cs)** requires **2 parameters**: *Name —* iCalendar file name in storage and [***StorageModelRqOfCalendarDto***](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/Model/StorageModelRqOfCalendarDto.cs) object — calendar properties update request.** 
+[**SaveCalendarModelRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/SaveCalendarModelRequest.cs) requires **2 parameters**: 
+*Name —* iCalendar file name in storage and [***StorageModelRqOfCalendarDto***](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/Model/StorageModelRqOfCalendarDto.cs) object — calendar properties update request. 
 
 [**StorageModelRqOfCalendarDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/Model/StorageModelRqOfCalendarDto.cs) has 2 parameters:
 
-- *Value* — [**CalendarDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/Model/CalendarDto.cs)** object.
+- *Value* — [**CalendarDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/Model/CalendarDto.cs) object.
 - *StorageFolder* — [**StorageFolderLocation**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/dff3d963b6d39312189f14dafafe2aa2ab774b4b/Model/StorageFolderLocation.cs) object.
 
 **How to create a CalendarDto object and save it to the Storage?**
@@ -74,7 +79,7 @@ You can find the saved file on [Aspose.Cloud Dashboard](https://dashboard.aspose
 
 To download a file from the storage use [**DownloadFileAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#SaveCalendarModelAsync) from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md). This method requires 1 parameter — [**DownloadFileRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/DownloadFileRequest.cs), which is a request for this operation.
 
-[**DownloadFileRequest](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/DownloadFileRequest.cs)** has **3 parameters**:
+[**DownloadFileRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/DownloadFileRequest.cs) has **3 parameters**:
 
 - *Path* — File path e.g. "/folder/file.ext".
 - *StorageName* — Storage name.
@@ -124,9 +129,12 @@ To download a file from the storage use [**DownloadFileAsync**](https://github.
 ## **Get Calendar File From Storage as CalendarDto Object**
 Let's get this file from storage as a **CalendarDto** object.
 
-To get a calendar file from Storage use [**GetCalendarModelAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#GetCalendarModelAsync) from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md). This method requires **1 parameter** — [**GetCalendarModelRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/GetCalendarModelRequest.cs), which is a request for this operation.
+To get a calendar file from Storage use [**GetCalendarModelAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#GetCalendarModelAsync) 
+from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md). 
+This method requires **1 parameter** — 
+[**GetCalendarModelRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/GetCalendarModelRequest.cs), which is a request for this operation.
 
-[**GetCalendarModelRequest](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/GetCalendarModelRequest.cs)** has **3 parameters**:
+[**GetCalendarModelRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/GetCalendarModelRequest.cs) has **3 parameters**:
 
 - *Name* — iCalendar file name in storage.
 - *Folder* — Path to the folder in storage.
@@ -174,6 +182,7 @@ To get a calendar file from Storage use [**GetCalendarModelAsync**](https://git
 
 {{< /tabs >}}
 
+\
 You can change model fields and save it again. The file will be rewritten if you don't change file name and location.
 ## **Convert Calendar Object to AlternateView**
 We also provide API methods for converting **CalendarDto** to an **AlternateView**. **AlternateView** can be added to **EmailDto**, which can be saved as **EML** file or sent using a built-in email client.
@@ -188,7 +197,7 @@ To get more information about built-in email client — take a look at the [Emai
 
 To convert a **CalendarDto** object to **AlternateView** use [**ConvertCalendarModelToAlternateAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#ConvertCalendarModelToAlternateAsync) from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md). This method requires **1 parameter** — [**ConvertCalendarModelToAlternateRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/ConvertCalendarModelToAlternateRequest.cs), which is a request for this operation. This request has 1 parameter — [**CalendarDtoAlternateRq**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/Model/CalendarDtoAlternateRq.cs) (iCalendar document as AlternateView request).
 
-[**CalendarDtoAlternateRq](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/Model/CalendarDtoAlternateRq.cs)**  has **3 parameters**:
+[**CalendarDtoAlternateRq**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/Model/CalendarDtoAlternateRq.cs) has **3 parameters**:
 
 - *Value* — iCalendar document model.
 - *Action* — iCalendar actions. Enum, available values: Create, Update, Cancel.
@@ -240,7 +249,7 @@ You can get a list of iCalendar files stored in one folder on storage using a si
 
 To get a list of iCalendar files use [**GetCalendarModelListAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#GetCalendarModelListAsync) from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md). This method requires **1 parameter** — [**GetCalendarModelListRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/GetCalendarModelListRequest.cs), which is a request for this operation.
 
-[**GetCalendarModelListRequest](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/GetCalendarModelListRequest.cs)** has **4 parameters**:
+[**GetCalendarModelListRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/GetCalendarModelListRequest.cs) has **4 parameters**:
 
 - *Folder* — Path to the folder in storage.
 - *ItemsPerPage* — Count of items on page.

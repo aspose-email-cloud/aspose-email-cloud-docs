@@ -5,11 +5,11 @@ url: /aspose-email-cloud-20-7-release-notes/
 weight: 10
 ---
 
-# **New features**
+## **New features**
 ## **MAPI message files API**
 {{% alert color="primary" %}} 
 
-To see how to work with MAPI Message Files API use the [Introduction to MAPI Message Files API](/introduction-to-mapi-message-files-api-html/)[.](https://docs.aspose.cloud/display/LGIS/SDK+setup)
+To see how to work with MAPI Message Files API use the [Introduction to MAPI Message Files API](/introduction-to-mapi-message-files-api/)[.](https://docs.aspose.cloud/display/LGIS/SDK+setup)
 
 {{% /alert %}} 
 
@@ -54,7 +54,7 @@ calendar.Recurrence = new DailyRecurrencePatternDto
 ```
 
 
-# **SDK changes**
+## **SDK changes**
 - Some corrections in null value handling during a model serialization.
 - Discriminator property has been added to ContactPhoto because it is now inherited by MapiContactPhotoDto.
 - Bug with the lost model property types information has been fixed.

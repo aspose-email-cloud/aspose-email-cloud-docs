@@ -34,18 +34,16 @@ When using Model API, the files are represented using models.
 When using this model, we need to follow certain steps. As specified in examples below. Let’s start with creating [CalendarDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarDto.md) object:
 
 **Create iCalendar — CalendarDto object:**
+{{% alert color="primary" %}} 
 
+[**CalendarDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarDto.md) - The model contains properties that are describing iCalendar;
+
+[**MailAddress**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/MailAddress.md) - Contains mail address properties.
+
+{{% /alert %}} 
 {{< tabs tabTotal="6" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" tabName6="Typescript" >}}
 
 {{< tab tabNum="1" >}}
-
-{{% alert color="primary" %}} 
-
-[**CalendarDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarDto.md) **-** The model contains properties that are describing iCalendar;
-
-[**MailAddress](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/MailAddress.md) **-** Contains mail address properties.
-
-{{% /alert %}} 
 
 {{< gist "aspose-cloud" "e50bc177cb788e499fd13c27b55d762e" "Examples-DotNET-CSharp-Email-Create-CalendarDto-Object-1.cs" >}}
 
@@ -129,19 +127,20 @@ Once **CalendarDto** has been created, the next step is to **save iCalendar fil
 
 **Save CalendarDto object as .ICS file**
 
-{{< tabs tabTotal="6" tabID="2" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" tabName6="Typescript" >}}
-
-{{< tab tabNum="1" >}}
-
 {{% alert color="primary" %}} 
 
-[**SaveCalendarModel](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/EmailApi.md#savecalendarmodel) **-** Save iCalendar.
+[**SaveCalendarModel**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/EmailApi.md#savecalendarmodel) - Save iCalendar.
 
 **SaveCalendarModelRequest** - Request model for saveCalendarModel operation.
 
 [**StorageModelRqOfCalendarDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/StorageModelRqOfCalendarDto.md) - Calendar properties update request.
 
 {{% /alert %}} 
+
+{{< tabs tabTotal="6" tabID="2" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" tabName6="Typescript" >}}
+
+{{< tab tabNum="1" >}}
+
 
 {{< gist "aspose-cloud" "e50bc177cb788e499fd13c27b55d762e" "Examples-DotNET-CSharp-Email-Save-CalendarDto-As-ICS-1.cs" >}}
 
@@ -235,23 +234,23 @@ Or, you get an option to convert iCalendar to an [AlternateView](https://githu
 
 **Save CalendarDto model as AlternateView:**
 
-{{< tabs tabTotal="6" tabID="3" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" tabName6="Typescript" >}}
-
-{{< tab tabNum="1" >}}
-
 {{% alert color="primary" %}} 
 
-[**ConvertCalendarModelToAlternateAsync](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/EmailApi.md#convertcalendarmodeltoalternateasync) **-** Convert iCalendar to AlternateView. Returns [**AlternateView](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/AlternateView.md)**.**
+[**ConvertCalendarModelToAlternateAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/EmailApi.md#convertcalendarmodeltoalternateasync) - Convert iCalendar to AlternateView. Returns [**AlternateView**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/AlternateView.md).
 
 **ConvertCalendarModelToAlternateRequest** - Request to convert iCalendar to AlternateView. 
 
 [**CalendarDtoAlternateRq**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/CalendarDtoAlternateRq.md) - iCalendar to AlternateView request. List of properties:
 
-- **Value ([CalendarDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/CalendarDto.md)) -** iCalendar document model;
-- **Action (string) -** iCalendar actions. Enum, available values: Create, Update, Cancel;
-- **SequenceId (string)** [Optional] **-** iCalendar sequence id.
+- **Value** ([CalendarDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/9511b81d6c62dda413dc23f6f6f8a0973a144343/docs/CalendarDto.md)) - iCalendar document model;
+- **Action (string)** - iCalendar actions. Enum, available values: Create, Update, Cancel;
+- **SequenceId (string)** [Optional]- iCalendar sequence id.
 
 {{% /alert %}} 
+
+{{< tabs tabTotal="6" tabID="3" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Python" tabName5="Ruby" tabName6="Typescript" >}}
+
+{{< tab tabNum="1" >}}
 
 {{< gist "aspose-cloud" "e50bc177cb788e499fd13c27b55d762e" "Examples-DotNET-CSharp-Email-Convert-CalendarDto-as-AlternateView-1.cs" >}}
 
@@ -358,7 +357,7 @@ Or, you get an option to convert iCalendar to an [AlternateView](https://githu
 {{< /tab >}}
 
 {{< /tabs >}}
-
+\
 Finally, the **AlternateView** can be added to [EmailDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailDto.md) object, which is also a part of the Model API.
 
 ## **Setup Aspose.Email Cloud SDK**

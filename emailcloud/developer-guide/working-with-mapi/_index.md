@@ -33,13 +33,16 @@ MAPI provides a universal way to work with different files such as email messag
 1. Convert MAPI email message files to [**EML**](https://wiki.fileformat.com/email/eml/), [**HTML**](https://wiki.fileformat.com/web/html/) or [**MHTML**](https://wiki.fileformat.com/web/mhtml/) and vice versa.
 1. Send MAPI messages via our internal [Email Client](/email-client/). To send a message you just need to convert a MAPI file to Base64 string or pass a file’s path in the [Storage](https://dashboard.aspose.cloud/#/storages) to the internal [Email Client](/email-client/). After that built-in [Email Client](/email-client/) will be able to send it or add it to your email client’s account as an email message.
 
-[Aspose.Email Cloud API](https://products.aspose.cloud/email/family) provides numerous useful functions and classes for comfortable working. Therefore, you can get an email message instantly as an **EmailDto,** which is convenient to work with and which is supported by our internal [**Email Client**](/email-client/) and **[EmailModel API**.](/working-with-new-model-api/)**
+[Aspose.Email Cloud API](https://products.aspose.cloud/email/family) provides numerous useful functions and classes for 
+comfortable working. Therefore, you can get an email message instantly as an **EmailDto,** which is convenient to work 
+with and which is supported by our internal [**Email Client**](/email-client/) and 
+[**EmailModel API**](/working-with-new-model-api/).
 
 |<p>{{% alert color="primary" %}} </p><p>MAPI is a universal way to work not only with email messages but also with contact cards and calendar files too.</p><p>{{% /alert %}}</p>| | |
 | :- | :- | :- |
 
 ### **Working With Contact Card Files via MAPI**
-Aspose.Email Cloud API provides a lot of useful functions for working with VCard files: create, edit, update and save contact card files. Read more: [**Working with Contact Cards**](/working-with-contact-cards-html/).
+Aspose.Email Cloud API provides a lot of useful functions for working with VCard files: create, edit, update and save contact card files. Read more: [**Working with Contact Cards**](/working-with-contact-cards/).
 
 You can get a contact file from the [Storage](https://dashboard.aspose.cloud/#/storages) as a **ContactDto** via MAPI, then edit contact files and instantly save it back to the [Storage](https://dashboard.aspose.cloud/#/storages) as an MAPI file or as a VCard. This can be helpful when you work with a big number of contact card files. 
 
@@ -52,7 +55,7 @@ MAPI allows working with calendars too. You can easily process calendar (iCalend
 - Work with calendar files’ attachments: edit them, search through them and more.
 - Convert iCalendar files to an Alternate View[](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AlternateView.md)**.**
 
-Read more about working with calendar files (.ics): [**Working with Contact Cards**](/working-with-contact-cards-html/).
+Read more about working with calendar files (.ics): [**Working with Contact Cards**](/working-with-contact-cards/).
 
 ### **Working With MAPI Files via Built-In Email Client**
 The best in using MAPI with Aspose.Email Cloud API is that you can send MAPI files via our built-in [**Email Client**](/email-client/). 

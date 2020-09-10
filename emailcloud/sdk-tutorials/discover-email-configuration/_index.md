@@ -61,14 +61,14 @@ The simplest way to discover email configuration is calling [**DiscoverEmailConf
 {{< /tab >}}
 
 {{< /tabs >}}
-
+\
 This method performs email configuration discovery using all methods that do not require validation. All methods invoked in parallel and the best result is returned to the user. **DiscoverEmailConfigRequest** contains one extra field - **fastProcessing**. This field determines that there is no need for the best possible result. If **fastProcessing** is set to true, service will also run all discover methods in parallel and return the first successful result without waiting for others.
 
 **DiscoverEmailConfig** returns list of EmailAccountConfig objects. **ExtraInfo** field contains extra information like OWA or EWS URLs, enable protocol instructions, etc.
 
 **See JSON Response Example For Gmail**
 
-{{< tabs tabTotal="1" tabID="2" tabName1="EmailAccountConfigList JSON response example" >}}
+{{< tabs tabTotal="1" tabID="2" tabName1="JSON" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -200,7 +200,9 @@ This method performs email configuration discovery using all methods that do not
 ## **Discover With Validation**
 To discover email configuration with validation, use methods **DiscoverEmailConfigOauth** and **DiscoverEmailConfigPassword**. These methods use all algorithms from **DiscoverEmailConfig** and some extra. Also, the discovered configuration will be validated, if it is possible. Service will try to connect to all discovered protocols using provided auth data.
 ### **Discover using password**
-To discover email configuration using password authentication use [**DiscoverEmailConfigPassword**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#DiscoverEmailConfigPassword) method. This method requires **1 parameter** — [**DiscoverEmailConfigPasswordRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/DiscoverEmailConfigPasswordRequest.cs), which is a request model for this operation. To initialize this object you should define its 1 parameter — [**DiscoverEmailConfigPassword](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/e9dbe88b18e176d7570339372636a36edae848f5/Model/DiscoverEmailConfigPassword.cs)**.** 
+To discover email configuration using password authentication use [**DiscoverEmailConfigPassword**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#DiscoverEmailConfigPassword) method. This method requires **1 parameter** — [**DiscoverEmailConfigPasswordRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/DiscoverEmailConfigPasswordRequest.cs), which is a request model for this operation. 
+To initialize this object you should define its 1 parameter — 
+[**DiscoverEmailConfigPassword**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/e9dbe88b18e176d7570339372636a36edae848f5/Model/DiscoverEmailConfigPassword.cs).
 
 [**DiscoverEmailConfigPassword**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/e9dbe88b18e176d7570339372636a36edae848f5/Model/DiscoverEmailConfigPassword.cs) has **4 parameters**:
 
@@ -250,10 +252,11 @@ To discover email configuration using password authentication use [**DiscoverEma
 {{< /tab >}}
 
 {{< /tabs >}}
-
+\
 You can also provide **login** if it is not same as the **address**.
 ### **Discover using OAuth 2.0**
-To discover email configuration using OAuth 2.0 use [**DiscoverEmailConfigOauth**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#DiscoverEmailConfigOauth) method. This method requires **1 parameter** — [**DiscoverEmailConfigOauthRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/DiscoverEmailConfigOauthRequest.cs), which is a request model for this operation. To initialize this object you should define its 1 parameter — [**DiscoverEmailConfigOauth](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/e9dbe88b18e176d7570339372636a36edae848f5/Model/DiscoverEmailConfigOauth.cs)**.** 
+To discover email configuration using OAuth 2.0 use [**DiscoverEmailConfigOauth**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#DiscoverEmailConfigOauth) method. This method requires **1 parameter** — [**DiscoverEmailConfigOauthRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/DiscoverEmailConfigOauthRequest.cs), which is a request model for this operation. 
+To initialize this object you should define its 1 parameter — [**DiscoverEmailConfigOauth**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/e9dbe88b18e176d7570339372636a36edae848f5/Model/DiscoverEmailConfigOauth.cs). 
 
 [**DiscoverEmailConfigOauth**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/e9dbe88b18e176d7570339372636a36edae848f5/Model/DiscoverEmailConfigOauth.cs) has 7 **parameters**:
 
@@ -312,7 +315,7 @@ To discover email configuration using OAuth 2.0 use [**DiscoverEmailConfigOauth*
 {{< /tab >}}
 
 {{< /tabs >}}
-
+\
 Provide **login** if it is not same as the address. You can also provide **requestUrl** (an URL to obtain an access token using refresh token). For some servers, **requestUrl** is discovered automatically.
 ## **More Tutorials**
 See more Aspose Email tutorials: 
