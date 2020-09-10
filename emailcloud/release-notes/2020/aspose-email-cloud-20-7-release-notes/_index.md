@@ -9,7 +9,7 @@ weight: 10
 ## **MAPI message files API**
 {{% alert color="primary" %}} 
 
-To see how to work with MAPI Message Files API use the [Introduction to MAPI Message Files API](/introduction-to-mapi-message-files-api/)[.](https://docs.aspose.cloud/display/LGIS/SDK+setup)
+To see how to work with MAPI Message Files API use the [Introduction to MAPI Message Files API](/emailcloud/introduction-to-mapi-message-files-api/)[.](https://docs.aspose.cloud/display/LGIS/SDK+setup)
 
 {{% /alert %}} 
 

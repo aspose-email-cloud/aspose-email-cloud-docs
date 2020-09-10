@@ -9,7 +9,7 @@ weight: 60
 ## **Work With Email Configuration**
 This is an automated email configuration discovery API. It performs more than 5 different configuration discovery methods simultaneously to support the maximum count of email providers. You can find an email server's configuration with 3 different methods. 
 
-{{% alert color="primary" %}} To see how to setup SDKs use the [SDK setup](/sdk-setup/) tutorial. {{% /alert %}} 
+{{% alert color="primary" %}} To see how to setup SDKs use the [SDK setup](/emailcloud/sdk-setup/) tutorial. {{% /alert %}} 
 
 
 ## **Discover Without Validation**

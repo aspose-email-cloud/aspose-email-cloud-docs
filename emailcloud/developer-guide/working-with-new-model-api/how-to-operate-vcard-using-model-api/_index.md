@@ -20,7 +20,7 @@ VCard Model API supports:
 ### **Create Contact Card — ContactDto Object**
 The first step is to create [ContactDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactDto.md) object:
 
-{{% alert color="primary" %}} If you want to know more about how to **create contact card files using different Aspose.Email Cloud SDKs**, please take a look at the article: [**Create VCard File**](/create-vcard-file/). {{% /alert %}} 
+{{% alert color="primary" %}} If you want to know more about how to **create contact card files using different Aspose.Email Cloud SDKs**, please take a look at the article: [**Create VCard File**](/emailcloud/create-vcard-file/). {{% /alert %}} 
 
 
 
@@ -41,7 +41,7 @@ number.Category = new EnumWithCustomOfPhoneNumberCategory("Custom", "For friends
 ### **Save Contact Card to Storage**
 Next step is to save the [ContactDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactDto.md) to the storage: 
 
-{{% alert color="primary" %}} If you want to know more about how to **save contact card files using different Aspose.Email Cloud SDKs**, take a look at the article: [**Save VCard File**](/save-vcard-file/). {{% /alert %}} 
+{{% alert color="primary" %}} If you want to know more about how to **save contact card files using different Aspose.Email Cloud SDKs**, take a look at the article: [**Save VCard File**](/emailcloud/save-vcard-file/). {{% /alert %}} 
 
 
 
@@ -52,7 +52,7 @@ Next step is to save the [ContactDto](https://github.com/aspose-email-cloud/asp
 ### **Parse an Image of Business Card to Contact Card File**
 In case you need to parse an image to [ContactDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactDto.md), please try using the following code snippet.
 
-{{% alert color="primary" %}} If you want to know more about how to **parse an image of a business card to the contact card file using different Aspose.Email Cloud SDKs**, take a look at the article: [**Parse Image To VCard File**](/parse-image-to-vcard-file/). {{% /alert %}} 
+{{% alert color="primary" %}} If you want to know more about how to **parse an image of a business card to the contact card file using different Aspose.Email Cloud SDKs**, take a look at the article: [**Parse Image To VCard File**](/emailcloud/parse-image-to-vcard-file/). {{% /alert %}} 
 
 
 
@@ -66,6 +66,6 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{% alert color="primary" %}} 
 
-How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/sdk-setup/).
+How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/).
 
 {{% /alert %}}

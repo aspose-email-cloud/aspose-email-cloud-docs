@@ -651,7 +651,7 @@ MapiContactDto:
 ## **Quick start with MAPI message files API**
 {{% alert color="primary" %}} 
 
-To see how to set up SDKs use the [SDK setup](/sdk-setup/) tutorial.
+To see how to set up SDKs use the [SDK setup](/emailcloud/sdk-setup/) tutorial.
 
 {{% /alert %}} 
 

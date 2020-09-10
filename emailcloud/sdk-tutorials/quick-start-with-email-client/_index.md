@@ -11,7 +11,7 @@ weight: 30
 
 {{% alert color="primary" %}} 
 
-To get more information about the built-in email client, take a look at the [Email Client](/email-client/) article. 
+To get more information about the built-in email client, take a look at the [Email Client](/emailcloud/email-client/) article. 
 
 {{% /alert %}} 
 
@@ -30,17 +30,17 @@ Virtual multi-account is a fast and convenient way to set up multiple email acco
 
 {{% alert color="primary" %}} 
 
-To see how to setup SDKs use the [SDK setup](/sdk-setup/) tutorial.
+To see how to setup SDKs use the [SDK setup](/emailcloud/sdk-setup/) tutorial.
 
 {{% /alert %}} 
 
 
 ## **How to Work With Email Client**
-Before we start, we should set up an email account. This allows you to process your messages with [built-in Email Client](/email-client/) which is developed by [Aspose.Email Cloud](https://products.aspose.cloud/email/family).
+Before we start, we should set up an email account. This allows you to process your messages with [built-in Email Client](/emailcloud/email-client/) which is developed by [Aspose.Email Cloud](https://products.aspose.cloud/email/family).
 
 The **created email account will be saved on storage**, so you don't have to repeat this operation later.
 ### **Create Email Account File**
-You can create an email account online using Swagger UI or follow the instructions from these guides: [Single Email Account Setup](/single-email-account-setup/) and [Multi Email Account Setup](/multi-email-account-setup/).
+You can create an email account online using Swagger UI or follow the instructions from these guides: [Single Email Account Setup](/emailcloud/single-email-account-setup/) and [Multi Email Account Setup](/emailcloud/multi-email-account-setup/).
 
 1. Open [link](https://apireference.aspose.cloud/email/#/EmailClient/SaveEmailClientAccount) and click *"Try it out"* button
 1. Enter JSON with email account information and click *"Execute"* button

@@ -12,7 +12,7 @@ This example allows you to Add new email using Aspose.Email for Cloud API in you
 
 {{% alert color="primary" %}} 
 
-If you want to know more about working with emails — take a look at the Aspose Email Cloud tutorial: [**Email Message Files**](/email-message-files/).
+If you want to know more about working with emails — take a look at the Aspose Email Cloud tutorial: [**Email Message Files**](/emailcloud/email-message-files/).
 
 {{% /alert %}} 
 ## **Resource**
@@ -315,7 +315,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{% alert color="primary" %}} 
 
-How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/sdk-setup/).
+How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/).
 
 {{% /alert %}}
 ## **cURL Example**

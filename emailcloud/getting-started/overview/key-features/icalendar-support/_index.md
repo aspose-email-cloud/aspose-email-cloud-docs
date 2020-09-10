@@ -16,7 +16,7 @@ iCalendar files are stored as [ICS](https://wiki.fileformat.com/email/ics/) fi
 
 iCalendar is a file format which is using all around the world. Many popular products support it, including Microsoft Outlook, Apple Calendar, IBM Notes or Lotus Notes, Google Calendar and many more. Integrate with these applications using [**Aspose.Email Cloud**](https://products.aspose.cloud/email/family).
 
-{{% alert color="primary" %}} How to work with iCalendar files via Aspose.Email Cloud API: [**Working with Calendar**](/working-with-calendar/). {{% /alert %}} 
+{{% alert color="primary" %}} How to work with iCalendar files via Aspose.Email Cloud API: [**Working with Calendar**](/emailcloud/working-with-calendar/). {{% /alert %}} 
 
 
 ## **Work With iCalendar in Aspose.Email Cloud**
@@ -25,7 +25,7 @@ With [**Aspose.Email Cloud**](https://products.aspose.cloud/email/family) you 
 1. Work with your files on [Storage](https://dashboard.aspose.cloud/#/storages): create, edit [ICS](https://wiki.fileformat.com/email/ics/) files, work with appointments, download & upload iCalendar files, update and remove calendar file’s properties.
 1. Convert calendar files to [AlternateView](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AlternateView.md). AlternateView allows appending iCalendar to an email for further sending.
 1. Work with calendar files’ attachments: edit them, search through them and more.
-1. Attach a calendar file ([ICS](https://wiki.fileformat.com/email/ics/)) to an email and send it using our build-in [Email Client](/email-client/)[.](http://client/)
+1. Attach a calendar file ([ICS](https://wiki.fileformat.com/email/ics/)) to an email and send it using our build-in [Email Client](/emailcloud/email-client/)[.](http://client/)
 
 
 
@@ -45,7 +45,7 @@ iCalendar Model API supports to:
 - **Get a calendar** file from [Storage](https://dashboard.aspose.cloud/#/storages) **as AlternateView type**. 
 - **Convert a calendar file to AlternateView**. A calendar file which is converted to AlternateView can be appended to the email.
 ### **Work With iCalendar File as Property Set**
-The second way is to operate a calendar file as a property set. For example, to create a **calendar** file using the property set: **[Create iCalendar file using the property set](/create-icalendar-file-using-the-property-set/)**.
+The second way is to operate a calendar file as a property set. For example, to create a **calendar** file using the property set: **[Create iCalendar file using the property set](/emailcloud/create-icalendar-file-using-the-property-set/)**.
 
 **Note:** Using Model API is a more convenient and productive approach. 
 

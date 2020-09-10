@@ -58,7 +58,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{% alert color="primary" %}} 
 
-How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/sdk-setup/). 
+How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/). 
 
 {{% /alert %}} 
 ## **Articles in this section**
