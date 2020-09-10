@@ -9,7 +9,7 @@ weight: 50
 ## **VCard API**
 [Aspose.Email Cloud API](https://products.aspose.cloud/email/family) supports working with VCard files. You can use our API to read, edit and save VCard files. Also, you can use our Business card recognition API to parse VCard file from image.
 
-The SDKs support two different ways of operating with VCard files using MapiContactDto and ContactDto. This tutorial shows how to use ContactDto.
+The SDKs support two different ways of operating with VCard files using **MapiContactDto** and **ContactDto**. This tutorial shows how to use **ContactDto**.
 
 {{% alert color="primary" %}} To see how to setup SDKs use the [SDK setup](/sdk-setup/) tutorial. {{% /alert %}} 
 ## **How to Create Contact File Object and Save It to Storage**
