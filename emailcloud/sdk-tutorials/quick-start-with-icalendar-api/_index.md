@@ -487,19 +487,126 @@ api.client.message.send(models.ClientMessageSendRequest(
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cloud" "767aea704882493974d05202ff8a7961" "Examples-Ruby-Convert-CalendarDto-To-AlternateView-1.rb" >}}
+```ruby
+# Convert CalendarDto to AlternateView
+alternate = api.calendar.as_alternate(
+  CalendarAsAlternateRequest.new(
+    value: calendar, action: 'Create'))
+
+# Create EmailDto with AlternateView
+email = EmailDto.new(
+  alternate_views: [alternate],
+  from: MailAddress.new(display_name: 'From Name', address: 'cloud.em@yandex.ru'),
+  to: [MailAddress.new(display_name: 'To Name', address: 'cloud.em@yandex.ru')],
+  subject: 'Some subject',
+  body: 'Some body')
+
+# Save EmailDto as EML file
+email_file = 'email.eml'
+api.email.save(
+  EmailSaveRequest.new(
+    storage_file: StorageFileLocation.new(
+      storage: storage,
+      folder_path: folder,
+      file_name: email_file),
+    value: email,
+    format: 'Eml'))
+
+# Or Setup SMTP account to send email
+credentials = EmailClientAccountPasswordCredentials.new(
+  login: 'example@gmail.com', password: 'password')
+send_account_dto = EmailClientAccount.new(
+  host: 'smtp.gmail.com',
+  port: 465,
+  security_options: 'SSLAuto',
+  protocol_type: 'SMTP',
+  credentials: credentials)
+smtp_account = 'smtp.account'
+smtp_location = StorageFileLocation.new(
+  storage: storage,
+  folder_path: folder,
+  file_name: smtp_account)
+api.client.account.save(
+  ClientAccountSaveRequest.new(
+    storage_file: smtp_location, value: send_account_dto))
+# And send it
+api.client.message.send(ClientMessageSendRequest.new(
+  account_location: smtp_location, message: MailMessageDto.new(value: email)))
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cloud" "6ec28658aa5c23997911e5c1c61a3493" "Examples-Node-Convert-CalendarDto-To-AlternateView-1.ts" >}}
+```typescript
+//Convert CalendarDto to AlternateView
+const alternate = await api.calendar.asAlternate(
+    new CalendarAsAlternateRequest(calendar, 'Create'));
+
+//Create EmailDto with AlternateView
+const email = new EmailDto();
+email.alternateViews = [alternate];
+email.from = new MailAddress('From address', 'organizer@aspose.com');
+email.to = [new MailAddress('To address', 'attendee@aspose.com')];
+email.subject = 'Some subject';
+email.body = 'Some body';
+
+//Save EmailDto as EML file
+const emailFile = 'email.eml';
+await api.email.save(new EmailSaveRequest(
+    new StorageFileLocation(storage, folder, emailFile), email,'Eml'));
+
+//Or Setup SMTP account to send email
+const credentials = new EmailClientAccountPasswordCredentials(
+    'example@gmail.com', 'password');
+const sendAccountDto = new EmailClientAccount(
+    'smtp.gmail.com', 465, 'SSLAuto', 'SMTP', credentials);
+const smtpAccount = 'smtp.account';
+const smtpLocation = new StorageFileLocation(storage, folder, smtpAccount);
+await api.client.account.save(new ClientAccountSaveRequest(
+    smtpLocation, sendAccountDto));
+//And send it
+await api.client.message.send(new ClientMessageSendRequest(
+    smtpLocation, new MailMessageDto(email)));
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cloud" "ad60c1500a11fcf71b0e840ac5b3ffb6" "Examples-PHP-Convert-CalendarDto-To-AlternateView-1.php" >}}
+```php
+//Convert CalendarDto to AlternateView
+$alternate = $api->calendar()->asAlternate(
+    new CalendarAsAlternateRequest($calendar, "Create"));
+
+//Create EmailDto with AlternateView
+$email = (new EmailDto())
+    ->setAlternateViews(array($alternate))
+    ->setFrom(new MailAddress("Organizer Name", "organizer@aspose.com"))
+    ->setTo(array(new MailAddress("Attendee Name", "attendee@aspose.com")))
+    ->setSubject("Some subject")
+    ->setBody("Some body");
+
+//Save EmailDto as EML file
+$emailFile = "email.eml";
+$api->email()->save(new EmailSaveRequest(
+    new StorageFileLocation($storage, $folder, $emailFile),
+    $email, "Eml"));
+
+//Or Setup SMTP account to send email
+$credentials = new EmailClientAccountPasswordCredentials(
+    "example@gmail.com", "password");
+$sendAccountDto = new EmailClientAccount(
+    "smtp.gmail.com", 465, "SSLAuto", "SMTP", $credentials);
+$smtpAccount = "smtp.account";
+$smtpLocation = new StorageFileLocation($storage, $folder, $smtpAccount);
+$api->client()->account()->save(
+    new ClientAccountSaveRequest($smtpLocation, $sendAccountDto));
+//And send it
+$api->client()->message()->send(new ClientMessageSendRequest(
+    $smtpLocation, new MailMessageDto($email)
+));
+```
 
 {{< /tab >}}
 
@@ -507,9 +614,9 @@ api.client.message.send(models.ClientMessageSendRequest(
 ## **Get a List of iCalendar Files From One Folder**
 You can get a list of iCalendar files stored in one folder on storage using a single API request. Files will be filtered by ".ics" extension and read to list of CalendarDto object. The method supports pagination.
 
-To get a list of iCalendar files use [**GetCalendarModelListAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md#GetCalendarModelListAsync) from [**EmailApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/docs/EmailApi.md). This method requires **1 parameter** — [**GetCalendarModelListRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/GetCalendarModelListRequest.cs), which is a request for this operation.
+To get a list of iCalendar files use [**GetListAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarApi.md#GetListAsync) from [**CalendarApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarApi.md). This method requires **1 parameter** — **CalendarGetListRequest**, which is a request for this operation.
 
-[**GetCalendarModelListRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/GetCalendarModelListRequest.cs) has **4 parameters**:
+**CalendarGetListRequest** has **4 parameters**:
 
 - *Folder* — Path to the folder in storage.
 - *ItemsPerPage* — Count of items on page.
@@ -522,37 +629,55 @@ To get a list of iCalendar files use [**GetCalendarModelListAsync**](https://gi
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cloud" "e50bc177cb788e499fd13c27b55d762e" "Examples-DotNET-CSharp-Get-List-Of-CalendarDto-From-Storage-1.cs" >}}
+```csharp
+CalendarStorageList calendarList = await api.Calendar.GetListAsync(
+    new CalendarGetListRequest(folder, 10, 0, storage));
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cloud" "f057be7285ab86be13ff3fd45568d5c4" "Examples-Java-Get-List-Of-CalendarDto-From-Storage-1.java" >}}
+```java
+CalendarStorageList calendarList = api.calendar().getList(
+    new CalendarGetListRequest(folder, 10, 0, storage));
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cloud" "6d17607766c7783b42db8f744d189579" "Examples-Python-Get-List-Of-CalendarDto-From-Storage-1.py" >}}
+```python
+calendar_list = api.calendar.get_list(
+    models.CalendarGetListRequest(folder, 10, 0, storage))
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cloud" "767aea704882493974d05202ff8a7961" "Examples-Ruby-Get-List-Of-CalendarDto-From-Storage-1.rb" >}}
+```ruby
+calendar_list = api.calendar.get_list(CalendarGetListRequest.new(
+  folder: folder, items_per_page: 10, page_number: 0, storage: storage))
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cloud" "6ec28658aa5c23997911e5c1c61a3493" "Examples-Node-Get-List-Of-CalendarDto-From-Storage-1.ts" >}}
+```typescript
+const calendarList = api.calendar.getList(
+    new CalendarGetListRequest(folder, 10, 0, storage));
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cloud" "ad60c1500a11fcf71b0e840ac5b3ffb6" "Examples-PHP-Get-List-Of-CalendarDto-From-Storage-1.php" >}}
+```php
+$calendarList = $api->calendar()->getList(
+    new CalendarGetListRequest($folder, 10, 0, $storage));
+```
 
 {{< /tab >}}
 
