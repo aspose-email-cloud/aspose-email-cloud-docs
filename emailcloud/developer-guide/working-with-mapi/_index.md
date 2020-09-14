@@ -31,22 +31,22 @@ MAPI provides a universal way to work with different files such as email messag
 ### **Working With Email Messages via MAPI**
 1. Work with your files on the [Storage](https://dashboard.aspose.cloud/#/storages) via MAPI: create, update, add/edit attachments and download email message files.
 1. Convert MAPI email message files to [**EML**](https://wiki.fileformat.com/email/eml/), [**HTML**](https://wiki.fileformat.com/web/html/) or [**MHTML**](https://wiki.fileformat.com/web/mhtml/) and vice versa.
-1. Send MAPI messages via our internal [Email Client](/email-client/). To send a message you just need to convert a MAPI file to Base64 string or pass a file’s path in the [Storage](https://dashboard.aspose.cloud/#/storages) to the internal [Email Client](/email-client/). After that built-in [Email Client](/email-client/) will be able to send it or add it to your email client’s account as an email message.
+1. Send MAPI messages via our internal [Email Client](/emailcloud/email-client/). To send a message you just need to convert a MAPI file to Base64 string or pass a file’s path in the [Storage](https://dashboard.aspose.cloud/#/storages) to the internal [Email Client](/emailcloud/email-client/). After that built-in [Email Client](/emailcloud/email-client/) will be able to send it or add it to your email client’s account as an email message.
 
 [Aspose.Email Cloud API](https://products.aspose.cloud/email/family) provides numerous useful functions and classes for 
 comfortable working. Therefore, you can get an email message instantly as an **EmailDto,** which is convenient to work 
-with and which is supported by our internal [**Email Client**](/email-client/) and 
-[**EmailModel API**](/working-with-new-model-api/).
+with and which is supported by our internal [**Email Client**](/emailcloud/email-client/) and 
+[**EmailModel API**](/emailcloud/working-with-new-model-api/).
 
 |<p>{{% alert color="primary" %}} </p><p>MAPI is a universal way to work not only with email messages but also with contact cards and calendar files too.</p><p>{{% /alert %}}</p>| | |
 | :- | :- | :- |
 
 ### **Working With Contact Card Files via MAPI**
-Aspose.Email Cloud API provides a lot of useful functions for working with VCard files: create, edit, update and save contact card files. Read more: [**Working with Contact Cards**](/working-with-contact-cards/).
+Aspose.Email Cloud API provides a lot of useful functions for working with VCard files: create, edit, update and save contact card files. Read more: [**Working with Contact Cards**](/emailcloud/working-with-contact-cards/).
 
 You can get a contact file from the [Storage](https://dashboard.aspose.cloud/#/storages) as a **ContactDto** via MAPI, then edit contact files and instantly save it back to the [Storage](https://dashboard.aspose.cloud/#/storages) as an MAPI file or as a VCard. This can be helpful when you work with a big number of contact card files. 
 
-With Aspose.Email Cloud API you can easily **scan images of business cards,** work with scanned business cards as VCard files. Read more: [**Business Card Recognition API**](/business-cards-recognition-api/).
+With Aspose.Email Cloud API you can easily **scan images of business cards,** work with scanned business cards as VCard files. Read more: [**Business Card Recognition API**](/emailcloud/business-cards-recognition-api/).
 
 ### **Working With Calendars via MAPI**
 MAPI allows working with calendars too. You can easily process calendar (iCalendar) files with Aspose.Email Cloud API: 
@@ -55,10 +55,10 @@ MAPI allows working with calendars too. You can easily process calendar (iCalend
 - Work with calendar files’ attachments: edit them, search through them and more.
 - Convert iCalendar files to an Alternate View[](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AlternateView.md)**.**
 
-Read more about working with calendar files (.ics): [**Working with Contact Cards**](/working-with-contact-cards/).
+Read more about working with calendar files (.ics): [**Working with Contact Cards**](/emailcloud/working-with-contact-cards/).
 
 ### **Working With MAPI Files via Built-In Email Client**
-The best in using MAPI with Aspose.Email Cloud API is that you can send MAPI files via our built-in [**Email Client**](/email-client/). 
+The best in using MAPI with Aspose.Email Cloud API is that you can send MAPI files via our built-in [**Email Client**](/emailcloud/email-client/). 
 
 Aspose.Email Cloud API has a built-in Email Client which allows to:
 
@@ -67,7 +67,7 @@ Aspose.Email Cloud API has a built-in Email Client which allows to:
 - Mark emails as read.
 - Get email lists, search emails.
 
-|<p>{{% alert color="primary" %}} </p><p>You can send and append MAPI files via our internal [Email Client](/email-client/).</p><p>{{% /alert %}}</p>| | |
+|<p>{{% alert color="primary" %}} </p><p>You can send and append MAPI files via our internal [Email Client](/emailcloud/email-client/).</p><p>{{% /alert %}}</p>| | |
 | :- | :- | :- |
 
 ## **Setup Aspose.Email Cloud SDK**
@@ -75,7 +75,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{% alert color="primary" %}} 
 
-How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/sdk-setup/).
+How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/).
 
 {{% /alert %}} 
 

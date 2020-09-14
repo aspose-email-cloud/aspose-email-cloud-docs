@@ -12,7 +12,7 @@ Aspose.Email Cloud API allows you to save VCard file using [**ContactDto**](htt
 
 {{% alert color="primary" %}} 
 
-If you want to know more about working with **VCard files** — take a look at the Aspose Email Cloud tutorial: [**Quick Start With VCard API**](/quick-start-with-vcard-api/).
+If you want to know more about working with **VCard files** — take a look at the Aspose Email Cloud tutorial: [**Quick Start With VCard API**](/emailcloud/quick-start-with-vcard-api/).
 
 {{% /alert %}} 
 
@@ -196,6 +196,6 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{% alert color="primary" %}} 
 
-How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/sdk-setup/).
+How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/).
 
 {{% /alert %}}

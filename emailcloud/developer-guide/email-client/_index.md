@@ -25,9 +25,9 @@ weight: 110
 
 Email account information should be stored on Storage as **.account** or **.multi.account** file. 
 
-File with **.account** extension is used to store one email account. It contains information about email server configuration (*host, port, protocol, security options*) and authentication data (*login/password or OAuth credentials*). You can find out more in [working with single email account ](/single-email-account-setup/)article.  
+File with **.account** extension is used to store one email account. It contains information about email server configuration (*host, port, protocol, security options*) and authentication data (*login/password or OAuth credentials*). You can find out more in [working with single email account ](/emailcloud/single-email-account-setup/)article.  
 
-File with **.multi.account** extension is used to store Virtual Multi-account. ou can find out more in [working with multi email account ](/multi-email-account-setup/)article.  
+File with **.multi.account** extension is used to store Virtual Multi-account. ou can find out more in [working with multi email account ](/emailcloud/multi-email-account-setup/)article.  
 
 All email client methods use one account or an account pair (firstAccount + secondAccount). For example, you can call an API method with a combination of IMAP and SMTP accounts. So the client will use the SMTP account to send and the IMAP account to receive messages.
 

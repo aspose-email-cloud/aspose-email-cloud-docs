@@ -253,7 +253,7 @@ $api = new EmailCloud($configuration);
 Our SDK automatically gets API token using your **AppKey** and **AppSid**. Also, it automatically gets a new token, if previous one is expired.
 
 ## **Check Everything Works**
-After setting up Aspose.Email Cloud API SDK, it's time to start using it. The API has numerous functions for working with email messages, calendars, contacts, etc.. Also, the API includes AI functions such as the [Business Card Recognition API](/business-cards-recognition-api/) and [Name API](/working-with-name-api/). These features will facilitate and speed up the development of your application. 
+After setting up Aspose.Email Cloud API SDK, it's time to start using it. The API has numerous functions for working with email messages, calendars, contacts, etc.. Also, the API includes AI functions such as the [Business Card Recognition API](/emailcloud/business-cards-recognition-api/) and [Name API](/emailcloud/working-with-name-api/). These features will facilitate and speed up the development of your application. 
 
 Let’s call some SDK methods to see that everything set up properly. For example, you can easily convert an **EML** file to **MSG** format with our API.
 
