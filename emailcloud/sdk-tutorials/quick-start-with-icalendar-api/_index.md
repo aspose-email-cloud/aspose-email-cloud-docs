@@ -343,7 +343,7 @@ We also provide API methods for converting **CalendarDto** to an **AlternateView
 
 {{% alert color="primary" %}} 
 
-To get more information about built-in email client — take a look at the [Email Client tutorial](/quick-start-with-email-client/).
+To get more information about built-in email client — take a look at the [Email Client tutorial](/emailcloud/quick-start-with-email-client/).
 
 {{% /alert %}} 
 

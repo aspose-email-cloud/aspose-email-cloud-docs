@@ -420,7 +420,7 @@ We can append this EmailDto object to the "INBOX" folder of an IMAP account:
 
 {{% alert color="primary" %}} 
 
-See how to setup and use email client in the [Quickstart with an email client tutorial](/quick-start-with-email-client/).
+See how to setup and use email client in the [Quickstart with an email client tutorial](/emailcloud/quick-start-with-email-client/).
 
 {{% /alert %}} 
 
