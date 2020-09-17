@@ -785,23 +785,23 @@ expect(emailDto.subject).to.be.eq(mapiMessageDto.body.subject);
 
 ```java
 
-email\_document = models.EmailDto()
+email_document = models.EmailDto()
 
-email\_document.\_from = models.MailAddress(address='from@aspose.com')
+email_document._from = models.MailAddress(address='from@aspose.com')
 
-email\_document.to = [models.MailAddress(address='to@aspose.com')]
+email_document.to = [models.MailAddress(address='to@aspose.com')]
 
-email\_document.subject = 'Some subject'
+email_document.subject = 'Some subject'
 
-email\_document.body = 'Some body'
+email_document.body = 'Some body'
 
-email\_document.\_date = datetime.today()
+email_document._date = datetime.today()
 
-mapi\_message = email.convert\_email\_model\_to\_mapi\_model(
+mapi_message = email.convert_email_model_to_mapi_model(
 
-    requests.ConvertEmailModelToMapiModelRequest(email\_document))
+    requests.ConvertEmailModelToMapiModelRequest(email_document))
 
-assert email\_document.subject == mapi\_message.subject
+assert email_document.subject == mapi_message.subject
 
 ```
 
@@ -823,11 +823,11 @@ email.body = 'Some body'
 
 email.date = DateTime.now
 
-mapi\_message = @api.convert\_email\_model\_to\_mapi\_model(
+mapi_message = @api.convert_email_model_to_mapi_model(
 
     ConvertEmailModelToMapiModelRequestData.new(email))
 
-expect(email.subject).to eq mapi\_message.subject
+expect(email.subject).to eq mapi_message.subject
 
 ```
 
@@ -1081,57 +1081,57 @@ expect(mapiMessageDto.body).to.be.eq(emailDto.body.body);
 
 ```java
 
-mapi\_message = models.MapiMessageDto()
+mapi_message = models.MapiMessageDto()
 
-mapi\_message.sender\_address\_type = 'SMTP'
+mapi_message.sender_address_type = 'SMTP'
 
-mapi\_message.sender\_email\_address = 'from@aspose.com'
+mapi_message.sender_email_address = 'from@aspose.com'
 
-mapi\_message.sender\_smtp\_address = 'from@aspose.com'
+mapi_message.sender_smtp_address = 'from@aspose.com'
 
-mapi\_message.sender\_name = 'From Address'
+mapi_message.sender_name = 'From Address'
 
-mapi\_message.message\_body = 'Some body'
+mapi_message.message_body = 'Some body'
 
-mapi\_message.display\_to = 'To Address'
+mapi_message.display_to = 'To Address'
 
-mapi\_message.delivery\_time = datetime.today()
+mapi_message.delivery_time = datetime.today()
 
-mapi\_message.flags = ['MsgFlagRead',    'MsgFlagUnsent',    'MsgFlagHasAttach']
+mapi_message.flags = ['MsgFlagRead',    'MsgFlagUnsent',    'MsgFlagHasAttach']
 
-recipient\_dto = models.MapiRecipientDto()
+recipient_dto = models.MapiRecipientDto()
 
-recipient\_dto.address\_type = 'SMTP'
+recipient_dto.address_type = 'SMTP'
 
-recipient\_dto.display\_name = 'To address'
+recipient_dto.display_name = 'To address'
 
-recipient\_dto.email\_address = 'to@aspose.com'
+recipient_dto.email_address = 'to@aspose.com'
 
-recipient\_dto.recipient\_type = 'MapiTo'
+recipient_dto.recipient_type = 'MapiTo'
 
-mapi\_message.recipients = [recipient\_dto]
+mapi_message.recipients = [recipient_dto]
 
 attachment = models.MapiAttachmentDto()
 
-attachment.data\_base64 = str(base64.b64encode(b'Some file text'), 'utf-8')
+attachment.data_base64 = str(base64.b64encode(b'Some file text'), 'utf-8')
 
 attachment.name = 'some-file.txt'
 
-mapi\_message.attachments = [attachment]
+mapi_message.attachments = [attachment]
 
-mapi\_message.body = 'Some body'
+mapi_message.body = 'Some body'
 
-mapi\_message.subject = 'Re: Some subject'
+mapi_message.subject = 'Re: Some subject'
 
-mapi\_message.body\_type = 'PlainText'
+mapi_message.body_type = 'PlainText'
 
-email\_dto = email.convert\_mapi\_message\_model\_to\_email\_model(
+email_dto = email.convert_mapi_message_model_to_email_model(
 
-    requests.ConvertMapiMessageModelToEmailModelRequest(mapi\_message))
+    requests.ConvertMapiMessageModelToEmailModelRequest(mapi_message))
 
-assert mapi\_message.subject == email\_dto.subject
+assert mapi_message.subject == email_dto.subject
 
-assert mapi\_message.body == email\_dto.body
+assert mapi_message.body == email_dto.body
 
 ```
 
@@ -1141,57 +1141,57 @@ assert mapi\_message.body == email\_dto.body
 
 ```java
 
-mapi\_message\_dto = MapiMessageDto.new
+mapi_message_dto = MapiMessageDto.new
 
-mapi\_message\_dto.sender\_address\_type = 'SMTP'
+mapi_message_dto.sender_address_type = 'SMTP'
 
-mapi\_message\_dto.sender\_email\_address = 'from@aspose.com'
+mapi_message_dto.sender_email_address = 'from@aspose.com'
 
-mapi\_message\_dto.sender\_smtp\_address = 'from@aspose.com'
+mapi_message_dto.sender_smtp_address = 'from@aspose.com'
 
-mapi\_message\_dto.sender\_name = 'From Address'
+mapi_message_dto.sender_name = 'From Address'
 
-mapi\_message\_dto.message\_body = 'Some body'
+mapi_message_dto.message_body = 'Some body'
 
-mapi\_message\_dto.display\_to = 'To Address'
+mapi_message_dto.display_to = 'To Address'
 
-mapi\_message\_dto.delivery\_time = DateTime.now
+mapi_message_dto.delivery_time = DateTime.now
 
-mapi\_message\_dto.flags = %w[MsgFlagRead MsgFlagUnsent MsgFlagHasAttach]
+mapi_message_dto.flags = %w[MsgFlagRead MsgFlagUnsent MsgFlagHasAttach]
 
-recipient\_dto = MapiRecipientDto.new
+recipient_dto = MapiRecipientDto.new
 
-recipient\_dto.address\_type = 'SMTP'
+recipient_dto.address_type = 'SMTP'
 
-recipient\_dto.display\_name = 'To address'
+recipient_dto.display_name = 'To address'
 
-recipient\_dto.email\_address = 'to@aspose.com'
+recipient_dto.email_address = 'to@aspose.com'
 
-recipient\_dto.recipient\_type = 'MapiTo'
+recipient_dto.recipient_type = 'MapiTo'
 
-mapi\_message\_dto.recipients = [recipient\_dto]
+mapi_message_dto.recipients = [recipient_dto]
 
 attachment = MapiAttachmentDto.new
 
-attachment.data\_base64 = Base64.encode64('Some file text')
+attachment.data_base64 = Base64.encode64('Some file text')
 
 attachment.name = 'some-file.txt'
 
-mapi\_message\_dto.attachments = [attachment]
+mapi_message_dto.attachments = [attachment]
 
-mapi\_message\_dto.body = 'Some body'
+mapi_message_dto.body = 'Some body'
 
-mapi\_message\_dto.subject = 'Re: Some subject'
+mapi_message_dto.subject = 'Re: Some subject'
 
-mapi\_message\_dto.body\_type = 'PlainText'
+mapi_message_dto.body_type = 'PlainText'
 
-email = @api.convert\_mapi\_message\_model\_to\_email\_model(
+email = @api.convert_mapi_message_model_to_email_model(
 
-  ConvertMapiMessageModelToEmailModelRequestData.new(mapi\_message))
+  ConvertMapiMessageModelToEmailModelRequestData.new(mapi_message))
 
-expect(mapi\_message.subject).to eq email.subject
+expect(mapi_message.subject).to eq email.subject
 
-expect(mapi\_message.body).to eq email.body
+expect(mapi_message.body).to eq email.body
 
 ```
 
@@ -1237,7 +1237,7 @@ $mapiMessage = (new MapiMessageDto())
 
     ->setAttachments(array((new MapiAttachmentDto())
 
-        ->setDataBase64(base64\_encode("Some file text"))
+        ->setDataBase64(base64_encode("Some file text"))
 
         ->setName("some-file.txt")))
 
@@ -1455,27 +1455,27 @@ expect(mapiMessageDto.subject).to.be.eq(subjectString);
 
 \# Convert to a file in EML format:
 
-eml\_file = email.convert\_mapi\_message\_model\_to\_file(
+eml_file = email.convert_mapi_message_model_to_file(
 
-    requests.ConvertMapiMessageModelToFileRequest('Eml', mapi\_message))
+    requests.ConvertMapiMessageModelToFileRequest('Eml', mapi_message))
 
 \# EML is a text format, let's check it contains subject as text:
 
-with open(eml\_file, 'r') as f:
+with open(eml_file, 'r') as f:
 
-    file\_data = f.read()
+    file_data = f.read()
 
-    assert mapi\_message.subject in file\_data
+    assert mapi_message.subject in file_data
 
 \# Convert file back to a MapiMessageDto object:
 
-mapi\_message\_converted = email.get\_email\_file\_as\_mapi\_model(
+mapi_message_converted = email.get_email_file_as_mapi_model(
 
-    requests.GetEmailFileAsMapiModelRequest('Eml', eml\_file))
+    requests.GetEmailFileAsMapiModelRequest('Eml', eml_file))
 
 \# Check the subject:
 
-assert mapi\_message.subject == mapi\_message\_converted.subject
+assert mapi_message.subject == mapi_message_converted.subject
 
 \# Subject is also available as MapiPropertyDto:
 
@@ -1483,15 +1483,15 @@ assert mapi\_message.subject == mapi\_message\_converted.subject
 
 \# Some properties are known to the service and have MapiKnownPropertyDescriptor
 
-known\_properties = [x for x in mapi\_message\_converted.properties
+known_properties = [x for x in mapi_message_converted.properties
 
                     if x.descriptor.discriminator == 'MapiKnownPropertyDescriptor']
 
 \# So we can find subject property by known property name:
 
-subject\_property = next(x for x in known\_properties if x.descriptor.name == 'TagSubject')
+subject_property = next(x for x in known_properties if x.descriptor.name == 'TagSubject')
 
-assert mapi\_message.subject == subject\_property.value
+assert mapi_message.subject == subject_property.value
 
 ```
 
@@ -1503,25 +1503,25 @@ assert mapi\_message.subject == subject\_property.value
 
 \# Convert to a file in EML format:
 
-eml\_file = @api.convert\_mapi\_message\_model\_to\_file(
+eml_file = @api.convert_mapi_message_model_to_file(
 
-  ConvertMapiMessageModelToFileRequestData.new('Eml', mapi\_message))
+  ConvertMapiMessageModelToFileRequestData.new('Eml', mapi_message))
 
 \# EML is a text format, let's check it contains subject as text:
 
-eml\_content = IO.read(eml\_file)
+eml_content = IO.read(eml_file)
 
-expect(eml\_content).to include mapi\_message.subject
+expect(eml_content).to include mapi_message.subject
 
 \# Convert file back to a MapiMessageDto object:
 
-mapi\_message\_converted = @api.get\_email\_file\_as\_mapi\_model(
+mapi_message_converted = @api.get_email_file_as_mapi_model(
 
-  GetEmailFileAsMapiModelRequestData.new('Eml', eml\_file))
+  GetEmailFileAsMapiModelRequestData.new('Eml', eml_file))
 
 \# Check the subject:
 
-expect(mapi\_message.subject).to eq mapi\_message\_converted.subject
+expect(mapi_message.subject).to eq mapi_message_converted.subject
 
 \# Subject is also available as MapiPropertyDto:
 
@@ -1531,7 +1531,7 @@ expect(mapi\_message.subject).to eq mapi\_message\_converted.subject
 
 \# So we can find subject property by known property name:
 
-subject\_property = mapi\_message\_converted
+subject_property = mapi_message_converted
 
                    .properties
 
@@ -1539,7 +1539,7 @@ subject\_property = mapi\_message\_converted
 
                    .find { |i| i.descriptor.name == 'TagSubject' }
 
-expect(mapi\_message.subject).to eq subject\_property.value
+expect(mapi_message.subject).to eq subject_property.value
 
 ```
 
@@ -1589,7 +1589,7 @@ $this->assertEquals($mapiMessage->getSubject(), $mapiMessageConverted->getSubjec
 
 $knownPropertiesArray =
 
-    array\_filter($mapiMessageConverted->getProperties(), function ($var) {
+    array_filter($mapiMessageConverted->getProperties(), function ($var) {
 
         return $var->getDescriptor()->getDiscriminator() == "MapiKnownPropertyDescriptor";
 
@@ -1597,9 +1597,9 @@ $knownPropertiesArray =
 
 //We know, that subject is stored in known property with name TagSubject:
 
-$subjectProperty = array\_values(
+$subjectProperty = array_values(
 
-    array\_filter($knownPropertiesArray, function ($var) {
+    array_filter($knownPropertiesArray, function ($var) {
 
         /\*\* @noinspection PhpPossiblePolymorphicInvocationInspection \*/
 
@@ -1737,31 +1737,31 @@ storage = "First Storage"
 
 folder = "a/folder/on/a/storage"
 
-file\_name = "fileName.msg"
+file_name = "fileName.msg"
 
 \# Save as a file on storage:
 
-email.save\_mapi\_message\_model(
+email.save_mapi_message_model(
 
     requests.SaveMapiMessageModelRequest(
 
-        'Msg', file\_name,
+        'Msg', file_name,
 
         models.StorageModelRqOfMapiMessageDto(
 
-            mapi\_message,
+            mapi_message,
 
             models.StorageFolderLocation(storage, folder))))
 
 \# Get back from storage:
 
-mapi\_message\_from\_storage = email.get\_mapi\_message\_model(
+mapi_message_from_storage = email.get_mapi_message_model(
 
-    requests.GetMapiMessageModelRequest('Msg', file\_name, folder, storage))
+    requests.GetMapiMessageModelRequest('Msg', file_name, folder, storage))
 
 \# Compare
 
-assert mapi\_message.subject == mapi\_message\_from\_storage.subject
+assert mapi_message.subject == mapi_message_from_storage.subject
 
 ```
 
@@ -1775,19 +1775,19 @@ assert mapi\_message.subject == mapi\_message\_from\_storage.subject
 
 folder = 'a/folder/on/a/storage'
 
-file\_name = 'fileName.msg'
+file_name = 'fileName.msg'
 
 \# Save as a file on storage:
 
-@api.save\_mapi\_message\_model(
+@api.save_mapi_message_model(
 
   SaveMapiMessageModelRequestData.new(
 
-    'Msg', file\_name,
+    'Msg', file_name,
 
     StorageModelRqOfMapiMessageDto.new(
 
-      mapi\_message,
+      mapi_message,
 
       StorageFolderLocation.new(storage, folder)
 
@@ -1799,13 +1799,13 @@ file\_name = 'fileName.msg'
 
 \# Get back from storage:
 
-mapi\_message\_from\_storage = @api.get\_mapi\_message\_model(
+mapi_message_from_storage = @api.get_mapi_message_model(
 
-  GetMapiMessageModelRequestData.new('Msg', file\_name, @folder, @storage))
+  GetMapiMessageModelRequestData.new('Msg', file_name, @folder, @storage))
 
 \# Compare
 
-expect(mapi\_message.subject).to eq mapi\_message\_from\_storage.subject
+expect(mapi_message.subject).to eq mapi_message_from_storage.subject
 
 ```
 
@@ -2014,9 +2014,9 @@ contact = models.ContactDto(
 
     surname='Thomas',
 
-    given\_name='Alex',
+    given_name='Alex',
 
-    email\_addresses=[
+    email_addresses=[
 
         models.EmailAddress(
 
@@ -2024,7 +2024,7 @@ contact = models.ContactDto(
 
             'Alex Thomas', True, address='alex.thomas@work.com')],
 
-    phone\_numbers=[
+    phone_numbers=[
 
         models.PhoneNumber(
 
@@ -2032,11 +2032,11 @@ contact = models.ContactDto(
 
             '+49211424721', True)])
 
-mapi\_contact = email.convert\_contact\_model\_to\_mapi\_model(
+mapi_contact = email.convert_contact_model_to_mapi_model(
 
     requests.ConvertContactModelToMapiModelRequest(contact))
 
-assert contact.surname == mapi\_contact.name\_info.surname
+assert contact.surname == mapi_contact.name_info.surname
 
 ```
 
@@ -2050,21 +2050,21 @@ contact = ContactDto.new
 
 contact.surname = 'Cane'
 
-contact.given\_name = 'John'
+contact.given_name = 'John'
 
 contact.gender = 'Male'
 
-contact.email\_addresses = [EmailAddress.new(nil, nil, nil, nil, 'address@aspose.com')]
+contact.email_addresses = [EmailAddress.new(nil, nil, nil, nil, 'address@aspose.com')]
 
-contact.phone\_numbers = [PhoneNumber.new(nil, '+4734534643')]
+contact.phone_numbers = [PhoneNumber.new(nil, '+4734534643')]
 
-mapi\_contact = @api.convert\_contact\_model\_to\_mapi\_model(
+mapi_contact = @api.convert_contact_model_to_mapi_model(
 
   ConvertContactModelToMapiModelRequestData.new(contact)
 
 )
 
-expect(contact.surname).to eq mapi\_contact.name\_info.surname
+expect(contact.surname).to eq mapi_contact.name_info.surname
 
 ```
 
@@ -2244,43 +2244,43 @@ expect(mapiContactDto.nameInfo.surname).to.be.eq(contactDto.body.surname);
 
 ```java
 
-mapi\_contact = models.MapiContactDto()
+mapi_contact = models.MapiContactDto()
 
-electronic\_addresses = models.MapiContactElectronicAddressPropertySetDto()
+electronic_addresses = models.MapiContactElectronicAddressPropertySetDto()
 
-electronic\_addresses.default\_email\_address = models.MapiContactElectronicAddressDto()
+electronic_addresses.default_email_address = models.MapiContactElectronicAddressDto()
 
-electronic\_addresses.default\_email\_address.email\_address = 'email@aspose.com'
+electronic_addresses.default_email_address.email_address = 'email@aspose.com'
 
-mapi\_contact.electronic\_addresses = electronic\_addresses
+mapi_contact.electronic_addresses = electronic_addresses
 
-name\_info = models.MapiContactNamePropertySetDto()
+name_info = models.MapiContactNamePropertySetDto()
 
-name\_info.given\_name = 'Alex'
+name_info.given_name = 'Alex'
 
-name\_info.surname = 'Thomas'
+name_info.surname = 'Thomas'
 
-mapi\_contact.name\_info = name\_info
+mapi_contact.name_info = name_info
 
-mapi\_contact.personal\_info = models.MapiContactPersonalInfoPropertySetDto()
+mapi_contact.personal_info = models.MapiContactPersonalInfoPropertySetDto()
 
-mapi\_contact.personal\_info.business\_home\_page = 'www.aspose.com'
+mapi_contact.personal_info.business_home_page = 'www.aspose.com'
 
-mapi\_contact.professional\_info = models.MapiContactProfessionalPropertySetDto()
+mapi_contact.professional_info = models.MapiContactProfessionalPropertySetDto()
 
-mapi\_contact.professional\_info.profession = 'GENERAL DIRECTOR'
+mapi_contact.professional_info.profession = 'GENERAL DIRECTOR'
 
-mapi\_contact.telephones = models.MapiContactTelephonePropertySetDto()
+mapi_contact.telephones = models.MapiContactTelephonePropertySetDto()
 
-mapi\_contact.telephones.primary\_telephone\_number = '+49 211 4247 21'
+mapi_contact.telephones.primary_telephone_number = '+49 211 4247 21'
 
-contact = email.convert\_mapi\_contact\_model\_to\_contact\_model(
+contact = email.convert_mapi_contact_model_to_contact_model(
 
-  requests.ConvertMapiContactModelToContactModelRequest(mapi\_contact))
+  requests.ConvertMapiContactModelToContactModelRequest(mapi_contact))
 
-assert mapi\_contact.name\_info.given\_name == contact.given\_name
+assert mapi_contact.name_info.given_name == contact.given_name
 
-assert mapi\_contact.name\_info.surname == contact.surname
+assert mapi_contact.name_info.surname == contact.surname
 
 ```
 
@@ -2290,43 +2290,43 @@ assert mapi\_contact.name\_info.surname == contact.surname
 
 ```java
 
-mapi\_contact = MapiContactDto.new
+mapi_contact = MapiContactDto.new
 
-electronic\_addresses = MapiContactElectronicAddressPropertySetDto.new
+electronic_addresses = MapiContactElectronicAddressPropertySetDto.new
 
-electronic\_addresses.default\_email\_address = MapiContactElectronicAddressDto.new
+electronic_addresses.default_email_address = MapiContactElectronicAddressDto.new
 
-electronic\_addresses.default\_email\_address.email\_address = 'email@aspose.com'
+electronic_addresses.default_email_address.email_address = 'email@aspose.com'
 
-mapi\_contact.electronic\_addresses = electronic\_addresses
+mapi_contact.electronic_addresses = electronic_addresses
 
-name\_info = MapiContactNamePropertySetDto.new
+name_info = MapiContactNamePropertySetDto.new
 
-name\_info.given\_name = 'Alex'
+name_info.given_name = 'Alex'
 
-name\_info.surname = 'Thomas'
+name_info.surname = 'Thomas'
 
-mapi\_contact.name\_info = name\_info
+mapi_contact.name_info = name_info
 
-mapi\_contact.personal\_info = MapiContactPersonalInfoPropertySetDto.new
+mapi_contact.personal_info = MapiContactPersonalInfoPropertySetDto.new
 
-mapi\_contact.personal\_info.business\_home\_page = 'www.aspose.com'
+mapi_contact.personal_info.business_home_page = 'www.aspose.com'
 
-mapi\_contact.professional\_info = MapiContactProfessionalPropertySetDto.new
+mapi_contact.professional_info = MapiContactProfessionalPropertySetDto.new
 
-mapi\_contact.professional\_info.profession = 'GENERAL DIRECTOR'
+mapi_contact.professional_info.profession = 'GENERAL DIRECTOR'
 
-mapi\_contact.telephones = MapiContactTelephonePropertySetDto.new
+mapi_contact.telephones = MapiContactTelephonePropertySetDto.new
 
-mapi\_contact.telephones.primary\_telephone\_number = '+49 211 4247 21'
+mapi_contact.telephones.primary_telephone_number = '+49 211 4247 21'
 
-contact = @api.convert\_mapi\_contact\_model\_to\_contact\_model(
+contact = @api.convert_mapi_contact_model_to_contact_model(
 
-  ConvertMapiContactModelToContactModelRequestData.new(mapi\_contact))
+  ConvertMapiContactModelToContactModelRequestData.new(mapi_contact))
 
-expect(mapi\_contact.name\_info.given\_name).to eq contact.given\_name
+expect(mapi_contact.name_info.given_name).to eq contact.given_name
 
-expect(mapi\_contact.name\_info.surname).to eq contact.surname
+expect(mapi_contact.name_info.surname).to eq contact.surname
 
 ```
 
@@ -2476,21 +2476,21 @@ expect(mapiContactDto.nameInfo.surname).to.be.eq(mapiContactDtoConverted.body.na
 
 ```java
 
-vcard\_file = email.convert\_mapi\_contact\_model\_to\_file(
+vcard_file = email.convert_mapi_contact_model_to_file(
 
-    requests.ConvertMapiContactModelToFileRequest('VCard', mapi\_contact))
+    requests.ConvertMapiContactModelToFileRequest('VCard', mapi_contact))
 
-with open(vcard\_file, 'r') as f:
+with open(vcard_file, 'r') as f:
 
-    file\_data = f.read()
+    file_data = f.read()
 
-    assert mapi\_contact.name\_info.given\_name in file\_data
+    assert mapi_contact.name_info.given_name in file_data
 
-mapi\_contact\_converted = email.get\_contact\_file\_as\_mapi\_model(
+mapi_contact_converted = email.get_contact_file_as_mapi_model(
 
-    requests.GetContactFileAsMapiModelRequest('VCard', vcard\_file))
+    requests.GetContactFileAsMapiModelRequest('VCard', vcard_file))
 
-assert mapi\_contact.name\_info.surname == mapi\_contact\_converted.name\_info.surname
+assert mapi_contact.name_info.surname == mapi_contact_converted.name_info.surname
 
 ```
 
@@ -2500,19 +2500,19 @@ assert mapi\_contact.name\_info.surname == mapi\_contact\_converted.name\_info.s
 
 ```java
 
-vcard\_file = @api.convert\_mapi\_contact\_model\_to\_file(
+vcard_file = @api.convert_mapi_contact_model_to_file(
 
-  ConvertMapiContactModelToFileRequestData.new('VCard', mapi\_contact))
+  ConvertMapiContactModelToFileRequestData.new('VCard', mapi_contact))
 
-vcard\_content = IO.read(vcard\_file)
+vcard_content = IO.read(vcard_file)
 
-expect(vcard\_content).to include mapi\_contact.name\_info.given\_name
+expect(vcard_content).to include mapi_contact.name_info.given_name
 
-mapi\_contact\_converted = @api.get\_contact\_file\_as\_mapi\_model(
+mapi_contact_converted = @api.get_contact_file_as_mapi_model(
 
-  GetContactFileAsMapiModelRequestData.new('VCard', vcard\_file))
+  GetContactFileAsMapiModelRequestData.new('VCard', vcard_file))
 
-expect(mapi\_contact.name\_info.surname).to eq mapi\_contact\_converted.name\_info.surname
+expect(mapi_contact.name_info.surname).to eq mapi_contact_converted.name_info.surname
 
 ```
 
@@ -2656,23 +2656,23 @@ storage = "First Storage"
 
 folder = "a/folder/on/a/storage"
 
-file\_name = "fileName.msg"
+file_name = "fileName.msg"
 
 
 
-email.save\_mapi\_contact\_model(
+email.save_mapi_contact_model(
 
     requests.SaveMapiContactModelRequest(
 
-        'Msg', file\_name,
+        'Msg', file_name,
 
-        models.StorageModelRqOfMapiContactDto(mapi\_contact, models.StorageFolderLocation(storage, folder))))
+        models.StorageModelRqOfMapiContactDto(mapi_contact, models.StorageFolderLocation(storage, folder))))
 
-mapi\_contact\_from\_storage = email.get\_mapi\_contact\_model(
+mapi_contact_from_storage = email.get_mapi_contact_model(
 
-    requests.GetMapiContactModelRequest('Msg', file\_name, folder, storage))
+    requests.GetMapiContactModelRequest('Msg', file_name, folder, storage))
 
-assert mapi\_contact.name\_info.surname == mapi\_contact\_from\_storage.name\_info.surname
+assert mapi_contact.name_info.surname == mapi_contact_from_storage.name_info.surname
 
 ```
 
@@ -2686,21 +2686,21 @@ storage = 'First Storage'
 
 folder = 'a/folder/on/a/storage'
 
-file\_name = 'fileName.msg'
+file_name = 'fileName.msg'
 
-@api.save\_mapi\_contact\_model(
+@api.save_mapi_contact_model(
 
   SaveMapiContactModelRequestData.new(
 
-    'Msg', file\_name,
+    'Msg', file_name,
 
-    StorageModelRqOfMapiContactDto.new(mapi\_contact, StorageFolderLocation.new(storage, folder))))
+    StorageModelRqOfMapiContactDto.new(mapi_contact, StorageFolderLocation.new(storage, folder))))
 
-mapi\_contact\_from\_storage = @api.get\_mapi\_contact\_model(
+mapi_contact_from_storage = @api.get_mapi_contact_model(
 
-  GetMapiContactModelRequestData.new('Msg', file\_name, @folder, @storage))
+  GetMapiContactModelRequestData.new('Msg', file_name, @folder, @storage))
 
-expect(mapi\_contact.name\_info.surname).to eq mapi\_contact\_from\_storage.name\_info.surname
+expect(mapi_contact.name_info.surname).to eq mapi_contact_from_storage.name_info.surname
 
 ```
 
@@ -2904,19 +2904,19 @@ calendar.summary = 'Some summary'
 
 calendar.organizer = models.MailAddress('Organizer Name', 'organizer@aspose.com', 'Accepted')
 
-calendar.start\_date = datetime.today() + timedelta(days=1)
+calendar.start_date = datetime.today() + timedelta(days=1)
 
-calendar.end\_date = calendar.start\_date + timedelta(hours=1)
+calendar.end_date = calendar.start_date + timedelta(hours=1)
 
 calendar.location = 'Some location'
 
 calendar.recurrence = models.DailyRecurrencePatternDto(None, 10, None, 'Monday')
 
-mapi\_calendar = email.convert\_calendar\_model\_to\_mapi\_model(
+mapi_calendar = email.convert_calendar_model_to_mapi_model(
 
     requests.ConvertCalendarModelToMapiModelRequest(calendar))
 
-assert calendar.location == mapi\_calendar.location
+assert calendar.location == mapi_calendar.location
 
 
 
@@ -2936,9 +2936,9 @@ calendar.summary = 'Some summary'
 
 calendar.description = 'Some description'
 
-calendar.start\_date = DateTime.now
+calendar.start_date = DateTime.now
 
-calendar.end\_date = DateTime.now + 1
+calendar.end_date = DateTime.now + 1
 
 calendar.organizer = MailAddress.new nil, 'organizer@aspose.com'
 
@@ -2946,11 +2946,11 @@ calendar.attendees = [MailAddress.new(nil, 'attendee@aspose.com')]
 
 calendar.recurrence = DailyRecurrencePatternDto.new(nil, 10, nil, 'Monday')
 
-mapi\_calendar = @api.convert\_calendar\_model\_to\_mapi\_model(
+mapi_calendar = @api.convert_calendar_model_to_mapi_model(
 
   ConvertCalendarModelToMapiModelRequestData.new(calendar))
 
-expect(calendar.location).to eq mapi\_calendar.location
+expect(calendar.location).to eq mapi_calendar.location
 
 ```
 
@@ -3224,57 +3224,57 @@ expect(mapiCalendarDto.location).to.be.eq(calendarDto.body.location);
 
 ```java
 
-mapi\_calendar = models.MapiCalendarDto()
+mapi_calendar = models.MapiCalendarDto()
 
-mapi\_recipient = models.MapiRecipientDto()
+mapi_recipient = models.MapiRecipientDto()
 
-mapi\_recipient.address\_type = 'SMTP'
+mapi_recipient.address_type = 'SMTP'
 
-mapi\_recipient.display\_name = 'Attendee Name'
+mapi_recipient.display_name = 'Attendee Name'
 
-mapi\_recipient.email\_address = 'attendee@aspose.com'
+mapi_recipient.email_address = 'attendee@aspose.com'
 
-mapi\_recipient.recipient\_type = 'MapiTo'
+mapi_recipient.recipient_type = 'MapiTo'
 
-mapi\_calendar.attendees = models.MapiCalendarAttendeesDto([mapi\_recipient])
+mapi_calendar.attendees = models.MapiCalendarAttendeesDto([mapi_recipient])
 
-mapi\_calendar.client\_intent = ['Manager']
+mapi_calendar.client_intent = ['Manager']
 
 recurrence = models.MapiCalendarEventRecurrenceDto()
 
-recurrence\_pattern = models.MapiCalendarDailyRecurrencePatternDto()
+recurrence_pattern = models.MapiCalendarDailyRecurrencePatternDto()
 
-recurrence\_pattern.occurrence\_count = 10
+recurrence_pattern.occurrence_count = 10
 
-recurrence\_pattern.week\_start\_day = 'Monday'
+recurrence_pattern.week_start_day = 'Monday'
 
-recurrence.recurrence\_pattern = recurrence\_pattern
+recurrence.recurrence_pattern = recurrence_pattern
 
-mapi\_calendar.recurrence = recurrence
+mapi_calendar.recurrence = recurrence
 
-mapi\_calendar.organizer = models.MapiElectronicAddressDto(None, 'organizer@aspose.com')
+mapi_calendar.organizer = models.MapiElectronicAddressDto(None, 'organizer@aspose.com')
 
-mapi\_calendar.busy\_status = 'Tentative'
+mapi_calendar.busy_status = 'Tentative'
 
-mapi\_calendar.start\_date = datetime.today()
+mapi_calendar.start_date = datetime.today()
 
-mapi\_calendar.end\_date = datetime.today()
+mapi_calendar.end_date = datetime.today()
 
-mapi\_calendar.location = 'Some location'
+mapi_calendar.location = 'Some location'
 
-mapi\_calendar.body = 'Some description'
+mapi_calendar.body = 'Some description'
 
-mapi\_calendar.body\_type = 'PlainText'
+mapi_calendar.body_type = 'PlainText'
 
-mapi\_calendar.subject = 'Some summary'
+mapi_calendar.subject = 'Some summary'
 
-calendar = email.convert\_mapi\_calendar\_model\_to\_calendar\_model(
+calendar = email.convert_mapi_calendar_model_to_calendar_model(
 
-    requests.ConvertMapiCalendarModelToCalendarModelRequest(mapi\_calendar))
+    requests.ConvertMapiCalendarModelToCalendarModelRequest(mapi_calendar))
 
-assert mapi\_calendar.subject == calendar.summary
+assert mapi_calendar.subject == calendar.summary
 
-assert mapi\_calendar.location == calendar.location
+assert mapi_calendar.location == calendar.location
 
 ```
 
@@ -3284,57 +3284,57 @@ assert mapi\_calendar.location == calendar.location
 
 ```java
 
-mapi\_calendar = MapiCalendarDto.new
+mapi_calendar = MapiCalendarDto.new
 
-mapi\_recipient = MapiRecipientDto.new
+mapi_recipient = MapiRecipientDto.new
 
-mapi\_recipient.address\_type = 'SMTP'
+mapi_recipient.address_type = 'SMTP'
 
-mapi\_recipient.display\_name = 'Attendee Name'
+mapi_recipient.display_name = 'Attendee Name'
 
-mapi\_recipient.email\_address = 'attendee@aspose.com'
+mapi_recipient.email_address = 'attendee@aspose.com'
 
-mapi\_recipient.recipient\_type = 'MapiTo'
+mapi_recipient.recipient_type = 'MapiTo'
 
-mapi\_calendar.attendees = MapiCalendarAttendeesDto.new([mapi\_recipient])
+mapi_calendar.attendees = MapiCalendarAttendeesDto.new([mapi_recipient])
 
-mapi\_calendar.client\_intent = ['Manager']
+mapi_calendar.client_intent = ['Manager']
 
 recurrence = MapiCalendarEventRecurrenceDto.new
 
-recurrence\_pattern = MapiCalendarDailyRecurrencePatternDto.new
+recurrence_pattern = MapiCalendarDailyRecurrencePatternDto.new
 
-recurrence\_pattern.occurrence\_count = 10
+recurrence_pattern.occurrence_count = 10
 
-recurrence\_pattern.week\_start\_day = 'Monday'
+recurrence_pattern.week_start_day = 'Monday'
 
-recurrence.recurrence\_pattern = recurrence\_pattern
+recurrence.recurrence_pattern = recurrence_pattern
 
-mapi\_calendar.recurrence = recurrence
+mapi_calendar.recurrence = recurrence
 
-mapi\_calendar.organizer = MapiElectronicAddressDto.new(nil, 'organizer@aspose.com')
+mapi_calendar.organizer = MapiElectronicAddressDto.new(nil, 'organizer@aspose.com')
 
-mapi\_calendar.busy\_status = 'Tentative'
+mapi_calendar.busy_status = 'Tentative'
 
-mapi\_calendar.start\_date = DateTime.now
+mapi_calendar.start_date = DateTime.now
 
-mapi\_calendar.end\_date = DateTime.now + 1
+mapi_calendar.end_date = DateTime.now + 1
 
-mapi\_calendar.location = 'Some location'
+mapi_calendar.location = 'Some location'
 
-mapi\_calendar.body = 'Some description'
+mapi_calendar.body = 'Some description'
 
-mapi\_calendar.body\_type = 'PlainText'
+mapi_calendar.body_type = 'PlainText'
 
-mapi\_calendar.subject = 'Some summary'
+mapi_calendar.subject = 'Some summary'
 
-calendar = @api.convert\_mapi\_calendar\_model\_to\_calendar\_model(
+calendar = @api.convert_mapi_calendar_model_to_calendar_model(
 
-  ConvertMapiCalendarModelToCalendarModelRequestData.new(mapi\_calendar))
+  ConvertMapiCalendarModelToCalendarModelRequestData.new(mapi_calendar))
 
-expect(mapi\_calendar.subject).to eq calendar.summary
+expect(mapi_calendar.subject).to eq calendar.summary
 
-expect(mapi\_calendar.location).to eq calendar.location
+expect(mapi_calendar.location).to eq calendar.location
 
 ```
 
@@ -3504,21 +3504,21 @@ expect(mapiCalendarDto.location).to.be.eq(mapiCalendarDtoConverted.body.location
 
 ```java
 
-ics\_file = email.convert\_mapi\_calendar\_model\_to\_file(
+ics_file = email.convert_mapi_calendar_model_to_file(
 
-    requests.ConvertMapiCalendarModelToFileRequest('Ics', mapi\_calendar))
+    requests.ConvertMapiCalendarModelToFileRequest('Ics', mapi_calendar))
 
-with open(ics\_file, 'r') as f:
+with open(ics_file, 'r') as f:
 
-    file\_data = f.read()
+    file_data = f.read()
 
-    assert mapi\_calendar.location in file\_data
+    assert mapi_calendar.location in file_data
 
-mapi\_calendar\_converted = email.get\_calendar\_file\_as\_mapi\_model(
+mapi_calendar_converted = email.get_calendar_file_as_mapi_model(
 
-    requests.GetCalendarFileAsMapiModelRequest(ics\_file))
+    requests.GetCalendarFileAsMapiModelRequest(ics_file))
 
-assert mapi\_calendar.location == mapi\_calendar\_converted.location
+assert mapi_calendar.location == mapi_calendar_converted.location
 
 ```
 
@@ -3528,19 +3528,19 @@ assert mapi\_calendar.location == mapi\_calendar\_converted.location
 
 ```java
 
-ics\_file = @api.convert\_mapi\_calendar\_model\_to\_file(
+ics_file = @api.convert_mapi_calendar_model_to_file(
 
-  ConvertMapiCalendarModelToFileRequestData.new('Ics', mapi\_calendar))
+  ConvertMapiCalendarModelToFileRequestData.new('Ics', mapi_calendar))
 
-ics\_content = IO.read(ics\_file)
+ics_content = IO.read(ics_file)
 
-expect(ics\_content).to include mapi\_calendar.location
+expect(ics_content).to include mapi_calendar.location
 
-mapi\_calendar\_converted = @api.get\_calendar\_file\_as\_mapi\_model(
+mapi_calendar_converted = @api.get_calendar_file_as_mapi_model(
 
-  GetCalendarFileAsMapiModelRequestData.new(ics\_file))
+  GetCalendarFileAsMapiModelRequestData.new(ics_file))
 
-expect(mapi\_calendar.location).to eq mapi\_calendar\_converted.location
+expect(mapi_calendar.location).to eq mapi_calendar_converted.location
 
 ```
 
@@ -3685,27 +3685,27 @@ storage = "First Storage"
 
 folder = "a/folder/on/a/storage"
 
-file\_name = "fileName.msg"
+file_name = "fileName.msg"
 
 
 
-email.save\_mapi\_calendar\_model(
+email.save_mapi_calendar_model(
 
     requests.SaveMapiCalendarModelRequest(
 
-        file\_name, 'Msg',
+        file_name, 'Msg',
 
         models.StorageModelRqOfMapiCalendarDto(
 
-            mapi\_calendar,
+            mapi_calendar,
 
             models.StorageFolderLocation(storage, folder))))
 
-mapi\_calendar\_from\_storage = email.get\_mapi\_calendar\_model(
+mapi_calendar_from_storage = email.get_mapi_calendar_model(
 
-    requests.GetMapiCalendarModelRequest(file\_name, folder, storage))
+    requests.GetMapiCalendarModelRequest(file_name, folder, storage))
 
-assert mapi\_calendar.location == mapi\_calendar\_from\_storage.location
+assert mapi_calendar.location == mapi_calendar_from_storage.location
 
 ```
 
@@ -3719,25 +3719,25 @@ storage = 'First Storage'
 
 folder = 'a/folder/on/a/storage'
 
-file\_name = 'fileName.msg'
+file_name = 'fileName.msg'
 
-@api.save\_mapi\_calendar\_model(
+@api.save_mapi_calendar_model(
 
   SaveMapiCalendarModelRequestData.new(
 
-    file\_name, 'Msg',
+    file_name, 'Msg',
 
     StorageModelRqOfMapiCalendarDto.new(
 
-      mapi\_calendar,
+      mapi_calendar,
 
       StorageFolderLocation.new(storage, folder))))
 
-mapi\_calendar\_from\_storage = @api.get\_mapi\_calendar\_model(
+mapi_calendar_from_storage = @api.get_mapi_calendar_model(
 
-  GetMapiCalendarModelRequestData.new(file\_name, @folder, @storage))
+  GetMapiCalendarModelRequestData.new(file_name, @folder, @storage))
 
-expect(mapi\_calendar.location).to eq mapi\_calendar\_from\_storage.location
+expect(mapi_calendar.location).to eq mapi_calendar_from_storage.location
 
 ```
 

@@ -77,7 +77,7 @@ This method requires **1 parameter** — [**DownloadFileRequest**](https://gi
 
 [**DownloadFileRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/02941624e3e6e35c1c1d8fef37e3f201b6cc353c/Model/Requests/DownloadFileRequest.cs) has **3 parameters**:
 
-- *Path* — File path e.g. "/folder/contact\_card".
+- *Path* — File path e.g. "/folder/contact_card".
 - *StorageName* — Storage name.
 - *VersionId* [**optional**] — File version ID to download
 
@@ -184,7 +184,7 @@ Now, let's use our **Business Card Recognition API**.
 
 First, we need an image of a business card. Something like this:
 
-![todo:image\_alt\_text](quick-start-with-vcard-api_1.png)
+![todo:image_alt_text](quick-start-with-vcard-api_1.png)
 
 This file should be placed somewhere on the disk, for example at "*/tmp/alex.png*". To use our parsing API, we should read the file. We need to convert it to the base64 string and send it to parser using our SDK.
 

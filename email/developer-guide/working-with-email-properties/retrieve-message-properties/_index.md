@@ -113,17 +113,17 @@ AsposeApp::$appKey = "...";
 
 $method = "GET";
 
-$base\_url = "http://api.aspose.com/v1.1";
+$base_url = "http://api.aspose.com/v1.1";
 
-$request\_url = "$base\_url/email/Sample1.eml/properties/MessageId";
+$request_url = "$base_url/email/Sample1.eml/properties/MessageId";
 
-$signed\_url = Utils::sign($request\_url);
+$signed_url = Utils::sign($request_url);
 
-$response = Utils::processCommand($signed\_url, $method, "", "");
+$response = Utils::processCommand($signed_url, $method, "", "");
 
-$response = json\_decode($response);
+$response = json_decode($response);
 
-var\_dump($response);
+var_dump($response);
 
 
 ```
@@ -132,17 +132,17 @@ var\_dump($response);
 {{< tab tabNum="5" >}}
 ```java
 
-app\_sid = "..."
+app_sid = "..."
 
-app\_key = "..."
+app_key = "..."
 
-request\_url = "http://api.aspose.com/v1.1/email/Sample1.eml/properties/MessageId"
+request_url = "http://api.aspose.com/v1.1/email/Sample1.eml/properties/MessageId"
 
-Aspose::Cloud::Common::AsposeApp.new(app\_sid, app\_key)
+Aspose::Cloud::Common::AsposeApp.new(app_sid, app_key)
 
-signed\_url = Aspose::Cloud::Common::Utils.sign(request\_url)
+signed_url = Aspose::Cloud::Common::Utils.sign(request_url)
 
-response = RestClient.get(signed\_url, :accept=>:json)
+response = RestClient.get(signed_url, :accept=>:json)
 
 response = JSON.parse(response)
 
@@ -159,21 +159,21 @@ import json
 
 from aspose.cloud.common import \*
 
-AsposeApp.app\_sid = "..."
+AsposeApp.app_sid = "..."
 
-AsposeApp.app\_key = "..."
+AsposeApp.app_key = "..."
 
 method = "GET"
 
-request\_url = "http://api.aspose.com/v1.1/email/Sample1.eml/properties/MessageId"
+request_url = "http://api.aspose.com/v1.1/email/Sample1.eml/properties/MessageId"
 
-signed\_url = Utils.sign(Utils(), request\_url)
+signed_url = Utils.sign(Utils(), request_url)
 
-response = Utils.process\_command(Utils(), signed\_url, method, "", "")
+response = Utils.process_command(Utils(), signed_url, method, "", "")
 
-response\_json = json.loads(response)
+response_json = json.loads(response)
 
-print response\_json
+print response_json
 
 
 ```
@@ -184,19 +184,19 @@ print response\_json
 
 use Data::Dumper;
 
-my $app\_sid = "...";
+my $app_sid = "...";
 
-my $app\_key = "...";
+my $app_key = "...";
 
-my $base\_url = "http://api.aspose.com/v1.1";
+my $base_url = "http://api.aspose.com/v1.1";
 
-my $request\_method = "GET";
+my $request_method = "GET";
 
-my $request\_url = "$base\_url/email/Sample1.eml/properties/MessageId";
+my $request_url = "$base_url/email/Sample1.eml/properties/MessageId";
 
-my $signed\_url = Sign($request\_url, $app\_sid, $app\_key);
+my $signed_url = Sign($request_url, $app_sid, $app_key);
 
-my $result = ProcessCommand($request\_method, $signed\_url);
+my $result = ProcessCommand($request_method, $signed_url);
 
 print Dumper($result);
 
@@ -211,19 +211,19 @@ var appSID = "...";
 
 var appKey = "...";
 
-var base\_url = "http://api.aspose.com/v1.1/";
+var base_url = "http://api.aspose.com/v1.1/";
 
 var method = "GET";
 
-var request\_url = base\_url + "email/Sample1.eml/properties/MessageId";
+var request_url = base_url + "email/Sample1.eml/properties/MessageId";
 
-var signed\_url = Sign(request\_url, appSID, appKey);
+var signed_url = Sign(request_url, appSID, appKey);
 
 ProcessCommand(
 
   method,
 
-  signed\_url,
+  signed_url,
 
   null,
 
@@ -242,19 +242,19 @@ ProcessCommand(
 {{< tab tabNum="9" >}}
 ```cpp
 
-std::string app\_sid = "...";
+std::string app_sid = "...";
 
-std::string app\_key = "...";
+std::string app_key = "...";
 
-std::string base\_url = "http://api.aspose.com/v1.1/";
+std::string base_url = "http://api.aspose.com/v1.1/";
 
 std::string method = "GET";
 
-std::string request\_url = base\_url + "email/Sample1.eml/properties/MessageId";
+std::string request_url = base_url + "email/Sample1.eml/properties/MessageId";
 
-std::string signed\_url = sign(request\_url, app\_sid, app\_key);
+std::string signed_url = sign(request_url, app_sid, app_key);
 
-rapidjson::Document response = process\_command(method, signed\_url);
+rapidjson::Document response = process_command(method, signed_url);
 
 std::cout << "Status: " << response["Status"].GetString() << std::endl;
 
@@ -268,13 +268,13 @@ AsposeApp.setAppKeyAndAppSID("Get it from https://cloud.aspose.com", "Get it fro
 
 AsposeApp.setBaseProductURI("http://api.aspose.com/v1.1");
 
-String EMAIL\_URI = AsposeApp.BASE\_PRODUCT\_URI + "/email/";
+String EMAIL_URI = AsposeApp.BASE_PRODUCT_URI + "/email/";
 
 String propertyValue = null;
 
 //build URL
 
-String strURL = EMAIL\_URI + Uri.encode("Message.msg") + "/properties/" + Uri.encode("Body");
+String strURL = EMAIL_URI + Uri.encode("Message.msg") + "/properties/" + Uri.encode("Body");
 
 //sign URL
 
@@ -307,7 +307,7 @@ if(emailPropertyResponse.getCode().equals("200") && emailPropertyResponse.getSta
 
 [ASPOSEProduct setBaseProductUri:@"http://api.aspose.com/v1.1"];
 
-NSString \*EMAIL\_URI = [[ASPOSEProduct baseProductUri] stringByAppendingString:@"/email/"];
+NSString \*EMAIL_URI = [[ASPOSEProduct baseProductUri] stringByAppendingString:@"/email/"];
 
 NSObject \*propertyValue = nil;
 
@@ -315,7 +315,7 @@ NSString \*fileName = @"Self Assessment.eml";
 
 //build URL
 
-NSString \*strURL = [NSString stringWithFormat:@"%@%@/properties/%@", EMAIL\_URI,
+NSString \*strURL = [NSString stringWithFormat:@"%@%@/properties/%@", EMAIL_URI,
 
                     [fileName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], @"Body"];
 
@@ -364,7 +364,7 @@ How to setup Aspose.Email Cloud SDKs:Â [**SDK setup**](/emailcloud/sdk-setup/).Â
 
 ```java
 
-curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml?appSID=XXXX&signature=XXXX" \
+curl -v "http://api.aspose.cloud/v1.1/email/email_test.eml?appSID=XXXX&signature=XXXX" \
      -X GET \
      -H "Content-Type: application/json" \
      -H "Accept: application/json"
@@ -407,7 +407,7 @@ Retrieved File
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-email" "3f41448648db89803193189f274722fa" "Examples-Ruby-EmailProperties-get\_mail\_common\_info-.rb" >}}
+{{< gist "aspose-email" "3f41448648db89803193189f274722fa" "Examples-Ruby-EmailProperties-get_mail_common_info-.rb" >}}
 
 {{< /tab >}}
 

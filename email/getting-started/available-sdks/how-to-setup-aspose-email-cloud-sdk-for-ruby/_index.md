@@ -10,7 +10,7 @@ You can install Aspose Email Cloud with gem:
 
 ```java
 
-gem install aspose\_email\_cloud
+gem install aspose_email_cloud
 
 ```
 ## **Source Code**

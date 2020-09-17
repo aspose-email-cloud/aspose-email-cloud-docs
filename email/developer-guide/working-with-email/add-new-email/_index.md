@@ -107,7 +107,7 @@ AsposeApp.setAppKeyAndAppSID("Get it from https://cloud.aspose.com", "Get it fro
 
 AsposeApp.setBaseProductURI("http://api.aspose.com/v1.1");
 
-String EMAIL\_URI = AsposeApp.BASE\_PRODUCT\_URI + "/email/";
+String EMAIL_URI = AsposeApp.BASE_PRODUCT_URI + "/email/";
 
 AddNewEmailResponse addNewEmailResponse = null;
 
@@ -169,7 +169,7 @@ emailDocument.emailDocumentProperties.emailPropertiesList.add(mEmailProperty);
 
 //build URL
 
-String strURL = EMAIL\_URI + Uri.encode(emailName);
+String strURL = EMAIL_URI + Uri.encode(emailName);
 
 //sign URL
 
@@ -206,7 +206,7 @@ if(addNewEmailResponse.getCode().equals("200") && addNewEmailResponse.getStatus(
 
 [ASPOSEProduct setBaseProductUri:@"http://api.aspose.com/v1.1"];
 
-NSString \*EMAIL\_URI = [[ASPOSEProduct baseProductUri] stringByAppendingString:@"/email/"];
+NSString \*EMAIL_URI = [[ASPOSEProduct baseProductUri] stringByAppendingString:@"/email/"];
 
 NSString \*fileName = @"Marketplace.eml";
 
@@ -276,7 +276,7 @@ NSString \*requestJSONString = [emailData toJSONString];
 
 //build URL
 
-NSString \*strURL = [NSString stringWithFormat:@"%@%@", EMAIL\_URI,
+NSString \*strURL = [NSString stringWithFormat:@"%@%@", EMAIL_URI,
 
                     [fileName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 
@@ -286,7 +286,7 @@ NSString \*signedURL = [ASPOSEUtils sign:strURL];
 
 NSData \*responseData = [ASPOSEUtils processCommand:signedURL httpMethod:@"PUT"
 
-                                           content:requestJSONString contentType:CONTENT\_TYPE\_JSON];
+                                           content:requestJSONString contentType:CONTENT_TYPE_JSON];
 
 if(responseData) {
 
@@ -325,7 +325,7 @@ How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/).
 
 ```java
 
-curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signature=XXXX" \
+curl -v "http://api.aspose.cloud/v1.1/email/email_test2.eml?appSID=XXXX&signature=XXXX" \
      -X PUT \
     -d '{"DocumentProperties": {"List": [{"Name": "Body", "Value": "This is body"}, {"Name": "To", "Value": "developer@aspose.com"}, {"Name": "From", "Value": "sales@aspose.com"}]}, "Format": "eml"}' \
      -H "Content-Type: application/json" \
@@ -347,7 +347,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
       {
 
-        "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml",
+        "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml",
 
         "Rel": "self",
 
@@ -359,7 +359,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
       {
 
-        "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml?format=eml",
+        "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml?format=eml",
 
         "Rel": "alternate",
 
@@ -371,7 +371,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
       {
 
-        "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml?format=msg",
+        "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml?format=msg",
 
         "Rel": "alternate",
 
@@ -383,7 +383,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
       {
 
-        "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml?format=mht",
+        "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml?format=mht",
 
         "Rel": "alternate",
 
@@ -399,7 +399,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
       "Link": {
 
-        "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml/documentproperties/",
+        "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml/documentproperties/",
 
         "Rel": "self",
 
@@ -415,7 +415,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml/documentproperties/Bcc",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml/documentproperties/Bcc",
 
             "Rel": "self",
 
@@ -435,7 +435,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml/documentproperties/Body",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml/documentproperties/Body",
 
             "Rel": "self",
 
@@ -455,7 +455,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml/documentproperties/CC",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml/documentproperties/CC",
 
             "Rel": "self",
 
@@ -475,7 +475,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml/documentproperties/Date",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml/documentproperties/Date",
 
             "Rel": "self",
 
@@ -495,7 +495,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml/documentproperties/DeliveryNotificationOptions",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml/documentproperties/DeliveryNotificationOptions",
 
             "Rel": "self",
 
@@ -515,7 +515,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml/documentproperties/From",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml/documentproperties/From",
 
             "Rel": "self",
 
@@ -535,7 +535,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml/documentproperties/To",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml/documentproperties/To",
 
             "Rel": "self",
 
@@ -555,7 +555,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml/documentproperties/HtmlBody",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml/documentproperties/HtmlBody",
 
             "Rel": "self",
 
@@ -575,7 +575,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml/documentproperties/IsBodyHtml",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml/documentproperties/IsBodyHtml",
 
             "Rel": "self",
 
@@ -595,7 +595,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml/documentproperties/MessageId",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml/documentproperties/MessageId",
 
             "Rel": "self",
 
@@ -615,7 +615,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml/documentproperties/Priority",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml/documentproperties/Priority",
 
             "Rel": "self",
 
@@ -635,7 +635,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml/documentproperties/Subject",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml/documentproperties/Subject",
 
             "Rel": "self",
 
@@ -655,7 +655,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml/documentproperties/TextBody",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml/documentproperties/TextBody",
 
             "Rel": "self",
 
@@ -675,7 +675,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test2.eml/documentproperties/Attachments",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test2.eml/documentproperties/Attachments",
 
             "Rel": "self",
 
@@ -739,7 +739,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signatu
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-email" "3f41448648db89803193189f274722fa" "Examples-Ruby-Email-add\_new\_email-.rb" >}}
+{{< gist "aspose-email" "3f41448648db89803193189f274722fa" "Examples-Ruby-Email-add_new_email-.rb" >}}
 
 {{< /tab >}}
 

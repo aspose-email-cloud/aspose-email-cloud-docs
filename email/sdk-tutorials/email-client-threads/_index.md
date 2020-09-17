@@ -21,7 +21,7 @@ You may ask '*Is there any difference between messages and threads?*'. At first
 
 Using threads, you can easily structure emails in the mailbox. Instead of working with an unstructured list of messages, it is better to work and analyze only certain threads of emails. In the picture below you can see how the messages are arranged in threads:
 
-![todo:image\_alt\_text](email-client-threads_1.png)
+![todo:image_alt_text](email-client-threads_1.png)
 ## **Built-In Email Client**
 [**Aspose.Email Cloud API**](https://products.aspose.cloud/email/family) provides a [built-in email client](/emailcloud/email-client/) with a unified API, which supports different account types like **SMTP**, **POP3**, **IMAP**, **EWS**.
 

@@ -11,7 +11,7 @@ This is a business card scanner, which allows you to convert captured business c
 
 
 
-![todo:image\_alt\_text](aspose-email-cloud-19-12-release-notes_1.png)
+![todo:image_alt_text](aspose-email-cloud-19-12-release-notes_1.png)
 
 Now you can use artificial intelligence functionality for creating email applications that work with standard email file formats. There are two ways to parse business cards using the Business card recognition API – with cloud storage or not.
 ### **2. Name API for parsing and handling personal names**

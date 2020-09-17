@@ -83,7 +83,7 @@ AsposeApp.setAppKeyAndAppSID("Get it from https://cloud.aspose.com", "Get it fro
 
 AsposeApp.setBaseProductURI("http://api.aspose.com/v1.1");
 
-String EMAIL\_URI = AsposeApp.BASE\_PRODUCT\_URI + "/email/";
+String EMAIL_URI = AsposeApp.BASE_PRODUCT_URI + "/email/";
 
 AddEmailAttachmentResponse addEmailAttachmentResponse = null;
 
@@ -93,7 +93,7 @@ String attachmentName = "certificate.png"
 
 //build URL
 
-String strURL = EMAIL\_URI + Uri.encode(fileName) + "/attachments/" + Uri.encode(attachmentName);
+String strURL = EMAIL_URI + Uri.encode(fileName) + "/attachments/" + Uri.encode(attachmentName);
 
 //sign URL
 
@@ -126,7 +126,7 @@ if(addEmailAttachmentResponse.getCode().equals("200") && addEmailAttachmentRespo
 
 [ASPOSEProduct setBaseProductUri:@"http://api.aspose.com/v1.1"];
 
-NSString \*EMAIL\_URI = [[ASPOSEProduct baseProductUri] stringByAppendingString:@"/email/"];
+NSString \*EMAIL_URI = [[ASPOSEProduct baseProductUri] stringByAppendingString:@"/email/"];
 
 ASPOSEAddNewDocumentResponse \*addEmailAttachmentResponse = nil;
 
@@ -136,7 +136,7 @@ NSString \*attachmentName = @"sample.jpg";
 
 //build URL
 
-NSString \*strURL = [NSString stringWithFormat:@"%@%@/attachments/%@", EMAIL\_URI,
+NSString \*strURL = [NSString stringWithFormat:@"%@%@/attachments/%@", EMAIL_URI,
 
                     [fileName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
 
@@ -183,7 +183,7 @@ How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/).
 
 ```java
 
-curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.TXT?appSID=XXXX&signature=XXXX" \
+curl -v "http://api.aspose.cloud/v1.1/email/email_test.eml/attachments/README.TXT?appSID=XXXX&signature=XXXX" \
      -X POST \
      -H "Content-Type: application/json" \
      -H "Accept: application/json"
@@ -204,7 +204,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
       {
 
-        "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml",
+        "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml",
 
         "Rel": "self",
 
@@ -216,7 +216,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
       {
 
-        "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml?format=eml",
+        "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml?format=eml",
 
         "Rel": "alternate",
 
@@ -228,7 +228,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
       {
 
-        "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml?format=msg",
+        "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml?format=msg",
 
         "Rel": "alternate",
 
@@ -240,7 +240,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
       {
 
-        "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml?format=mht",
+        "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml?format=mht",
 
         "Rel": "alternate",
 
@@ -256,7 +256,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
       "Link": {
 
-        "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml/documentproperties/",
+        "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml/documentproperties/",
 
         "Rel": "self",
 
@@ -272,7 +272,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml/documentproperties/Bcc",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml/documentproperties/Bcc",
 
             "Rel": "self",
 
@@ -292,7 +292,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml/documentproperties/Body",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml/documentproperties/Body",
 
             "Rel": "self",
 
@@ -312,7 +312,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml/documentproperties/CC",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml/documentproperties/CC",
 
             "Rel": "self",
 
@@ -332,7 +332,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml/documentproperties/Date",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml/documentproperties/Date",
 
             "Rel": "self",
 
@@ -352,7 +352,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml/documentproperties/DeliveryNotificationOptions",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml/documentproperties/DeliveryNotificationOptions",
 
             "Rel": "self",
 
@@ -372,7 +372,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml/documentproperties/From",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml/documentproperties/From",
 
             "Rel": "self",
 
@@ -392,7 +392,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml/documentproperties/To",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml/documentproperties/To",
 
             "Rel": "self",
 
@@ -412,7 +412,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml/documentproperties/HtmlBody",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml/documentproperties/HtmlBody",
 
             "Rel": "self",
 
@@ -432,7 +432,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml/documentproperties/IsBodyHtml",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml/documentproperties/IsBodyHtml",
 
             "Rel": "self",
 
@@ -452,7 +452,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml/documentproperties/MessageId",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml/documentproperties/MessageId",
 
             "Rel": "self",
 
@@ -472,7 +472,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml/documentproperties/Priority",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml/documentproperties/Priority",
 
             "Rel": "self",
 
@@ -492,7 +492,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml/documentproperties/Subject",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml/documentproperties/Subject",
 
             "Rel": "self",
 
@@ -512,7 +512,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml/documentproperties/TextBody",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml/documentproperties/TextBody",
 
             "Rel": "self",
 
@@ -532,7 +532,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
           "Link": {
 
-            "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml/documentproperties/Attachments",
+            "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml/documentproperties/Attachments",
 
             "Rel": "self",
 
@@ -604,7 +604,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/attachments/README.T
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-email" "3f41448648db89803193189f274722fa" "Examples-Ruby-Attachments-add\_email\_attachment-.rb" >}}
+{{< gist "aspose-email" "3f41448648db89803193189f274722fa" "Examples-Ruby-Attachments-add_email_attachment-.rb" >}}
 
 {{< /tab >}}
 

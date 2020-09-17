@@ -288,7 +288,7 @@ Or, you get an option to convert iCalendar to an [AlternateView](https://githu
 
 - **value ([CalendarDto](https://github.com/aspose-email-cloud/aspose-email-cloud-php/blob/3a5c2c35a31629493aa484b65870622165570db8/doc/CalendarDto.md)) -** iCalendar document model;
 - **action (string) -** iCalendar actions. Enum, available values: Create, Update, Cancel;
-- **sequence\_id (string)** [Optional] **-** iCalendar sequence id.
+- **sequence_id (string)** [Optional] **-** iCalendar sequence id.
 
 {{% /alert %}} 
 
@@ -308,7 +308,7 @@ Or, you get an option to convert iCalendar to an [AlternateView](https://githu
 
 - **value ([CalendarDto](https://github.com/aspose-email-cloud/aspose-email-cloud-python/blob/22a14eb5f9ca38fcf2e79193a2890d3018fbaf84/sdk/docs/CalendarDto.md)) -** iCalendar document model;
 - **action (str) -** iCalendar actions. Enum, available values: Create, Update, Cancel;
-- **sequence\_id (str)** [Optional] **-** iCalendar sequence id.
+- **sequence_id (str)** [Optional] **-** iCalendar sequence id.
 
 {{% /alert %}} 
 
@@ -328,7 +328,7 @@ Or, you get an option to convert iCalendar to an [AlternateView](https://githu
 
 - **value ([CalendarDto](https://github.com/aspose-email-cloud/aspose-email-cloud-ruby/blob/f3225bb43730f601716d5aa26c0f5e1734a64833/docs/CalendarDto.md)) -** iCalendar document model;
 - **action (string) -** iCalendar actions. Enum, available values: Create, Update, Cancel;
-- **sequence\_id (string)** [Optional] **-** iCalendar sequence id.
+- **sequence_id (string)** [Optional] **-** iCalendar sequence id.
 
 {{% /alert %}} 
 

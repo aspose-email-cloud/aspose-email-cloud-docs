@@ -20,7 +20,7 @@ Owing to the importance and emerging needs for this format, Aspose.Email Cloud h
 
 The following image depicts a conversion flow from a business card to vCard format.
 
-![todo:image\_alt\_text](https://raw.githubusercontent.com/wiki/aspose-email-cloud/aspose-email-cloud-dotnet/images/bcr.jpg)
+![todo:image_alt_text](https://raw.githubusercontent.com/wiki/aspose-email-cloud/aspose-email-cloud-dotnet/images/bcr.jpg)
 
 
 ## **Image located on Storage**

@@ -86,9 +86,9 @@ Dim storage As String = ""
 
 Dim apiUrl As String = String.Format("email/{0}/properties/{1}?storage={2}&folder={3}", name, propertyName, storage, folder)
 
-Dim jObject\_\_1 As JObject = JObject.Parse(ServiceController.[Get](apiUrl, appSid, appKey))
+Dim jObject__1 As JObject = JObject.Parse(ServiceController.[Get](apiUrl, appSid, appKey))
 
-Dim emailPropertyResponse As EmailPropertyResponse = jObject\_\_1.ToObject(Of EmailPropertyResponse)()
+Dim emailPropertyResponse As EmailPropertyResponse = jObject__1.ToObject(Of EmailPropertyResponse)()
 
 ```
 
@@ -101,7 +101,7 @@ AsposeApp.setAppKeyAndAppSID("Get it from https://cloud.aspose.com", "Get it fro
 
 AsposeApp.setBaseProductURI("http://api.aspose.com/v1.1");
 
-String EMAIL\_URI = AsposeApp.BASE\_PRODUCT\_URI + "/email/";
+String EMAIL_URI = AsposeApp.BASE_PRODUCT_URI + "/email/";
 
 String propertyValue = null;
 
@@ -111,7 +111,7 @@ String propertyName = "Body";
 
 //build URL
 
-String strURL = EMAIL\_URI + Uri.encode(fileName) + "/properties/" + Uri.encode(propertyName);
+String strURL = EMAIL_URI + Uri.encode(fileName) + "/properties/" + Uri.encode(propertyName);
 
 //sign URL
 
@@ -145,7 +145,7 @@ if(emailPropertyResponse.getCode().equals("200") && emailPropertyResponse.getSta
 
 [ASPOSEProduct setBaseProductUri:@"http://api.aspose.com/v1.1"];
 
-NSString \*EMAIL\_URI = [[ASPOSEProduct baseProductUri] stringByAppendingString:@"/email/"];
+NSString \*EMAIL_URI = [[ASPOSEProduct baseProductUri] stringByAppendingString:@"/email/"];
 
 NSObject \*propertyValue = nil;
 
@@ -155,7 +155,7 @@ NSString \*propertyName = @"Body";
 
 //build URL
 
-NSString \*strURL = [NSString stringWithFormat:@"%@%@/properties/%@", EMAIL\_URI,
+NSString \*strURL = [NSString stringWithFormat:@"%@%@/properties/%@", EMAIL_URI,
 
                     [fileName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], propertyName];
 
@@ -202,7 +202,7 @@ How to setup Aspose.Email Cloud SDKs:Â [**SDK setup**](/emailcloud/sdk-setup/).Â
 
 ```java
 
-curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/properties/Subject?appSID=XXXX&signature=XXXX" \
+curl -v "http://api.aspose.cloud/v1.1/email/email_test.eml/properties/Subject?appSID=XXXX&signature=XXXX" \
      -X GET \
      -H "Content-Type: application/json" \
      -H "Accept: application/json"
@@ -221,7 +221,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/properties/Subject?a
 
     "Link": {
 
-      "Href": "http://api.aspose.cloud/v1.1/email/email\_test.eml/documentproperties/Subject",
+      "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml/documentproperties/Subject",
 
       "Rel": "self",
 
@@ -271,7 +271,7 @@ curl -v "http://api.aspose.cloud/v1.1/email/email\_test.eml/properties/Subject?a
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-email" "3f41448648db89803193189f274722fa" "Examples-Ruby-EmailProperties-read\_document\_property\_by\_name-.rb" >}}
+{{< gist "aspose-email" "3f41448648db89803193189f274722fa" "Examples-Ruby-EmailProperties-read_document_property_by_name-.rb" >}}
 
 {{< /tab >}}
 

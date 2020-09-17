@@ -21,7 +21,7 @@ You can also [checkout](https://www.npmjs.com/package/asposeemailcloud) Aspose.E
 
 ```java
 
-cd SDKs/Aspose.Email\_Cloud\_SDK\_for\_NodeJS
+cd SDKs/Aspose.Email_Cloud_SDK_for_NodeJS
 
 npm install .
 

@@ -51,7 +51,7 @@ import java.io.\*; import com.aspose.cloud.common.Utils; import com.aspose.cloud
 {{< tab tabNum="4" >}}
 ```java
 
-use Aspose\Cloud\Common\AsposeApp; use Aspose\Cloud\Common\Utils; AsposeApp::$appSID = "..."; AsposeApp::$appKey = "..."; $method = "GET"; $base\_url = "http://api.aspose.com/v1.1"; $request\_url = "$base\_url/email/Sample1.eml/attachments/attachment.txt"; $output\_file = getcwd() . "/attachment.txt"; $signed\_url = Utils::sign($request\_url); $response = Utils::processCommand($signed\_url, $method, "", ""); file\_put\_contents($output\_file, $response); echo "File saved: $output\_file\n";
+use Aspose\Cloud\Common\AsposeApp; use Aspose\Cloud\Common\Utils; AsposeApp::$appSID = "..."; AsposeApp::$appKey = "..."; $method = "GET"; $base_url = "http://api.aspose.com/v1.1"; $request_url = "$base_url/email/Sample1.eml/attachments/attachment.txt"; $output_file = getcwd() . "/attachment.txt"; $signed_url = Utils::sign($request_url); $response = Utils::processCommand($signed_url, $method, "", ""); file_put_contents($output_file, $response); echo "File saved: $output_file\n";
 
 ```
 {{< /tab >}}
@@ -59,7 +59,7 @@ use Aspose\Cloud\Common\AsposeApp; use Aspose\Cloud\Common\Utils; AsposeApp::$ap
 {{< tab tabNum="5" >}}
 ```java
 
-app\_sid = "..." app\_key = "..." request\_url = "http://api.aspose.com/v1.1/email/Sample1.eml/attachments/attachment.txt" output\_file = File.join(Dir.pwd, "attachment.txt") Aspose::Cloud::Common::AsposeApp.new(app\_sid, app\_key) signed\_url = Aspose::Cloud::Common::Utils.sign(request\_url) response = RestClient.get(signed\_url) File.open(output\_file, "wb") { |file| file.write(response) } puts "File saved: #{output\_file}"
+app_sid = "..." app_key = "..." request_url = "http://api.aspose.com/v1.1/email/Sample1.eml/attachments/attachment.txt" output_file = File.join(Dir.pwd, "attachment.txt") Aspose::Cloud::Common::AsposeApp.new(app_sid, app_key) signed_url = Aspose::Cloud::Common::Utils.sign(request_url) response = RestClient.get(signed_url) File.open(output_file, "wb") { |file| file.write(response) } puts "File saved: #{output_file}"
 
 ```
 {{< /tab >}}
@@ -67,7 +67,7 @@ app\_sid = "..." app\_key = "..." request\_url = "http://api.aspose.com/v1.1/ema
 {{< tab tabNum="6" >}}
 ```java
 
-import os.path from aspose.cloud.common import \* AsposeApp.app\_sid = "..." AsposeApp.app\_key = "..." method = "GET" request\_url = "http://api.aspose.com/v1.1/email/Sample1.eml/attachments/attachment.txt" output\_file = "attachment.txt" output\_file\_path = os.path.join(os.getcwd(), output\_file) signed\_url = Utils.sign(Utils(), request\_url) response = Utils.process\_command(Utils(), signed\_url, method, "", "") Utils.save\_file(Utils(), response, output\_file\_path) print "File saved:", output\_file\_path
+import os.path from aspose.cloud.common import \* AsposeApp.app_sid = "..." AsposeApp.app_key = "..." method = "GET" request_url = "http://api.aspose.com/v1.1/email/Sample1.eml/attachments/attachment.txt" output_file = "attachment.txt" output_file_path = os.path.join(os.getcwd(), output_file) signed_url = Utils.sign(Utils(), request_url) response = Utils.process_command(Utils(), signed_url, method, "", "") Utils.save_file(Utils(), response, output_file_path) print "File saved:", output_file_path
 
 ```
 {{< /tab >}}
@@ -76,7 +76,7 @@ import os.path from aspose.cloud.common import \* AsposeApp.app\_sid = "..." Asp
 
 ```javascript
 
-var appSID = '...'; var appKey = '...'; var base\_url = 'http://api.aspose.com/v1.1/'; var fs = require('fs'); var method = 'GET'; var request\_url = base\_url + 'email/Sample1.eml/attachments/attachment.txt'; var output\_file = 'attachment.txt'; ProcessCommandContent( method, Sign(request\_url, appSID, appKey), null, function(buffer) { fs.writeFileSync(output\_file, buffer); } );
+var appSID = '...'; var appKey = '...'; var base_url = 'http://api.aspose.com/v1.1/'; var fs = require('fs'); var method = 'GET'; var request_url = base_url + 'email/Sample1.eml/attachments/attachment.txt'; var output_file = 'attachment.txt'; ProcessCommandContent( method, Sign(request_url, appSID, appKey), null, function(buffer) { fs.writeFileSync(output_file, buffer); } );
 
 ```
 {{< /tab >}}
@@ -84,7 +84,7 @@ var appSID = '...'; var appKey = '...'; var base\_url = 'http://api.aspose.com/v
 {{< tab tabNum="8" >}}
 ```cpp
 
-std::string app\_sid("..."); std::string app\_key("..."); std::string base\_url("http://api.aspose.com/v1.1/"); std::string method = "GET"; std::string request\_url = base\_url + "email/Sample1.eml/attachments/attachment.txt"; std::string signed\_url = sign(request\_url, app\_sid, app\_key); std::string output\_file = "attachment.txt"; std::ofstream output\_fstream; output\_fstream.open(output\_file, std::ofstream::binary); process\_command(method, signed\_url, output\_fstream); output\_fstream.close(); std::cout << "File saved: " << output\_file << std::endl;
+std::string app_sid("..."); std::string app_key("..."); std::string base_url("http://api.aspose.com/v1.1/"); std::string method = "GET"; std::string request_url = base_url + "email/Sample1.eml/attachments/attachment.txt"; std::string signed_url = sign(request_url, app_sid, app_key); std::string output_file = "attachment.txt"; std::ofstream output_fstream; output_fstream.open(output_file, std::ofstream::binary); process_command(method, signed_url, output_fstream); output_fstream.close(); std::cout << "File saved: " << output_file << std::endl;
 
 ```
 {{< /tab >}}
@@ -92,7 +92,7 @@ std::string app\_sid("..."); std::string app\_key("..."); std::string base\_url(
 {{< tab tabNum="9" >}}
 ```java
 
-AsposeApp.setAppKeyAndAppSID("Get it from https://cloud.aspose.com", "Get it from https://cloud.aspose.com") AsposeApp.setBaseProductURI("http://api.aspose.com/v1.1"); String EMAIL\_URI = AsposeApp.BASE\_PRODUCT\_URI + "/email/"; //build URL String strURL = EMAIL\_URI + Uri.encode("Message.msg") + "/attachments/" + Uri.encode("License.txt"); //sign URL String signedURL = Utils.sign(strURL); InputStream responseStream = Utils.processCommand(signedURL, "GET"); //Save attachment on Disk String localAttachmentPath = Utils.saveStreamToFile(responseStream, "License.txt");
+AsposeApp.setAppKeyAndAppSID("Get it from https://cloud.aspose.com", "Get it from https://cloud.aspose.com") AsposeApp.setBaseProductURI("http://api.aspose.com/v1.1"); String EMAIL_URI = AsposeApp.BASE_PRODUCT_URI + "/email/"; //build URL String strURL = EMAIL_URI + Uri.encode("Message.msg") + "/attachments/" + Uri.encode("License.txt"); //sign URL String signedURL = Utils.sign(strURL); InputStream responseStream = Utils.processCommand(signedURL, "GET"); //Save attachment on Disk String localAttachmentPath = Utils.saveStreamToFile(responseStream, "License.txt");
 
 ```
 {{< /tab >}}
@@ -100,7 +100,7 @@ AsposeApp.setAppKeyAndAppSID("Get it from https://cloud.aspose.com", "Get it fro
 {{< tab tabNum="10" >}}
 ```java
 
-[ASPOSEApp setAppKey:@"Get it from https://cloud.aspose.com" andAppSID:@"Get it from https://cloud.aspose.com"]; [ASPOSEProduct setBaseProductUri:@"http://api.aspose.com/v1.1"]; NSString \*EMAIL\_URI = [[ASPOSEProduct baseProductUri] stringByAppendingString:@"/email/"]; NSString \*fileName = @"Self Assessment.eml"; NSString \*attachmentName = @"License.txt"; //build URL NSString \*strURL = [NSString stringWithFormat:@"%@%@/attachments/%@", EMAIL\_URI, [fileName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], [attachmentName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]; //sign URL NSString \*signedURL = [ASPOSEUtils sign:strURL]; NSData \*responseData = [ASPOSEUtils processCommand:signedURL httpMethod:@"GET"]; //Parsing JSON if(responseData) { NSError \*error; emailAttachmentResponse = [[ASPOSEEmailAttachmentResponse alloc] initWithData:responseData error:&error]; if(emailAttachmentResponse == nil) { //Save file on Disk emailAttachmentResponse = [[ASPOSEEmailAttachmentResponse alloc] init]; emailAttachmentResponse.localFilePath = [ASPOSEFolder saveFile:responseData withName:@"License.txt"]; } }
+[ASPOSEApp setAppKey:@"Get it from https://cloud.aspose.com" andAppSID:@"Get it from https://cloud.aspose.com"]; [ASPOSEProduct setBaseProductUri:@"http://api.aspose.com/v1.1"]; NSString \*EMAIL_URI = [[ASPOSEProduct baseProductUri] stringByAppendingString:@"/email/"]; NSString \*fileName = @"Self Assessment.eml"; NSString \*attachmentName = @"License.txt"; //build URL NSString \*strURL = [NSString stringWithFormat:@"%@%@/attachments/%@", EMAIL_URI, [fileName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], [attachmentName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]; //sign URL NSString \*signedURL = [ASPOSEUtils sign:strURL]; NSData \*responseData = [ASPOSEUtils processCommand:signedURL httpMethod:@"GET"]; //Parsing JSON if(responseData) { NSError \*error; emailAttachmentResponse = [[ASPOSEEmailAttachmentResponse alloc] initWithData:responseData error:&error]; if(emailAttachmentResponse == nil) { //Save file on Disk emailAttachmentResponse = [[ASPOSEEmailAttachmentResponse alloc] init]; emailAttachmentResponse.localFilePath = [ASPOSEFolder saveFile:responseData withName:@"License.txt"]; } }
 
 ```
 {{< /tab >}}
@@ -122,7 +122,7 @@ How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/).
 
 ```java
 
-curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml/attachments/README.TXT?appSID=XXXX&signature=XXXX" \
+curl -v "http://api.aspose.cloud/v1.1/email/email_test2.eml/attachments/README.TXT?appSID=XXXX&signature=XXXX" \
      -X GET \
      -H "Content-Type: application/json" \
      -H "Accept: application/json"
@@ -167,7 +167,7 @@ Attachment
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-email" "3f41448648db89803193189f274722fa" "Examples-Ruby-Attachments-get\_email\_attachment\_by\_name-.rb" >}}
+{{< gist "aspose-email" "3f41448648db89803193189f274722fa" "Examples-Ruby-Attachments-get_email_attachment_by_name-.rb" >}}
 
 {{< /tab >}}
 

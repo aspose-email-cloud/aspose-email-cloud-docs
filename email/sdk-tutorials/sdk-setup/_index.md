@@ -107,7 +107,7 @@ Use gem:
 
 ```plain
 
-gem install aspose\_email\_cloud
+gem install aspose_email_cloud
 
 ```
 
@@ -145,13 +145,13 @@ Simply put, **app Key** is a login and **app SID** is a password. You can cr
 
 Here, you see the example of the apps’ statistics. In the APP column, you can see from which application was a request, also, there are details, size and sender’s IP address of a request.
 
-![todo:image\_alt\_text](sdk-setup_1.png)
+![todo:image_alt_text](sdk-setup_1.png)
 
 **App Key** and **app SID** are used to get the temporary **JWT token**, which provides access to the API methods of Aspose.Email Cloud. These tokens can be seen in curl requests generated in the [Swagger UI](https://apireference.aspose.cloud/email/).
 
 {{% alert color="primary" %}}
 Here you can see a screenshot of the Curl with JWT token:
-![todo:image\_alt\_text](sdk-setup_3.png)
+![todo:image_alt_text](sdk-setup_3.png)
 {{% /alert %}}
 
 Our SDKs do not require you to receive these tokens again and again as they become obsolete. Instead, the **EmailApi** class stores **app Key** and **app SID** in itself and receive a token by itself. If the token is out of date, Aspose.Email SDKs automatically receive a new one.
@@ -242,7 +242,7 @@ from AsposeEmailCloudSdk.models import requests
 
 ...
 
-email\_api = api.EmailApi("app\_key", "app\_sid")
+email_api = api.EmailApi("app_key", "app_sid")
 
 ```
 
