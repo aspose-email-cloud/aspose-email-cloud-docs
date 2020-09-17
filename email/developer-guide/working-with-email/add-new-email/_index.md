@@ -326,13 +326,9 @@ How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/).
 ```java
 
 curl -v "http://api.aspose.cloud/v1.1/email/email\_test2.eml?appSID=XXXX&signature=XXXX" \
-
      -X PUT \
-
     -d '{"DocumentProperties": {"List": [{"Name": "Body", "Value": "This is body"}, {"Name": "To", "Value": "developer@aspose.com"}, {"Name": "From", "Value": "sales@aspose.com"}]}, "Format": "eml"}' \
-
      -H "Content-Type: application/json" \
-
      -H "Accept: application/json"
 
 ```
