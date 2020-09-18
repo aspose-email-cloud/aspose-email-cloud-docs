@@ -1,0 +1,327 @@
+---
+title: "Set Message Property"
+type: docs
+url: /set-message-property/
+weight: 20
+---
+
+## **Introduction**
+This example allows you to set an email's property using Aspose.Email for Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
+## **REST Methods References**
+We're referring some common methods in the REST examples to perform general operations. These methods can be found at the following page: [REST API Methods](https://apireference.aspose.cloud/email)
+## **REST Examples**
+{{< tabs tabTotal="3" tabID="1" tabName1="C#" 
+tabName2="Android" tabName3="Objective C" >}}
+{{< tab tabNum="1" >}}
+```java
+
+// Initialize variables being used
+
+string appSid = "Get it from https://cloud.aspose.com";
+
+string appKey = "Get it from https://cloud.aspose.com";
+
+/// <summary>
+
+/// Set document property.
+
+/// </summary>
+
+/// <param name="name">File name. e.g. myEmail.msg</param>
+
+/// <param name="propertyName">Property Name</param>
+
+/// <param name="property">EmailProperty object</param>
+
+/// <param name="folder">Folder path.</param>
+
+/// <param name="storage">The document storage.</param>
+
+string name; string propertyName; EmailProperty property; string folder; string storage = "";
+
+// Build URI to perform request. ServiceController is located in Aspose.Cloud.Common in .NET SDK Source code available at http://goo.gl/BftpIi
+
+string apiUrl = string.Format(@"email/{0}/properties/{1}?storage={2}&folder={3}", name, propertyName, storage, folder);
+
+ServiceController.Put(apiUrl, appSid, appKey, JsonConvert.SerializeObject(property));
+
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```java
+
+' Initialize variables being used
+
+Dim appSid As String = "Get it from https://cloud.aspose.com"
+
+Dim appKey As String = "Get it from https://cloud.aspose.com"
+
+''' <summary>
+
+''' Set document property.
+
+''' </summary>
+
+''' <param name="name">File name. e.g. myEmail.msg</param>
+
+''' <param name="propertyName">Property Name</param>
+
+''' <param name="property">EmailProperty object</param>
+
+''' <param name="folder">Folder path.</param>
+
+''' <param name="storage">The document storage.</param>
+
+Dim name As String
+
+Dim propertyName As String
+
+Dim [property] As EmailProperty
+
+Dim folder As String
+
+Dim storage As String = ""
+
+' Build URI to perform request. ServiceController is located in Aspose.Cloud.Common in .NET SDK Source code available at http://goo.gl/BftpIi
+
+Dim apiUrl As String = String.Format("email/{0}/properties/{1}?storage={2}&folder={3}", name, propertyName, storage, folder)
+
+ServiceController.Put(apiUrl, appSid, appKey, JsonConvert.SerializeObject([property]))
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+```java
+
+AsposeApp.setAppKeyAndAppSID("Get it from https://cloud.aspose.com", "Get it from https://cloud.aspose.com");
+
+AsposeApp.setBaseProductURI("http://api.aspose.com/v1.1");
+
+String EMAIL_URI = AsposeApp.BASE_PRODUCT_URI + "/email/";
+
+boolean isPropertyUpdated = false;
+
+String fileName = "Message.msg";
+
+String propertyName = "Body";
+
+String propertyValue = "New body text";
+
+//build URL
+
+String strURL = EMAIL_URI + Uri.encode(fileName) + "/properties/" + Uri.encode(propertyName);
+
+//sign URL
+
+String signedURL = Utils.sign(strURL);
+
+EmailProperty emailProperty = new EmailProperty();
+
+emailProperty.name = propertyName;
+
+emailProperty.value = propertyValue;
+
+//Encoding to JSON
+
+Gson gson = new Gson();
+
+String jsonStr = gson.toJson(emailProperty);
+
+InputStream responseStream = Utils.processCommand(signedURL, "PUT", jsonStr);
+
+String responseStr = Utils.streamToString(responseStream);
+
+//Parsing JSON
+
+EmailPropertyResponse emailPropertyResponse = gson.fromJson(responseStr, EmailPropertyResponse.class);
+
+if(emailPropertyResponse.getCode().equals("200") && emailPropertyResponse.getStatus().equals("OK")) {
+
+    isPropertyUpdated = true;
+
+}
+
+
+```
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+```java
+
+[ASPOSEApp setAppKey:@"Get it from https://cloud.aspose.com" andAppSID:@"Get it from https://cloud.aspose.com"];
+
+[ASPOSEProduct setBaseProductUri:@"http://api.aspose.com/v1.1"];
+
+NSString \*EMAIL_URI = [[ASPOSEProduct baseProductUri] stringByAppendingString:@"/email/"];
+
+BOOL isPropertyUpdated = NO;
+
+NSString \*fileName = @"Self Assessment.eml";
+
+NSString \*propertyName = @"Body";
+
+NSString \*propertyValue = @"New body text";
+
+//build URL
+
+NSString \*strURL = [NSString stringWithFormat:@"%@%@/properties/%@", EMAIL_URI,
+
+                    [fileName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], propertyName];
+
+ASPOSEEmailProperty \*emailProperty =  [[ASPOSEEmailProperty alloc] init];
+
+emailProperty.name = propertyName;
+
+emailProperty.value = propertyValue;
+
+NSString \*requestJSONString = [emailProperty toJSONString];
+
+//sign URL
+
+NSString \*signedURL = [ASPOSEUtils sign:strURL];
+
+NSData \*responseData = [ASPOSEUtils processCommand:signedURL httpMethod:@"PUT" content:requestJSONString contentType:CONTENT_TYPE_JSON];
+
+//Parsing JSON
+
+if(responseData) {
+
+    NSError \*error;
+
+    ASPOSEEmailPropertyResponse \*emailPropertyResponse = [[ASPOSEEmailPropertyResponse alloc] initWithData:responseData error:&error];
+
+    if(!error && [emailPropertyResponse.code isEqualToString:@"200"] && [emailPropertyResponse.status isEqualToString:@"OK"]) {
+
+        isPropertyUpdated = YES;
+
+    }
+
+}
+
+
+```
+{{< /tab >}}
+
+{{< /tabs >}}
+
+## **Setup Aspose.Email Cloud SDK**
+Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Checkout our [GitHub repository](https://github.com/aspose-email-cloud) for a complete list of Aspose.Email SDKs along with working examples.
+
+{{% alert color="primary" %}} 
+
+How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/). 
+
+{{% /alert %}}
+## **cURL Example**
+{{< tabs tabTotal="2" tabID="16" tabName1="Request" tabName2="Response" >}}
+
+{{< tab tabNum="1" >}}
+
+```java
+
+curl -v "http://api.aspose.cloud/v1.1/email/email_test.eml/properties/Subject?appSID=XXXX&signature=XXXX" \
+     -X PUT \
+     -d '{"Name": "Subject", "Value": "This is a new subject"}' \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+
+{
+
+  "EmailProperty": {
+
+    "Link": {
+
+      "Href": "http://api.aspose.cloud/v1.1/email/email_test.eml/documentproperties/Subject",
+
+      "Rel": "self",
+
+      "Type": null,
+
+      "Title": null
+
+    },
+
+    "Name": "Subject",
+
+    "Value": "This is a new subject"
+
+  },
+
+  "Code": 200,
+
+  "Status": "OK"
+
+}
+
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+## **SDK Examples**
+**Set message property**
+
+{{< tabs tabTotal="9" tabID="19" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Objective C" tabName9="Perl" >}}
+
+{{< tab tabNum="1" >}}
+
+{{< gist "aspose-email" "838d7478e3720f941514d3d04417e82e" "Examples-DotNET-CSharp-Email-Properties-SetMessageProperty-1.cs" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+{{< gist "aspose-email" "10428737982c525bf33b54ad9c27b707" "Examples-JAVA-SDK-src-main-java-com-aspose-email-cloud-properties-SetMessagePropertyExample-SetMessagePropertyExample.java" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+{{< gist "aspose-email" "3f41448648db89803193189f274722fa" "Examples-Ruby-EmailProperties-set_email_property-.rb" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+{{< gist "aspose-email" "13478a90f198800bfcdafa983dbd0fcd" "SetMessageProperty.py" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+{{< gist "aspose-email" "838d7478e3720f941514d3d04417e82e" "Examples-Node.js-Email-Properties-SetMessageProperty-1.js" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+{{< gist "aspose-email" "95a576636fc5c03e126e2617c83ce117" "Examples-Android-app-src-main-java-com-aspose-email-cloud-examples-working-properties-SetMessagePropertyExample-SetMessagePropertyExample.java" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="9" >}}
+
+{{< gist "aspose-email" "838d7478e3720f941514d3d04417e82e" "Examples-Perl-Email-Properties-SetMessageProperty-1.pl" >}}
+
+{{< /tab >}}
+
+{{< /tabs >}}
