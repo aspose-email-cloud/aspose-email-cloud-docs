@@ -601,4 +601,4 @@ $this->assertEquals("Cane", $surname->getValue());
 
 ## **More Tutorials**
 See more Aspose Email Tutorials: 
-[Tutorials]({{< ref "emailcloud/sdk-tutorials/" >}})
+[Tutorials]({{< ref "email/sdk-tutorials/" >}})
