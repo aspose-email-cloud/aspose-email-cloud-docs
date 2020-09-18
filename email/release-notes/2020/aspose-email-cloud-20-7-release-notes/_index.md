@@ -2,7 +2,7 @@
 title: "Aspose.Email Cloud 20.7 Release Notes"
 type: docs
 url: /aspose-email-cloud-20-7-release-notes/
-weight: 10
+weight: 130
 ---
 
 ## **New features**
