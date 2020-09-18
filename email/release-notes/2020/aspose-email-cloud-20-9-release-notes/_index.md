@@ -21,30 +21,30 @@ All SDKs were completely redesigned:
 
 - EmailApi class replaced by EmailCloud.
 - All methods were split into groups and renamed. Now it is much easier to find the function you need. For example:
-```cs
-var emailMessage = new EmailDto();
-...
-//Previous versions:
-var mapiStream = api.ConvertEmailModelToFile(
-    new ConvertEmailModelToFileRequest(
-        "Msg", emailMessage));
- 
-//v4.0 based SDK:
-var mapiStream = cloud.Email.AsFile(
-    new EmailAsFileRequest("Msg", emailMessage));
-```
+    ```cs
+    var emailMessage = new EmailDto();
+    ...
+    //Previous versions:
+    var mapiStream = api.ConvertEmailModelToFile(
+        new ConvertEmailModelToFileRequest(
+            "Msg", emailMessage));
+    
+    //v4.0 based SDK:
+    var mapiStream = cloud.Email.AsFile(
+        new EmailAsFileRequest("Msg", emailMessage));
+    ```
 - Request models now stored in the same folder as all other models. So you don't have to guess which namespace should be used. Also, there is no unnecessary double wrapping of models anymore:
-```cs
-//Previous versions:
-await api.SaveEmailClientAccountAsync(new SaveEmailClientAccountRequest(
-    //StorageFileRqOfEmailClientAccount model is an unnecessary second wrapping here:
-    new StorageFileRqOfEmailClientAccount(
-        emailClientAccount,
-        new StorageFileLocation(StorageName, Folder, fileName))));
-//v4.0 based SDK:
-await cloud.Client.Account.SaveAsync(new ClientAccountSaveRequest(
-new StorageFileLocation(StorageName, Folder, fileName), emailClientAccount));
-```
+    ```cs
+    //Previous versions:
+    await api.SaveEmailClientAccountAsync(new SaveEmailClientAccountRequest(
+        //StorageFileRqOfEmailClientAccount model is an unnecessary second wrapping here:
+        new StorageFileRqOfEmailClientAccount(
+            emailClientAccount,
+            new StorageFileLocation(StorageName, Folder, fileName))));
+    //v4.0 based SDK:
+    await cloud.Client.Account.SaveAsync(new ClientAccountSaveRequest(
+    new StorageFileLocation(StorageName, Folder, fileName), emailClientAccount));
+    ```
 - Model inheritance discriminators using improved.
 - Ruby model constructors now use named arguments instead of positional.
 - Typescript functions now return the result without any extra HTTP data.
