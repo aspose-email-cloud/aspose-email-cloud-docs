@@ -2,7 +2,7 @@
 title: "Business Cards Recognition"
 type: docs
 url: /business-cards-recognition/
-weight: 10
+weight: 15
 ---
 
 ## **Introduction**
