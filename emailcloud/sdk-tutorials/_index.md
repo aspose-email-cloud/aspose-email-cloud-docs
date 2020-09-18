@@ -14,3 +14,4 @@ weight: 20
 - [Email Client Threads](/emailcloud/email-client-threads/)
 - [Convert Email, Calendar and Contact Files](/emailcloud/convert-email-2c-calendar-and-contact-files/)
 - [Introduction to MAPI Message Files API](/emailcloud/introduction-to-mapi-message-files-api/)
+- [Business Cards Recognition](/emailcloud/business-cards-recognition/)

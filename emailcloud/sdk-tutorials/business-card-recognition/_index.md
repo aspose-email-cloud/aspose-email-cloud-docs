@@ -304,3 +304,4 @@ $fileContent = $contactTempFile->fread($contactTempFile->getSize());
 
 ## **More Tutorials**
 See more Aspose Email Tutorials: 
+[Tutorials]({{< ref "emailcloud/sdk-tutorials/" >}})
