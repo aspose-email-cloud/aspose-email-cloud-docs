@@ -12,7 +12,7 @@ weight: 15
 
 {{% alert color="primary" %}} 
 
-If you want to know more about working with **VCard files** — take a look at the Aspose Email Cloud tutorial: [**Quick Start With VCard API**](/emailcloud/quick-start-with-vcard-api/).
+If you want to know more about working with **VCard files** — take a look at the Aspose Email Cloud tutorial: [**Quick Start With VCard API**](/email/quick-start-with-vcard-api/).
 
 {{% /alert %}} 
 
@@ -24,11 +24,11 @@ The following image depicts a conversion flow from a business card to vCard form
 
 {{% alert color="primary" %}}
 
-To see how to setup SDKs use the [SDK setup tutorial](/emailcloud/sdk-setup/).
+To see how to setup SDKs use the [SDK setup tutorial](/email/sdk-setup/).
 
 {{% /alert %}} 
 
-## **Parse business card image to VCard**
+## **Parse Business Card Image to VCard**
 
 {{< tabs tabTotal="6" tabID="2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -115,7 +115,7 @@ $displayName = $contact->getDisplayName();
 {{< /tabs >}}
 
 
-## **Image located on Storage**
+## **Image Located on Storage**
 Please try using [**ParseStorage**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AiBcrApi.md#ParseStorage) method from [**AiBcrApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AiBcrApi.md) to recognize VCard from an image located on storage.
 
 {{< tabs tabTotal="6" tabID="1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
@@ -304,4 +304,4 @@ $fileContent = $contactTempFile->fread($contactTempFile->getSize());
 
 ## **More Tutorials**
 See more Aspose Email Tutorials: 
-[Tutorials]({{< ref "email/sdk-tutorials/" >}})
+{{< list-of-articles-in-this-section >}}

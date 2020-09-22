@@ -7,11 +7,11 @@ weight: 40
 ---
 
 ## **iCalendar API**
-[Aspose.Email Cloud API](https://products.aspose.cloud/email/family) supports working with iCalendar files. You can use our API to read, edit and save iCalendar (.ics) files. Also, you can convert them to [**AlternateView**](/emailcloud/icalendar-to-alternateview-converter/) and add them to email messages.
+[Aspose.Email Cloud API](https://products.aspose.cloud/email/family) supports working with iCalendar files. You can use our API to read, edit and save iCalendar (.ics) files. Also, you can convert them to [**AlternateView**](/email/icalendar-to-alternateview-converter/) and add them to email messages.
 
 Our SDKs support two different ways of operating with iCalendar files using **MapiCalendarDto** and **CalendarDto**. This tutorial shows how to use **CalendarDto**.
 
-{{% alert color="primary" %}} To see how to setup SDKs use the [SDK setup](/emailcloud/sdk-setup/) tutorial. {{% /alert %}} 
+{{% alert color="primary" %}} To see how to setup SDKs use the [SDK setup](/email/sdk-setup/) tutorial. {{% /alert %}} 
 
 
 ## **Create Calendar File Object and Save It to Storage**
@@ -343,7 +343,7 @@ We also provide API methods for converting **CalendarDto** to an **AlternateView
 
 {{% alert color="primary" %}} 
 
-To get more information about built-in email client — take a look at the [Email Client tutorial](/emailcloud/quick-start-with-email-client/).
+To get more information about built-in email client — take a look at the [Email Client tutorial](/email/quick-start-with-email-client/).
 
 {{% /alert %}} 
 
@@ -686,3 +686,4 @@ $calendarList = $api->calendar()->getList(
 
 ## **More Tutorials**
 See more Aspose Email tutorials: 
+{{< list-of-articles-in-this-section >}}

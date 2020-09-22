@@ -9,7 +9,7 @@ weight: 60
 ## **Work With Email Configuration**
 This is an automated email configuration discovery API. It performs more than 5 different configuration discovery methods simultaneously to support the maximum count of email providers. You can find an email server's configuration with 3 different methods.
 
-{{% alert color="primary" %}} To see how to setup SDKs use the [SDK setup](/emailcloud/sdk-setup/) tutorial. {{% /alert %}} 
+{{% alert color="primary" %}} To see how to setup SDKs use the [SDK setup](/email/sdk-setup/) tutorial. {{% /alert %}} 
 
 
 ## **Discover Without Validation**
@@ -340,5 +340,4 @@ $configs = $api->emailConfig()->discoverOauth(
 Provide **login** if it is not same as the address. You can also provide **requestUrl** (an URL to obtain an access token using refresh token). For some servers, **requestUrl** is discovered automatically.
 ## **More Tutorials**
 See more Aspose Email tutorials: 
-
-
+{{< list-of-articles-in-this-section >}}

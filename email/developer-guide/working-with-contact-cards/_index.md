@@ -32,18 +32,18 @@ Improve your applications with [Aspose.Email Cloud API](https://products.aspose
 
 {{% alert color="primary" %}} 
 
-If you want to know more about working with **VCard files** — take a look at the Aspose Email Cloud tutorial: [**Quick Start With VCard API**](/emailcloud/quick-start-with-vcard-api/).
+If you want to know more about working with **VCard files** — take a look at the Aspose Email Cloud tutorial: [**Quick Start With VCard API**](/email/quick-start-with-vcard-api/).
 
 {{% /alert %}} 
 
 
 ## **How to Start Working With Contact Card Files**
 ### **Setup Aspose.Email Cloud SDK**
-Let’s start with setting up [Aspose.Email Cloud SDK](https://products.aspose.cloud/email/family). Read more: [**SDK setup**](/emailcloud/sdk-setup/).
+Let’s start with setting up [Aspose.Email Cloud SDK](https://products.aspose.cloud/email/family). Read more: [**SDK setup**](/email/sdk-setup/).
 
 Please check that everything is working fine before going ahead.
 ### **Work With Contact Card Files via MAPI**
-[Aspose.Email Cloud API](https://products.aspose.cloud/email/family) supports **MAPI**. Please, read more: [**Working with MAPI**](/emailcloud/working-with-mapi/).
+[Aspose.Email Cloud API](https://products.aspose.cloud/email/family) supports **MAPI**. Please, read more: [**Working with MAPI**](/email/working-with-mapi/).
 
 You are able to work with [Aspose.Email Cloud API](https://products.aspose.cloud/email/family) via MAPI to process email messages, **contact cards** and calendars your way. This approach can help you to unify your file processing with [**Aspose Storage**](https://dashboard.aspose.cloud/#/storages).
 
@@ -68,11 +68,11 @@ VCard **Model API** supports to:
 
 {{% alert color="primary" %}} 
 
-Find more examples here: [**How To Operate VCard Using Model API**](/emailcloud/how-to-operate-vcard-using-model-api/).
+Find more examples here: [**How To Operate VCard Using Model API**](/email/how-to-operate-vcard-using-model-api/).
 
 {{% /alert %}} 
 ### **Operate VCard Using Property Sets**
-The second way — operating contact card (VCard) files as property sets. Find an example here: [Read Contact Document Properties](/emailcloud/read-contact-document-properties/).
+The second way — operating contact card (VCard) files as property sets. Find an example here: [Read Contact Document Properties](/email/read-contact-document-properties/).
 
 {{% alert color="primary" %}} 
 
@@ -86,7 +86,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{% alert color="primary" %}} 
 
-How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/).
+How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/email/sdk-setup/).
 
 {{% /alert %}} 
 
@@ -94,8 +94,8 @@ How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/).
 ## **Articles in This Section**
 Please take a look at the following examples to see how it works:
 
-- [Business Cards Recognition API](/emailcloud/business-cards-recognition-api/)
-- [Create VCard File](/emailcloud/create-vcard-file/)
-- [Parse Image To VCard File](/emailcloud/parse-image-to-vcard-file/)
-- [Read Contact Document Properties](/emailcloud/read-contact-document-properties/)
-- [Save VCard File](/emailcloud/save-vcard-file/)
+- [Business Cards Recognition API](/email/business-cards-recognition-api/)
+- [Create VCard File](/email/create-vcard-file/)
+- [Parse Image To VCard File](/email/parse-image-to-vcard-file/)
+- [Read Contact Document Properties](/email/read-contact-document-properties/)
+- [Save VCard File](/email/save-vcard-file/)

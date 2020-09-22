@@ -23,14 +23,14 @@ Using threads, you can easily structure emails in the mailbox. Instead of workin
 
 ![todo:image_alt_text](email-client-threads_1.png)
 ## **Built-In Email Client**
-[**Aspose.Email Cloud API**](https://products.aspose.cloud/email/family) provides a [built-in email client](/emailcloud/email-client/) with a unified API, which supports different account types like **SMTP**, **POP3**, **IMAP**, **EWS**.
+[**Aspose.Email Cloud API**](https://products.aspose.cloud/email/family) provides a [built-in email client](/email/email-client/) with a unified API, which supports different account types like **SMTP**, **POP3**, **IMAP**, **EWS**.
 
 
 
 {{% alert color="primary" %}} 
 
-- Setup SDK, using tutorial: [**SDK setup**](/emailcloud/sdk-setup/).
-- Setup your email client accounts, using tutorial: [**Quick Start With Email Client**](/emailcloud/quick-start-with-email-client/).
+- Setup SDK, using tutorial: [**SDK setup**](/email/sdk-setup/).
+- Setup your email client accounts, using tutorial: [**Quick Start With Email Client**](/email/quick-start-with-email-client/).
 
 {{% /alert %}} 
 
@@ -42,7 +42,7 @@ Threads support by protocols:
 - **WebDav**: threads are not supported.
 - **Virtual Multi-account**: gets threads from underlying accounts and provides them as is.
 ## **Thread Support using Message Cache**
-Aspose.Email Cloud [built-in email client](/emailcloud/email-client/) supports native threads for **EWS** accounts. For **POP3** and **IMAP** accounts we provide this functionality using our own threads implementation. This implementation uses messages’ cache, located on [Aspose Storage](https://apireference.aspose.cloud/storage/) and our own threads algorithm, which generates threads based on message subject and participants.
+Aspose.Email Cloud [built-in email client](/email/email-client/) supports native threads for **EWS** accounts. For **POP3** and **IMAP** accounts we provide this functionality using our own threads implementation. This implementation uses messages’ cache, located on [Aspose Storage](https://apireference.aspose.cloud/storage/) and our own threads algorithm, which generates threads based on message subject and participants.
 
 Native threads for **IMAP** will be added in future versions. Message cache will still be used for **IMAP** accounts if the **IMAP** server does not provide native threads.
 
@@ -565,5 +565,4 @@ $api->client()->thread()->move(
 {{< /tabs >}}
 ## **More Tutorials**
 See more Aspose Email tutorials: 
-
-
+{{< list-of-articles-in-this-section >}}

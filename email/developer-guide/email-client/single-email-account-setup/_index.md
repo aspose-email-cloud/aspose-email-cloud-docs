@@ -21,7 +21,7 @@ You don't need to create **\*.account** file directly, you can do it via Aspose
 
 {{% alert color="primary" %}} 
 
-If you want to know more about working with **Email Client** — take a look at the Aspose Email Cloud tutorial: [**Quick Start With Email Client**](/emailcloud/quick-start-with-email-client/).
+If you want to know more about working with **Email Client** — take a look at the Aspose Email Cloud tutorial: [**Quick Start With Email Client**](/email/quick-start-with-email-client/).
 
 {{% /alert %}} 
 ## **Save email account using Swagger-UI**
@@ -127,6 +127,6 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{% alert color="primary" %}} 
 
-How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/).
+How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/email/sdk-setup/).
 
 {{% /alert %}}

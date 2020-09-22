@@ -366,7 +366,7 @@ MapiContactDto:
 
 {{% alert color="primary" %}} 
 
-To see how to set up SDKs use the [SDK setup](/emailcloud/sdk-setup/) tutorial.
+To see how to set up SDKs use the [SDK setup](/email/sdk-setup/) tutorial.
 
 {{% /alert %}} 
 
@@ -2126,3 +2126,4 @@ $this->assertEquals($mapiCalendar->getLocation(), $mapiCalendarFromStorage->getL
 {{< /tabs >}}
 ## **More Tutorials**
 Take a look at other tutorials, you may find answers on your questions there:
+{{< list-of-articles-in-this-section >}}

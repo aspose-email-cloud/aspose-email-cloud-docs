@@ -1,5 +1,5 @@
 ---
-title: "AI powered Name API"
+title: "AI Powered Name API"
 type: docs
 url: /name-api/
 weight: 16
@@ -23,7 +23,7 @@ description: "Process names with Artificial Intelligence functionality called Na
 
 {{% alert color="primary" %}} 
 
-How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/).
+How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/email/sdk-setup/).
 
 {{% /alert %}}
 
@@ -601,4 +601,4 @@ $this->assertEquals("Cane", $surname->getValue());
 
 ## **More Tutorials**
 See more Aspose Email Tutorials: 
-[Tutorials]({{< ref "email/sdk-tutorials/" >}})
+{{< list-of-articles-in-this-section >}}

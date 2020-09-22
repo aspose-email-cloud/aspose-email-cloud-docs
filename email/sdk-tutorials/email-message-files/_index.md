@@ -7,11 +7,11 @@ weight: 20
 ---
 
 ## **How to Work With Email Message Files via Aspose.Email Cloud API**
-[Aspose.Email Cloud API](https://products.aspose.cloud/email/family) supports email message files with EML, MSG, MHTML and HTML format. We have API for creating, editing, converting such files. Also, email message files can be used in the [built-in email client](/emailcloud/email-client/).
+[Aspose.Email Cloud API](https://products.aspose.cloud/email/family) supports email message files with EML, MSG, MHTML and HTML format. We have API for creating, editing, converting such files. Also, email message files can be used in the [built-in email client](/email/email-client/).
 
 Our SDKs support two different ways of operating with email message files using MapiMessageDto and EmailDto. This tutorial shows how to use an **EmailDto**.
 
-{{% alert color="primary" %}} To see how to setup SDKs use the [SDK setup tutorial](/emailcloud/sdk-setup/). {{% /alert %}} 
+{{% alert color="primary" %}} To see how to setup SDKs use the [SDK setup tutorial](/email/sdk-setup/). {{% /alert %}} 
 ## **Email Message Files**
 Simply put, email message files are the files using to exchanging messages between people using electronic devices. Sounds simple, isn’t it? 
 
@@ -420,7 +420,7 @@ We can append this EmailDto object to the "INBOX" folder of an IMAP account:
 
 {{% alert color="primary" %}} 
 
-See how to setup and use email client in the [Quickstart with an email client tutorial](/emailcloud/quick-start-with-email-client/).
+See how to setup and use email client in the [Quickstart with an email client tutorial](/email/quick-start-with-email-client/).
 
 {{% /alert %}} 
 
@@ -617,3 +617,4 @@ $mapi = $api->email()->convert(
 {{< /tabs >}}
 ## **More Tutorials**
 See more Aspose Email tutorials: 
+{{< list-of-articles-in-this-section >}}

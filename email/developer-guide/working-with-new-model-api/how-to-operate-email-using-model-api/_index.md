@@ -20,7 +20,7 @@ Email Model API supports:
 - Fetch message from email account ([FetchEmailModel](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#FetchEmailModel))
 - Get messages from email account folder ([ListEmailModels](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#ListEmailModels))
 
-Create [EmailDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailDto.md) object with [AlternateView](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AlternateView.md). The conversion details can be found over [How to operate iCalendar using Model API](/emailcloud/how-to-operate-icalendar-using-model-api/):
+Create [EmailDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailDto.md) object with [AlternateView](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AlternateView.md). The conversion details can be found over [How to operate iCalendar using Model API](/email/how-to-operate-icalendar-using-model-api/):
 
 
 
@@ -34,7 +34,7 @@ The email variable now represents an email message with iCalendar in it. This em
 
 {{< gist "aspose-cloud" "e50bc177cb788e499fd13c27b55d762e" "Examples-DotNET-CSharp-Email-Save-Email-As-EMLFormat-1.cs" >}}
 
-Once an email has been created, the email can be sent to [attendee@aspose.com](/emailcloud/mailto-attendee@aspose-com/) using built-in email client: 
+Once an email has been created, the email can be sent to [attendee@aspose.com](/email/mailto-attendee@aspose-com/) using built-in email client: 
 
 **Send email using builtin client**
 
@@ -44,6 +44,6 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{% alert color="primary" %}} 
 
-How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/).
+How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/email/sdk-setup/).
 
 {{% /alert %}}

@@ -8,7 +8,7 @@ weight: 30
 ---
 
 ## **Introduction**
-Starting with the release of [Aspose.Email Cloud 20.1](/emailcloud/aspose-email-cloud-20-1-release-notes/), we have introduced the capability to convert iCalendar to AlternateView.
+Starting with the release of [Aspose.Email Cloud 20.1](/email/aspose-email-cloud-20-1-release-notes/), we have introduced the capability to convert iCalendar to AlternateView.
 
 {{% alert color="primary" %}}  [AlternateView](https://docs.microsoft.com/en-us/dotnet/api/system.net.mail.alternateview?view=netframework-4.8) specifies copies of an email message in different formats. For example, if you send a message in HTML, you might also want to provide a plain text version in case some of the recipients use email readers that cannot display HTML content. {{% /alert %}} 
 
@@ -22,7 +22,7 @@ Once the email message has been converted to AlternateView, it can easily be at
 
 {{% alert color="primary" %}} 
 
-If you want to know more about working with **iCalendar files** — take a look at the Aspose Email Cloud tutorial: [**Quick Start With iCalendar API**](/emailcloud/quick-start-with-icalendar-api/).
+If you want to know more about working with **iCalendar files** — take a look at the Aspose Email Cloud tutorial: [**Quick Start With iCalendar API**](/email/quick-start-with-icalendar-api/).
 
 {{% /alert %}} 
 
@@ -62,6 +62,6 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{% alert color="primary" %}} 
 
-How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/).
+How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/email/sdk-setup/).
 
 {{% /alert %}}

@@ -6,11 +6,11 @@ weight: 30
 ---
 
 ## **Parse an image to VCard file**
-Aspose.Email Cloud API allows you to parse an image to VCard file using [**ContactDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactDto.md) and [**The Business Card Recognition**](/emailcloud/business-cards-recognition-api/).
+Aspose.Email Cloud API allows you to parse an image to VCard file using [**ContactDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactDto.md) and [**The Business Card Recognition**](/email/business-cards-recognition-api/).
 
 {{% alert color="primary" %}} 
 
-If you want to know more about working with **VCard files** — take a look at the Aspose Email Cloud tutorial: [**Quick Start With VCard API**](/emailcloud/quick-start-with-vcard-api/).
+If you want to know more about working with **VCard files** — take a look at the Aspose Email Cloud tutorial: [**Quick Start With VCard API**](/email/quick-start-with-vcard-api/).
 
 {{% /alert %}} 
 ## **API Information**
@@ -152,6 +152,6 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{% alert color="primary" %}} 
 
-How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/).
+How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/email/sdk-setup/).
 
 {{% /alert %}}

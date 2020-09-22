@@ -1,5 +1,5 @@
 ---
-title: "SDK setup"
+title: "SDK Setup"
 type: docs
 url: /sdk-setup/
 description: " Instructions on how to setup Aspose.Email Cloud SDK. How to setup Cloud SDK for .NET, Java, PHP, Python, Ruby, Node.js."
@@ -253,7 +253,7 @@ $api = new EmailCloud($configuration);
 Our SDK automatically gets API token using your **AppKey** and **AppSid**. Also, it automatically gets a new token, if previous one is expired.
 
 ## **Check Everything Works**
-After setting up Aspose.Email Cloud API SDK, it's time to start using it. The API has numerous functions for working with email messages, calendars, contacts, etc.. Also, the API includes AI functions such as the [Business Card Recognition API](/emailcloud/business-cards-recognition-api/) and [Name API](/emailcloud/working-with-name-api/). These features will facilitate and speed up the development of your application. 
+After setting up Aspose.Email Cloud API SDK, it's time to start using it. The API has numerous functions for working with email messages, calendars, contacts, etc.. Also, the API includes AI functions such as the [Business Card Recognition API](/email/business-cards-recognition-api/) and [Name API](/email/working-with-name-api/). These features will facilitate and speed up the development of your application. 
 
 Let’s call some SDK methods to see that everything set up properly. For example, you can easily convert an **EML** file to **MSG** format with our API.
 
@@ -340,3 +340,4 @@ You can use the trial version of the Aspose.Email Cloud API to try it out. The t
 *Don't be shy to ask questions on our [free forum](https://forum.aspose.cloud/c/email) or the [special paid forum for our customers](https://helpdesk.aspose.cloud), we will answer as soon as possible and help to solve your problems.*
 ## **See More Tutorials**
 Take a look at other tutorials, you may find answers on your questions there:
+{{< list-of-articles-in-this-section >}}

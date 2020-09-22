@@ -27,7 +27,7 @@ Using API for conversation threads you can:
 - move thread to another folder
 - delete thread
 
-More details are available in the [**Tutorial**](/emailcloud/email-client-threads/).
+More details are available in the [**Tutorial**](/email/email-client-threads/).
 ## **2. Extended file converting API**
 The most popular method in Aspose.Email Cloud API is ConvertEmail. This method converts email documents from one format to another. We have extended the file converting API and added new methods:
 
@@ -38,6 +38,6 @@ The most popular method in Aspose.Email Cloud API is ConvertEmail. This method c
 
 We hope you will like these new methods as much as you like ConvertEmail.
 
-More details are available in the [**Tutorial**](/emailcloud/convert-email-calendar-and-contact-files/).
+More details are available in the [**Tutorial**](/email/convert-email-calendar-and-contact-files/).
 ## **Documentation Improvements**
-We have prepared new tutorials to help you get started with Aspose.Email Cloud SDK. All tutorials are available here: [**SDK Tutorials**](/emailcloud/sdk-tutorials/).
+We have prepared new tutorials to help you get started with Aspose.Email Cloud SDK. All tutorials are available here: [**SDK Tutorials**](/email/sdk-tutorials/).

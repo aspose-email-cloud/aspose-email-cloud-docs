@@ -11,7 +11,7 @@ weight: 50
 
 The SDKs support two different ways of operating with VCard files using **MapiContactDto** and **ContactDto**. This tutorial shows how to use **ContactDto**.
 
-{{% alert color="primary" %}} To see how to setup SDKs use the [SDK setup](/emailcloud/sdk-setup/) tutorial. {{% /alert %}} 
+{{% alert color="primary" %}} To see how to setup SDKs use the [SDK setup](/email/sdk-setup/) tutorial. {{% /alert %}} 
 ## **How to Create Contact File Object and Save It to Storage**
 **ContactDto** object contains all contact’s information such as gender, surname, email addresses, phone numbers, etc.
 
@@ -346,7 +346,7 @@ $contactDto = api->contact()->get(new ContactGetRequest(
 You can change model fields and save it again. The file will be rewritten if you don't change file name and location.
 ## **How to Use Business Card Recognition API**
 
-{{% alert color="primary" %}} To get more information take a look at the [Business Cards Recognition API](/emailcloud/business-cards-recognition-api/). {{% /alert %}} 
+{{% alert color="primary" %}} To get more information take a look at the [Business Cards Recognition API](/email/business-cards-recognition-api/). {{% /alert %}} 
 
 Now, let's use our **Business Card Recognition API**.
 
@@ -515,5 +515,4 @@ $contacts = $api->contact()->getList(new ContactGetListRequest(
 
 ## **More Tutorials**
 See more Aspose Email tutorials: 
-
-
+{{< list-of-articles-in-this-section >}}

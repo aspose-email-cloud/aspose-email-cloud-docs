@@ -9,7 +9,7 @@ weight: 130
 ## **MAPI message files API**
 {{% alert color="primary" %}} 
 
-To see how to work with MAPI Message Files API use the [Introduction to MAPI Message Files API](/emailcloud/introduction-to-mapi-message-files-api/).
+To see how to work with MAPI Message Files API use the [Introduction to MAPI Message Files API](/email/introduction-to-mapi-message-files-api/).
 
 {{% /alert %}} 
 

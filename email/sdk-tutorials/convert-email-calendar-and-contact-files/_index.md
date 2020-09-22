@@ -9,7 +9,7 @@ weight: 80
 ## **Convert Calendar (iCalendar) Files**
 {{% alert color="primary" %}}
 
-This tutorial describes only the file conversion API. To get more information about **iCalendar** API usage see [**iCalendar API Tutorial**](/emailcloud/quick-start-with-icalendar-api/).
+This tutorial describes only the file conversion API. To get more information about **iCalendar** API usage see [**iCalendar API Tutorial**](/email/quick-start-with-icalendar-api/).
 
 {{% /alert %}} 
 
@@ -372,7 +372,7 @@ $this->assertEquals($calendar->getLocation(), $dto->getLocation());
 
 {{% alert color="primary" %}}
 
-This tutorial describes only the file conversion API. To get more information about VCard API usage see [**VCard API Tutorial**](/emailcloud/quick-start-with-vcard-api/).
+This tutorial describes only the file conversion API. To get more information about VCard API usage see [**VCard API Tutorial**](/email/quick-start-with-vcard-api/).
 
 {{% /alert %}} 
 
@@ -574,7 +574,7 @@ $this->assertEquals($contactDto->getSurname(), $dto->getSurname());
 
 {{% alert color="primary" %}}
 
-This tutorial describes only the file conversion API. To get more information about Email messages API usage see [**Email Message Files API Tutorial**](/emailcloud/email-message-files/).
+This tutorial describes only the file conversion API. To get more information about Email messages API usage see [**Email Message Files API Tutorial**](/email/email-message-files/).
 
 {{% /alert %}} 
 
@@ -756,3 +756,4 @@ $this->assertEquals(
 
 ## **More Tutorials**
 See more Aspose Email Tutorials: 
+{{< list-of-articles-in-this-section >}}
