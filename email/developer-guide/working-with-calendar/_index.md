@@ -26,18 +26,18 @@ Let us improve your business with Aspose.Email Cloud API.
 
 {{% alert color="primary" %}} 
 
-If you want to know more about working with **iCalendar files** — take a look at the Aspose Email Cloud tutorial: [**Quick Start With iCalendar API**](/emailcloud/quick-start-with-icalendar-api/).
+If you want to know more about working with **iCalendar files** — take a look at the Aspose Email Cloud tutorial: [**Quick Start With iCalendar API**](/email/quick-start-with-icalendar-api/).
 
 {{% /alert %}} 
 
 
 ## **How to Start Working With iCalendar Files**
 ### **Setup Aspose.Email Cloud SDK**
-First of all, you need to setup [Aspose.Email Cloud SDK](https://products.aspose.cloud/email/family). Read more: [**SDK setup**](/emailcloud/sdk-setup/).
+First of all, you need to setup [Aspose.Email Cloud SDK](https://products.aspose.cloud/email/family). Read more: [**SDK setup**](/email/sdk-setup/).
 
 Don’t forget to check that everything is working before going ahead.
 ### **Work With iCalendar Files via MAPI**
-[Aspose.Email Cloud API](https://products.aspose.cloud/email/family) supports **MAPI**. Please, read more: [**Working with MAPI**](/emailcloud/working-with-mapi/).
+[Aspose.Email Cloud API](https://products.aspose.cloud/email/family) supports **MAPI**. Please, read more: [**Working with MAPI**](/email/working-with-mapi/).
 
 Using MAPI you are able to process email messages, contact cards and calendars. This approach can help you to unify your file processing with [**Aspose Storage**](https://dashboard.aspose.cloud/#/storages).
 ## **Work With iCalendar in Aspose.Email Cloud**
@@ -55,7 +55,7 @@ iCalendar Model API supports to:
 
 {{% alert color="primary" %}} 
 
-Find more examples here: [**How To Operate iCalendar Using Model API**](/emailcloud/how-to-operate-icalendar-using-model-api/).
+Find more examples here: [**How To Operate iCalendar Using Model API**](/email/how-to-operate-icalendar-using-model-api/).
 
 {{% /alert %}} 
 
@@ -79,7 +79,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 
 {{% alert color="primary" %}} 
 
-How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/).
+How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/email/sdk-setup/).
 
 {{% /alert %}} 
 
@@ -87,9 +87,9 @@ How to setup Aspose.Email Cloud SDKs: [**SDK setup**](/emailcloud/sdk-setup/).
 ## **Articles in This Section**
 Please take a look at the following examples to see how it works:
 
-- [CalendarDto Model To Represent iCalendar Files](/emailcloud/calendardto-model-to-represent-icalendar-files/)
-- [Create iCalendar File Using The Property Set](/emailcloud/create-icalendar-file-using-the-property-set/)
-- [iCalendar To AlternateView Converter](/emailcloud/icalendar-to-alternateview-converter/)
-- [Read Calendar Attachment By Name](/emailcloud/read-calendar-attachment-by-name/)
-- [Read Properties For a Calendar](/emailcloud/read-properties-for-a-calendar/)
-- [Update a Calendar Property](/emailcloud/update-a-calendar-property/)
+- [CalendarDto Model To Represent iCalendar Files](/email/calendardto-model-to-represent-icalendar-files/)
+- [Create iCalendar File Using The Property Set](/email/create-icalendar-file-using-the-property-set/)
+- [iCalendar To AlternateView Converter](/email/icalendar-to-alternateview-converter/)
+- [Read Calendar Attachment By Name](/email/read-calendar-attachment-by-name/)
+- [Read Properties For a Calendar](/email/read-properties-for-a-calendar/)
+- [Update a Calendar Property](/email/update-a-calendar-property/)

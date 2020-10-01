@@ -2,7 +2,7 @@
 title: "Aspose.Email Cloud 20.3 Release Notes"
 type: docs
 url: /aspose-email-cloud-20-3-release-notes/
-weight: 30
+weight: 170
 ---
 
 ## **New features**
@@ -19,7 +19,7 @@ Console.WriteLine(isDisposable.Value); //prints true
 
 ```
 
-More languages and examples available in the [Developer Guide](/emailcloud/disposable-emails-detection-api/).
+More languages and examples available in the [Developer Guide](/email/disposable-emails-detection-api/).
 ## **2. Virtual multi email account client**
 We extended the functionality of the built-in email client. Now you can create virtual multi-account to search, fetch and delete messages from several accounts at the same time:
 
@@ -75,7 +75,7 @@ var messages = await emailApi.ListEmailModelsAsync(new ListEmailModelsRequest(
 
 ```
 
-More languages and examples available in the [Developer Guide](/emailcloud/email-client/).
+More languages and examples available in the [Developer Guide](/email/email-client/).
 ## **Other improvements**
 We improved our [apireference](https://apireference.aspose.cloud/email/). For some endpoints, you can see prefilled example values, when you press *"Try it out"* button. We are going to add more examples in future. Now examples available for:
 

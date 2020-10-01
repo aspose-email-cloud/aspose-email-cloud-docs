@@ -2,14 +2,14 @@
 title: "Aspose.Email Cloud 20.7 Release Notes"
 type: docs
 url: /aspose-email-cloud-20-7-release-notes/
-weight: 10
+weight: 130
 ---
 
 ## **New features**
 ## **MAPI message files API**
 {{% alert color="primary" %}} 
 
-To see how to work with MAPI Message Files API use the [Introduction to MAPI Message Files API](/emailcloud/introduction-to-mapi-message-files-api/).
+To see how to work with MAPI Message Files API use the [Introduction to MAPI Message Files API](/email/introduction-to-mapi-message-files-api/).
 
 {{% /alert %}} 
 
