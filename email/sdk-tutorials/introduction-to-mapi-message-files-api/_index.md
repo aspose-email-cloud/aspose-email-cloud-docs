@@ -11,8 +11,7 @@ weight: 90
 
 First of all, the MSG file could be represented as a list of properties. See this JSON example:
 
-<details>
-  <summary>MSG file properties list represented as a JSON array</summary>
+{{< expand-list title="MSG file properties list represented as a JSON array" >}}
 
 ```json
 {
@@ -285,7 +284,7 @@ First of all, the MSG file could be represented as a list of properties. See thi
 }
 ```
 
-</details>
+{{< /expand-list >}}
 
 These properties could contain different values. It could be integers, strings, bytes, multiple strings, and a lot of other data types. All properties are identified using property Descriptors. Aspose.Email Cloud supports different types of property descriptors:
 
