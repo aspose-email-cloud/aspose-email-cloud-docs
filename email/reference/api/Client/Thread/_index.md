@@ -69,7 +69,7 @@ Input parameters:
 
 Description: Delete email thread request.
 
-Type: [**ClientThreadDeleteRequest**](/email/reference-client-thread-delete-request/).
+Type: [**ClientThreadDeleteRequest**](/email/reference-model-client-thread-delete-request/).
 
 {{< tabs tabTotal="6" tabID="client_thread_delete_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -174,7 +174,7 @@ $request = Models::clientThreadDeleteRequest()
 
 Get message threads from folder. All messages are partly fetched (without email body and some other fields).             
 
-Returns [**EmailThreadList**](EmailThreadList.md) model.
+Returns [**EmailThreadList**](/email/reference-model-email-thread-list/) model.
 
 {{< tabs tabTotal="6" tabID="client_thread_get_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -234,7 +234,7 @@ Input parameters:
 
 Description: GetList method request.
 
-Type: [**ClientThreadGetListRequest**](/email/reference-client-thread-get-list-request/).
+Type: [**ClientThreadGetListRequest**](/email/reference-model-client-thread-get-list-request/).
 
 {{< tabs tabTotal="6" tabID="client_thread_get_list_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -322,7 +322,7 @@ $request = Models::ClientThreadGetListRequest()
 
 Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
 
-Returns [**EmailList**](EmailList.md) model.
+Returns [**EmailList**](/email/reference-model-email-list/) model.
 
 {{< tabs tabTotal="6" tabID="client_thread_get_messages_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -382,7 +382,7 @@ Input parameters:
 
 Description: GetMessages method request.
 
-Type: [**ClientThreadGetMessagesRequest**](/email/reference-client-thread-get-messages-request/).
+Type: [**ClientThreadGetMessagesRequest**](/email/reference-model-client-thread-get-messages-request/).
 
 {{< tabs tabTotal="6" tabID="client_thread_get_messages_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -534,7 +534,7 @@ Input parameters:
 
 Description: Move thread request.
 
-Type: [**ClientThreadMoveRequest**](/email/reference-client-thread-move-request/).
+Type: [**ClientThreadMoveRequest**](/email/reference-model-client-thread-move-request/).
 
 {{< tabs tabTotal="6" tabID="client_thread_move_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -697,7 +697,7 @@ Input parameters:
 
 Description: Email account specifier and IsRead flag.
 
-Type: [**ClientThreadSetIsReadRequest**](/email/reference-client-thread-set-is-read-request/).
+Type: [**ClientThreadSetIsReadRequest**](/email/reference-model-client-thread-set-is-read-request/).
 
 {{< tabs tabTotal="6" tabID="client_thread_set_is_read_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 

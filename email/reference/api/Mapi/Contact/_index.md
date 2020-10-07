@@ -11,7 +11,7 @@ MAPI contact operations
 
 Converts MAPI contact model to ContactDto model.             
 
-Returns [**ContactDto**](ContactDto.md) model.
+Returns [**ContactDto**](/email/reference-model-contact-dto/) model.
 
 {{< tabs tabTotal="6" tabID="mapi_contact_as_contact_dto_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -71,7 +71,7 @@ Input parameters:
 
 Description: MAPI contact model to convert.
 
-Type: [**MapiContactDto**](/email/reference-mapi-contact-dto/).
+Type: [**MapiContactDto**](/email/reference-model-mapi-contact-dto/).
 
 {{< tabs tabTotal="6" tabID="mapi_contact_as_contact_dto_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -297,7 +297,7 @@ Input parameters:
 
 Description: MAPI contact model to convert.
 
-Type: [**MapiContactAsFileRequest**](/email/reference-mapi-contact-as-file-request/).
+Type: [**MapiContactAsFileRequest**](/email/reference-model-mapi-contact-as-file-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_contact_as_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -480,7 +480,7 @@ $request = Models::mapiContactAsFileRequest()
 
 Converts contact file to a MAPI model representation.             
 
-Returns [**MapiContactDto**](MapiContactDto.md) model.
+Returns [**MapiContactDto**](/email/reference-model-mapi-contact-dto/) model.
 
 {{< tabs tabTotal="6" tabID="mapi_contact_from_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -540,7 +540,7 @@ Input parameters:
 
 Description: FromFile method request.
 
-Type: [**MapiContactFromFileRequest**](/email/reference-mapi-contact-from-file-request/).
+Type: [**MapiContactFromFileRequest**](/email/reference-model-mapi-contact-from-file-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_contact_from_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -616,7 +616,7 @@ $request = Models::MapiContactFromFileRequest()
 
 Get MAPI contact document.             
 
-Returns [**MapiContactDto**](MapiContactDto.md) model.
+Returns [**MapiContactDto**](/email/reference-model-mapi-contact-dto/) model.
 
 {{< tabs tabTotal="6" tabID="mapi_contact_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -676,7 +676,7 @@ Input parameters:
 
 Description: Get method request.
 
-Type: [**MapiContactGetRequest**](/email/reference-mapi-contact-get-request/).
+Type: [**MapiContactGetRequest**](/email/reference-model-mapi-contact-get-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_contact_get_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -822,7 +822,7 @@ Input parameters:
 
 Description: Create/Update contact request.
 
-Type: [**MapiContactSaveRequest**](/email/reference-mapi-contact-save-request/).
+Type: [**MapiContactSaveRequest**](/email/reference-model-mapi-contact-save-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_contact_save_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 

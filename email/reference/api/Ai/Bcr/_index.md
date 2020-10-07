@@ -11,7 +11,7 @@ AI Business card recognition operations.
 
 Parse images to vCard document models             
 
-Returns [**ContactList**](ContactList.md) model.
+Returns [**ContactList**](/email/reference-model-contact-list/) model.
 
 {{< tabs tabTotal="6" tabID="ai_bcr_parse_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -71,7 +71,7 @@ Input parameters:
 
 Description: Parse method request.
 
-Type: [**AiBcrParseRequest**](/email/reference-ai-bcr-parse-request/).
+Type: [**AiBcrParseRequest**](/email/reference-model-ai-bcr-parse-request/).
 
 {{< tabs tabTotal="6" tabID="ai_bcr_parse_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -159,7 +159,7 @@ $request = Models::AiBcrParseRequest()
 
 Parse images from storage to vCard files             
 
-Returns [**StorageFileLocationList**](StorageFileLocationList.md) model.
+Returns [**StorageFileLocationList**](/email/reference-model-storage-file-location-list/) model.
 
 {{< tabs tabTotal="6" tabID="ai_bcr_parse_storage_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -219,7 +219,7 @@ Input parameters:
 
 Description: Request with images located on storage
 
-Type: [**AiBcrParseStorageRequest**](/email/reference-ai-bcr-parse-storage-request/).
+Type: [**AiBcrParseStorageRequest**](/email/reference-model-ai-bcr-parse-storage-request/).
 
 {{< tabs tabTotal="6" tabID="ai_bcr_parse_storage_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 

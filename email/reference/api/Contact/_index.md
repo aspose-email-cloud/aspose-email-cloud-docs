@@ -71,7 +71,7 @@ Input parameters:
 
 Description: Contact model and format to convert
 
-Type: [**ContactAsFileRequest**](/email/reference-contact-as-file-request/).
+Type: [**ContactAsFileRequest**](/email/reference-model-contact-as-file-request/).
 
 {{< tabs tabTotal="6" tabID="contact_as_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -363,7 +363,7 @@ $request = Models::contactAsFileRequest()
 
 Converts ContactDto to MapiContactDto.             
 
-Returns [**MapiContactDto**](MapiContactDto.md) model.
+Returns [**MapiContactDto**](/email/reference-model-mapi-contact-dto/) model.
 
 {{< tabs tabTotal="6" tabID="contact_as_mapi_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -423,7 +423,7 @@ Input parameters:
 
 Description: Contact model to convert
 
-Type: [**ContactDto**](/email/reference-contact-dto/).
+Type: [**ContactDto**](/email/reference-model-contact-dto/).
 
 {{< tabs tabTotal="6" tabID="contact_as_mapi_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -764,7 +764,7 @@ Input parameters:
 
 Description: Convert method request.
 
-Type: [**ContactConvertRequest**](/email/reference-contact-convert-request/).
+Type: [**ContactConvertRequest**](/email/reference-model-contact-convert-request/).
 
 {{< tabs tabTotal="6" tabID="contact_convert_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -846,7 +846,7 @@ $request = Models::ContactConvertRequest()
 
 Converts contact document to a model representation             
 
-Returns [**ContactDto**](ContactDto.md) model.
+Returns [**ContactDto**](/email/reference-model-contact-dto/) model.
 
 {{< tabs tabTotal="6" tabID="contact_from_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -906,7 +906,7 @@ Input parameters:
 
 Description: FromFile method request.
 
-Type: [**ContactFromFileRequest**](/email/reference-contact-from-file-request/).
+Type: [**ContactFromFileRequest**](/email/reference-model-contact-from-file-request/).
 
 {{< tabs tabTotal="6" tabID="contact_from_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -982,7 +982,7 @@ $request = Models::ContactFromFileRequest()
 
 Get contact document from storage.             
 
-Returns [**ContactDto**](ContactDto.md) model.
+Returns [**ContactDto**](/email/reference-model-contact-dto/) model.
 
 {{< tabs tabTotal="6" tabID="contact_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1042,7 +1042,7 @@ Input parameters:
 
 Description: Get method request.
 
-Type: [**ContactGetRequest**](/email/reference-contact-get-request/).
+Type: [**ContactGetRequest**](/email/reference-model-contact-get-request/).
 
 {{< tabs tabTotal="6" tabID="contact_get_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1190,7 +1190,7 @@ Input parameters:
 
 Description: GetAsFile method request.
 
-Type: [**ContactGetAsFileRequest**](/email/reference-contact-get-as-file-request/).
+Type: [**ContactGetAsFileRequest**](/email/reference-model-contact-get-as-file-request/).
 
 {{< tabs tabTotal="6" tabID="contact_get_as_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1284,7 +1284,7 @@ $request = Models::ContactGetAsFileRequest()
 
 Get contact list from storage folder.             
 
-Returns [**ContactStorageList**](ContactStorageList.md) model.
+Returns [**ContactStorageList**](/email/reference-model-contact-storage-list/) model.
 
 {{< tabs tabTotal="6" tabID="contact_get_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1344,7 +1344,7 @@ Input parameters:
 
 Description: GetList method request.
 
-Type: [**ContactGetListRequest**](/email/reference-contact-get-list-request/).
+Type: [**ContactGetListRequest**](/email/reference-model-contact-get-list-request/).
 
 {{< tabs tabTotal="6" tabID="contact_get_list_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1496,7 +1496,7 @@ Input parameters:
 
 Description: Create/Update contact request.
 
-Type: [**ContactSaveRequest**](/email/reference-contact-save-request/).
+Type: [**ContactSaveRequest**](/email/reference-model-contact-save-request/).
 
 {{< tabs tabTotal="6" tabID="contact_save_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 

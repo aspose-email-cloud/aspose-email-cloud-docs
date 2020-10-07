@@ -11,7 +11,7 @@ Email client message operations.
 
 Add email message to specified folder in email account.             
 
-Returns [**ValueTOfString**](ValueTOfString.md) model.
+Returns [**ValueTOfString**](/email/reference-model-value-t-of-string/) model.
 
 {{< tabs tabTotal="6" tabID="client_message_append_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -71,7 +71,7 @@ Input parameters:
 
 Description: Append email request.
 
-Type: [**ClientMessageAppendRequest**](/email/reference-client-message-append-request/).
+Type: [**ClientMessageAppendRequest**](/email/reference-model-client-message-append-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_append_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -339,7 +339,7 @@ $request = Models::clientMessageAppendRequest()
 
 Add email message from file to specified folder in email account.             
 
-Returns [**ValueTOfString**](ValueTOfString.md) model.
+Returns [**ValueTOfString**](/email/reference-model-value-t-of-string/) model.
 
 {{< tabs tabTotal="6" tabID="client_message_append_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -399,7 +399,7 @@ Input parameters:
 
 Description: AppendFile method request.
 
-Type: [**ClientMessageAppendFileRequest**](/email/reference-client-message-append-file-request/).
+Type: [**ClientMessageAppendFileRequest**](/email/reference-model-client-message-append-file-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_append_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -557,7 +557,7 @@ Input parameters:
 
 Description: Delete message request.
 
-Type: [**ClientMessageDeleteRequest**](/email/reference-client-message-delete-request/).
+Type: [**ClientMessageDeleteRequest**](/email/reference-model-client-message-delete-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_delete_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -662,7 +662,7 @@ $request = Models::clientMessageDeleteRequest()
 
 Fetch message from email account             
 
-Returns [**MailMessageBase**](MailMessageBase.md) model.
+Returns [**MailMessageBase**](/email/reference-model-mail-message-base/) model.
 
 {{< tabs tabTotal="6" tabID="client_message_fetch_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -722,7 +722,7 @@ Input parameters:
 
 Description: Fetch method request.
 
-Type: [**ClientMessageFetchRequest**](/email/reference-client-message-fetch-request/).
+Type: [**ClientMessageFetchRequest**](/email/reference-model-client-message-fetch-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_fetch_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -888,7 +888,7 @@ Input parameters:
 
 Description: FetchFile method request.
 
-Type: [**ClientMessageFetchFileRequest**](/email/reference-client-message-fetch-file-request/).
+Type: [**ClientMessageFetchFileRequest**](/email/reference-model-client-message-fetch-file-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_fetch_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -988,7 +988,7 @@ $request = Models::ClientMessageFetchFileRequest()
 
 Get messages from folder, filtered by query             
 
-Returns [**MailMessageBaseList**](MailMessageBaseList.md) model.
+Returns [**MailMessageBaseList**](/email/reference-model-mail-message-base-list/) model.
 
 {{< tabs tabTotal="6" tabID="client_message_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1048,7 +1048,7 @@ Input parameters:
 
 Description: List method request.
 
-Type: [**ClientMessageListRequest**](/email/reference-client-message-list-request/).
+Type: [**ClientMessageListRequest**](/email/reference-model-client-message-list-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_list_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1218,7 +1218,7 @@ Input parameters:
 
 Description: Move message request.
 
-Type: [**ClientMessageMoveRequest**](/email/reference-client-message-move-request/).
+Type: [**ClientMessageMoveRequest**](/email/reference-model-client-message-move-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_move_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1387,7 +1387,7 @@ Input parameters:
 
 Description: Send email request.
 
-Type: [**ClientMessageSendRequest**](/email/reference-client-message-send-request/).
+Type: [**ClientMessageSendRequest**](/email/reference-model-client-message-send-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_send_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1701,7 +1701,7 @@ Input parameters:
 
 Description: SendFile method request.
 
-Type: [**ClientMessageSendFileRequest**](/email/reference-client-message-send-file-request/).
+Type: [**ClientMessageSendFileRequest**](/email/reference-model-client-message-send-file-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_send_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1853,7 +1853,7 @@ Input parameters:
 
 Description: Delete message request.
 
-Type: [**ClientMessageSetIsReadRequest**](/email/reference-client-message-set-is-read-request/).
+Type: [**ClientMessageSetIsReadRequest**](/email/reference-model-client-message-set-is-read-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_set_is_read_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 

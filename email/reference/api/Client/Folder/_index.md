@@ -69,7 +69,7 @@ Input parameters:
 
 Description: Create folder request
 
-Type: [**ClientFolderCreateRequest**](/email/reference-client-folder-create-request/).
+Type: [**ClientFolderCreateRequest**](/email/reference-model-client-folder-create-request/).
 
 {{< tabs tabTotal="6" tabID="client_folder_create_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -232,7 +232,7 @@ Input parameters:
 
 Description: Delete folder request
 
-Type: [**ClientFolderDeleteRequest**](/email/reference-client-folder-delete-request/).
+Type: [**ClientFolderDeleteRequest**](/email/reference-model-client-folder-delete-request/).
 
 {{< tabs tabTotal="6" tabID="client_folder_delete_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -331,7 +331,7 @@ $request = Models::clientFolderDeleteRequest()
 
 Get folders list in email account             
 
-Returns [**MailServerFolderList**](MailServerFolderList.md) model.
+Returns [**MailServerFolderList**](/email/reference-model-mail-server-folder-list/) model.
 
 {{< tabs tabTotal="6" tabID="client_folder_get_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -391,7 +391,7 @@ Input parameters:
 
 Description: GetList method request.
 
-Type: [**ClientFolderGetListRequest**](/email/reference-client-folder-get-list-request/).
+Type: [**ClientFolderGetListRequest**](/email/reference-model-client-folder-get-list-request/).
 
 {{< tabs tabTotal="6" tabID="client_folder_get_list_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 

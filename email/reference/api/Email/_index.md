@@ -71,7 +71,7 @@ Input parameters:
 
 Description: Email model and format to convert.
 
-Type: [**EmailAsFileRequest**](/email/reference-email-as-file-request/).
+Type: [**EmailAsFileRequest**](/email/reference-model-email-as-file-request/).
 
 {{< tabs tabTotal="6" tabID="email_as_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -287,7 +287,7 @@ $request = Models::emailAsFileRequest()
 
 Converts EmailDto to MapiMessageDto.             
 
-Returns [**MapiMessageDto**](MapiMessageDto.md) model.
+Returns [**MapiMessageDto**](/email/reference-model-mapi-message-dto/) model.
 
 {{< tabs tabTotal="6" tabID="email_as_mapi_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -347,7 +347,7 @@ Input parameters:
 
 Description: Email model to convert
 
-Type: [**EmailDto**](/email/reference-email-dto/).
+Type: [**EmailDto**](/email/reference-model-email-dto/).
 
 {{< tabs tabTotal="6" tabID="email_as_mapi_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -612,7 +612,7 @@ Input parameters:
 
 Description: Convert method request.
 
-Type: [**EmailConvertRequest**](/email/reference-email-convert-request/).
+Type: [**EmailConvertRequest**](/email/reference-model-email-convert-request/).
 
 {{< tabs tabTotal="6" tabID="email_convert_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -694,7 +694,7 @@ $request = Models::EmailConvertRequest()
 
 Converts email document to a model representation             
 
-Returns [**EmailDto**](EmailDto.md) model.
+Returns [**EmailDto**](/email/reference-model-email-dto/) model.
 
 {{< tabs tabTotal="6" tabID="email_from_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -754,7 +754,7 @@ Input parameters:
 
 Description: FromFile method request.
 
-Type: [**EmailFromFileRequest**](/email/reference-email-from-file-request/).
+Type: [**EmailFromFileRequest**](/email/reference-model-email-from-file-request/).
 
 {{< tabs tabTotal="6" tabID="email_from_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -830,7 +830,7 @@ $request = Models::EmailFromFileRequest()
 
 Get email document from storage.             
 
-Returns [**EmailDto**](EmailDto.md) model.
+Returns [**EmailDto**](/email/reference-model-email-dto/) model.
 
 {{< tabs tabTotal="6" tabID="email_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -890,7 +890,7 @@ Input parameters:
 
 Description: Get method request.
 
-Type: [**EmailGetRequest**](/email/reference-email-get-request/).
+Type: [**EmailGetRequest**](/email/reference-model-email-get-request/).
 
 {{< tabs tabTotal="6" tabID="email_get_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1038,7 +1038,7 @@ Input parameters:
 
 Description: GetAsFile method request.
 
-Type: [**EmailGetAsFileRequest**](/email/reference-email-get-as-file-request/).
+Type: [**EmailGetAsFileRequest**](/email/reference-model-email-get-as-file-request/).
 
 {{< tabs tabTotal="6" tabID="email_get_as_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1126,7 +1126,7 @@ $request = Models::EmailGetAsFileRequest()
 
 Get email list from storage folder.             
 
-Returns [**EmailStorageList**](EmailStorageList.md) model.
+Returns [**EmailStorageList**](/email/reference-model-email-storage-list/) model.
 
 {{< tabs tabTotal="6" tabID="email_get_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1186,7 +1186,7 @@ Input parameters:
 
 Description: GetList method request.
 
-Type: [**EmailGetListRequest**](/email/reference-email-get-list-request/).
+Type: [**EmailGetListRequest**](/email/reference-model-email-get-list-request/).
 
 {{< tabs tabTotal="6" tabID="email_get_list_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1338,7 +1338,7 @@ Input parameters:
 
 Description: Email document create/update request.
 
-Type: [**EmailSaveRequest**](/email/reference-email-save-request/).
+Type: [**EmailSaveRequest**](/email/reference-model-email-save-request/).
 
 {{< tabs tabTotal="6" tabID="email_save_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 

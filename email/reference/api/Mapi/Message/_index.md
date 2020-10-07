@@ -11,7 +11,7 @@ MAPI message operations
 
 Converts MAPI message model to EmailDto model             
 
-Returns [**EmailDto**](EmailDto.md) model.
+Returns [**EmailDto**](/email/reference-model-email-dto/) model.
 
 {{< tabs tabTotal="6" tabID="mapi_message_as_email_dto_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -71,7 +71,7 @@ Input parameters:
 
 Description: MAPI message model to convert
 
-Type: [**MapiMessageDto**](/email/reference-mapi-message-dto/).
+Type: [**MapiMessageDto**](/email/reference-model-mapi-message-dto/).
 
 {{< tabs tabTotal="6" tabID="mapi_message_as_email_dto_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -373,7 +373,7 @@ Input parameters:
 
 Description: MAPI message model to convert.
 
-Type: [**MapiMessageAsFileRequest**](/email/reference-mapi-message-as-file-request/).
+Type: [**MapiMessageAsFileRequest**](/email/reference-model-mapi-message-as-file-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_message_as_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -632,7 +632,7 @@ $request = Models::mapiMessageAsFileRequest()
 
 Converts email file to a MAPI model representation             
 
-Returns [**MapiMessageDto**](MapiMessageDto.md) model.
+Returns [**MapiMessageDto**](/email/reference-model-mapi-message-dto/) model.
 
 {{< tabs tabTotal="6" tabID="mapi_message_from_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -692,7 +692,7 @@ Input parameters:
 
 Description: FromFile method request.
 
-Type: [**MapiMessageFromFileRequest**](/email/reference-mapi-message-from-file-request/).
+Type: [**MapiMessageFromFileRequest**](/email/reference-model-mapi-message-from-file-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_message_from_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -768,7 +768,7 @@ $request = Models::MapiMessageFromFileRequest()
 
 Get MAPI message document.             
 
-Returns [**MapiMessageDto**](MapiMessageDto.md) model.
+Returns [**MapiMessageDto**](/email/reference-model-mapi-message-dto/) model.
 
 {{< tabs tabTotal="6" tabID="mapi_message_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -828,7 +828,7 @@ Input parameters:
 
 Description: Get method request.
 
-Type: [**MapiMessageGetRequest**](/email/reference-mapi-message-get-request/).
+Type: [**MapiMessageGetRequest**](/email/reference-model-mapi-message-get-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_message_get_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -974,7 +974,7 @@ Input parameters:
 
 Description: Message create/update request.
 
-Type: [**MapiMessageSaveRequest**](/email/reference-mapi-message-save-request/).
+Type: [**MapiMessageSaveRequest**](/email/reference-model-mapi-message-save-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_message_save_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 

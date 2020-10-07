@@ -69,7 +69,7 @@ Input parameters:
 
 Description: CopyFile method request.
 
-Type: [**CopyFileRequest**](/email/reference-copy-file-request/).
+Type: [**CopyFileRequest**](/email/reference-model-copy-file-request/).
 
 {{< tabs tabTotal="6" tabID="copy_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -215,7 +215,7 @@ Input parameters:
 
 Description: DeleteFile method request.
 
-Type: [**DeleteFileRequest**](/email/reference-delete-file-request/).
+Type: [**DeleteFileRequest**](/email/reference-model-delete-file-request/).
 
 {{< tabs tabTotal="6" tabID="delete_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -351,7 +351,7 @@ Input parameters:
 
 Description: DownloadFile method request.
 
-Type: [**DownloadFileRequest**](/email/reference-download-file-request/).
+Type: [**DownloadFileRequest**](/email/reference-model-download-file-request/).
 
 {{< tabs tabTotal="6" tabID="download_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -485,7 +485,7 @@ Input parameters:
 
 Description: MoveFile method request.
 
-Type: [**MoveFileRequest**](/email/reference-move-file-request/).
+Type: [**MoveFileRequest**](/email/reference-model-move-file-request/).
 
 {{< tabs tabTotal="6" tabID="move_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -573,7 +573,7 @@ $request = Models::MoveFileRequest()
 
 Upload file
 
-Returns [**FilesUploadResult**](FilesUploadResult.md) model.
+Returns [**FilesUploadResult**](/email/reference-model-files-upload-result/) model.
 
 {{< tabs tabTotal="6" tabID="upload_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -633,7 +633,7 @@ Input parameters:
 
 Description: UploadFile method request.
 
-Type: [**UploadFileRequest**](/email/reference-upload-file-request/).
+Type: [**UploadFileRequest**](/email/reference-model-upload-file-request/).
 
 {{< tabs tabTotal="6" tabID="upload_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 

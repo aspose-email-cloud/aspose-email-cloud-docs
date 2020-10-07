@@ -11,7 +11,7 @@ AI Name operations.
 
 The call proposes k most probable names for given starting characters.             
 
-Returns [**AiNameWeightedVariants**](AiNameWeightedVariants.md) model.
+Returns [**AiNameWeightedVariants**](/email/reference-model-ai-name-weighted-variants/) model.
 
 {{< tabs tabTotal="6" tabID="ai_name_complete_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -71,7 +71,7 @@ Input parameters:
 
 Description: Complete method request.
 
-Type: [**AiNameCompleteRequest**](/email/reference-ai-name-complete-request/).
+Type: [**AiNameCompleteRequest**](/email/reference-model-ai-name-complete-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_complete_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -141,7 +141,7 @@ $request = Models::AiNameCompleteRequest()
 
 Expands a person's name into a list of possible alternatives using options for expanding instructions.             
 
-Returns [**AiNameWeightedVariants**](AiNameWeightedVariants.md) model.
+Returns [**AiNameWeightedVariants**](/email/reference-model-ai-name-weighted-variants/) model.
 
 {{< tabs tabTotal="6" tabID="ai_name_expand_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -201,7 +201,7 @@ Input parameters:
 
 Description: Expand method request.
 
-Type: [**AiNameExpandRequest**](/email/reference-ai-name-expand-request/).
+Type: [**AiNameExpandRequest**](/email/reference-model-ai-name-expand-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_expand_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -271,7 +271,7 @@ $request = Models::AiNameExpandRequest()
 
 Expands a person's parsed name into a list of possible alternatives using options for expanding instructions.             
 
-Returns [**AiNameWeightedVariants**](AiNameWeightedVariants.md) model.
+Returns [**AiNameWeightedVariants**](/email/reference-model-ai-name-weighted-variants/) model.
 
 {{< tabs tabTotal="6" tabID="ai_name_expand_parsed_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -331,7 +331,7 @@ Input parameters:
 
 Description: Parsed name with options.
 
-Type: [**AiNameParsedRequest**](/email/reference-ai-name-parsed-request/).
+Type: [**AiNameParsedRequest**](/email/reference-model-ai-name-parsed-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_expand_parsed_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -519,7 +519,7 @@ $request = Models::aiNameParsedRequest()
 
 Formats a person's name in correct case and name order using options for formatting instructions.             
 
-Returns [**AiNameFormatted**](AiNameFormatted.md) model.
+Returns [**AiNameFormatted**](/email/reference-model-ai-name-formatted/) model.
 
 {{< tabs tabTotal="6" tabID="ai_name_format_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -579,7 +579,7 @@ Input parameters:
 
 Description: Format method request.
 
-Type: [**AiNameFormatRequest**](/email/reference-ai-name-format-request/).
+Type: [**AiNameFormatRequest**](/email/reference-model-ai-name-format-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_format_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -655,7 +655,7 @@ $request = Models::AiNameFormatRequest()
 
 Formats a person's parsed name in correct case and name order using options for formatting instructions.             
 
-Returns [**AiNameFormatted**](AiNameFormatted.md) model.
+Returns [**AiNameFormatted**](/email/reference-model-ai-name-formatted/) model.
 
 {{< tabs tabTotal="6" tabID="ai_name_format_parsed_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -715,7 +715,7 @@ Input parameters:
 
 Description: Parsed name with options.
 
-Type: [**AiNameParsedRequest**](/email/reference-ai-name-parsed-request/).
+Type: [**AiNameParsedRequest**](/email/reference-model-ai-name-parsed-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_format_parsed_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -903,7 +903,7 @@ $request = Models::aiNameParsedRequest()
 
 Detect person's gender from name string.             
 
-Returns [**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md) model.
+Returns [**AiNameGenderHypothesisList**](/email/reference-model-ai-name-gender-hypothesis-list/) model.
 
 {{< tabs tabTotal="6" tabID="ai_name_genderize_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -963,7 +963,7 @@ Input parameters:
 
 Description: Genderize method request.
 
-Type: [**AiNameGenderizeRequest**](/email/reference-ai-name-genderize-request/).
+Type: [**AiNameGenderizeRequest**](/email/reference-model-ai-name-genderize-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_genderize_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1033,7 +1033,7 @@ $request = Models::AiNameGenderizeRequest()
 
 Detect person's gender from parsed name.             
 
-Returns [**AiNameGenderHypothesisList**](AiNameGenderHypothesisList.md) model.
+Returns [**AiNameGenderHypothesisList**](/email/reference-model-ai-name-gender-hypothesis-list/) model.
 
 {{< tabs tabTotal="6" tabID="ai_name_genderize_parsed_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1093,7 +1093,7 @@ Input parameters:
 
 Description: Gender detection request data.
 
-Type: [**AiNameParsedRequest**](/email/reference-ai-name-parsed-request/).
+Type: [**AiNameParsedRequest**](/email/reference-model-ai-name-parsed-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_genderize_parsed_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1281,7 +1281,7 @@ $request = Models::aiNameParsedRequest()
 
 Compare people's names. Uses options for comparing instructions.             
 
-Returns [**AiNameMatchResult**](AiNameMatchResult.md) model.
+Returns [**AiNameMatchResult**](/email/reference-model-ai-name-match-result/) model.
 
 {{< tabs tabTotal="6" tabID="ai_name_match_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1341,7 +1341,7 @@ Input parameters:
 
 Description: Match method request.
 
-Type: [**AiNameMatchRequest**](/email/reference-ai-name-match-request/).
+Type: [**AiNameMatchRequest**](/email/reference-model-ai-name-match-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_match_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1417,7 +1417,7 @@ $request = Models::AiNameMatchRequest()
 
 Compare people's parsed names and attributes. Uses options for comparing instructions.             
 
-Returns [**AiNameMatchResult**](AiNameMatchResult.md) model.
+Returns [**AiNameMatchResult**](/email/reference-model-ai-name-match-result/) model.
 
 {{< tabs tabTotal="6" tabID="ai_name_match_parsed_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1477,7 +1477,7 @@ Input parameters:
 
 Description: Parsed names to match.
 
-Type: [**AiNameMatchParsedRequest**](/email/reference-ai-name-match-parsed-request/).
+Type: [**AiNameMatchParsedRequest**](/email/reference-model-ai-name-match-parsed-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_match_parsed_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1789,7 +1789,7 @@ $request = Models::aiNameMatchParsedRequest()
 
 Parse name to components.             
 
-Returns [**AiNameComponentList**](AiNameComponentList.md) model.
+Returns [**AiNameComponentList**](/email/reference-model-ai-name-component-list/) model.
 
 {{< tabs tabTotal="6" tabID="ai_name_parse_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1849,7 +1849,7 @@ Input parameters:
 
 Description: Parse method request.
 
-Type: [**AiNameParseRequest**](/email/reference-ai-name-parse-request/).
+Type: [**AiNameParseRequest**](/email/reference-model-ai-name-parse-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_parse_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1931,7 +1931,7 @@ $request = Models::AiNameParseRequest()
 
 Parse person's name out of an email address.             
 
-Returns [**AiNameExtractedList**](AiNameExtractedList.md) model.
+Returns [**AiNameExtractedList**](/email/reference-model-ai-name-extracted-list/) model.
 
 {{< tabs tabTotal="6" tabID="ai_name_parse_email_address_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1991,7 +1991,7 @@ Input parameters:
 
 Description: ParseEmailAddress method request.
 
-Type: [**AiNameParseEmailAddressRequest**](/email/reference-ai-name-parse-email-address-request/).
+Type: [**AiNameParseEmailAddressRequest**](/email/reference-model-ai-name-parse-email-address-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_parse_email_address_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 

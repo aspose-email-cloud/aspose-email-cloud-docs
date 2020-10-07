@@ -11,7 +11,7 @@ MAPI calendar operations.
 
 Converts MAPI calendar model to CalendarDto model.             
 
-Returns [**CalendarDto**](CalendarDto.md) model.
+Returns [**CalendarDto**](/email/reference-model-calendar-dto/) model.
 
 {{< tabs tabTotal="6" tabID="mapi_calendar_as_calendar_dto_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -71,7 +71,7 @@ Input parameters:
 
 Description: MAPI calendar model to convert.
 
-Type: [**MapiCalendarDto**](/email/reference-mapi-calendar-dto/).
+Type: [**MapiCalendarDto**](/email/reference-model-mapi-calendar-dto/).
 
 {{< tabs tabTotal="6" tabID="mapi_calendar_as_calendar_dto_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -391,7 +391,7 @@ Input parameters:
 
 Description: MAPI calendar model to convert.
 
-Type: [**MapiCalendarAsFileRequest**](/email/reference-mapi-calendar-as-file-request/).
+Type: [**MapiCalendarAsFileRequest**](/email/reference-model-mapi-calendar-as-file-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_calendar_as_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -668,7 +668,7 @@ $request = Models::mapiCalendarAsFileRequest()
 
 Converts calendar file to a MAPI model representation.             
 
-Returns [**MapiCalendarDto**](MapiCalendarDto.md) model.
+Returns [**MapiCalendarDto**](/email/reference-model-mapi-calendar-dto/) model.
 
 {{< tabs tabTotal="6" tabID="mapi_calendar_from_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -728,7 +728,7 @@ Input parameters:
 
 Description: FromFile method request.
 
-Type: [**MapiCalendarFromFileRequest**](/email/reference-mapi-calendar-from-file-request/).
+Type: [**MapiCalendarFromFileRequest**](/email/reference-model-mapi-calendar-from-file-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_calendar_from_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -798,7 +798,7 @@ $request = Models::MapiCalendarFromFileRequest()
 
 Get MAPI calendar document.             
 
-Returns [**MapiCalendarDto**](MapiCalendarDto.md) model.
+Returns [**MapiCalendarDto**](/email/reference-model-mapi-calendar-dto/) model.
 
 {{< tabs tabTotal="6" tabID="mapi_calendar_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -858,7 +858,7 @@ Input parameters:
 
 Description: Get method request.
 
-Type: [**MapiCalendarGetRequest**](/email/reference-mapi-calendar-get-request/).
+Type: [**MapiCalendarGetRequest**](/email/reference-model-mapi-calendar-get-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_calendar_get_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -998,7 +998,7 @@ Input parameters:
 
 Description: Calendar create/update request.
 
-Type: [**MapiCalendarSaveRequest**](/email/reference-mapi-calendar-save-request/).
+Type: [**MapiCalendarSaveRequest**](/email/reference-model-mapi-calendar-save-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_calendar_save_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 

@@ -11,7 +11,7 @@ Email server account for built-in client operations.
 
 Get email client account from storage.             
 
-Returns [**EmailClientAccount**](EmailClientAccount.md) model.
+Returns [**EmailClientAccount**](/email/reference-model-email-client-account/) model.
 
 {{< tabs tabTotal="6" tabID="client_account_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -71,7 +71,7 @@ Input parameters:
 
 Description: Get method request.
 
-Type: [**ClientAccountGetRequest**](/email/reference-client-account-get-request/).
+Type: [**ClientAccountGetRequest**](/email/reference-model-client-account-get-request/).
 
 {{< tabs tabTotal="6" tabID="client_account_get_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -153,7 +153,7 @@ $request = Models::ClientAccountGetRequest()
 
 Get email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
 
-Returns [**EmailClientMultiAccount**](EmailClientMultiAccount.md) model.
+Returns [**EmailClientMultiAccount**](/email/reference-model-email-client-multi-account/) model.
 
 {{< tabs tabTotal="6" tabID="client_account_get_multi_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -213,7 +213,7 @@ Input parameters:
 
 Description: GetMulti method request.
 
-Type: [**ClientAccountGetMultiRequest**](/email/reference-client-account-get-multi-request/).
+Type: [**ClientAccountGetMultiRequest**](/email/reference-model-client-account-get-multi-request/).
 
 {{< tabs tabTotal="6" tabID="client_account_get_multi_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -353,7 +353,7 @@ Input parameters:
 
 Description: Email account information
 
-Type: [**ClientAccountSaveRequest**](/email/reference-client-account-save-request/).
+Type: [**ClientAccountSaveRequest**](/email/reference-model-client-account-save-request/).
 
 {{< tabs tabTotal="6" tabID="client_account_save_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -574,7 +574,7 @@ Input parameters:
 
 Description: Email accounts information.
 
-Type: [**ClientAccountSaveMultiRequest**](/email/reference-client-account-save-multi-request/).
+Type: [**ClientAccountSaveMultiRequest**](/email/reference-model-client-account-save-multi-request/).
 
 {{< tabs tabTotal="6" tabID="client_account_save_multi_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 

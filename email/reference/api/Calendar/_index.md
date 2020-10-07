@@ -11,7 +11,7 @@ iCalendar document operations.
 
 Convert iCalendar to AlternateView             
 
-Returns [**AlternateView**](AlternateView.md) model.
+Returns [**AlternateView**](/email/reference-model-alternate-view/) model.
 
 {{< tabs tabTotal="6" tabID="calendar_as_alternate_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -71,7 +71,7 @@ Input parameters:
 
 Description: iCalendar to AlternateView request
 
-Type: [**CalendarAsAlternateRequest**](/email/reference-calendar-as-alternate-request/).
+Type: [**CalendarAsAlternateRequest**](/email/reference-model-calendar-as-alternate-request/).
 
 {{< tabs tabTotal="6" tabID="calendar_as_alternate_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -331,7 +331,7 @@ Input parameters:
 
 Description: Calendar model and format to convert.
 
-Type: [**CalendarAsFileRequest**](/email/reference-calendar-as-file-request/).
+Type: [**CalendarAsFileRequest**](/email/reference-model-calendar-as-file-request/).
 
 {{< tabs tabTotal="6" tabID="calendar_as_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -525,7 +525,7 @@ $request = Models::calendarAsFileRequest()
 
 Converts CalendarDto to MapiCalendarDto.             
 
-Returns [**MapiCalendarDto**](MapiCalendarDto.md) model.
+Returns [**MapiCalendarDto**](/email/reference-model-mapi-calendar-dto/) model.
 
 {{< tabs tabTotal="6" tabID="calendar_as_mapi_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -585,7 +585,7 @@ Input parameters:
 
 Description: iCalendar model calendar representation.
 
-Type: [**CalendarDto**](/email/reference-calendar-dto/).
+Type: [**CalendarDto**](/email/reference-model-calendar-dto/).
 
 {{< tabs tabTotal="6" tabID="calendar_as_mapi_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -828,7 +828,7 @@ Input parameters:
 
 Description: Convert method request.
 
-Type: [**CalendarConvertRequest**](/email/reference-calendar-convert-request/).
+Type: [**CalendarConvertRequest**](/email/reference-model-calendar-convert-request/).
 
 {{< tabs tabTotal="6" tabID="calendar_convert_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -904,7 +904,7 @@ $request = Models::CalendarConvertRequest()
 
 Converts calendar document to a model representation.             
 
-Returns [**CalendarDto**](CalendarDto.md) model.
+Returns [**CalendarDto**](/email/reference-model-calendar-dto/) model.
 
 {{< tabs tabTotal="6" tabID="calendar_from_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -964,7 +964,7 @@ Input parameters:
 
 Description: FromFile method request.
 
-Type: [**CalendarFromFileRequest**](/email/reference-calendar-from-file-request/).
+Type: [**CalendarFromFileRequest**](/email/reference-model-calendar-from-file-request/).
 
 {{< tabs tabTotal="6" tabID="calendar_from_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1034,7 +1034,7 @@ $request = Models::CalendarFromFileRequest()
 
 Get calendar file from storage.             
 
-Returns [**CalendarDto**](CalendarDto.md) model.
+Returns [**CalendarDto**](/email/reference-model-calendar-dto/) model.
 
 {{< tabs tabTotal="6" tabID="calendar_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1094,7 +1094,7 @@ Input parameters:
 
 Description: Get method request.
 
-Type: [**CalendarGetRequest**](/email/reference-calendar-get-request/).
+Type: [**CalendarGetRequest**](/email/reference-model-calendar-get-request/).
 
 {{< tabs tabTotal="6" tabID="calendar_get_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1176,7 +1176,7 @@ $request = Models::CalendarGetRequest()
 
 Get iCalendar from storage as AlternateView             
 
-Returns [**AlternateView**](AlternateView.md) model.
+Returns [**AlternateView**](/email/reference-model-alternate-view/) model.
 
 {{< tabs tabTotal="6" tabID="calendar_get_as_alternate_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1236,7 +1236,7 @@ Input parameters:
 
 Description: GetAsAlternate method request.
 
-Type: [**CalendarGetAsAlternateRequest**](/email/reference-calendar-get-as-alternate-request/).
+Type: [**CalendarGetAsAlternateRequest**](/email/reference-model-calendar-get-as-alternate-request/).
 
 {{< tabs tabTotal="6" tabID="calendar_get_as_alternate_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1384,7 +1384,7 @@ Input parameters:
 
 Description: GetAsFile method request.
 
-Type: [**CalendarGetAsFileRequest**](/email/reference-calendar-get-as-file-request/).
+Type: [**CalendarGetAsFileRequest**](/email/reference-model-calendar-get-as-file-request/).
 
 {{< tabs tabTotal="6" tabID="calendar_get_as_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1472,7 +1472,7 @@ $request = Models::CalendarGetAsFileRequest()
 
 Get iCalendar list from storage folder.             
 
-Returns [**CalendarStorageList**](CalendarStorageList.md) model.
+Returns [**CalendarStorageList**](/email/reference-model-calendar-storage-list/) model.
 
 {{< tabs tabTotal="6" tabID="calendar_get_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1532,7 +1532,7 @@ Input parameters:
 
 Description: GetList method request.
 
-Type: [**CalendarGetListRequest**](/email/reference-calendar-get-list-request/).
+Type: [**CalendarGetListRequest**](/email/reference-model-calendar-get-list-request/).
 
 {{< tabs tabTotal="6" tabID="calendar_get_list_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1678,7 +1678,7 @@ Input parameters:
 
 Description: iCalendar create/update request
 
-Type: [**CalendarSaveRequest**](/email/reference-calendar-save-request/).
+Type: [**CalendarSaveRequest**](/email/reference-model-calendar-save-request/).
 
 {{< tabs tabTotal="6" tabID="calendar_save_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 

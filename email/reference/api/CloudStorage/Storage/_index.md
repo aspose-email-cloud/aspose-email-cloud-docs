@@ -11,7 +11,7 @@ Storage operations controller
 
 Get disc usage
 
-Returns [**DiscUsage**](DiscUsage.md) model.
+Returns [**DiscUsage**](/email/reference-model-disc-usage/) model.
 
 {{< tabs tabTotal="6" tabID="get_disc_usage_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -71,7 +71,7 @@ Input parameters:
 
 Description: GetDiscUsage method request.
 
-Type: [**GetDiscUsageRequest**](/email/reference-get-disc-usage-request/).
+Type: [**GetDiscUsageRequest**](/email/reference-model-get-disc-usage-request/).
 
 {{< tabs tabTotal="6" tabID="get_disc_usage_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -141,7 +141,7 @@ $request = Models::GetDiscUsageRequest()
 
 Get file versions
 
-Returns [**FileVersions**](FileVersions.md) model.
+Returns [**FileVersions**](/email/reference-model-file-versions/) model.
 
 {{< tabs tabTotal="6" tabID="get_file_versions_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -201,7 +201,7 @@ Input parameters:
 
 Description: GetFileVersions method request.
 
-Type: [**GetFileVersionsRequest**](/email/reference-get-file-versions-request/).
+Type: [**GetFileVersionsRequest**](/email/reference-model-get-file-versions-request/).
 
 {{< tabs tabTotal="6" tabID="get_file_versions_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -277,7 +277,7 @@ $request = Models::GetFileVersionsRequest()
 
 Check if file or folder exists
 
-Returns [**ObjectExist**](ObjectExist.md) model.
+Returns [**ObjectExist**](/email/reference-model-object-exist/) model.
 
 {{< tabs tabTotal="6" tabID="object_exists_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -337,7 +337,7 @@ Input parameters:
 
 Description: ObjectExists method request.
 
-Type: [**ObjectExistsRequest**](/email/reference-object-exists-request/).
+Type: [**ObjectExistsRequest**](/email/reference-model-object-exists-request/).
 
 {{< tabs tabTotal="6" tabID="object_exists_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -413,7 +413,7 @@ $request = Models::ObjectExistsRequest()
 
 Check if storage exists
 
-Returns [**StorageExist**](StorageExist.md) model.
+Returns [**StorageExist**](/email/reference-model-storage-exist/) model.
 
 {{< tabs tabTotal="6" tabID="storage_exists_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -473,7 +473,7 @@ Input parameters:
 
 Description: Exists method request.
 
-Type: [**StorageExistsRequest**](/email/reference-storage-exists-request/).
+Type: [**StorageExistsRequest**](/email/reference-model-storage-exists-request/).
 
 {{< tabs tabTotal="6" tabID="storage_exists_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 

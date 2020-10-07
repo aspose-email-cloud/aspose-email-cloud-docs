@@ -69,7 +69,7 @@ Input parameters:
 
 Description: CopyFolder method request.
 
-Type: [**CopyFolderRequest**](/email/reference-copy-folder-request/).
+Type: [**CopyFolderRequest**](/email/reference-model-copy-folder-request/).
 
 {{< tabs tabTotal="6" tabID="copy_folder_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -215,7 +215,7 @@ Input parameters:
 
 Description: CreateFolder method request.
 
-Type: [**CreateFolderRequest**](/email/reference-create-folder-request/).
+Type: [**CreateFolderRequest**](/email/reference-model-create-folder-request/).
 
 {{< tabs tabTotal="6" tabID="create_folder_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -349,7 +349,7 @@ Input parameters:
 
 Description: DeleteFolder method request.
 
-Type: [**DeleteFolderRequest**](/email/reference-delete-folder-request/).
+Type: [**DeleteFolderRequest**](/email/reference-model-delete-folder-request/).
 
 {{< tabs tabTotal="6" tabID="delete_folder_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -431,7 +431,7 @@ $request = Models::DeleteFolderRequest()
 
 Get all files and folders within a folder
 
-Returns [**FilesList**](FilesList.md) model.
+Returns [**FilesList**](/email/reference-model-files-list/) model.
 
 {{< tabs tabTotal="6" tabID="get_files_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -491,7 +491,7 @@ Input parameters:
 
 Description: GetFilesList method request.
 
-Type: [**GetFilesListRequest**](/email/reference-get-files-list-request/).
+Type: [**GetFilesListRequest**](/email/reference-model-get-files-list-request/).
 
 {{< tabs tabTotal="6" tabID="get_files_list_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -625,7 +625,7 @@ Input parameters:
 
 Description: MoveFolder method request.
 
-Type: [**MoveFolderRequest**](/email/reference-move-folder-request/).
+Type: [**MoveFolderRequest**](/email/reference-model-move-folder-request/).
 
 {{< tabs tabTotal="6" tabID="move_folder_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 

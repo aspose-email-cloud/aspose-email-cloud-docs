@@ -11,7 +11,7 @@ Email server configuration discovery.
 
 Discover email accounts by email address. Does not validate discovered accounts.             
 
-Returns [**EmailAccountConfigList**](EmailAccountConfigList.md) model.
+Returns [**EmailAccountConfigList**](/email/reference-model-email-account-config-list/) model.
 
 {{< tabs tabTotal="6" tabID="email_config_discover_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -71,7 +71,7 @@ Input parameters:
 
 Description: Discover method request.
 
-Type: [**EmailConfigDiscoverRequest**](/email/reference-email-config-discover-request/).
+Type: [**EmailConfigDiscoverRequest**](/email/reference-model-email-config-discover-request/).
 
 {{< tabs tabTotal="6" tabID="email_config_discover_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -135,7 +135,7 @@ $request = Models::EmailConfigDiscoverRequest()
 
 Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.             
 
-Returns [**EmailAccountConfigList**](EmailAccountConfigList.md) model.
+Returns [**EmailAccountConfigList**](/email/reference-model-email-account-config-list/) model.
 
 {{< tabs tabTotal="6" tabID="email_config_discover_oauth_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -195,7 +195,7 @@ Input parameters:
 
 Description: Discover email configuration request.
 
-Type: [**EmailConfigDiscoverOauthRequest**](/email/reference-email-config-discover-oauth-request/).
+Type: [**EmailConfigDiscoverOauthRequest**](/email/reference-model-email-config-discover-oauth-request/).
 
 {{< tabs tabTotal="6" tabID="email_config_discover_oauth_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -289,7 +289,7 @@ $request = Models::emailConfigDiscoverOauthRequest()
 
 Discover email accounts by email address. Validates discovered accounts using login and password.             
 
-Returns [**EmailAccountConfigList**](EmailAccountConfigList.md) model.
+Returns [**EmailAccountConfigList**](/email/reference-model-email-account-config-list/) model.
 
 {{< tabs tabTotal="6" tabID="email_config_discover_password_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -349,7 +349,7 @@ Input parameters:
 
 Description: Discover email configuration request.
 
-Type: [**EmailConfigDiscoverPasswordRequest**](/email/reference-email-config-discover-password-request/).
+Type: [**EmailConfigDiscoverPasswordRequest**](/email/reference-model-email-config-discover-password-request/).
 
 {{< tabs tabTotal="6" tabID="email_config_discover_password_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
