@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **accountStorageFolder** |**string**|Folder in storage where account file located |[optional] 
 **parentFolder** |**string**|Folder in which subfolders should be listed |[optional] 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="client_folder_get_list_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -98,5 +98,4 @@ $request = Models::ClientFolderGetListRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

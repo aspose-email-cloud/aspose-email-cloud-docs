@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **storageName** |**string**|Storage name |[optional] 
 **versionId** |**string**|File version ID |[optional] 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="object_exists_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -85,5 +85,4 @@ $request = Models::ObjectExistsRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

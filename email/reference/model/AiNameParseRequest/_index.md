@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **script** |**string**|A writing system code; starts with the ISO-15924 script name. |[optional] 
 **style** |**string**|Name writing style. Enum, available values: Formal, Informal, Legal, Academic |[optional] [default to 0]
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="ai_name_parse_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -94,5 +94,4 @@ $request = Models::AiNameParseRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

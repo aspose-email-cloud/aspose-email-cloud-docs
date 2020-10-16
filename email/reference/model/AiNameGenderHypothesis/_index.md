@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **Score** | **double?** | Hypothesis score              | 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="ai_name_gender_hypothesis_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -78,5 +78,4 @@ $aiNameGenderHypothesis = Models::aiNameGenderHypothesis()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

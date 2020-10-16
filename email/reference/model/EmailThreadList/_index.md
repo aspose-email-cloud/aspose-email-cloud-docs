@@ -12,7 +12,7 @@ Class has no properties
 
 Parent class: [ListResponseOfEmailThread](/email/reference-model-list-response-of-email-thread/)
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="email_thread_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -251,5 +251,4 @@ $emailThreadList = Models::emailThreadList()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

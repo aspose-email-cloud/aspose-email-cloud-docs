@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **Address** | **string** | Contains the email address. | 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="reminder_attendee_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -77,5 +77,4 @@ $reminderAttendee = Models::reminderAttendee()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

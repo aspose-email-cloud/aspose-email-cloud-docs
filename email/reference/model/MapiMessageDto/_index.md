@@ -38,7 +38,7 @@ Name | Type | Description | Notes
 
 Parent class: [MapiMessageItemBaseDto](/email/reference-model-mapi-message-item-base-dto/)
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="mapi_message_dto_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -274,5 +274,4 @@ $mapiMessageDto = Models::mapiMessageDto()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

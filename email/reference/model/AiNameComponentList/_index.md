@@ -12,7 +12,7 @@ Class has no properties
 
 Parent class: [ListResponseOfAiNameComponent](/email/reference-model-list-response-of-ai-name-component/)
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="ai_name_component_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -194,5 +194,4 @@ $aiNameComponentList = Models::aiNameComponentList()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **destStorageName** |**string**|Destination storage name |[optional] 
 **versionId** |**string**|File version ID to move |[optional] 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="move_file_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -99,5 +99,4 @@ $request = Models::MoveFileRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

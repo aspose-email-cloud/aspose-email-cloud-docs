@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **FolderPath** | **string** | A path to a folder in specified storage              | [optional] 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="storage_folder_location_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -84,5 +84,4 @@ $storageFolderLocation = Models::storageFolderLocation()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

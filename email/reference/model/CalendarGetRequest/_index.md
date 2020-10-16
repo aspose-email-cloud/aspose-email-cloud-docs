@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **folder** |**string**|Path to folder in storage. |[optional] 
 **storage** |**string**|Storage name. |[optional] 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="calendar_get_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -91,5 +91,4 @@ $request = Models::CalendarGetRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **Mismatches** | [**List&lt;AiNameMismatch&gt;**](/email/reference-model-ai-name-mismatch/) | Detailed description of mismatches              | [optional] 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="ai_name_match_result_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -109,5 +109,4 @@ $aiNameMatchResult = Models::aiNameMatchResult()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

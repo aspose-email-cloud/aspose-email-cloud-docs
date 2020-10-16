@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **Value** | [**List&lt;StorageFile&gt;**](/email/reference-model-storage-file/) | Files and folders contained by folder StorageFile. | [optional] 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="files_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -114,5 +114,4 @@ $filesList = Models::filesList()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

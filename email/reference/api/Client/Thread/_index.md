@@ -9,67 +9,11 @@ Email client thread operations.
 
 ## Delete
 
-Delete thread by id. All messages from thread will also be deleted.             
-
-{{< tabs tabTotal="6" tabID="client_thread_delete_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-await api.Client.Thread.DeleteAsync(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-api.client().thread().delete(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```python
-api.client.thread.delete(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-api.client.thread.delete(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```typescript
-await api.client.thread.delete(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-```php
-$api->client()->thread()->delete($request);
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-Input parameters:
+Delete thread by id. All messages from thread will also be deleted. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Delete email thread request.
-
-Type: [**ClientThreadDeleteRequest**](/email/reference-model-client-thread-delete-request/).
+Delete email thread request. Type: [**ClientThreadDeleteRequest**](/email/reference-model-client-thread-delete-request/).
 
 {{< tabs tabTotal="6" tabID="client_thread_delete_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -170,18 +114,13 @@ $request = Models::clientThreadDeleteRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## GetList
 
-Get message threads from folder. All messages are partly fetched (without email body and some other fields).             
-
-Returns [**EmailThreadList**](/email/reference-model-email-thread-list/) model.
-
-{{< tabs tabTotal="6" tabID="client_thread_get_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="client_thread_delete_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Client.Thread.GetListAsync(request);
+await api.Client.Thread.DeleteAsync(request);
 ```
 
 {{< /tab >}}
@@ -189,7 +128,7 @@ var result = await api.Client.Thread.GetListAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-EmailThreadList result = api.client().thread().getList(request);
+api.client().thread().delete(request);
 ```
 
 {{< /tab >}}
@@ -197,7 +136,7 @@ EmailThreadList result = api.client().thread().getList(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.client.thread.get_list(request)
+api.client.thread.delete(request)
 ```
 
 {{< /tab >}}
@@ -205,7 +144,7 @@ result = api.client.thread.get_list(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.client.thread.get_list(request)
+api.client.thread.delete(request)
 ```
 
 {{< /tab >}}
@@ -213,7 +152,7 @@ result = api.client.thread.get_list(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.client.thread.getList(request);
+await api.client.thread.delete(request);
 ```
 
 {{< /tab >}}
@@ -221,20 +160,20 @@ let result = await api.client.thread.getList(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->client()->thread()->getList($request);
+$api->client()->thread()->delete($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## GetList
 
-Input parameters:
+Get message threads from folder. All messages are partly fetched (without email body and some other fields). 
+Returns [**EmailThreadList**](/email/reference-model-email-thread-list/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: GetList method request.
-
-Type: [**ClientThreadGetListRequest**](/email/reference-model-client-thread-get-list-request/).
+GetList method request. Type: [**ClientThreadGetListRequest**](/email/reference-model-client-thread-get-list-request/).
 
 {{< tabs tabTotal="6" tabID="client_thread_get_list_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -318,18 +257,13 @@ $request = Models::ClientThreadGetListRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## GetMessages
 
-Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned.             
-
-Returns [**EmailList**](/email/reference-model-email-list/) model.
-
-{{< tabs tabTotal="6" tabID="client_thread_get_messages_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="client_thread_get_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Client.Thread.GetMessagesAsync(request);
+var result = await api.Client.Thread.GetListAsync(request);
 ```
 
 {{< /tab >}}
@@ -337,7 +271,7 @@ var result = await api.Client.Thread.GetMessagesAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-EmailList result = api.client().thread().getMessages(request);
+EmailThreadList result = api.client().thread().getList(request);
 ```
 
 {{< /tab >}}
@@ -345,7 +279,7 @@ EmailList result = api.client().thread().getMessages(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.client.thread.get_messages(request)
+result = api.client.thread.get_list(request)
 ```
 
 {{< /tab >}}
@@ -353,7 +287,7 @@ result = api.client.thread.get_messages(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.client.thread.get_messages(request)
+result = api.client.thread.get_list(request)
 ```
 
 {{< /tab >}}
@@ -361,7 +295,7 @@ result = api.client.thread.get_messages(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.client.thread.getMessages(request);
+let result = await api.client.thread.getList(request);
 ```
 
 {{< /tab >}}
@@ -369,20 +303,20 @@ let result = await api.client.thread.getMessages(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->client()->thread()->getMessages($request);
+$result = $api->client()->thread()->getList($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## GetMessages
 
-Input parameters:
+Get messages from thread by id. All messages are fully fetched. For accounts with CacheFile only cached messages will be returned. 
+Returns [**EmailList**](/email/reference-model-email-list/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: GetMessages method request.
-
-Type: [**ClientThreadGetMessagesRequest**](/email/reference-model-client-thread-get-messages-request/).
+GetMessages method request. Type: [**ClientThreadGetMessagesRequest**](/email/reference-model-client-thread-get-messages-request/).
 
 {{< tabs tabTotal="6" tabID="client_thread_get_messages_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -472,16 +406,13 @@ $request = Models::ClientThreadGetMessagesRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Move
 
-Move thread to another folder.             
-
-{{< tabs tabTotal="6" tabID="client_thread_move_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="client_thread_get_messages_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.Client.Thread.MoveAsync(request);
+var result = await api.Client.Thread.GetMessagesAsync(request);
 ```
 
 {{< /tab >}}
@@ -489,7 +420,7 @@ await api.Client.Thread.MoveAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.client().thread().move(request);
+EmailList result = api.client().thread().getMessages(request);
 ```
 
 {{< /tab >}}
@@ -497,7 +428,7 @@ api.client().thread().move(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.client.thread.move(request)
+result = api.client.thread.get_messages(request)
 ```
 
 {{< /tab >}}
@@ -505,7 +436,7 @@ api.client.thread.move(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.client.thread.move(request)
+result = api.client.thread.get_messages(request)
 ```
 
 {{< /tab >}}
@@ -513,7 +444,7 @@ api.client.thread.move(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.client.thread.move(request);
+let result = await api.client.thread.getMessages(request);
 ```
 
 {{< /tab >}}
@@ -521,20 +452,19 @@ await api.client.thread.move(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->client()->thread()->move($request);
+$result = $api->client()->thread()->getMessages($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Move
 
-Input parameters:
+Move thread to another folder. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Move thread request.
-
-Type: [**ClientThreadMoveRequest**](/email/reference-model-client-thread-move-request/).
+Move thread request. Type: [**ClientThreadMoveRequest**](/email/reference-model-client-thread-move-request/).
 
 {{< tabs tabTotal="6" tabID="client_thread_move_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -635,16 +565,13 @@ $request = Models::clientThreadMoveRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## SetIsRead
 
-Mark all messages in thread as read or unread.             
-
-{{< tabs tabTotal="6" tabID="client_thread_set_is_read_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="client_thread_move_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.Client.Thread.SetIsReadAsync(request);
+await api.Client.Thread.MoveAsync(request);
 ```
 
 {{< /tab >}}
@@ -652,7 +579,7 @@ await api.Client.Thread.SetIsReadAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.client().thread().setIsRead(request);
+api.client().thread().move(request);
 ```
 
 {{< /tab >}}
@@ -660,7 +587,7 @@ api.client().thread().setIsRead(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.client.thread.set_is_read(request)
+api.client.thread.move(request)
 ```
 
 {{< /tab >}}
@@ -668,7 +595,7 @@ api.client.thread.set_is_read(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.client.thread.set_is_read(request)
+api.client.thread.move(request)
 ```
 
 {{< /tab >}}
@@ -676,7 +603,7 @@ api.client.thread.set_is_read(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.client.thread.setIsRead(request);
+await api.client.thread.move(request);
 ```
 
 {{< /tab >}}
@@ -684,20 +611,19 @@ await api.client.thread.setIsRead(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->client()->thread()->setIsRead($request);
+$api->client()->thread()->move($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## SetIsRead
 
-Input parameters:
+Mark all messages in thread as read or unread. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Email account specifier and IsRead flag.
-
-Type: [**ClientThreadSetIsReadRequest**](/email/reference-model-client-thread-set-is-read-request/).
+Email account specifier and IsRead flag. Type: [**ClientThreadSetIsReadRequest**](/email/reference-model-client-thread-set-is-read-request/).
 
 {{< tabs tabTotal="6" tabID="client_thread_set_is_read_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -805,6 +731,58 @@ $request = Models::clientThreadSetIsReadRequest()
 
 {{< /expand-list >}}
 
+{{< tabs tabTotal="6" tabID="client_thread_set_is_read_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+await api.Client.Thread.SetIsReadAsync(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+api.client().thread().setIsRead(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```python
+api.client.thread.set_is_read(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+```ruby
+api.client.thread.set_is_read(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```typescript
+await api.client.thread.setIsRead(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```php
+$api->client()->thread()->setIsRead($request);
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ## More APIs
-See more APIs:
+
 {{< list-of-articles-in-this-section >}}

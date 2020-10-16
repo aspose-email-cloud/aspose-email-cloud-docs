@@ -9,69 +9,12 @@ Email client message operations.
 
 ## Append
 
-Add email message to specified folder in email account.             
-
-Returns [**ValueTOfString**](/email/reference-model-value-t-of-string/) model.
-
-{{< tabs tabTotal="6" tabID="client_message_append_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-var result = await api.Client.Message.AppendAsync(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-ValueTOfString result = api.client().message().append(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```python
-result = api.client.message.append(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-result = api.client.message.append(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```typescript
-let result = await api.client.message.append(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-```php
-$result = $api->client()->message()->append($request);
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-Input parameters:
+Add email message to specified folder in email account. 
+Returns [**ValueTOfString**](/email/reference-model-value-t-of-string/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Append email request.
-
-Type: [**ClientMessageAppendRequest**](/email/reference-model-client-message-append-request/).
+Append email request. Type: [**ClientMessageAppendRequest**](/email/reference-model-client-message-append-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_append_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -335,18 +278,13 @@ $request = Models::clientMessageAppendRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## AppendFile
 
-Add email message from file to specified folder in email account.             
-
-Returns [**ValueTOfString**](/email/reference-model-value-t-of-string/) model.
-
-{{< tabs tabTotal="6" tabID="client_message_append_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="client_message_append_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Client.Message.AppendFileAsync(request);
+var result = await api.Client.Message.AppendAsync(request);
 ```
 
 {{< /tab >}}
@@ -354,7 +292,7 @@ var result = await api.Client.Message.AppendFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-ValueTOfString result = api.client().message().appendFile(request);
+ValueTOfString result = api.client().message().append(request);
 ```
 
 {{< /tab >}}
@@ -362,7 +300,7 @@ ValueTOfString result = api.client().message().appendFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.client.message.append_file(request)
+result = api.client.message.append(request)
 ```
 
 {{< /tab >}}
@@ -370,7 +308,7 @@ result = api.client.message.append_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.client.message.append_file(request)
+result = api.client.message.append(request)
 ```
 
 {{< /tab >}}
@@ -378,7 +316,7 @@ result = api.client.message.append_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.client.message.appendFile(request);
+let result = await api.client.message.append(request);
 ```
 
 {{< /tab >}}
@@ -386,20 +324,20 @@ let result = await api.client.message.appendFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->client()->message()->appendFile($request);
+$result = $api->client()->message()->append($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## AppendFile
 
-Input parameters:
+Add email message from file to specified folder in email account. 
+Returns [**ValueTOfString**](/email/reference-model-value-t-of-string/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: AppendFile method request.
-
-Type: [**ClientMessageAppendFileRequest**](/email/reference-model-client-message-append-file-request/).
+AppendFile method request. Type: [**ClientMessageAppendFileRequest**](/email/reference-model-client-message-append-file-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_append_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -495,16 +433,13 @@ $request = Models::ClientMessageAppendFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Delete
 
-Delete message.             
-
-{{< tabs tabTotal="6" tabID="client_message_delete_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="client_message_append_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.Client.Message.DeleteAsync(request);
+var result = await api.Client.Message.AppendFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -512,7 +447,7 @@ await api.Client.Message.DeleteAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.client().message().delete(request);
+ValueTOfString result = api.client().message().appendFile(request);
 ```
 
 {{< /tab >}}
@@ -520,7 +455,7 @@ api.client().message().delete(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.client.message.delete(request)
+result = api.client.message.append_file(request)
 ```
 
 {{< /tab >}}
@@ -528,7 +463,7 @@ api.client.message.delete(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.client.message.delete(request)
+result = api.client.message.append_file(request)
 ```
 
 {{< /tab >}}
@@ -536,7 +471,7 @@ api.client.message.delete(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.client.message.delete(request);
+let result = await api.client.message.appendFile(request);
 ```
 
 {{< /tab >}}
@@ -544,20 +479,19 @@ await api.client.message.delete(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->client()->message()->delete($request);
+$result = $api->client()->message()->appendFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Delete
 
-Input parameters:
+Delete message. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Delete message request.
-
-Type: [**ClientMessageDeleteRequest**](/email/reference-model-client-message-delete-request/).
+Delete message request. Type: [**ClientMessageDeleteRequest**](/email/reference-model-client-message-delete-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_delete_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -658,18 +592,13 @@ $request = Models::clientMessageDeleteRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Fetch
 
-Fetch message from email account             
-
-Returns [**MailMessageBase**](/email/reference-model-mail-message-base/) model.
-
-{{< tabs tabTotal="6" tabID="client_message_fetch_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="client_message_delete_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Client.Message.FetchAsync(request);
+await api.Client.Message.DeleteAsync(request);
 ```
 
 {{< /tab >}}
@@ -677,7 +606,7 @@ var result = await api.Client.Message.FetchAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-MailMessageBase result = api.client().message().fetch(request);
+api.client().message().delete(request);
 ```
 
 {{< /tab >}}
@@ -685,7 +614,7 @@ MailMessageBase result = api.client().message().fetch(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.client.message.fetch(request)
+api.client.message.delete(request)
 ```
 
 {{< /tab >}}
@@ -693,7 +622,7 @@ result = api.client.message.fetch(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.client.message.fetch(request)
+api.client.message.delete(request)
 ```
 
 {{< /tab >}}
@@ -701,7 +630,7 @@ result = api.client.message.fetch(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.client.message.fetch(request);
+await api.client.message.delete(request);
 ```
 
 {{< /tab >}}
@@ -709,20 +638,20 @@ let result = await api.client.message.fetch(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->client()->message()->fetch($request);
+$api->client()->message()->delete($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Fetch
 
-Input parameters:
+Fetch message from email account. 
+Returns [**MailMessageBase**](/email/reference-model-mail-message-base/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Fetch method request.
-
-Type: [**ClientMessageFetchRequest**](/email/reference-model-client-message-fetch-request/).
+Fetch method request. Type: [**ClientMessageFetchRequest**](/email/reference-model-client-message-fetch-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_fetch_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -824,18 +753,13 @@ $request = Models::ClientMessageFetchRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## FetchFile
 
-Fetch message as file from email account             
-
-Returns a file.
-
-{{< tabs tabTotal="6" tabID="client_message_fetch_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="client_message_fetch_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Client.Message.FetchFileAsync(request);
+var result = await api.Client.Message.FetchAsync(request);
 ```
 
 {{< /tab >}}
@@ -843,7 +767,7 @@ var result = await api.Client.Message.FetchFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-byte[] result = api.client().message().fetchFile(request);
+MailMessageBase result = api.client().message().fetch(request);
 ```
 
 {{< /tab >}}
@@ -851,7 +775,7 @@ byte[] result = api.client().message().fetchFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.client.message.fetch_file(request)
+result = api.client.message.fetch(request)
 ```
 
 {{< /tab >}}
@@ -859,7 +783,7 @@ result = api.client.message.fetch_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.client.message.fetch_file(request)
+result = api.client.message.fetch(request)
 ```
 
 {{< /tab >}}
@@ -867,7 +791,7 @@ result = api.client.message.fetch_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.client.message.fetchFile(request);
+let result = await api.client.message.fetch(request);
 ```
 
 {{< /tab >}}
@@ -875,20 +799,20 @@ let result = await api.client.message.fetchFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->client()->message()->fetchFile($request);
+$result = $api->client()->message()->fetch($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## FetchFile
 
-Input parameters:
+Fetch message as file from email account. 
+Returns a **File**. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: FetchFile method request.
-
-Type: [**ClientMessageFetchFileRequest**](/email/reference-model-client-message-fetch-file-request/).
+FetchFile method request. Type: [**ClientMessageFetchFileRequest**](/email/reference-model-client-message-fetch-file-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_fetch_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -984,18 +908,13 @@ $request = Models::ClientMessageFetchFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## List
 
-Get messages from folder, filtered by query             
-
-Returns [**MailMessageBaseList**](/email/reference-model-mail-message-base-list/) model.
-
-{{< tabs tabTotal="6" tabID="client_message_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="client_message_fetch_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Client.Message.ListAsync(request);
+var result = await api.Client.Message.FetchFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -1003,7 +922,7 @@ var result = await api.Client.Message.ListAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-MailMessageBaseList result = api.client().message().list(request);
+byte[] result = api.client().message().fetchFile(request);
 ```
 
 {{< /tab >}}
@@ -1011,7 +930,7 @@ MailMessageBaseList result = api.client().message().list(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.client.message.list(request)
+result = api.client.message.fetch_file(request)
 ```
 
 {{< /tab >}}
@@ -1019,7 +938,7 @@ result = api.client.message.list(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.client.message.list(request)
+result = api.client.message.fetch_file(request)
 ```
 
 {{< /tab >}}
@@ -1027,7 +946,7 @@ result = api.client.message.list(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.client.message.list(request);
+let result = await api.client.message.fetchFile(request);
 ```
 
 {{< /tab >}}
@@ -1035,20 +954,20 @@ let result = await api.client.message.list(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->client()->message()->list($request);
+$result = $api->client()->message()->fetchFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## List
 
-Input parameters:
+Get messages from folder, filtered by query. 
+Returns [**MailMessageBaseList**](/email/reference-model-mail-message-base-list/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: List method request.
-
-Type: [**ClientMessageListRequest**](/email/reference-model-client-message-list-request/).
+List method request. Type: [**ClientMessageListRequest**](/email/reference-model-client-message-list-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_list_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1156,16 +1075,13 @@ $request = Models::ClientMessageListRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Move
 
-Move message to another folder.             
-
-{{< tabs tabTotal="6" tabID="client_message_move_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="client_message_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.Client.Message.MoveAsync(request);
+var result = await api.Client.Message.ListAsync(request);
 ```
 
 {{< /tab >}}
@@ -1173,7 +1089,7 @@ await api.Client.Message.MoveAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.client().message().move(request);
+MailMessageBaseList result = api.client().message().list(request);
 ```
 
 {{< /tab >}}
@@ -1181,7 +1097,7 @@ api.client().message().move(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.client.message.move(request)
+result = api.client.message.list(request)
 ```
 
 {{< /tab >}}
@@ -1189,7 +1105,7 @@ api.client.message.move(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.client.message.move(request)
+result = api.client.message.list(request)
 ```
 
 {{< /tab >}}
@@ -1197,7 +1113,7 @@ api.client.message.move(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.client.message.move(request);
+let result = await api.client.message.list(request);
 ```
 
 {{< /tab >}}
@@ -1205,20 +1121,19 @@ await api.client.message.move(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->client()->message()->move($request);
+$result = $api->client()->message()->list($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Move
 
-Input parameters:
+Move message to another folder. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Move message request.
-
-Type: [**ClientMessageMoveRequest**](/email/reference-model-client-message-move-request/).
+Move message request. Type: [**ClientMessageMoveRequest**](/email/reference-model-client-message-move-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_move_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1325,16 +1240,13 @@ $request = Models::clientMessageMoveRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Send
 
-Send an email specified by model in request.             
-
-{{< tabs tabTotal="6" tabID="client_message_send_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="client_message_move_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.Client.Message.SendAsync(request);
+await api.Client.Message.MoveAsync(request);
 ```
 
 {{< /tab >}}
@@ -1342,7 +1254,7 @@ await api.Client.Message.SendAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.client().message().send(request);
+api.client().message().move(request);
 ```
 
 {{< /tab >}}
@@ -1350,7 +1262,7 @@ api.client().message().send(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.client.message.send(request)
+api.client.message.move(request)
 ```
 
 {{< /tab >}}
@@ -1358,7 +1270,7 @@ api.client.message.send(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.client.message.send(request)
+api.client.message.move(request)
 ```
 
 {{< /tab >}}
@@ -1366,7 +1278,7 @@ api.client.message.send(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.client.message.send(request);
+await api.client.message.move(request);
 ```
 
 {{< /tab >}}
@@ -1374,20 +1286,19 @@ await api.client.message.send(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->client()->message()->send($request);
+$api->client()->message()->move($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Send
 
-Input parameters:
+Send an email specified by model in request. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Send email request.
-
-Type: [**ClientMessageSendRequest**](/email/reference-model-client-message-send-request/).
+Send email request. Type: [**ClientMessageSendRequest**](/email/reference-model-client-message-send-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_send_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1639,16 +1550,13 @@ $request = Models::clientMessageSendRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## SendFile
 
-Send an email file.             
-
-{{< tabs tabTotal="6" tabID="client_message_send_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="client_message_send_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.Client.Message.SendFileAsync(request);
+await api.Client.Message.SendAsync(request);
 ```
 
 {{< /tab >}}
@@ -1656,7 +1564,7 @@ await api.Client.Message.SendFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.client().message().sendFile(request);
+api.client().message().send(request);
 ```
 
 {{< /tab >}}
@@ -1664,7 +1572,7 @@ api.client().message().sendFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.client.message.send_file(request)
+api.client.message.send(request)
 ```
 
 {{< /tab >}}
@@ -1672,7 +1580,7 @@ api.client.message.send_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.client.message.send_file(request)
+api.client.message.send(request)
 ```
 
 {{< /tab >}}
@@ -1680,7 +1588,7 @@ api.client.message.send_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.client.message.sendFile(request);
+await api.client.message.send(request);
 ```
 
 {{< /tab >}}
@@ -1688,20 +1596,19 @@ await api.client.message.sendFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->client()->message()->sendFile($request);
+$api->client()->message()->send($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## SendFile
 
-Input parameters:
+Send an email file. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: SendFile method request.
-
-Type: [**ClientMessageSendFileRequest**](/email/reference-model-client-message-send-file-request/).
+SendFile method request. Type: [**ClientMessageSendFileRequest**](/email/reference-model-client-message-send-file-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_send_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1791,16 +1698,13 @@ $request = Models::ClientMessageSendFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## SetIsRead
 
-Mark message as read or unread.             
-
-{{< tabs tabTotal="6" tabID="client_message_set_is_read_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="client_message_send_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.Client.Message.SetIsReadAsync(request);
+await api.Client.Message.SendFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -1808,7 +1712,7 @@ await api.Client.Message.SetIsReadAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.client().message().setIsRead(request);
+api.client().message().sendFile(request);
 ```
 
 {{< /tab >}}
@@ -1816,7 +1720,7 @@ api.client().message().setIsRead(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.client.message.set_is_read(request)
+api.client.message.send_file(request)
 ```
 
 {{< /tab >}}
@@ -1824,7 +1728,7 @@ api.client.message.set_is_read(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.client.message.set_is_read(request)
+api.client.message.send_file(request)
 ```
 
 {{< /tab >}}
@@ -1832,7 +1736,7 @@ api.client.message.set_is_read(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.client.message.setIsRead(request);
+await api.client.message.sendFile(request);
 ```
 
 {{< /tab >}}
@@ -1840,20 +1744,19 @@ await api.client.message.setIsRead(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->client()->message()->setIsRead($request);
+$api->client()->message()->sendFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## SetIsRead
 
-Input parameters:
+Mark message as read or unread. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Delete message request.
-
-Type: [**ClientMessageSetIsReadRequest**](/email/reference-model-client-message-set-is-read-request/).
+Delete message request. Type: [**ClientMessageSetIsReadRequest**](/email/reference-model-client-message-set-is-read-request/).
 
 {{< tabs tabTotal="6" tabID="client_message_set_is_read_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1955,6 +1858,58 @@ $request = Models::clientMessageSetIsReadRequest()
 
 {{< /expand-list >}}
 
+{{< tabs tabTotal="6" tabID="client_message_set_is_read_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+await api.Client.Message.SetIsReadAsync(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+api.client().message().setIsRead(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```python
+api.client.message.set_is_read(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+```ruby
+api.client.message.set_is_read(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```typescript
+await api.client.message.setIsRead(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```php
+$api->client()->message()->setIsRead($request);
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ## More APIs
-See more APIs:
+
 {{< list-of-articles-in-this-section >}}

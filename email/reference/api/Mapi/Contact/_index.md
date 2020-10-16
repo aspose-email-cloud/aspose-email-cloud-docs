@@ -9,69 +9,12 @@ MAPI contact operations
 
 ## AsContactDto
 
-Converts MAPI contact model to ContactDto model.             
-
-Returns [**ContactDto**](/email/reference-model-contact-dto/) model.
-
-{{< tabs tabTotal="6" tabID="mapi_contact_as_contact_dto_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-var result = await api.Mapi.Contact.AsContactDtoAsync(mapiContactDto);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-ContactDto result = api.mapi().contact().asContactDto(mapiContactDto);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```python
-result = api.mapi.contact.as_contact_dto(mapi_contact_dto)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-result = api.mapi.contact.as_contact_dto(mapi_contact_dto)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```typescript
-let result = await api.mapi.contact.asContactDto(mapiContactDto);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-```php
-$result = $api->mapi()->contact()->asContactDto($mapi_contact_dto);
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-Input parameters:
+Converts MAPI contact model to ContactDto model. 
+Returns [**ContactDto**](/email/reference-model-contact-dto/) model. Requires:
 
 {{< expand-list title="mapiContactDto" >}}
 
-Description: MAPI contact model to convert.
-
-Type: [**MapiContactDto**](/email/reference-model-mapi-contact-dto/).
+MAPI contact model to convert. Type: [**MapiContactDto**](/email/reference-model-mapi-contact-dto/).
 
 {{< tabs tabTotal="6" tabID="mapi_contact_as_contact_dto_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -233,18 +176,13 @@ $mapi_contact_dto = Models::mapiContactDto()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## AsFile
 
-Converts MAPI contact model to specified format and returns as file.             
-
-Returns a file.
-
-{{< tabs tabTotal="6" tabID="mapi_contact_as_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="mapi_contact_as_contact_dto_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Mapi.Contact.AsFileAsync(request);
+var result = await api.Mapi.Contact.AsContactDtoAsync(mapiContactDto);
 ```
 
 {{< /tab >}}
@@ -252,7 +190,7 @@ var result = await api.Mapi.Contact.AsFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-byte[] result = api.mapi().contact().asFile(request);
+ContactDto result = api.mapi().contact().asContactDto(mapiContactDto);
 ```
 
 {{< /tab >}}
@@ -260,7 +198,7 @@ byte[] result = api.mapi().contact().asFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.mapi.contact.as_file(request)
+result = api.mapi.contact.as_contact_dto(mapi_contact_dto)
 ```
 
 {{< /tab >}}
@@ -268,7 +206,7 @@ result = api.mapi.contact.as_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.mapi.contact.as_file(request)
+result = api.mapi.contact.as_contact_dto(mapi_contact_dto)
 ```
 
 {{< /tab >}}
@@ -276,7 +214,7 @@ result = api.mapi.contact.as_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.mapi.contact.asFile(request);
+let result = await api.mapi.contact.asContactDto(mapiContactDto);
 ```
 
 {{< /tab >}}
@@ -284,20 +222,20 @@ let result = await api.mapi.contact.asFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->mapi()->contact()->asFile($request);
+$result = $api->mapi()->contact()->asContactDto($mapi_contact_dto);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## AsFile
 
-Input parameters:
+Converts MAPI contact model to specified format and returns as file. 
+Returns a **File**. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: MAPI contact model to convert.
-
-Type: [**MapiContactAsFileRequest**](/email/reference-model-mapi-contact-as-file-request/).
+MAPI contact model to convert. Type: [**MapiContactAsFileRequest**](/email/reference-model-mapi-contact-as-file-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_contact_as_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -476,18 +414,13 @@ $request = Models::mapiContactAsFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## FromFile
 
-Converts contact file to a MAPI model representation.             
-
-Returns [**MapiContactDto**](/email/reference-model-mapi-contact-dto/) model.
-
-{{< tabs tabTotal="6" tabID="mapi_contact_from_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="mapi_contact_as_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Mapi.Contact.FromFileAsync(request);
+var result = await api.Mapi.Contact.AsFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -495,7 +428,7 @@ var result = await api.Mapi.Contact.FromFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-MapiContactDto result = api.mapi().contact().fromFile(request);
+byte[] result = api.mapi().contact().asFile(request);
 ```
 
 {{< /tab >}}
@@ -503,7 +436,7 @@ MapiContactDto result = api.mapi().contact().fromFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.mapi.contact.from_file(request)
+result = api.mapi.contact.as_file(request)
 ```
 
 {{< /tab >}}
@@ -511,7 +444,7 @@ result = api.mapi.contact.from_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.mapi.contact.from_file(request)
+result = api.mapi.contact.as_file(request)
 ```
 
 {{< /tab >}}
@@ -519,7 +452,7 @@ result = api.mapi.contact.from_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.mapi.contact.fromFile(request);
+let result = await api.mapi.contact.asFile(request);
 ```
 
 {{< /tab >}}
@@ -527,20 +460,20 @@ let result = await api.mapi.contact.fromFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->mapi()->contact()->fromFile($request);
+$result = $api->mapi()->contact()->asFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## FromFile
 
-Input parameters:
+Converts contact file to a MAPI model representation. 
+Returns [**MapiContactDto**](/email/reference-model-mapi-contact-dto/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: FromFile method request.
-
-Type: [**MapiContactFromFileRequest**](/email/reference-model-mapi-contact-from-file-request/).
+FromFile method request. Type: [**MapiContactFromFileRequest**](/email/reference-model-mapi-contact-from-file-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_contact_from_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -612,18 +545,13 @@ $request = Models::MapiContactFromFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Get
 
-Get MAPI contact document.             
-
-Returns [**MapiContactDto**](/email/reference-model-mapi-contact-dto/) model.
-
-{{< tabs tabTotal="6" tabID="mapi_contact_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="mapi_contact_from_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Mapi.Contact.GetAsync(request);
+var result = await api.Mapi.Contact.FromFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -631,7 +559,7 @@ var result = await api.Mapi.Contact.GetAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-MapiContactDto result = api.mapi().contact().get(request);
+MapiContactDto result = api.mapi().contact().fromFile(request);
 ```
 
 {{< /tab >}}
@@ -639,7 +567,7 @@ MapiContactDto result = api.mapi().contact().get(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.mapi.contact.get(request)
+result = api.mapi.contact.from_file(request)
 ```
 
 {{< /tab >}}
@@ -647,7 +575,7 @@ result = api.mapi.contact.get(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.mapi.contact.get(request)
+result = api.mapi.contact.from_file(request)
 ```
 
 {{< /tab >}}
@@ -655,7 +583,7 @@ result = api.mapi.contact.get(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.mapi.contact.get(request);
+let result = await api.mapi.contact.fromFile(request);
 ```
 
 {{< /tab >}}
@@ -663,20 +591,20 @@ let result = await api.mapi.contact.get(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->mapi()->contact()->get($request);
+$result = $api->mapi()->contact()->fromFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Get
 
-Input parameters:
+Get MAPI contact document. 
+Returns [**MapiContactDto**](/email/reference-model-mapi-contact-dto/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Get method request.
-
-Type: [**MapiContactGetRequest**](/email/reference-model-mapi-contact-get-request/).
+Get method request. Type: [**MapiContactGetRequest**](/email/reference-model-mapi-contact-get-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_contact_get_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -760,16 +688,13 @@ $request = Models::MapiContactGetRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Save
 
-Save MAPI Contact to storage.             
-
-{{< tabs tabTotal="6" tabID="mapi_contact_save_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="mapi_contact_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.Mapi.Contact.SaveAsync(request);
+var result = await api.Mapi.Contact.GetAsync(request);
 ```
 
 {{< /tab >}}
@@ -777,7 +702,7 @@ await api.Mapi.Contact.SaveAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.mapi().contact().save(request);
+MapiContactDto result = api.mapi().contact().get(request);
 ```
 
 {{< /tab >}}
@@ -785,7 +710,7 @@ api.mapi().contact().save(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.mapi.contact.save(request)
+result = api.mapi.contact.get(request)
 ```
 
 {{< /tab >}}
@@ -793,7 +718,7 @@ api.mapi.contact.save(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.mapi.contact.save(request)
+result = api.mapi.contact.get(request)
 ```
 
 {{< /tab >}}
@@ -801,7 +726,7 @@ api.mapi.contact.save(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.mapi.contact.save(request);
+let result = await api.mapi.contact.get(request);
 ```
 
 {{< /tab >}}
@@ -809,20 +734,19 @@ await api.mapi.contact.save(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->mapi()->contact()->save($request);
+$result = $api->mapi()->contact()->get($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Save
 
-Input parameters:
+Save MAPI Contact to storage. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Create/Update contact request.
-
-Type: [**MapiContactSaveRequest**](/email/reference-model-mapi-contact-save-request/).
+Create/Update contact request. Type: [**MapiContactSaveRequest**](/email/reference-model-mapi-contact-save-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_contact_save_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1031,6 +955,58 @@ $request = Models::mapiContactSaveRequest()
 
 {{< /expand-list >}}
 
+{{< tabs tabTotal="6" tabID="mapi_contact_save_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+await api.Mapi.Contact.SaveAsync(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+api.mapi().contact().save(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```python
+api.mapi.contact.save(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+```ruby
+api.mapi.contact.save(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```typescript
+await api.mapi.contact.save(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```php
+$api->mapi()->contact()->save($request);
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ## More APIs
-See more APIs:
+
 {{< list-of-articles-in-this-section >}}

@@ -9,67 +9,11 @@ Folder operations controller
 
 ## CopyFolder
 
-Copy folder
-
-{{< tabs tabTotal="6" tabID="copy_folder_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-await api.CloudStorage.Folder.CopyFolderAsync(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-api.cloudStorage().folder().copyFolder(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```python
-api.cloud_storage.folder.copy_folder(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-api.cloud_storage.folder.copy_folder(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```typescript
-await api.cloudStorage.folder.copyFolder(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-```php
-$api->cloudStorage()->folder()->copyFolder($request);
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-Input parameters:
+Copy folder. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: CopyFolder method request.
-
-Type: [**CopyFolderRequest**](/email/reference-model-copy-folder-request/).
+CopyFolder method request. Type: [**CopyFolderRequest**](/email/reference-model-copy-folder-request/).
 
 {{< tabs tabTotal="6" tabID="copy_folder_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -153,16 +97,13 @@ $request = Models::CopyFolderRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## CreateFolder
 
-Create the folder
-
-{{< tabs tabTotal="6" tabID="create_folder_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="copy_folder_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.CloudStorage.Folder.CreateFolderAsync(request);
+await api.CloudStorage.Folder.CopyFolderAsync(request);
 ```
 
 {{< /tab >}}
@@ -170,7 +111,7 @@ await api.CloudStorage.Folder.CreateFolderAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.cloudStorage().folder().createFolder(request);
+api.cloudStorage().folder().copyFolder(request);
 ```
 
 {{< /tab >}}
@@ -178,7 +119,7 @@ api.cloudStorage().folder().createFolder(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.cloud_storage.folder.create_folder(request)
+api.cloud_storage.folder.copy_folder(request)
 ```
 
 {{< /tab >}}
@@ -186,7 +127,7 @@ api.cloud_storage.folder.create_folder(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.cloud_storage.folder.create_folder(request)
+api.cloud_storage.folder.copy_folder(request)
 ```
 
 {{< /tab >}}
@@ -194,7 +135,7 @@ api.cloud_storage.folder.create_folder(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.cloudStorage.folder.createFolder(request);
+await api.cloudStorage.folder.copyFolder(request);
 ```
 
 {{< /tab >}}
@@ -202,20 +143,19 @@ await api.cloudStorage.folder.createFolder(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->cloudStorage()->folder()->createFolder($request);
+$api->cloudStorage()->folder()->copyFolder($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## CreateFolder
 
-Input parameters:
+Create the folder. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: CreateFolder method request.
-
-Type: [**CreateFolderRequest**](/email/reference-model-create-folder-request/).
+CreateFolder method request. Type: [**CreateFolderRequest**](/email/reference-model-create-folder-request/).
 
 {{< tabs tabTotal="6" tabID="create_folder_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -287,16 +227,13 @@ $request = Models::CreateFolderRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## DeleteFolder
 
-Delete folder
-
-{{< tabs tabTotal="6" tabID="delete_folder_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="create_folder_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.CloudStorage.Folder.DeleteFolderAsync(request);
+await api.CloudStorage.Folder.CreateFolderAsync(request);
 ```
 
 {{< /tab >}}
@@ -304,7 +241,7 @@ await api.CloudStorage.Folder.DeleteFolderAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.cloudStorage().folder().deleteFolder(request);
+api.cloudStorage().folder().createFolder(request);
 ```
 
 {{< /tab >}}
@@ -312,7 +249,7 @@ api.cloudStorage().folder().deleteFolder(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.cloud_storage.folder.delete_folder(request)
+api.cloud_storage.folder.create_folder(request)
 ```
 
 {{< /tab >}}
@@ -320,7 +257,7 @@ api.cloud_storage.folder.delete_folder(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.cloud_storage.folder.delete_folder(request)
+api.cloud_storage.folder.create_folder(request)
 ```
 
 {{< /tab >}}
@@ -328,7 +265,7 @@ api.cloud_storage.folder.delete_folder(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.cloudStorage.folder.deleteFolder(request);
+await api.cloudStorage.folder.createFolder(request);
 ```
 
 {{< /tab >}}
@@ -336,20 +273,19 @@ await api.cloudStorage.folder.deleteFolder(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->cloudStorage()->folder()->deleteFolder($request);
+$api->cloudStorage()->folder()->createFolder($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## DeleteFolder
 
-Input parameters:
+Delete folder. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: DeleteFolder method request.
-
-Type: [**DeleteFolderRequest**](/email/reference-model-delete-folder-request/).
+DeleteFolder method request. Type: [**DeleteFolderRequest**](/email/reference-model-delete-folder-request/).
 
 {{< tabs tabTotal="6" tabID="delete_folder_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -427,18 +363,13 @@ $request = Models::DeleteFolderRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## GetFilesList
 
-Get all files and folders within a folder
-
-Returns [**FilesList**](/email/reference-model-files-list/) model.
-
-{{< tabs tabTotal="6" tabID="get_files_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="delete_folder_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.CloudStorage.Folder.GetFilesListAsync(request);
+await api.CloudStorage.Folder.DeleteFolderAsync(request);
 ```
 
 {{< /tab >}}
@@ -446,7 +377,7 @@ var result = await api.CloudStorage.Folder.GetFilesListAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-FilesList result = api.cloudStorage().folder().getFilesList(request);
+api.cloudStorage().folder().deleteFolder(request);
 ```
 
 {{< /tab >}}
@@ -454,7 +385,7 @@ FilesList result = api.cloudStorage().folder().getFilesList(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.cloud_storage.folder.get_files_list(request)
+api.cloud_storage.folder.delete_folder(request)
 ```
 
 {{< /tab >}}
@@ -462,7 +393,7 @@ result = api.cloud_storage.folder.get_files_list(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.cloud_storage.folder.get_files_list(request)
+api.cloud_storage.folder.delete_folder(request)
 ```
 
 {{< /tab >}}
@@ -470,7 +401,7 @@ result = api.cloud_storage.folder.get_files_list(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.cloudStorage.folder.getFilesList(request);
+await api.cloudStorage.folder.deleteFolder(request);
 ```
 
 {{< /tab >}}
@@ -478,20 +409,20 @@ let result = await api.cloudStorage.folder.getFilesList(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->cloudStorage()->folder()->getFilesList($request);
+$api->cloudStorage()->folder()->deleteFolder($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## GetFilesList
 
-Input parameters:
+Get all files and folders within a folder. 
+Returns [**FilesList**](/email/reference-model-files-list/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: GetFilesList method request.
-
-Type: [**GetFilesListRequest**](/email/reference-model-get-files-list-request/).
+GetFilesList method request. Type: [**GetFilesListRequest**](/email/reference-model-get-files-list-request/).
 
 {{< tabs tabTotal="6" tabID="get_files_list_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -563,16 +494,13 @@ $request = Models::GetFilesListRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## MoveFolder
 
-Move folder
-
-{{< tabs tabTotal="6" tabID="move_folder_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="get_files_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.CloudStorage.Folder.MoveFolderAsync(request);
+var result = await api.CloudStorage.Folder.GetFilesListAsync(request);
 ```
 
 {{< /tab >}}
@@ -580,7 +508,7 @@ await api.CloudStorage.Folder.MoveFolderAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.cloudStorage().folder().moveFolder(request);
+FilesList result = api.cloudStorage().folder().getFilesList(request);
 ```
 
 {{< /tab >}}
@@ -588,7 +516,7 @@ api.cloudStorage().folder().moveFolder(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.cloud_storage.folder.move_folder(request)
+result = api.cloud_storage.folder.get_files_list(request)
 ```
 
 {{< /tab >}}
@@ -596,7 +524,7 @@ api.cloud_storage.folder.move_folder(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.cloud_storage.folder.move_folder(request)
+result = api.cloud_storage.folder.get_files_list(request)
 ```
 
 {{< /tab >}}
@@ -604,7 +532,7 @@ api.cloud_storage.folder.move_folder(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.cloudStorage.folder.moveFolder(request);
+let result = await api.cloudStorage.folder.getFilesList(request);
 ```
 
 {{< /tab >}}
@@ -612,20 +540,19 @@ await api.cloudStorage.folder.moveFolder(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->cloudStorage()->folder()->moveFolder($request);
+$result = $api->cloudStorage()->folder()->getFilesList($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## MoveFolder
 
-Input parameters:
+Move folder. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: MoveFolder method request.
-
-Type: [**MoveFolderRequest**](/email/reference-model-move-folder-request/).
+MoveFolder method request. Type: [**MoveFolderRequest**](/email/reference-model-move-folder-request/).
 
 {{< tabs tabTotal="6" tabID="move_folder_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -710,6 +637,58 @@ $request = Models::MoveFolderRequest()
 
 {{< /expand-list >}}
 
+{{< tabs tabTotal="6" tabID="move_folder_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+await api.CloudStorage.Folder.MoveFolderAsync(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+api.cloudStorage().folder().moveFolder(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```python
+api.cloud_storage.folder.move_folder(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+```ruby
+api.cloud_storage.folder.move_folder(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```typescript
+await api.cloudStorage.folder.moveFolder(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```php
+$api->cloudStorage()->folder()->moveFolder($request);
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ## More APIs
-See more APIs:
+
 {{< list-of-articles-in-this-section >}}

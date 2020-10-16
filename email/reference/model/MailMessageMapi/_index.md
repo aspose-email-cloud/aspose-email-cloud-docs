@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 
 Parent class: [MailMessageBase](/email/reference-model-mail-message-base/)
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="mail_message_mapi_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -261,5 +261,4 @@ $mailMessageMapi = Models::mailMessageMapi()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

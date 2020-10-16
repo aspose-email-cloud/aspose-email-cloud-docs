@@ -9,67 +9,11 @@ Email client folder operations.
 
 ## Create
 
-Create new folder in email account             
-
-{{< tabs tabTotal="6" tabID="client_folder_create_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-await api.Client.Folder.CreateAsync(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-api.client().folder().create(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```python
-api.client.folder.create(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-api.client.folder.create(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```typescript
-await api.client.folder.create(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-```php
-$api->client()->folder()->create($request);
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-Input parameters:
+Create new folder in email account. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Create folder request
-
-Type: [**ClientFolderCreateRequest**](/email/reference-model-client-folder-create-request/).
+Create folder request. Type: [**ClientFolderCreateRequest**](/email/reference-model-client-folder-create-request/).
 
 {{< tabs tabTotal="6" tabID="client_folder_create_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -170,16 +114,13 @@ $request = Models::clientFolderCreateRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Delete
 
-Delete a folder in email account             
-
-{{< tabs tabTotal="6" tabID="client_folder_delete_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="client_folder_create_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.Client.Folder.DeleteAsync(request);
+await api.Client.Folder.CreateAsync(request);
 ```
 
 {{< /tab >}}
@@ -187,7 +128,7 @@ await api.Client.Folder.DeleteAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.client().folder().delete(request);
+api.client().folder().create(request);
 ```
 
 {{< /tab >}}
@@ -195,7 +136,7 @@ api.client().folder().delete(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.client.folder.delete(request)
+api.client.folder.create(request)
 ```
 
 {{< /tab >}}
@@ -203,7 +144,7 @@ api.client.folder.delete(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.client.folder.delete(request)
+api.client.folder.create(request)
 ```
 
 {{< /tab >}}
@@ -211,7 +152,7 @@ api.client.folder.delete(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.client.folder.delete(request);
+await api.client.folder.create(request);
 ```
 
 {{< /tab >}}
@@ -219,20 +160,19 @@ await api.client.folder.delete(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->client()->folder()->delete($request);
+$api->client()->folder()->create($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Delete
 
-Input parameters:
+Delete a folder in email account. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Delete folder request
-
-Type: [**ClientFolderDeleteRequest**](/email/reference-model-client-folder-delete-request/).
+Delete folder request. Type: [**ClientFolderDeleteRequest**](/email/reference-model-client-folder-delete-request/).
 
 {{< tabs tabTotal="6" tabID="client_folder_delete_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -327,18 +267,13 @@ $request = Models::clientFolderDeleteRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## GetList
 
-Get folders list in email account             
-
-Returns [**MailServerFolderList**](/email/reference-model-mail-server-folder-list/) model.
-
-{{< tabs tabTotal="6" tabID="client_folder_get_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="client_folder_delete_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Client.Folder.GetListAsync(request);
+await api.Client.Folder.DeleteAsync(request);
 ```
 
 {{< /tab >}}
@@ -346,7 +281,7 @@ var result = await api.Client.Folder.GetListAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-MailServerFolderList result = api.client().folder().getList(request);
+api.client().folder().delete(request);
 ```
 
 {{< /tab >}}
@@ -354,7 +289,7 @@ MailServerFolderList result = api.client().folder().getList(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.client.folder.get_list(request)
+api.client.folder.delete(request)
 ```
 
 {{< /tab >}}
@@ -362,7 +297,7 @@ result = api.client.folder.get_list(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.client.folder.get_list(request)
+api.client.folder.delete(request)
 ```
 
 {{< /tab >}}
@@ -370,7 +305,7 @@ result = api.client.folder.get_list(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.client.folder.getList(request);
+await api.client.folder.delete(request);
 ```
 
 {{< /tab >}}
@@ -378,20 +313,20 @@ let result = await api.client.folder.getList(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->client()->folder()->getList($request);
+$api->client()->folder()->delete($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## GetList
 
-Input parameters:
+Get folders list in email account. 
+Returns [**MailServerFolderList**](/email/reference-model-mail-server-folder-list/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: GetList method request.
-
-Type: [**ClientFolderGetListRequest**](/email/reference-model-client-folder-get-list-request/).
+GetList method request. Type: [**ClientFolderGetListRequest**](/email/reference-model-client-folder-get-list-request/).
 
 {{< tabs tabTotal="6" tabID="client_folder_get_list_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -476,6 +411,58 @@ $request = Models::ClientFolderGetListRequest()
 
 {{< /expand-list >}}
 
+{{< tabs tabTotal="6" tabID="client_folder_get_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+var result = await api.Client.Folder.GetListAsync(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+MailServerFolderList result = api.client().folder().getList(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```python
+result = api.client.folder.get_list(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+```ruby
+result = api.client.folder.get_list(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```typescript
+let result = await api.client.folder.getList(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```php
+$result = $api->client()->folder()->getList($request);
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ## More APIs
-See more APIs:
+
 {{< list-of-articles-in-this-section >}}

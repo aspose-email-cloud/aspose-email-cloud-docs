@@ -9,69 +9,12 @@ Contact document operations. Supported formats: VCard, MSG, WebDav
 
 ## AsFile
 
-Converts contact model to specified format and returns as file             
-
-Returns a file.
-
-{{< tabs tabTotal="6" tabID="contact_as_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-var result = await api.Contact.AsFileAsync(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-byte[] result = api.contact().asFile(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```python
-result = api.contact.as_file(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-result = api.contact.as_file(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```typescript
-let result = await api.contact.asFile(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-```php
-$result = $api->contact()->asFile($request);
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-Input parameters:
+Converts contact model to specified format and returns as file. 
+Returns a **File**. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Contact model and format to convert
-
-Type: [**ContactAsFileRequest**](/email/reference-model-contact-as-file-request/).
+Contact model and format to convert. Type: [**ContactAsFileRequest**](/email/reference-model-contact-as-file-request/).
 
 {{< tabs tabTotal="6" tabID="contact_as_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -359,18 +302,13 @@ $request = Models::contactAsFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## AsMapi
 
-Converts ContactDto to MapiContactDto.             
-
-Returns [**MapiContactDto**](/email/reference-model-mapi-contact-dto/) model.
-
-{{< tabs tabTotal="6" tabID="contact_as_mapi_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="contact_as_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Contact.AsMapiAsync(contactDto);
+var result = await api.Contact.AsFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -378,7 +316,7 @@ var result = await api.Contact.AsMapiAsync(contactDto);
 {{< tab tabNum="2" >}}
 
 ```java
-MapiContactDto result = api.contact().asMapi(contactDto);
+byte[] result = api.contact().asFile(request);
 ```
 
 {{< /tab >}}
@@ -386,7 +324,7 @@ MapiContactDto result = api.contact().asMapi(contactDto);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.contact.as_mapi(contact_dto)
+result = api.contact.as_file(request)
 ```
 
 {{< /tab >}}
@@ -394,7 +332,7 @@ result = api.contact.as_mapi(contact_dto)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.contact.as_mapi(contact_dto)
+result = api.contact.as_file(request)
 ```
 
 {{< /tab >}}
@@ -402,7 +340,7 @@ result = api.contact.as_mapi(contact_dto)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.contact.asMapi(contactDto);
+let result = await api.contact.asFile(request);
 ```
 
 {{< /tab >}}
@@ -410,20 +348,20 @@ let result = await api.contact.asMapi(contactDto);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->contact()->asMapi($contact_dto);
+$result = $api->contact()->asFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## AsMapi
 
-Input parameters:
+Converts ContactDto to MapiContactDto. 
+Returns [**MapiContactDto**](/email/reference-model-mapi-contact-dto/) model. Requires:
 
 {{< expand-list title="contactDto" >}}
 
-Description: Contact model to convert
-
-Type: [**ContactDto**](/email/reference-model-contact-dto/).
+Contact model to convert. Type: [**ContactDto**](/email/reference-model-contact-dto/).
 
 {{< tabs tabTotal="6" tabID="contact_as_mapi_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -700,18 +638,13 @@ $contact_dto = Models::contactDto()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Convert
 
-Converts contact document to specified format and returns as file             
-
-Returns a file.
-
-{{< tabs tabTotal="6" tabID="contact_convert_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="contact_as_mapi_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Contact.ConvertAsync(request);
+var result = await api.Contact.AsMapiAsync(contactDto);
 ```
 
 {{< /tab >}}
@@ -719,7 +652,7 @@ var result = await api.Contact.ConvertAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-byte[] result = api.contact().convert(request);
+MapiContactDto result = api.contact().asMapi(contactDto);
 ```
 
 {{< /tab >}}
@@ -727,7 +660,7 @@ byte[] result = api.contact().convert(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.contact.convert(request)
+result = api.contact.as_mapi(contact_dto)
 ```
 
 {{< /tab >}}
@@ -735,7 +668,7 @@ result = api.contact.convert(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.contact.convert(request)
+result = api.contact.as_mapi(contact_dto)
 ```
 
 {{< /tab >}}
@@ -743,7 +676,7 @@ result = api.contact.convert(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.contact.convert(request);
+let result = await api.contact.asMapi(contactDto);
 ```
 
 {{< /tab >}}
@@ -751,20 +684,20 @@ let result = await api.contact.convert(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->contact()->convert($request);
+$result = $api->contact()->asMapi($contact_dto);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Convert
 
-Input parameters:
+Converts contact document to specified format and returns as file. 
+Returns a **File**. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Convert method request.
-
-Type: [**ContactConvertRequest**](/email/reference-model-contact-convert-request/).
+Convert method request. Type: [**ContactConvertRequest**](/email/reference-model-contact-convert-request/).
 
 {{< tabs tabTotal="6" tabID="contact_convert_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -842,18 +775,13 @@ $request = Models::ContactConvertRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## FromFile
 
-Converts contact document to a model representation             
-
-Returns [**ContactDto**](/email/reference-model-contact-dto/) model.
-
-{{< tabs tabTotal="6" tabID="contact_from_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="contact_convert_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Contact.FromFileAsync(request);
+var result = await api.Contact.ConvertAsync(request);
 ```
 
 {{< /tab >}}
@@ -861,7 +789,7 @@ var result = await api.Contact.FromFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-ContactDto result = api.contact().fromFile(request);
+byte[] result = api.contact().convert(request);
 ```
 
 {{< /tab >}}
@@ -869,7 +797,7 @@ ContactDto result = api.contact().fromFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.contact.from_file(request)
+result = api.contact.convert(request)
 ```
 
 {{< /tab >}}
@@ -877,7 +805,7 @@ result = api.contact.from_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.contact.from_file(request)
+result = api.contact.convert(request)
 ```
 
 {{< /tab >}}
@@ -885,7 +813,7 @@ result = api.contact.from_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.contact.fromFile(request);
+let result = await api.contact.convert(request);
 ```
 
 {{< /tab >}}
@@ -893,20 +821,20 @@ let result = await api.contact.fromFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->contact()->fromFile($request);
+$result = $api->contact()->convert($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## FromFile
 
-Input parameters:
+Converts contact document to a model representation. 
+Returns [**ContactDto**](/email/reference-model-contact-dto/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: FromFile method request.
-
-Type: [**ContactFromFileRequest**](/email/reference-model-contact-from-file-request/).
+FromFile method request. Type: [**ContactFromFileRequest**](/email/reference-model-contact-from-file-request/).
 
 {{< tabs tabTotal="6" tabID="contact_from_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -978,18 +906,13 @@ $request = Models::ContactFromFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Get
 
-Get contact document from storage.             
-
-Returns [**ContactDto**](/email/reference-model-contact-dto/) model.
-
-{{< tabs tabTotal="6" tabID="contact_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="contact_from_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Contact.GetAsync(request);
+var result = await api.Contact.FromFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -997,7 +920,7 @@ var result = await api.Contact.GetAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-ContactDto result = api.contact().get(request);
+ContactDto result = api.contact().fromFile(request);
 ```
 
 {{< /tab >}}
@@ -1005,7 +928,7 @@ ContactDto result = api.contact().get(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.contact.get(request)
+result = api.contact.from_file(request)
 ```
 
 {{< /tab >}}
@@ -1013,7 +936,7 @@ result = api.contact.get(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.contact.get(request)
+result = api.contact.from_file(request)
 ```
 
 {{< /tab >}}
@@ -1021,7 +944,7 @@ result = api.contact.get(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.contact.get(request);
+let result = await api.contact.fromFile(request);
 ```
 
 {{< /tab >}}
@@ -1029,20 +952,20 @@ let result = await api.contact.get(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->contact()->get($request);
+$result = $api->contact()->fromFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Get
 
-Input parameters:
+Get contact document from storage. 
+Returns [**ContactDto**](/email/reference-model-contact-dto/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Get method request.
-
-Type: [**ContactGetRequest**](/email/reference-model-contact-get-request/).
+Get method request. Type: [**ContactGetRequest**](/email/reference-model-contact-get-request/).
 
 {{< tabs tabTotal="6" tabID="contact_get_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1126,18 +1049,13 @@ $request = Models::ContactGetRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## GetAsFile
 
-Converts contact document from storage to specified format and returns as file             
-
-Returns a file.
-
-{{< tabs tabTotal="6" tabID="contact_get_as_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="contact_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Contact.GetAsFileAsync(request);
+var result = await api.Contact.GetAsync(request);
 ```
 
 {{< /tab >}}
@@ -1145,7 +1063,7 @@ var result = await api.Contact.GetAsFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-byte[] result = api.contact().getAsFile(request);
+ContactDto result = api.contact().get(request);
 ```
 
 {{< /tab >}}
@@ -1153,7 +1071,7 @@ byte[] result = api.contact().getAsFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.contact.get_as_file(request)
+result = api.contact.get(request)
 ```
 
 {{< /tab >}}
@@ -1161,7 +1079,7 @@ result = api.contact.get_as_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.contact.get_as_file(request)
+result = api.contact.get(request)
 ```
 
 {{< /tab >}}
@@ -1169,7 +1087,7 @@ result = api.contact.get_as_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.contact.getAsFile(request);
+let result = await api.contact.get(request);
 ```
 
 {{< /tab >}}
@@ -1177,20 +1095,20 @@ let result = await api.contact.getAsFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->contact()->getAsFile($request);
+$result = $api->contact()->get($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## GetAsFile
 
-Input parameters:
+Converts contact document from storage to specified format and returns as file. 
+Returns a **File**. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: GetAsFile method request.
-
-Type: [**ContactGetAsFileRequest**](/email/reference-model-contact-get-as-file-request/).
+GetAsFile method request. Type: [**ContactGetAsFileRequest**](/email/reference-model-contact-get-as-file-request/).
 
 {{< tabs tabTotal="6" tabID="contact_get_as_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1280,18 +1198,13 @@ $request = Models::ContactGetAsFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## GetList
 
-Get contact list from storage folder.             
-
-Returns [**ContactStorageList**](/email/reference-model-contact-storage-list/) model.
-
-{{< tabs tabTotal="6" tabID="contact_get_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="contact_get_as_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Contact.GetListAsync(request);
+var result = await api.Contact.GetAsFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -1299,7 +1212,7 @@ var result = await api.Contact.GetListAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-ContactStorageList result = api.contact().getList(request);
+byte[] result = api.contact().getAsFile(request);
 ```
 
 {{< /tab >}}
@@ -1307,7 +1220,7 @@ ContactStorageList result = api.contact().getList(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.contact.get_list(request)
+result = api.contact.get_as_file(request)
 ```
 
 {{< /tab >}}
@@ -1315,7 +1228,7 @@ result = api.contact.get_list(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.contact.get_list(request)
+result = api.contact.get_as_file(request)
 ```
 
 {{< /tab >}}
@@ -1323,7 +1236,7 @@ result = api.contact.get_list(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.contact.getList(request);
+let result = await api.contact.getAsFile(request);
 ```
 
 {{< /tab >}}
@@ -1331,20 +1244,20 @@ let result = await api.contact.getList(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->contact()->getList($request);
+$result = $api->contact()->getAsFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## GetList
 
-Input parameters:
+Get contact list from storage folder. 
+Returns [**ContactStorageList**](/email/reference-model-contact-storage-list/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: GetList method request.
-
-Type: [**ContactGetListRequest**](/email/reference-model-contact-get-list-request/).
+GetList method request. Type: [**ContactGetListRequest**](/email/reference-model-contact-get-list-request/).
 
 {{< tabs tabTotal="6" tabID="contact_get_list_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1434,16 +1347,13 @@ $request = Models::ContactGetListRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Save
 
-Save contact to storage.             
-
-{{< tabs tabTotal="6" tabID="contact_save_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="contact_get_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.Contact.SaveAsync(request);
+var result = await api.Contact.GetListAsync(request);
 ```
 
 {{< /tab >}}
@@ -1451,7 +1361,7 @@ await api.Contact.SaveAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.contact().save(request);
+ContactStorageList result = api.contact().getList(request);
 ```
 
 {{< /tab >}}
@@ -1459,7 +1369,7 @@ api.contact().save(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.contact.save(request)
+result = api.contact.get_list(request)
 ```
 
 {{< /tab >}}
@@ -1467,7 +1377,7 @@ api.contact.save(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.contact.save(request)
+result = api.contact.get_list(request)
 ```
 
 {{< /tab >}}
@@ -1475,7 +1385,7 @@ api.contact.save(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.contact.save(request);
+let result = await api.contact.getList(request);
 ```
 
 {{< /tab >}}
@@ -1483,20 +1393,19 @@ await api.contact.save(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->contact()->save($request);
+$result = $api->contact()->getList($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Save
 
-Input parameters:
+Save contact to storage. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Create/Update contact request.
-
-Type: [**ContactSaveRequest**](/email/reference-model-contact-save-request/).
+Create/Update contact request. Type: [**ContactSaveRequest**](/email/reference-model-contact-save-request/).
 
 {{< tabs tabTotal="6" tabID="contact_save_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1814,6 +1723,58 @@ $request = Models::contactSaveRequest()
 
 {{< /expand-list >}}
 
+{{< tabs tabTotal="6" tabID="contact_save_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+await api.Contact.SaveAsync(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+api.contact().save(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```python
+api.contact.save(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+```ruby
+api.contact.save(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```typescript
+await api.contact.save(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```php
+$api->contact()->save($request);
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ## More APIs
-See more APIs:
+
 {{< list-of-articles-in-this-section >}}

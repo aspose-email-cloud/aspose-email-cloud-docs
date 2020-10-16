@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **updateFolderCache** |**bool?**|This parameter is only used in accounts with CacheFile. If true - get new messages and update threads cache for given folder. If false, get only threads from cache without any calls to an email account              |[optional] [default to true]
 **messagesCacheLimit** |**int?**|Limit messages cache size if CacheFile is used. Ignored in accounts without limits support              |[optional] [default to 200]
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="client_thread_get_list_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -100,5 +100,4 @@ $request = Models::ClientThreadGetListRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 
 Parent class: [RecurrencePatternDto](/email/reference-model-recurrence-pattern-dto/)
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="task_regenerating_pattern_dto_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -96,5 +96,4 @@ $taskRegeneratingPatternDto = Models::taskRegeneratingPatternDto()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **Discriminator** | **string** |  | 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="mapi_property_descriptor_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -77,5 +77,4 @@ $mapiPropertyDescriptor = Models::mapiPropertyDescriptor()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

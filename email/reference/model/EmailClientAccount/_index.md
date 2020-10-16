@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **CacheFile** | [**StorageFileLocation**](/email/reference-model-storage-file-location/) | File with messages cache. Used to provide extra functions, which are not supported by account              | [optional] 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="email_client_account_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -135,5 +135,4 @@ $emailClientAccount = Models::emailClientAccount()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

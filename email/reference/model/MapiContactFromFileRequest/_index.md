@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **format** |**string**|File format Enum, available values: VCard, WebDav, Msg |
 **file** |**System.IO.Stream**|File to convert |
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="mapi_contact_from_file_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -84,5 +84,4 @@ $request = Models::MapiContactFromFileRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

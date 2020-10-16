@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **Discriminator** | **string** |  | 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="recurrence_pattern_dto_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -87,5 +87,4 @@ $recurrencePatternDto = Models::recurrencePatternDto()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

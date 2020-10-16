@@ -9,69 +9,12 @@ Email document (*.eml) operations.
 
 ## AsFile
 
-Converts Email model to specified format and returns as file.             
-
-Returns a file.
-
-{{< tabs tabTotal="6" tabID="email_as_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-var result = await api.Email.AsFileAsync(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-byte[] result = api.email().asFile(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```python
-result = api.email.as_file(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-result = api.email.as_file(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```typescript
-let result = await api.email.asFile(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-```php
-$result = $api->email()->asFile($request);
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-Input parameters:
+Converts Email model to specified format and returns as file. 
+Returns a **File**. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Email model and format to convert.
-
-Type: [**EmailAsFileRequest**](/email/reference-model-email-as-file-request/).
+Email model and format to convert. Type: [**EmailAsFileRequest**](/email/reference-model-email-as-file-request/).
 
 {{< tabs tabTotal="6" tabID="email_as_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -283,18 +226,13 @@ $request = Models::emailAsFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## AsMapi
 
-Converts EmailDto to MapiMessageDto.             
-
-Returns [**MapiMessageDto**](/email/reference-model-mapi-message-dto/) model.
-
-{{< tabs tabTotal="6" tabID="email_as_mapi_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="email_as_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Email.AsMapiAsync(emailDto);
+var result = await api.Email.AsFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -302,7 +240,7 @@ var result = await api.Email.AsMapiAsync(emailDto);
 {{< tab tabNum="2" >}}
 
 ```java
-MapiMessageDto result = api.email().asMapi(emailDto);
+byte[] result = api.email().asFile(request);
 ```
 
 {{< /tab >}}
@@ -310,7 +248,7 @@ MapiMessageDto result = api.email().asMapi(emailDto);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.email.as_mapi(email_dto)
+result = api.email.as_file(request)
 ```
 
 {{< /tab >}}
@@ -318,7 +256,7 @@ result = api.email.as_mapi(email_dto)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.email.as_mapi(email_dto)
+result = api.email.as_file(request)
 ```
 
 {{< /tab >}}
@@ -326,7 +264,7 @@ result = api.email.as_mapi(email_dto)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.email.asMapi(emailDto);
+let result = await api.email.asFile(request);
 ```
 
 {{< /tab >}}
@@ -334,20 +272,20 @@ let result = await api.email.asMapi(emailDto);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->email()->asMapi($email_dto);
+$result = $api->email()->asFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## AsMapi
 
-Input parameters:
+Converts EmailDto to MapiMessageDto. 
+Returns [**MapiMessageDto**](/email/reference-model-mapi-message-dto/) model. Requires:
 
 {{< expand-list title="emailDto" >}}
 
-Description: Email model to convert
-
-Type: [**EmailDto**](/email/reference-model-email-dto/).
+Email model to convert. Type: [**EmailDto**](/email/reference-model-email-dto/).
 
 {{< tabs tabTotal="6" tabID="email_as_mapi_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -548,18 +486,13 @@ $email_dto = Models::emailDto()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Convert
 
-Converts email document to specified format and returns as file             
-
-Returns a file.
-
-{{< tabs tabTotal="6" tabID="email_convert_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="email_as_mapi_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Email.ConvertAsync(request);
+var result = await api.Email.AsMapiAsync(emailDto);
 ```
 
 {{< /tab >}}
@@ -567,7 +500,7 @@ var result = await api.Email.ConvertAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-byte[] result = api.email().convert(request);
+MapiMessageDto result = api.email().asMapi(emailDto);
 ```
 
 {{< /tab >}}
@@ -575,7 +508,7 @@ byte[] result = api.email().convert(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.email.convert(request)
+result = api.email.as_mapi(email_dto)
 ```
 
 {{< /tab >}}
@@ -583,7 +516,7 @@ result = api.email.convert(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.email.convert(request)
+result = api.email.as_mapi(email_dto)
 ```
 
 {{< /tab >}}
@@ -591,7 +524,7 @@ result = api.email.convert(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.email.convert(request);
+let result = await api.email.asMapi(emailDto);
 ```
 
 {{< /tab >}}
@@ -599,20 +532,20 @@ let result = await api.email.convert(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->email()->convert($request);
+$result = $api->email()->asMapi($email_dto);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Convert
 
-Input parameters:
+Converts email document to specified format and returns as file. 
+Returns a **File**. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Convert method request.
-
-Type: [**EmailConvertRequest**](/email/reference-model-email-convert-request/).
+Convert method request. Type: [**EmailConvertRequest**](/email/reference-model-email-convert-request/).
 
 {{< tabs tabTotal="6" tabID="email_convert_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -690,18 +623,13 @@ $request = Models::EmailConvertRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## FromFile
 
-Converts email document to a model representation             
-
-Returns [**EmailDto**](/email/reference-model-email-dto/) model.
-
-{{< tabs tabTotal="6" tabID="email_from_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="email_convert_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Email.FromFileAsync(request);
+var result = await api.Email.ConvertAsync(request);
 ```
 
 {{< /tab >}}
@@ -709,7 +637,7 @@ var result = await api.Email.FromFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-EmailDto result = api.email().fromFile(request);
+byte[] result = api.email().convert(request);
 ```
 
 {{< /tab >}}
@@ -717,7 +645,7 @@ EmailDto result = api.email().fromFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.email.from_file(request)
+result = api.email.convert(request)
 ```
 
 {{< /tab >}}
@@ -725,7 +653,7 @@ result = api.email.from_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.email.from_file(request)
+result = api.email.convert(request)
 ```
 
 {{< /tab >}}
@@ -733,7 +661,7 @@ result = api.email.from_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.email.fromFile(request);
+let result = await api.email.convert(request);
 ```
 
 {{< /tab >}}
@@ -741,20 +669,20 @@ let result = await api.email.fromFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->email()->fromFile($request);
+$result = $api->email()->convert($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## FromFile
 
-Input parameters:
+Converts email document to a model representation. 
+Returns [**EmailDto**](/email/reference-model-email-dto/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: FromFile method request.
-
-Type: [**EmailFromFileRequest**](/email/reference-model-email-from-file-request/).
+FromFile method request. Type: [**EmailFromFileRequest**](/email/reference-model-email-from-file-request/).
 
 {{< tabs tabTotal="6" tabID="email_from_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -826,18 +754,13 @@ $request = Models::EmailFromFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Get
 
-Get email document from storage.             
-
-Returns [**EmailDto**](/email/reference-model-email-dto/) model.
-
-{{< tabs tabTotal="6" tabID="email_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="email_from_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Email.GetAsync(request);
+var result = await api.Email.FromFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -845,7 +768,7 @@ var result = await api.Email.GetAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-EmailDto result = api.email().get(request);
+EmailDto result = api.email().fromFile(request);
 ```
 
 {{< /tab >}}
@@ -853,7 +776,7 @@ EmailDto result = api.email().get(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.email.get(request)
+result = api.email.from_file(request)
 ```
 
 {{< /tab >}}
@@ -861,7 +784,7 @@ result = api.email.get(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.email.get(request)
+result = api.email.from_file(request)
 ```
 
 {{< /tab >}}
@@ -869,7 +792,7 @@ result = api.email.get(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.email.get(request);
+let result = await api.email.fromFile(request);
 ```
 
 {{< /tab >}}
@@ -877,20 +800,20 @@ let result = await api.email.get(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->email()->get($request);
+$result = $api->email()->fromFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Get
 
-Input parameters:
+Get email document from storage. 
+Returns [**EmailDto**](/email/reference-model-email-dto/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Get method request.
-
-Type: [**EmailGetRequest**](/email/reference-model-email-get-request/).
+Get method request. Type: [**EmailGetRequest**](/email/reference-model-email-get-request/).
 
 {{< tabs tabTotal="6" tabID="email_get_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -974,18 +897,13 @@ $request = Models::EmailGetRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## GetAsFile
 
-Converts email document from storage to specified format and returns as file             
-
-Returns a file.
-
-{{< tabs tabTotal="6" tabID="email_get_as_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="email_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Email.GetAsFileAsync(request);
+var result = await api.Email.GetAsync(request);
 ```
 
 {{< /tab >}}
@@ -993,7 +911,7 @@ var result = await api.Email.GetAsFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-byte[] result = api.email().getAsFile(request);
+EmailDto result = api.email().get(request);
 ```
 
 {{< /tab >}}
@@ -1001,7 +919,7 @@ byte[] result = api.email().getAsFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.email.get_as_file(request)
+result = api.email.get(request)
 ```
 
 {{< /tab >}}
@@ -1009,7 +927,7 @@ result = api.email.get_as_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.email.get_as_file(request)
+result = api.email.get(request)
 ```
 
 {{< /tab >}}
@@ -1017,7 +935,7 @@ result = api.email.get_as_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.email.getAsFile(request);
+let result = await api.email.get(request);
 ```
 
 {{< /tab >}}
@@ -1025,20 +943,20 @@ let result = await api.email.getAsFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->email()->getAsFile($request);
+$result = $api->email()->get($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## GetAsFile
 
-Input parameters:
+Converts email document from storage to specified format and returns as file. 
+Returns a **File**. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: GetAsFile method request.
-
-Type: [**EmailGetAsFileRequest**](/email/reference-model-email-get-as-file-request/).
+GetAsFile method request. Type: [**EmailGetAsFileRequest**](/email/reference-model-email-get-as-file-request/).
 
 {{< tabs tabTotal="6" tabID="email_get_as_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1122,18 +1040,13 @@ $request = Models::EmailGetAsFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## GetList
 
-Get email list from storage folder.             
-
-Returns [**EmailStorageList**](/email/reference-model-email-storage-list/) model.
-
-{{< tabs tabTotal="6" tabID="email_get_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="email_get_as_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Email.GetListAsync(request);
+var result = await api.Email.GetAsFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -1141,7 +1054,7 @@ var result = await api.Email.GetListAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-EmailStorageList result = api.email().getList(request);
+byte[] result = api.email().getAsFile(request);
 ```
 
 {{< /tab >}}
@@ -1149,7 +1062,7 @@ EmailStorageList result = api.email().getList(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.email.get_list(request)
+result = api.email.get_as_file(request)
 ```
 
 {{< /tab >}}
@@ -1157,7 +1070,7 @@ result = api.email.get_list(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.email.get_list(request)
+result = api.email.get_as_file(request)
 ```
 
 {{< /tab >}}
@@ -1165,7 +1078,7 @@ result = api.email.get_list(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.email.getList(request);
+let result = await api.email.getAsFile(request);
 ```
 
 {{< /tab >}}
@@ -1173,20 +1086,20 @@ let result = await api.email.getList(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->email()->getList($request);
+$result = $api->email()->getAsFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## GetList
 
-Input parameters:
+Get email list from storage folder. 
+Returns [**EmailStorageList**](/email/reference-model-email-storage-list/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: GetList method request.
-
-Type: [**EmailGetListRequest**](/email/reference-model-email-get-list-request/).
+GetList method request. Type: [**EmailGetListRequest**](/email/reference-model-email-get-list-request/).
 
 {{< tabs tabTotal="6" tabID="email_get_list_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1276,16 +1189,13 @@ $request = Models::EmailGetListRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Save
 
-Save email document to storage.             
-
-{{< tabs tabTotal="6" tabID="email_save_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="email_get_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.Email.SaveAsync(request);
+var result = await api.Email.GetListAsync(request);
 ```
 
 {{< /tab >}}
@@ -1293,7 +1203,7 @@ await api.Email.SaveAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.email().save(request);
+EmailStorageList result = api.email().getList(request);
 ```
 
 {{< /tab >}}
@@ -1301,7 +1211,7 @@ api.email().save(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.email.save(request)
+result = api.email.get_list(request)
 ```
 
 {{< /tab >}}
@@ -1309,7 +1219,7 @@ api.email.save(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.email.save(request)
+result = api.email.get_list(request)
 ```
 
 {{< /tab >}}
@@ -1317,7 +1227,7 @@ api.email.save(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.email.save(request);
+let result = await api.email.getList(request);
 ```
 
 {{< /tab >}}
@@ -1325,20 +1235,19 @@ await api.email.save(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->email()->save($request);
+$result = $api->email()->getList($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Save
 
-Input parameters:
+Save email document to storage. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Email document create/update request.
-
-Type: [**EmailSaveRequest**](/email/reference-model-email-save-request/).
+Email document create/update request. Type: [**EmailSaveRequest**](/email/reference-model-email-save-request/).
 
 {{< tabs tabTotal="6" tabID="email_save_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1586,6 +1495,58 @@ $request = Models::emailSaveRequest()
 
 {{< /expand-list >}}
 
+{{< tabs tabTotal="6" tabID="email_save_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+await api.Email.SaveAsync(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+api.email().save(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```python
+api.email.save(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+```ruby
+api.email.save(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```typescript
+await api.email.save(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```php
+$api->email()->save($request);
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ## More APIs
-See more APIs:
+
 {{< list-of-articles-in-this-section >}}

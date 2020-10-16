@@ -48,7 +48,7 @@ Name | Type | Description | Notes
 **Urls** | [**List&lt;Url&gt;**](/email/reference-model-url/) | Person&#39;s urls.              | [optional] 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="contact_dto_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -323,5 +323,4 @@ $contactDto = Models::contactDto()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

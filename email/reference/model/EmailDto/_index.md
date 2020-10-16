@@ -44,7 +44,7 @@ Name | Type | Description | Notes
 **XMailer** | **string** | The X-Mailer the software that created the e-mail message.              | [optional] 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="email_dto_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -243,5 +243,4 @@ $emailDto = Models::emailDto()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

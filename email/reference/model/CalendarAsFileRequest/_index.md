@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **Value** | [**CalendarDto**](/email/reference-model-calendar-dto/) | iCalendar model              | 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="calendar_as_file_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -202,5 +202,4 @@ $calendarAsFileRequest = Models::calendarAsFileRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

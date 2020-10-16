@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 
 Parent class: [AiNameParsedRequest](/email/reference-model-ai-name-parsed-request/)
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="ai_name_match_parsed_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -320,5 +320,4 @@ $aiNameMatchParsedRequest = Models::aiNameMatchParsedRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

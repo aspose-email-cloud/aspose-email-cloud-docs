@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **Folder** | **string** | Thread folder location              | [optional] 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="email_thread_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -410,5 +410,4 @@ $emailThread = Models::emailThread()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

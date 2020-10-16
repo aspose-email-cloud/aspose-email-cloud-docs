@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **Related** | **string** | Specify the relationship of the alarm trigger with respect to the start or end of the event. Enum, available values: Start, End | 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="reminder_trigger_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -85,5 +85,4 @@ $reminderTrigger = Models::reminderTrigger()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

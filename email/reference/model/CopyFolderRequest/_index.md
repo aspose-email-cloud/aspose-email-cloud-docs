@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **srcStorageName** |**string**|Source storage name |[optional] 
 **destStorageName** |**string**|Destination storage name |[optional] 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="copy_folder_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -98,5 +98,4 @@ $request = Models::CopyFolderRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

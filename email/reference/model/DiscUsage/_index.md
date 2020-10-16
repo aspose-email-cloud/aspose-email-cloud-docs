@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **TotalSize** | **long?** | Total disc space. | 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="disc_usage_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -84,5 +84,4 @@ $discUsage = Models::discUsage()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

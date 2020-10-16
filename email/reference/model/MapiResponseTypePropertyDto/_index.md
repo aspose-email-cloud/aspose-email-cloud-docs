@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 
 Parent class: [MapiPropertyDto](/email/reference-model-mapi-property-dto/)
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="mapi_response_type_property_dto_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -95,5 +95,4 @@ $mapiResponseTypePropertyDto = Models::mapiResponseTypePropertyDto()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

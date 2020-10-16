@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **storage** |**string**|Storage name where account file located |[optional] 
 **accountStorageFolder** |**string**|Folder in storage where account file located |[optional] 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="client_thread_get_messages_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -105,5 +105,4 @@ $request = Models::ClientThreadGetMessagesRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

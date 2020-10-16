@@ -12,7 +12,7 @@ Class has no properties
 
 Parent class: [ListResponseOfStorageModelOfEmailDto](/email/reference-model-list-response-of-storage-model-of-email-dto/)
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="email_storage_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -270,5 +270,4 @@ $emailStorageList = Models::emailStorageList()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

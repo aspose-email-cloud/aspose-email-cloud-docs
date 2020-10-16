@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **Options** | [**AiBcrOptions**](/email/reference-model-ai-bcr-options/) | Recognition options.              | [optional] 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="ai_bcr_parse_storage_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -150,5 +150,4 @@ $aiBcrParseStorageRequest = Models::aiBcrParseStorageRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

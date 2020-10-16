@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **RecipientType** | **string** | Represent the PR_RECIPIENT_TYPE property which contains the recipient type for a message recipient. Enum, available values: Unknown, MapiBcc, MapiCc, MapiP1, MapiSubmitted, MapiTo | 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="mapi_recipient_dto_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -98,5 +98,4 @@ $mapiRecipientDto = Models::mapiRecipientDto()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

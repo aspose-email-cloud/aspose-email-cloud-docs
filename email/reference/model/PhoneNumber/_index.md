@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **Preferred** | **bool?** | Defines whether phone number is preferred.              | 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="phone_number_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -102,5 +102,4 @@ $phoneNumber = Models::phoneNumber()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

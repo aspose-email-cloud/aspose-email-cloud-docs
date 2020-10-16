@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **address** |**string**|Email address. |
 **fastProcessing** |**bool?**|Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned.              |[optional] [default to false]
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="email_config_discover_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -72,5 +72,4 @@ $request = Models::EmailConfigDiscoverRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 
 Parent class: [StorageModelOfContactDto](/email/reference-model-storage-model-of-contact-dto/)
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="contact_save_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -329,5 +329,4 @@ $contactSaveRequest = Models::contactSaveRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

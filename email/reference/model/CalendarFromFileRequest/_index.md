@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
 **file** |**System.IO.Stream**|File to convert |
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="calendar_from_file_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -77,5 +77,4 @@ $request = Models::CalendarFromFileRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

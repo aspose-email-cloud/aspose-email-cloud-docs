@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **Score** | **double?** | Extracted name score              | 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="ai_name_extracted_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -132,5 +132,4 @@ $aiNameExtracted = Models::aiNameExtracted()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

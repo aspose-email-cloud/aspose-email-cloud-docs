@@ -9,69 +9,12 @@ MAPI calendar operations.
 
 ## AsCalendarDto
 
-Converts MAPI calendar model to CalendarDto model.             
-
-Returns [**CalendarDto**](/email/reference-model-calendar-dto/) model.
-
-{{< tabs tabTotal="6" tabID="mapi_calendar_as_calendar_dto_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-var result = await api.Mapi.Calendar.AsCalendarDtoAsync(mapiCalendarDto);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-CalendarDto result = api.mapi().calendar().asCalendarDto(mapiCalendarDto);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```python
-result = api.mapi.calendar.as_calendar_dto(mapi_calendar_dto)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-result = api.mapi.calendar.as_calendar_dto(mapi_calendar_dto)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```typescript
-let result = await api.mapi.calendar.asCalendarDto(mapiCalendarDto);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-```php
-$result = $api->mapi()->calendar()->asCalendarDto($mapi_calendar_dto);
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-Input parameters:
+Converts MAPI calendar model to CalendarDto model. 
+Returns [**CalendarDto**](/email/reference-model-calendar-dto/) model. Requires:
 
 {{< expand-list title="mapiCalendarDto" >}}
 
-Description: MAPI calendar model to convert.
-
-Type: [**MapiCalendarDto**](/email/reference-model-mapi-calendar-dto/).
+MAPI calendar model to convert. Type: [**MapiCalendarDto**](/email/reference-model-mapi-calendar-dto/).
 
 {{< tabs tabTotal="6" tabID="mapi_calendar_as_calendar_dto_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -327,18 +270,13 @@ $mapi_calendar_dto = Models::mapiCalendarDto()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## AsFile
 
-Converts MAPI calendar model to specified format and returns as file.             
-
-Returns a file.
-
-{{< tabs tabTotal="6" tabID="mapi_calendar_as_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="mapi_calendar_as_calendar_dto_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Mapi.Calendar.AsFileAsync(request);
+var result = await api.Mapi.Calendar.AsCalendarDtoAsync(mapiCalendarDto);
 ```
 
 {{< /tab >}}
@@ -346,7 +284,7 @@ var result = await api.Mapi.Calendar.AsFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-byte[] result = api.mapi().calendar().asFile(request);
+CalendarDto result = api.mapi().calendar().asCalendarDto(mapiCalendarDto);
 ```
 
 {{< /tab >}}
@@ -354,7 +292,7 @@ byte[] result = api.mapi().calendar().asFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.mapi.calendar.as_file(request)
+result = api.mapi.calendar.as_calendar_dto(mapi_calendar_dto)
 ```
 
 {{< /tab >}}
@@ -362,7 +300,7 @@ result = api.mapi.calendar.as_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.mapi.calendar.as_file(request)
+result = api.mapi.calendar.as_calendar_dto(mapi_calendar_dto)
 ```
 
 {{< /tab >}}
@@ -370,7 +308,7 @@ result = api.mapi.calendar.as_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.mapi.calendar.asFile(request);
+let result = await api.mapi.calendar.asCalendarDto(mapiCalendarDto);
 ```
 
 {{< /tab >}}
@@ -378,20 +316,20 @@ let result = await api.mapi.calendar.asFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->mapi()->calendar()->asFile($request);
+$result = $api->mapi()->calendar()->asCalendarDto($mapi_calendar_dto);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## AsFile
 
-Input parameters:
+Converts MAPI calendar model to specified format and returns as file. 
+Returns a **File**. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: MAPI calendar model to convert.
-
-Type: [**MapiCalendarAsFileRequest**](/email/reference-model-mapi-calendar-as-file-request/).
+MAPI calendar model to convert. Type: [**MapiCalendarAsFileRequest**](/email/reference-model-mapi-calendar-as-file-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_calendar_as_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -664,18 +602,13 @@ $request = Models::mapiCalendarAsFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## FromFile
 
-Converts calendar file to a MAPI model representation.             
-
-Returns [**MapiCalendarDto**](/email/reference-model-mapi-calendar-dto/) model.
-
-{{< tabs tabTotal="6" tabID="mapi_calendar_from_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="mapi_calendar_as_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Mapi.Calendar.FromFileAsync(request);
+var result = await api.Mapi.Calendar.AsFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -683,7 +616,7 @@ var result = await api.Mapi.Calendar.FromFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-MapiCalendarDto result = api.mapi().calendar().fromFile(request);
+byte[] result = api.mapi().calendar().asFile(request);
 ```
 
 {{< /tab >}}
@@ -691,7 +624,7 @@ MapiCalendarDto result = api.mapi().calendar().fromFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.mapi.calendar.from_file(request)
+result = api.mapi.calendar.as_file(request)
 ```
 
 {{< /tab >}}
@@ -699,7 +632,7 @@ result = api.mapi.calendar.from_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.mapi.calendar.from_file(request)
+result = api.mapi.calendar.as_file(request)
 ```
 
 {{< /tab >}}
@@ -707,7 +640,7 @@ result = api.mapi.calendar.from_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.mapi.calendar.fromFile(request);
+let result = await api.mapi.calendar.asFile(request);
 ```
 
 {{< /tab >}}
@@ -715,20 +648,20 @@ let result = await api.mapi.calendar.fromFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->mapi()->calendar()->fromFile($request);
+$result = $api->mapi()->calendar()->asFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## FromFile
 
-Input parameters:
+Converts calendar file to a MAPI model representation. 
+Returns [**MapiCalendarDto**](/email/reference-model-mapi-calendar-dto/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: FromFile method request.
-
-Type: [**MapiCalendarFromFileRequest**](/email/reference-model-mapi-calendar-from-file-request/).
+FromFile method request. Type: [**MapiCalendarFromFileRequest**](/email/reference-model-mapi-calendar-from-file-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_calendar_from_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -794,18 +727,13 @@ $request = Models::MapiCalendarFromFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Get
 
-Get MAPI calendar document.             
-
-Returns [**MapiCalendarDto**](/email/reference-model-mapi-calendar-dto/) model.
-
-{{< tabs tabTotal="6" tabID="mapi_calendar_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="mapi_calendar_from_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Mapi.Calendar.GetAsync(request);
+var result = await api.Mapi.Calendar.FromFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -813,7 +741,7 @@ var result = await api.Mapi.Calendar.GetAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-MapiCalendarDto result = api.mapi().calendar().get(request);
+MapiCalendarDto result = api.mapi().calendar().fromFile(request);
 ```
 
 {{< /tab >}}
@@ -821,7 +749,7 @@ MapiCalendarDto result = api.mapi().calendar().get(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.mapi.calendar.get(request)
+result = api.mapi.calendar.from_file(request)
 ```
 
 {{< /tab >}}
@@ -829,7 +757,7 @@ result = api.mapi.calendar.get(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.mapi.calendar.get(request)
+result = api.mapi.calendar.from_file(request)
 ```
 
 {{< /tab >}}
@@ -837,7 +765,7 @@ result = api.mapi.calendar.get(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.mapi.calendar.get(request);
+let result = await api.mapi.calendar.fromFile(request);
 ```
 
 {{< /tab >}}
@@ -845,20 +773,20 @@ let result = await api.mapi.calendar.get(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->mapi()->calendar()->get($request);
+$result = $api->mapi()->calendar()->fromFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Get
 
-Input parameters:
+Get MAPI calendar document. 
+Returns [**MapiCalendarDto**](/email/reference-model-mapi-calendar-dto/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Get method request.
-
-Type: [**MapiCalendarGetRequest**](/email/reference-model-mapi-calendar-get-request/).
+Get method request. Type: [**MapiCalendarGetRequest**](/email/reference-model-mapi-calendar-get-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_calendar_get_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -936,16 +864,13 @@ $request = Models::MapiCalendarGetRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Save
 
-Save MAPI Calendar to storage.             
-
-{{< tabs tabTotal="6" tabID="mapi_calendar_save_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="mapi_calendar_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.Mapi.Calendar.SaveAsync(request);
+var result = await api.Mapi.Calendar.GetAsync(request);
 ```
 
 {{< /tab >}}
@@ -953,7 +878,7 @@ await api.Mapi.Calendar.SaveAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.mapi().calendar().save(request);
+MapiCalendarDto result = api.mapi().calendar().get(request);
 ```
 
 {{< /tab >}}
@@ -961,7 +886,7 @@ api.mapi().calendar().save(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.mapi.calendar.save(request)
+result = api.mapi.calendar.get(request)
 ```
 
 {{< /tab >}}
@@ -969,7 +894,7 @@ api.mapi.calendar.save(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.mapi.calendar.save(request)
+result = api.mapi.calendar.get(request)
 ```
 
 {{< /tab >}}
@@ -977,7 +902,7 @@ api.mapi.calendar.save(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.mapi.calendar.save(request);
+let result = await api.mapi.calendar.get(request);
 ```
 
 {{< /tab >}}
@@ -985,20 +910,19 @@ await api.mapi.calendar.save(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->mapi()->calendar()->save($request);
+$result = $api->mapi()->calendar()->get($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Save
 
-Input parameters:
+Save MAPI Calendar to storage. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Calendar create/update request.
-
-Type: [**MapiCalendarSaveRequest**](/email/reference-model-mapi-calendar-save-request/).
+Calendar create/update request. Type: [**MapiCalendarSaveRequest**](/email/reference-model-mapi-calendar-save-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_calendar_save_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1301,6 +1225,58 @@ $request = Models::mapiCalendarSaveRequest()
 
 {{< /expand-list >}}
 
+{{< tabs tabTotal="6" tabID="mapi_calendar_save_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+await api.Mapi.Calendar.SaveAsync(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+api.mapi().calendar().save(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```python
+api.mapi.calendar.save(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+```ruby
+api.mapi.calendar.save(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```typescript
+await api.mapi.calendar.save(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```php
+$api->mapi()->calendar()->save($request);
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ## More APIs
-See more APIs:
+
 {{< list-of-articles-in-this-section >}}

@@ -9,69 +9,12 @@ MAPI message operations
 
 ## AsEmailDto
 
-Converts MAPI message model to EmailDto model             
-
-Returns [**EmailDto**](/email/reference-model-email-dto/) model.
-
-{{< tabs tabTotal="6" tabID="mapi_message_as_email_dto_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-var result = await api.Mapi.Message.AsEmailDtoAsync(mapiMessage);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-EmailDto result = api.mapi().message().asEmailDto(mapiMessage);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```python
-result = api.mapi.message.as_email_dto(mapi_message)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-result = api.mapi.message.as_email_dto(mapi_message)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```typescript
-let result = await api.mapi.message.asEmailDto(mapiMessage);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-```php
-$result = $api->mapi()->message()->asEmailDto($mapi_message);
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-Input parameters:
+Converts MAPI message model to EmailDto model. 
+Returns [**EmailDto**](/email/reference-model-email-dto/) model. Requires:
 
 {{< expand-list title="mapiMessage" >}}
 
-Description: MAPI message model to convert
-
-Type: [**MapiMessageDto**](/email/reference-model-mapi-message-dto/).
+MAPI message model to convert. Type: [**MapiMessageDto**](/email/reference-model-mapi-message-dto/).
 
 {{< tabs tabTotal="6" tabID="mapi_message_as_email_dto_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -309,18 +252,13 @@ $mapi_message = Models::mapiMessageDto()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## AsFile
 
-Converts MAPI message model to specified format and returns as file.             
-
-Returns a file.
-
-{{< tabs tabTotal="6" tabID="mapi_message_as_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="mapi_message_as_email_dto_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Mapi.Message.AsFileAsync(request);
+var result = await api.Mapi.Message.AsEmailDtoAsync(mapiMessage);
 ```
 
 {{< /tab >}}
@@ -328,7 +266,7 @@ var result = await api.Mapi.Message.AsFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-byte[] result = api.mapi().message().asFile(request);
+EmailDto result = api.mapi().message().asEmailDto(mapiMessage);
 ```
 
 {{< /tab >}}
@@ -336,7 +274,7 @@ byte[] result = api.mapi().message().asFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.mapi.message.as_file(request)
+result = api.mapi.message.as_email_dto(mapi_message)
 ```
 
 {{< /tab >}}
@@ -344,7 +282,7 @@ result = api.mapi.message.as_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.mapi.message.as_file(request)
+result = api.mapi.message.as_email_dto(mapi_message)
 ```
 
 {{< /tab >}}
@@ -352,7 +290,7 @@ result = api.mapi.message.as_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.mapi.message.asFile(request);
+let result = await api.mapi.message.asEmailDto(mapiMessage);
 ```
 
 {{< /tab >}}
@@ -360,20 +298,20 @@ let result = await api.mapi.message.asFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->mapi()->message()->asFile($request);
+$result = $api->mapi()->message()->asEmailDto($mapi_message);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## AsFile
 
-Input parameters:
+Converts MAPI message model to specified format and returns as file. 
+Returns a **File**. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: MAPI message model to convert.
-
-Type: [**MapiMessageAsFileRequest**](/email/reference-model-mapi-message-as-file-request/).
+MAPI message model to convert. Type: [**MapiMessageAsFileRequest**](/email/reference-model-mapi-message-as-file-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_message_as_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -628,18 +566,13 @@ $request = Models::mapiMessageAsFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## FromFile
 
-Converts email file to a MAPI model representation             
-
-Returns [**MapiMessageDto**](/email/reference-model-mapi-message-dto/) model.
-
-{{< tabs tabTotal="6" tabID="mapi_message_from_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="mapi_message_as_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Mapi.Message.FromFileAsync(request);
+var result = await api.Mapi.Message.AsFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -647,7 +580,7 @@ var result = await api.Mapi.Message.FromFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-MapiMessageDto result = api.mapi().message().fromFile(request);
+byte[] result = api.mapi().message().asFile(request);
 ```
 
 {{< /tab >}}
@@ -655,7 +588,7 @@ MapiMessageDto result = api.mapi().message().fromFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.mapi.message.from_file(request)
+result = api.mapi.message.as_file(request)
 ```
 
 {{< /tab >}}
@@ -663,7 +596,7 @@ result = api.mapi.message.from_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.mapi.message.from_file(request)
+result = api.mapi.message.as_file(request)
 ```
 
 {{< /tab >}}
@@ -671,7 +604,7 @@ result = api.mapi.message.from_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.mapi.message.fromFile(request);
+let result = await api.mapi.message.asFile(request);
 ```
 
 {{< /tab >}}
@@ -679,20 +612,20 @@ let result = await api.mapi.message.fromFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->mapi()->message()->fromFile($request);
+$result = $api->mapi()->message()->asFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## FromFile
 
-Input parameters:
+Converts email file to a MAPI model representation. 
+Returns [**MapiMessageDto**](/email/reference-model-mapi-message-dto/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: FromFile method request.
-
-Type: [**MapiMessageFromFileRequest**](/email/reference-model-mapi-message-from-file-request/).
+FromFile method request. Type: [**MapiMessageFromFileRequest**](/email/reference-model-mapi-message-from-file-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_message_from_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -764,18 +697,13 @@ $request = Models::MapiMessageFromFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Get
 
-Get MAPI message document.             
-
-Returns [**MapiMessageDto**](/email/reference-model-mapi-message-dto/) model.
-
-{{< tabs tabTotal="6" tabID="mapi_message_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="mapi_message_from_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Mapi.Message.GetAsync(request);
+var result = await api.Mapi.Message.FromFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -783,7 +711,7 @@ var result = await api.Mapi.Message.GetAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-MapiMessageDto result = api.mapi().message().get(request);
+MapiMessageDto result = api.mapi().message().fromFile(request);
 ```
 
 {{< /tab >}}
@@ -791,7 +719,7 @@ MapiMessageDto result = api.mapi().message().get(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.mapi.message.get(request)
+result = api.mapi.message.from_file(request)
 ```
 
 {{< /tab >}}
@@ -799,7 +727,7 @@ result = api.mapi.message.get(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.mapi.message.get(request)
+result = api.mapi.message.from_file(request)
 ```
 
 {{< /tab >}}
@@ -807,7 +735,7 @@ result = api.mapi.message.get(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.mapi.message.get(request);
+let result = await api.mapi.message.fromFile(request);
 ```
 
 {{< /tab >}}
@@ -815,20 +743,20 @@ let result = await api.mapi.message.get(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->mapi()->message()->get($request);
+$result = $api->mapi()->message()->fromFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Get
 
-Input parameters:
+Get MAPI message document. 
+Returns [**MapiMessageDto**](/email/reference-model-mapi-message-dto/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Get method request.
-
-Type: [**MapiMessageGetRequest**](/email/reference-model-mapi-message-get-request/).
+Get method request. Type: [**MapiMessageGetRequest**](/email/reference-model-mapi-message-get-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_message_get_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -912,16 +840,13 @@ $request = Models::MapiMessageGetRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Save
 
-Save MAPI message to storage.             
-
-{{< tabs tabTotal="6" tabID="mapi_message_save_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="mapi_message_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.Mapi.Message.SaveAsync(request);
+var result = await api.Mapi.Message.GetAsync(request);
 ```
 
 {{< /tab >}}
@@ -929,7 +854,7 @@ await api.Mapi.Message.SaveAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.mapi().message().save(request);
+MapiMessageDto result = api.mapi().message().get(request);
 ```
 
 {{< /tab >}}
@@ -937,7 +862,7 @@ api.mapi().message().save(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.mapi.message.save(request)
+result = api.mapi.message.get(request)
 ```
 
 {{< /tab >}}
@@ -945,7 +870,7 @@ api.mapi.message.save(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.mapi.message.save(request)
+result = api.mapi.message.get(request)
 ```
 
 {{< /tab >}}
@@ -953,7 +878,7 @@ api.mapi.message.save(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.mapi.message.save(request);
+let result = await api.mapi.message.get(request);
 ```
 
 {{< /tab >}}
@@ -961,20 +886,19 @@ await api.mapi.message.save(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->mapi()->message()->save($request);
+$result = $api->mapi()->message()->get($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Save
 
-Input parameters:
+Save MAPI message to storage. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Message create/update request.
-
-Type: [**MapiMessageSaveRequest**](/email/reference-model-mapi-message-save-request/).
+Message create/update request. Type: [**MapiMessageSaveRequest**](/email/reference-model-mapi-message-save-request/).
 
 {{< tabs tabTotal="6" tabID="mapi_message_save_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1259,6 +1183,58 @@ $request = Models::mapiMessageSaveRequest()
 
 {{< /expand-list >}}
 
+{{< tabs tabTotal="6" tabID="mapi_message_save_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+await api.Mapi.Message.SaveAsync(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+api.mapi().message().save(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```python
+api.mapi.message.save(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+```ruby
+api.mapi.message.save(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```typescript
+await api.mapi.message.save(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```php
+$api->mapi()->message()->save($request);
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ## More APIs
-See more APIs:
+
 {{< list-of-articles-in-this-section >}}

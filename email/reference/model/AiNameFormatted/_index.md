@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **Comments** | **string** | Usually empty; can contain extra message describing some issue occurred during the formatting              | [optional] 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="ai_name_formatted_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -84,5 +84,4 @@ $aiNameFormatted = Models::aiNameFormatted()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

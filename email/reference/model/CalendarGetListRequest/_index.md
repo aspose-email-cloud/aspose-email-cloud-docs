@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **pageNumber** |**int?**|Page number. |[optional] [default to 0]
 **storage** |**string**|Storage name. |[optional] 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="calendar_get_list_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -98,5 +98,4 @@ $request = Models::CalendarGetListRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

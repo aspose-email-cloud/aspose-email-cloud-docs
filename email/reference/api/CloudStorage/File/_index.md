@@ -9,67 +9,11 @@ File operations controller
 
 ## CopyFile
 
-Copy file
-
-{{< tabs tabTotal="6" tabID="copy_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-await api.CloudStorage.File.CopyFileAsync(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-api.cloudStorage().file().copyFile(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```python
-api.cloud_storage.file.copy_file(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-api.cloud_storage.file.copy_file(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```typescript
-await api.cloudStorage.file.copyFile(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-```php
-$api->cloudStorage()->file()->copyFile($request);
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-Input parameters:
+Copy file. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: CopyFile method request.
-
-Type: [**CopyFileRequest**](/email/reference-model-copy-file-request/).
+CopyFile method request. Type: [**CopyFileRequest**](/email/reference-model-copy-file-request/).
 
 {{< tabs tabTotal="6" tabID="copy_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -153,16 +97,13 @@ $request = Models::CopyFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## DeleteFile
 
-Delete file
-
-{{< tabs tabTotal="6" tabID="delete_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="copy_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.CloudStorage.File.DeleteFileAsync(request);
+await api.CloudStorage.File.CopyFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -170,7 +111,7 @@ await api.CloudStorage.File.DeleteFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.cloudStorage().file().deleteFile(request);
+api.cloudStorage().file().copyFile(request);
 ```
 
 {{< /tab >}}
@@ -178,7 +119,7 @@ api.cloudStorage().file().deleteFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.cloud_storage.file.delete_file(request)
+api.cloud_storage.file.copy_file(request)
 ```
 
 {{< /tab >}}
@@ -186,7 +127,7 @@ api.cloud_storage.file.delete_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.cloud_storage.file.delete_file(request)
+api.cloud_storage.file.copy_file(request)
 ```
 
 {{< /tab >}}
@@ -194,7 +135,7 @@ api.cloud_storage.file.delete_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.cloudStorage.file.deleteFile(request);
+await api.cloudStorage.file.copyFile(request);
 ```
 
 {{< /tab >}}
@@ -202,20 +143,19 @@ await api.cloudStorage.file.deleteFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->cloudStorage()->file()->deleteFile($request);
+$api->cloudStorage()->file()->copyFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## DeleteFile
 
-Input parameters:
+Delete file. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: DeleteFile method request.
-
-Type: [**DeleteFileRequest**](/email/reference-model-delete-file-request/).
+DeleteFile method request. Type: [**DeleteFileRequest**](/email/reference-model-delete-file-request/).
 
 {{< tabs tabTotal="6" tabID="delete_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -287,18 +227,13 @@ $request = Models::DeleteFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## DownloadFile
 
-Download file
-
-Returns a file.
-
-{{< tabs tabTotal="6" tabID="download_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="delete_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.CloudStorage.File.DownloadFileAsync(request);
+await api.CloudStorage.File.DeleteFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -306,7 +241,7 @@ var result = await api.CloudStorage.File.DownloadFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-byte[] result = api.cloudStorage().file().downloadFile(request);
+api.cloudStorage().file().deleteFile(request);
 ```
 
 {{< /tab >}}
@@ -314,7 +249,7 @@ byte[] result = api.cloudStorage().file().downloadFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.cloud_storage.file.download_file(request)
+api.cloud_storage.file.delete_file(request)
 ```
 
 {{< /tab >}}
@@ -322,7 +257,7 @@ result = api.cloud_storage.file.download_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.cloud_storage.file.download_file(request)
+api.cloud_storage.file.delete_file(request)
 ```
 
 {{< /tab >}}
@@ -330,7 +265,7 @@ result = api.cloud_storage.file.download_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.cloudStorage.file.downloadFile(request);
+await api.cloudStorage.file.deleteFile(request);
 ```
 
 {{< /tab >}}
@@ -338,20 +273,20 @@ let result = await api.cloudStorage.file.downloadFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->cloudStorage()->file()->downloadFile($request);
+$api->cloudStorage()->file()->deleteFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## DownloadFile
 
-Input parameters:
+Download file. 
+Returns a **File**. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: DownloadFile method request.
-
-Type: [**DownloadFileRequest**](/email/reference-model-download-file-request/).
+DownloadFile method request. Type: [**DownloadFileRequest**](/email/reference-model-download-file-request/).
 
 {{< tabs tabTotal="6" tabID="download_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -423,16 +358,13 @@ $request = Models::DownloadFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## MoveFile
 
-Move file
-
-{{< tabs tabTotal="6" tabID="move_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="download_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.CloudStorage.File.MoveFileAsync(request);
+var result = await api.CloudStorage.File.DownloadFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -440,7 +372,7 @@ await api.CloudStorage.File.MoveFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.cloudStorage().file().moveFile(request);
+byte[] result = api.cloudStorage().file().downloadFile(request);
 ```
 
 {{< /tab >}}
@@ -448,7 +380,7 @@ api.cloudStorage().file().moveFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.cloud_storage.file.move_file(request)
+result = api.cloud_storage.file.download_file(request)
 ```
 
 {{< /tab >}}
@@ -456,7 +388,7 @@ api.cloud_storage.file.move_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.cloud_storage.file.move_file(request)
+result = api.cloud_storage.file.download_file(request)
 ```
 
 {{< /tab >}}
@@ -464,7 +396,7 @@ api.cloud_storage.file.move_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.cloudStorage.file.moveFile(request);
+let result = await api.cloudStorage.file.downloadFile(request);
 ```
 
 {{< /tab >}}
@@ -472,20 +404,19 @@ await api.cloudStorage.file.moveFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->cloudStorage()->file()->moveFile($request);
+$result = $api->cloudStorage()->file()->downloadFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## MoveFile
 
-Input parameters:
+Move file. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: MoveFile method request.
-
-Type: [**MoveFileRequest**](/email/reference-model-move-file-request/).
+MoveFile method request. Type: [**MoveFileRequest**](/email/reference-model-move-file-request/).
 
 {{< tabs tabTotal="6" tabID="move_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -569,18 +500,13 @@ $request = Models::MoveFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## UploadFile
 
-Upload file
-
-Returns [**FilesUploadResult**](/email/reference-model-files-upload-result/) model.
-
-{{< tabs tabTotal="6" tabID="upload_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="move_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.CloudStorage.File.UploadFileAsync(request);
+await api.CloudStorage.File.MoveFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -588,7 +514,7 @@ var result = await api.CloudStorage.File.UploadFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-FilesUploadResult result = api.cloudStorage().file().uploadFile(request);
+api.cloudStorage().file().moveFile(request);
 ```
 
 {{< /tab >}}
@@ -596,7 +522,7 @@ FilesUploadResult result = api.cloudStorage().file().uploadFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.cloud_storage.file.upload_file(request)
+api.cloud_storage.file.move_file(request)
 ```
 
 {{< /tab >}}
@@ -604,7 +530,7 @@ result = api.cloud_storage.file.upload_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.cloud_storage.file.upload_file(request)
+api.cloud_storage.file.move_file(request)
 ```
 
 {{< /tab >}}
@@ -612,7 +538,7 @@ result = api.cloud_storage.file.upload_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.cloudStorage.file.uploadFile(request);
+await api.cloudStorage.file.moveFile(request);
 ```
 
 {{< /tab >}}
@@ -620,20 +546,20 @@ let result = await api.cloudStorage.file.uploadFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->cloudStorage()->file()->uploadFile($request);
+$api->cloudStorage()->file()->moveFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## UploadFile
 
-Input parameters:
+Upload file. 
+Returns [**FilesUploadResult**](/email/reference-model-files-upload-result/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: UploadFile method request.
-
-Type: [**UploadFileRequest**](/email/reference-model-upload-file-request/).
+UploadFile method request. Type: [**UploadFileRequest**](/email/reference-model-upload-file-request/).
 
 {{< tabs tabTotal="6" tabID="upload_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -712,6 +638,58 @@ $request = Models::UploadFileRequest()
 
 {{< /expand-list >}}
 
+{{< tabs tabTotal="6" tabID="upload_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+var result = await api.CloudStorage.File.UploadFileAsync(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+FilesUploadResult result = api.cloudStorage().file().uploadFile(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```python
+result = api.cloud_storage.file.upload_file(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+```ruby
+result = api.cloud_storage.file.upload_file(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```typescript
+let result = await api.cloudStorage.file.uploadFile(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```php
+$result = $api->cloudStorage()->file()->uploadFile($request);
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ## More APIs
-See more APIs:
+
 {{< list-of-articles-in-this-section >}}

@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **Value** | [**MapiMessageDto**](/email/reference-model-mapi-message-dto/) | MAPI message model.              | 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="mapi_message_as_file_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -267,5 +267,4 @@ $mapiMessageAsFileRequest = Models::mapiMessageAsFileRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

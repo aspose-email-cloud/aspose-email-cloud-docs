@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **folder** |**string**|Folder on storage |[optional] 
 **storage** |**string**|Storage name |[optional] 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="client_account_get_multi_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -91,5 +91,4 @@ $request = Models::ClientAccountGetMultiRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

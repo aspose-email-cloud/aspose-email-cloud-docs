@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 
 Parent class: [StorageModelOfMapiContactDto](/email/reference-model-storage-model-of-mapi-contact-dto/)
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="mapi_contact_save_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -220,5 +220,4 @@ $mapiContactSaveRequest = Models::mapiContactSaveRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **SendAccount** | [**EmailClientAccount**](/email/reference-model-email-client-account/) | Email client send account              | [optional] 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="email_client_multi_account_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -254,5 +254,4 @@ $emailClientMultiAccount = Models::emailClientMultiAccount()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

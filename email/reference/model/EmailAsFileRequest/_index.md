@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **Value** | [**EmailDto**](/email/reference-model-email-dto/) | Email model.              | 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="email_as_file_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -224,5 +224,4 @@ $emailAsFileRequest = Models::emailAsFileRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **languages** |**string**|Comma-separated ISO-639 codes of languages (either 639-1 or 639-3; i.e. \"it\" or \"ita\" for Italian); it's \"\" by default.              |[optional] 
 **isSingle** |**bool?**|Determines that image contains single VCard or more. |[optional] [default to true]
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="ai_bcr_parse_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -98,5 +98,4 @@ $request = Models::AiBcrParseRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

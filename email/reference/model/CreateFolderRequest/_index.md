@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **path** |**string**|Folder path to create e.g. 'folder_1/folder_2/' |
 **storageName** |**string**|Storage name |[optional] 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="create_folder_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -84,5 +84,4 @@ $request = Models::CreateFolderRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **storageName** |**string**|Storage name |[optional] 
 **recursive** |**bool?**|Enable to delete folders, subfolders and files |[optional] [default to false]
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="delete_folder_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -91,5 +91,4 @@ $request = Models::DeleteFolderRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

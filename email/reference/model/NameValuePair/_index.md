@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **Value** | **string** | Property value              | [optional] 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="name_value_pair_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -84,5 +84,4 @@ $nameValuePair = Models::nameValuePair()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

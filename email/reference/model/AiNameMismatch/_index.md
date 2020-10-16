@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **Explanation** | **string** | Explanation or mismatch subtype              | [optional] 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="ai_name_mismatch_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -85,5 +85,4 @@ $aiNameMismatch = Models::aiNameMismatch()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

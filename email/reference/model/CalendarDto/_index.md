@@ -34,7 +34,7 @@ Name | Type | Description | Notes
 **Transparency** | **string** | Specifies whether or not this appointment is intended to be visible in availability searches. Enum, available values: NotDefined, Transparent, Opaque | 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="calendar_dto_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -211,5 +211,4 @@ $calendarDto = Models::calendarDto()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

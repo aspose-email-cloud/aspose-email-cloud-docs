@@ -9,69 +9,12 @@ AI Business card recognition operations.
 
 ## Parse
 
-Parse images to vCard document models             
-
-Returns [**ContactList**](/email/reference-model-contact-list/) model.
-
-{{< tabs tabTotal="6" tabID="ai_bcr_parse_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-var result = await api.Ai.Bcr.ParseAsync(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-ContactList result = api.ai().bcr().parse(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```python
-result = api.ai.bcr.parse(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-result = api.ai.bcr.parse(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```typescript
-let result = await api.ai.bcr.parse(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-```php
-$result = $api->ai()->bcr()->parse($request);
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-Input parameters:
+Parse images to vCard document models. 
+Returns [**ContactList**](/email/reference-model-contact-list/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Parse method request.
-
-Type: [**AiBcrParseRequest**](/email/reference-model-ai-bcr-parse-request/).
+Parse method request. Type: [**AiBcrParseRequest**](/email/reference-model-ai-bcr-parse-request/).
 
 {{< tabs tabTotal="6" tabID="ai_bcr_parse_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -155,18 +98,13 @@ $request = Models::AiBcrParseRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## ParseStorage
 
-Parse images from storage to vCard files             
-
-Returns [**StorageFileLocationList**](/email/reference-model-storage-file-location-list/) model.
-
-{{< tabs tabTotal="6" tabID="ai_bcr_parse_storage_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="ai_bcr_parse_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Ai.Bcr.ParseStorageAsync(request);
+var result = await api.Ai.Bcr.ParseAsync(request);
 ```
 
 {{< /tab >}}
@@ -174,7 +112,7 @@ var result = await api.Ai.Bcr.ParseStorageAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-StorageFileLocationList result = api.ai().bcr().parseStorage(request);
+ContactList result = api.ai().bcr().parse(request);
 ```
 
 {{< /tab >}}
@@ -182,7 +120,7 @@ StorageFileLocationList result = api.ai().bcr().parseStorage(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.ai.bcr.parse_storage(request)
+result = api.ai.bcr.parse(request)
 ```
 
 {{< /tab >}}
@@ -190,7 +128,7 @@ result = api.ai.bcr.parse_storage(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.ai.bcr.parse_storage(request)
+result = api.ai.bcr.parse(request)
 ```
 
 {{< /tab >}}
@@ -198,7 +136,7 @@ result = api.ai.bcr.parse_storage(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.ai.bcr.parseStorage(request);
+let result = await api.ai.bcr.parse(request);
 ```
 
 {{< /tab >}}
@@ -206,20 +144,20 @@ let result = await api.ai.bcr.parseStorage(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->ai()->bcr()->parseStorage($request);
+$result = $api->ai()->bcr()->parse($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## ParseStorage
 
-Input parameters:
+Parse images from storage to vCard files. 
+Returns [**StorageFileLocationList**](/email/reference-model-storage-file-location-list/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Request with images located on storage
-
-Type: [**AiBcrParseStorageRequest**](/email/reference-model-ai-bcr-parse-storage-request/).
+Request with images located on storage. Type: [**AiBcrParseStorageRequest**](/email/reference-model-ai-bcr-parse-storage-request/).
 
 {{< tabs tabTotal="6" tabID="ai_bcr_parse_storage_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -357,6 +295,58 @@ $request = Models::aiBcrParseStorageRequest()
 
 {{< /expand-list >}}
 
+{{< tabs tabTotal="6" tabID="ai_bcr_parse_storage_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+var result = await api.Ai.Bcr.ParseStorageAsync(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+StorageFileLocationList result = api.ai().bcr().parseStorage(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```python
+result = api.ai.bcr.parse_storage(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+```ruby
+result = api.ai.bcr.parse_storage(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```typescript
+let result = await api.ai.bcr.parseStorage(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```php
+$result = $api->ai()->bcr()->parseStorage($request);
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ## More APIs
-See more APIs:
+
 {{< list-of-articles-in-this-section >}}

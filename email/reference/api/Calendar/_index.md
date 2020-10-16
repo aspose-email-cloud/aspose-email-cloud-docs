@@ -9,69 +9,12 @@ iCalendar document operations.
 
 ## AsAlternate
 
-Convert iCalendar to AlternateView             
-
-Returns [**AlternateView**](/email/reference-model-alternate-view/) model.
-
-{{< tabs tabTotal="6" tabID="calendar_as_alternate_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-var result = await api.Calendar.AsAlternateAsync(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-AlternateView result = api.calendar().asAlternate(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```python
-result = api.calendar.as_alternate(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-result = api.calendar.as_alternate(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```typescript
-let result = await api.calendar.asAlternate(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-```php
-$result = $api->calendar()->asAlternate($request);
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-Input parameters:
+Convert iCalendar to AlternateView. 
+Returns [**AlternateView**](/email/reference-model-alternate-view/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: iCalendar to AlternateView request
-
-Type: [**CalendarAsAlternateRequest**](/email/reference-model-calendar-as-alternate-request/).
+iCalendar to AlternateView request. Type: [**CalendarAsAlternateRequest**](/email/reference-model-calendar-as-alternate-request/).
 
 {{< tabs tabTotal="6" tabID="calendar_as_alternate_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -267,18 +210,13 @@ $request = Models::calendarAsAlternateRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## AsFile
 
-Converts calendar model to specified format and returns as file.             
-
-Returns a file.
-
-{{< tabs tabTotal="6" tabID="calendar_as_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="calendar_as_alternate_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Calendar.AsFileAsync(request);
+var result = await api.Calendar.AsAlternateAsync(request);
 ```
 
 {{< /tab >}}
@@ -286,7 +224,7 @@ var result = await api.Calendar.AsFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-byte[] result = api.calendar().asFile(request);
+AlternateView result = api.calendar().asAlternate(request);
 ```
 
 {{< /tab >}}
@@ -294,7 +232,7 @@ byte[] result = api.calendar().asFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.calendar.as_file(request)
+result = api.calendar.as_alternate(request)
 ```
 
 {{< /tab >}}
@@ -302,7 +240,7 @@ result = api.calendar.as_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.calendar.as_file(request)
+result = api.calendar.as_alternate(request)
 ```
 
 {{< /tab >}}
@@ -310,7 +248,7 @@ result = api.calendar.as_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.calendar.asFile(request);
+let result = await api.calendar.asAlternate(request);
 ```
 
 {{< /tab >}}
@@ -318,20 +256,20 @@ let result = await api.calendar.asFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->calendar()->asFile($request);
+$result = $api->calendar()->asAlternate($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## AsFile
 
-Input parameters:
+Converts calendar model to specified format and returns as file. 
+Returns a **File**. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Calendar model and format to convert.
-
-Type: [**CalendarAsFileRequest**](/email/reference-model-calendar-as-file-request/).
+Calendar model and format to convert. Type: [**CalendarAsFileRequest**](/email/reference-model-calendar-as-file-request/).
 
 {{< tabs tabTotal="6" tabID="calendar_as_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -521,18 +459,13 @@ $request = Models::calendarAsFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## AsMapi
 
-Converts CalendarDto to MapiCalendarDto.             
-
-Returns [**MapiCalendarDto**](/email/reference-model-mapi-calendar-dto/) model.
-
-{{< tabs tabTotal="6" tabID="calendar_as_mapi_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="calendar_as_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Calendar.AsMapiAsync(calendarDto);
+var result = await api.Calendar.AsFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -540,7 +473,7 @@ var result = await api.Calendar.AsMapiAsync(calendarDto);
 {{< tab tabNum="2" >}}
 
 ```java
-MapiCalendarDto result = api.calendar().asMapi(calendarDto);
+byte[] result = api.calendar().asFile(request);
 ```
 
 {{< /tab >}}
@@ -548,7 +481,7 @@ MapiCalendarDto result = api.calendar().asMapi(calendarDto);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.calendar.as_mapi(calendar_dto)
+result = api.calendar.as_file(request)
 ```
 
 {{< /tab >}}
@@ -556,7 +489,7 @@ result = api.calendar.as_mapi(calendar_dto)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.calendar.as_mapi(calendar_dto)
+result = api.calendar.as_file(request)
 ```
 
 {{< /tab >}}
@@ -564,7 +497,7 @@ result = api.calendar.as_mapi(calendar_dto)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.calendar.asMapi(calendarDto);
+let result = await api.calendar.asFile(request);
 ```
 
 {{< /tab >}}
@@ -572,20 +505,20 @@ let result = await api.calendar.asMapi(calendarDto);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->calendar()->asMapi($calendar_dto);
+$result = $api->calendar()->asFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## AsMapi
 
-Input parameters:
+Converts CalendarDto to MapiCalendarDto. 
+Returns [**MapiCalendarDto**](/email/reference-model-mapi-calendar-dto/) model. Requires:
 
 {{< expand-list title="calendarDto" >}}
 
-Description: iCalendar model calendar representation.
-
-Type: [**CalendarDto**](/email/reference-model-calendar-dto/).
+iCalendar model calendar representation. Type: [**CalendarDto**](/email/reference-model-calendar-dto/).
 
 {{< tabs tabTotal="6" tabID="calendar_as_mapi_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -764,18 +697,13 @@ $calendar_dto = Models::calendarDto()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Convert
 
-Converts calendar document to specified format and returns as file.             
-
-Returns a file.
-
-{{< tabs tabTotal="6" tabID="calendar_convert_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="calendar_as_mapi_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Calendar.ConvertAsync(request);
+var result = await api.Calendar.AsMapiAsync(calendarDto);
 ```
 
 {{< /tab >}}
@@ -783,7 +711,7 @@ var result = await api.Calendar.ConvertAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-byte[] result = api.calendar().convert(request);
+MapiCalendarDto result = api.calendar().asMapi(calendarDto);
 ```
 
 {{< /tab >}}
@@ -791,7 +719,7 @@ byte[] result = api.calendar().convert(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.calendar.convert(request)
+result = api.calendar.as_mapi(calendar_dto)
 ```
 
 {{< /tab >}}
@@ -799,7 +727,7 @@ result = api.calendar.convert(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.calendar.convert(request)
+result = api.calendar.as_mapi(calendar_dto)
 ```
 
 {{< /tab >}}
@@ -807,7 +735,7 @@ result = api.calendar.convert(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.calendar.convert(request);
+let result = await api.calendar.asMapi(calendarDto);
 ```
 
 {{< /tab >}}
@@ -815,20 +743,20 @@ let result = await api.calendar.convert(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->calendar()->convert($request);
+$result = $api->calendar()->asMapi($calendar_dto);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Convert
 
-Input parameters:
+Converts calendar document to specified format and returns as file. 
+Returns a **File**. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Convert method request.
-
-Type: [**CalendarConvertRequest**](/email/reference-model-calendar-convert-request/).
+Convert method request. Type: [**CalendarConvertRequest**](/email/reference-model-calendar-convert-request/).
 
 {{< tabs tabTotal="6" tabID="calendar_convert_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -900,18 +828,13 @@ $request = Models::CalendarConvertRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## FromFile
 
-Converts calendar document to a model representation.             
-
-Returns [**CalendarDto**](/email/reference-model-calendar-dto/) model.
-
-{{< tabs tabTotal="6" tabID="calendar_from_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="calendar_convert_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Calendar.FromFileAsync(request);
+var result = await api.Calendar.ConvertAsync(request);
 ```
 
 {{< /tab >}}
@@ -919,7 +842,7 @@ var result = await api.Calendar.FromFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-CalendarDto result = api.calendar().fromFile(request);
+byte[] result = api.calendar().convert(request);
 ```
 
 {{< /tab >}}
@@ -927,7 +850,7 @@ CalendarDto result = api.calendar().fromFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.calendar.from_file(request)
+result = api.calendar.convert(request)
 ```
 
 {{< /tab >}}
@@ -935,7 +858,7 @@ result = api.calendar.from_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.calendar.from_file(request)
+result = api.calendar.convert(request)
 ```
 
 {{< /tab >}}
@@ -943,7 +866,7 @@ result = api.calendar.from_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.calendar.fromFile(request);
+let result = await api.calendar.convert(request);
 ```
 
 {{< /tab >}}
@@ -951,20 +874,20 @@ let result = await api.calendar.fromFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->calendar()->fromFile($request);
+$result = $api->calendar()->convert($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## FromFile
 
-Input parameters:
+Converts calendar document to a model representation. 
+Returns [**CalendarDto**](/email/reference-model-calendar-dto/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: FromFile method request.
-
-Type: [**CalendarFromFileRequest**](/email/reference-model-calendar-from-file-request/).
+FromFile method request. Type: [**CalendarFromFileRequest**](/email/reference-model-calendar-from-file-request/).
 
 {{< tabs tabTotal="6" tabID="calendar_from_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1030,18 +953,13 @@ $request = Models::CalendarFromFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Get
 
-Get calendar file from storage.             
-
-Returns [**CalendarDto**](/email/reference-model-calendar-dto/) model.
-
-{{< tabs tabTotal="6" tabID="calendar_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="calendar_from_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Calendar.GetAsync(request);
+var result = await api.Calendar.FromFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -1049,7 +967,7 @@ var result = await api.Calendar.GetAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-CalendarDto result = api.calendar().get(request);
+CalendarDto result = api.calendar().fromFile(request);
 ```
 
 {{< /tab >}}
@@ -1057,7 +975,7 @@ CalendarDto result = api.calendar().get(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.calendar.get(request)
+result = api.calendar.from_file(request)
 ```
 
 {{< /tab >}}
@@ -1065,7 +983,7 @@ result = api.calendar.get(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.calendar.get(request)
+result = api.calendar.from_file(request)
 ```
 
 {{< /tab >}}
@@ -1073,7 +991,7 @@ result = api.calendar.get(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.calendar.get(request);
+let result = await api.calendar.fromFile(request);
 ```
 
 {{< /tab >}}
@@ -1081,20 +999,20 @@ let result = await api.calendar.get(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->calendar()->get($request);
+$result = $api->calendar()->fromFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Get
 
-Input parameters:
+Get calendar file from storage. 
+Returns [**CalendarDto**](/email/reference-model-calendar-dto/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Get method request.
-
-Type: [**CalendarGetRequest**](/email/reference-model-calendar-get-request/).
+Get method request. Type: [**CalendarGetRequest**](/email/reference-model-calendar-get-request/).
 
 {{< tabs tabTotal="6" tabID="calendar_get_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1172,18 +1090,13 @@ $request = Models::CalendarGetRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## GetAsAlternate
 
-Get iCalendar from storage as AlternateView             
-
-Returns [**AlternateView**](/email/reference-model-alternate-view/) model.
-
-{{< tabs tabTotal="6" tabID="calendar_get_as_alternate_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="calendar_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Calendar.GetAsAlternateAsync(request);
+var result = await api.Calendar.GetAsync(request);
 ```
 
 {{< /tab >}}
@@ -1191,7 +1104,7 @@ var result = await api.Calendar.GetAsAlternateAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-AlternateView result = api.calendar().getAsAlternate(request);
+CalendarDto result = api.calendar().get(request);
 ```
 
 {{< /tab >}}
@@ -1199,7 +1112,7 @@ AlternateView result = api.calendar().getAsAlternate(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.calendar.get_as_alternate(request)
+result = api.calendar.get(request)
 ```
 
 {{< /tab >}}
@@ -1207,7 +1120,7 @@ result = api.calendar.get_as_alternate(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.calendar.get_as_alternate(request)
+result = api.calendar.get(request)
 ```
 
 {{< /tab >}}
@@ -1215,7 +1128,7 @@ result = api.calendar.get_as_alternate(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.calendar.getAsAlternate(request);
+let result = await api.calendar.get(request);
 ```
 
 {{< /tab >}}
@@ -1223,20 +1136,20 @@ let result = await api.calendar.getAsAlternate(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->calendar()->getAsAlternate($request);
+$result = $api->calendar()->get($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## GetAsAlternate
 
-Input parameters:
+Get iCalendar from storage as AlternateView. 
+Returns [**AlternateView**](/email/reference-model-alternate-view/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: GetAsAlternate method request.
-
-Type: [**CalendarGetAsAlternateRequest**](/email/reference-model-calendar-get-as-alternate-request/).
+GetAsAlternate method request. Type: [**CalendarGetAsAlternateRequest**](/email/reference-model-calendar-get-as-alternate-request/).
 
 {{< tabs tabTotal="6" tabID="calendar_get_as_alternate_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1320,18 +1233,13 @@ $request = Models::CalendarGetAsAlternateRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## GetAsFile
 
-Converts calendar document from storage to specified format and returns as file.             
-
-Returns a file.
-
-{{< tabs tabTotal="6" tabID="calendar_get_as_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="calendar_get_as_alternate_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Calendar.GetAsFileAsync(request);
+var result = await api.Calendar.GetAsAlternateAsync(request);
 ```
 
 {{< /tab >}}
@@ -1339,7 +1247,7 @@ var result = await api.Calendar.GetAsFileAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-byte[] result = api.calendar().getAsFile(request);
+AlternateView result = api.calendar().getAsAlternate(request);
 ```
 
 {{< /tab >}}
@@ -1347,7 +1255,7 @@ byte[] result = api.calendar().getAsFile(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.calendar.get_as_file(request)
+result = api.calendar.get_as_alternate(request)
 ```
 
 {{< /tab >}}
@@ -1355,7 +1263,7 @@ result = api.calendar.get_as_file(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.calendar.get_as_file(request)
+result = api.calendar.get_as_alternate(request)
 ```
 
 {{< /tab >}}
@@ -1363,7 +1271,7 @@ result = api.calendar.get_as_file(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.calendar.getAsFile(request);
+let result = await api.calendar.getAsAlternate(request);
 ```
 
 {{< /tab >}}
@@ -1371,20 +1279,20 @@ let result = await api.calendar.getAsFile(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->calendar()->getAsFile($request);
+$result = $api->calendar()->getAsAlternate($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## GetAsFile
 
-Input parameters:
+Converts calendar document from storage to specified format and returns as file. 
+Returns a **File**. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: GetAsFile method request.
-
-Type: [**CalendarGetAsFileRequest**](/email/reference-model-calendar-get-as-file-request/).
+GetAsFile method request. Type: [**CalendarGetAsFileRequest**](/email/reference-model-calendar-get-as-file-request/).
 
 {{< tabs tabTotal="6" tabID="calendar_get_as_file_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1468,18 +1376,13 @@ $request = Models::CalendarGetAsFileRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## GetList
 
-Get iCalendar list from storage folder.             
-
-Returns [**CalendarStorageList**](/email/reference-model-calendar-storage-list/) model.
-
-{{< tabs tabTotal="6" tabID="calendar_get_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="calendar_get_as_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Calendar.GetListAsync(request);
+var result = await api.Calendar.GetAsFileAsync(request);
 ```
 
 {{< /tab >}}
@@ -1487,7 +1390,7 @@ var result = await api.Calendar.GetListAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-CalendarStorageList result = api.calendar().getList(request);
+byte[] result = api.calendar().getAsFile(request);
 ```
 
 {{< /tab >}}
@@ -1495,7 +1398,7 @@ CalendarStorageList result = api.calendar().getList(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.calendar.get_list(request)
+result = api.calendar.get_as_file(request)
 ```
 
 {{< /tab >}}
@@ -1503,7 +1406,7 @@ result = api.calendar.get_list(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.calendar.get_list(request)
+result = api.calendar.get_as_file(request)
 ```
 
 {{< /tab >}}
@@ -1511,7 +1414,7 @@ result = api.calendar.get_list(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.calendar.getList(request);
+let result = await api.calendar.getAsFile(request);
 ```
 
 {{< /tab >}}
@@ -1519,20 +1422,20 @@ let result = await api.calendar.getList(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->calendar()->getList($request);
+$result = $api->calendar()->getAsFile($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## GetList
 
-Input parameters:
+Get iCalendar list from storage folder. 
+Returns [**CalendarStorageList**](/email/reference-model-calendar-storage-list/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: GetList method request.
-
-Type: [**CalendarGetListRequest**](/email/reference-model-calendar-get-list-request/).
+GetList method request. Type: [**CalendarGetListRequest**](/email/reference-model-calendar-get-list-request/).
 
 {{< tabs tabTotal="6" tabID="calendar_get_list_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1616,16 +1519,13 @@ $request = Models::CalendarGetListRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Save
 
-Save iCalendar             
-
-{{< tabs tabTotal="6" tabID="calendar_save_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="calendar_get_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.Calendar.SaveAsync(request);
+var result = await api.Calendar.GetListAsync(request);
 ```
 
 {{< /tab >}}
@@ -1633,7 +1533,7 @@ await api.Calendar.SaveAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.calendar().save(request);
+CalendarStorageList result = api.calendar().getList(request);
 ```
 
 {{< /tab >}}
@@ -1641,7 +1541,7 @@ api.calendar().save(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.calendar.save(request)
+result = api.calendar.get_list(request)
 ```
 
 {{< /tab >}}
@@ -1649,7 +1549,7 @@ api.calendar.save(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.calendar.save(request)
+result = api.calendar.get_list(request)
 ```
 
 {{< /tab >}}
@@ -1657,7 +1557,7 @@ api.calendar.save(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.calendar.save(request);
+let result = await api.calendar.getList(request);
 ```
 
 {{< /tab >}}
@@ -1665,20 +1565,19 @@ await api.calendar.save(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->calendar()->save($request);
+$result = $api->calendar()->getList($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Save
 
-Input parameters:
+Save iCalendar. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: iCalendar create/update request
-
-Type: [**CalendarSaveRequest**](/email/reference-model-calendar-save-request/).
+iCalendar create/update request. Type: [**CalendarSaveRequest**](/email/reference-model-calendar-save-request/).
 
 {{< tabs tabTotal="6" tabID="calendar_save_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1898,6 +1797,58 @@ $request = Models::calendarSaveRequest()
 
 {{< /expand-list >}}
 
+{{< tabs tabTotal="6" tabID="calendar_save_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+await api.Calendar.SaveAsync(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+api.calendar().save(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```python
+api.calendar.save(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+```ruby
+api.calendar.save(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```typescript
+await api.calendar.save(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```php
+$api->calendar()->save($request);
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ## More APIs
-See more APIs:
+
 {{< list-of-articles-in-this-section >}}

@@ -12,7 +12,7 @@ Class has no properties
 
 Parent class: [ListResponseOfStorageModelOfContactDto](/email/reference-model-list-response-of-storage-model-of-contact-dto/)
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="contact_storage_list_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -346,5 +346,4 @@ $contactStorageList = Models::contactStorageList()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

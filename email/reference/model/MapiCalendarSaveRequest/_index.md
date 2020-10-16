@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 
 Parent class: [StorageModelOfMapiCalendarDto](/email/reference-model-storage-model-of-mapi-calendar-dto/)
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="mapi_calendar_save_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -314,5 +314,4 @@ $mapiCalendarSaveRequest = Models::mapiCalendarSaveRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

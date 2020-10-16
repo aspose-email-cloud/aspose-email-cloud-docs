@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **itemsPerPage** |**int?**|Count of items on page. |[optional] [default to 10]
 **pageNumber** |**int?**|Page number. |[optional] [default to 0]
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="contact_get_list_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -105,5 +105,4 @@ $request = Models::ContactGetListRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **Value** | [**MapiCalendarDto**](/email/reference-model-mapi-calendar-dto/) | MAPI calendar model.              | 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="mapi_calendar_as_file_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -285,5 +285,4 @@ $mapiCalendarAsFileRequest = Models::mapiCalendarAsFileRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

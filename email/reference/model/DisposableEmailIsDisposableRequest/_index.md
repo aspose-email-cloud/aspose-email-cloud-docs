@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
 **address** |**string**|An email address to check |
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="disposable_email_is_disposable_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -77,5 +77,4 @@ $request = Models::DisposableEmailIsDisposableRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

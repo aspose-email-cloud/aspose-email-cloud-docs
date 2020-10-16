@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 
 Parent class: [AiBcrImage](/email/reference-model-ai-bcr-image/)
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="ai_bcr_image_storage_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -107,5 +107,4 @@ $aiBcrImageStorageFile = Models::aiBcrImageStorageFile()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

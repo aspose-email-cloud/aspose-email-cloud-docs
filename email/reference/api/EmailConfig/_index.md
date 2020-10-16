@@ -9,69 +9,12 @@ Email server configuration discovery.
 
 ## Discover
 
-Discover email accounts by email address. Does not validate discovered accounts.             
-
-Returns [**EmailAccountConfigList**](/email/reference-model-email-account-config-list/) model.
-
-{{< tabs tabTotal="6" tabID="email_config_discover_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-var result = await api.EmailConfig.DiscoverAsync(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-EmailAccountConfigList result = api.emailConfig().discover(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```python
-result = api.email_config.discover(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-result = api.email_config.discover(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```typescript
-let result = await api.emailConfig.discover(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-```php
-$result = $api->emailConfig()->discover($request);
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-Input parameters:
+Discover email accounts by email address. Does not validate discovered accounts. 
+Returns [**EmailAccountConfigList**](/email/reference-model-email-account-config-list/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Discover method request.
-
-Type: [**EmailConfigDiscoverRequest**](/email/reference-model-email-config-discover-request/).
+Discover method request. Type: [**EmailConfigDiscoverRequest**](/email/reference-model-email-config-discover-request/).
 
 {{< tabs tabTotal="6" tabID="email_config_discover_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -131,18 +74,13 @@ $request = Models::EmailConfigDiscoverRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## DiscoverOauth
 
-Discover email accounts by email address. Validates discovered accounts using OAuth 2.0.             
-
-Returns [**EmailAccountConfigList**](/email/reference-model-email-account-config-list/) model.
-
-{{< tabs tabTotal="6" tabID="email_config_discover_oauth_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="email_config_discover_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.EmailConfig.DiscoverOauthAsync(request);
+var result = await api.EmailConfig.DiscoverAsync(request);
 ```
 
 {{< /tab >}}
@@ -150,7 +88,7 @@ var result = await api.EmailConfig.DiscoverOauthAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-EmailAccountConfigList result = api.emailConfig().discoverOauth(request);
+EmailAccountConfigList result = api.emailConfig().discover(request);
 ```
 
 {{< /tab >}}
@@ -158,7 +96,7 @@ EmailAccountConfigList result = api.emailConfig().discoverOauth(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.email_config.discover_oauth(request)
+result = api.email_config.discover(request)
 ```
 
 {{< /tab >}}
@@ -166,7 +104,7 @@ result = api.email_config.discover_oauth(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.email_config.discover_oauth(request)
+result = api.email_config.discover(request)
 ```
 
 {{< /tab >}}
@@ -174,7 +112,7 @@ result = api.email_config.discover_oauth(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.emailConfig.discoverOauth(request);
+let result = await api.emailConfig.discover(request);
 ```
 
 {{< /tab >}}
@@ -182,20 +120,20 @@ let result = await api.emailConfig.discoverOauth(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->emailConfig()->discoverOauth($request);
+$result = $api->emailConfig()->discover($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## DiscoverOauth
 
-Input parameters:
+Discover email accounts by email address. Validates discovered accounts using OAuth 2.0. 
+Returns [**EmailAccountConfigList**](/email/reference-model-email-account-config-list/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Discover email configuration request.
-
-Type: [**EmailConfigDiscoverOauthRequest**](/email/reference-model-email-config-discover-oauth-request/).
+Discover email configuration request. Type: [**EmailConfigDiscoverOauthRequest**](/email/reference-model-email-config-discover-oauth-request/).
 
 {{< tabs tabTotal="6" tabID="email_config_discover_oauth_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -285,18 +223,13 @@ $request = Models::emailConfigDiscoverOauthRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## DiscoverPassword
 
-Discover email accounts by email address. Validates discovered accounts using login and password.             
-
-Returns [**EmailAccountConfigList**](/email/reference-model-email-account-config-list/) model.
-
-{{< tabs tabTotal="6" tabID="email_config_discover_password_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="email_config_discover_oauth_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.EmailConfig.DiscoverPasswordAsync(request);
+var result = await api.EmailConfig.DiscoverOauthAsync(request);
 ```
 
 {{< /tab >}}
@@ -304,7 +237,7 @@ var result = await api.EmailConfig.DiscoverPasswordAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-EmailAccountConfigList result = api.emailConfig().discoverPassword(request);
+EmailAccountConfigList result = api.emailConfig().discoverOauth(request);
 ```
 
 {{< /tab >}}
@@ -312,7 +245,7 @@ EmailAccountConfigList result = api.emailConfig().discoverPassword(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.email_config.discover_password(request)
+result = api.email_config.discover_oauth(request)
 ```
 
 {{< /tab >}}
@@ -320,7 +253,7 @@ result = api.email_config.discover_password(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.email_config.discover_password(request)
+result = api.email_config.discover_oauth(request)
 ```
 
 {{< /tab >}}
@@ -328,7 +261,7 @@ result = api.email_config.discover_password(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.emailConfig.discoverPassword(request);
+let result = await api.emailConfig.discoverOauth(request);
 ```
 
 {{< /tab >}}
@@ -336,20 +269,20 @@ let result = await api.emailConfig.discoverPassword(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->emailConfig()->discoverPassword($request);
+$result = $api->emailConfig()->discoverOauth($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## DiscoverPassword
 
-Input parameters:
+Discover email accounts by email address. Validates discovered accounts using login and password. 
+Returns [**EmailAccountConfigList**](/email/reference-model-email-account-config-list/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Discover email configuration request.
-
-Type: [**EmailConfigDiscoverPasswordRequest**](/email/reference-model-email-config-discover-password-request/).
+Discover email configuration request. Type: [**EmailConfigDiscoverPasswordRequest**](/email/reference-model-email-config-discover-password-request/).
 
 {{< tabs tabTotal="6" tabID="email_config_discover_password_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -428,6 +361,58 @@ $request = Models::emailConfigDiscoverPasswordRequest()
 
 {{< /expand-list >}}
 
+{{< tabs tabTotal="6" tabID="email_config_discover_password_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+var result = await api.EmailConfig.DiscoverPasswordAsync(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+EmailAccountConfigList result = api.emailConfig().discoverPassword(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```python
+result = api.email_config.discover_password(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+```ruby
+result = api.email_config.discover_password(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```typescript
+let result = await api.emailConfig.discoverPassword(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```php
+$result = $api->emailConfig()->discoverPassword($request);
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ## More APIs
-See more APIs:
+
 {{< list-of-articles-in-this-section >}}

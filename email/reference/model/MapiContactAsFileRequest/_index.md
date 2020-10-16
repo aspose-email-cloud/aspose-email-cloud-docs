@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **Value** | [**MapiContactDto**](/email/reference-model-mapi-contact-dto/) | MAPI contact model.              | 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="mapi_contact_as_file_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -191,5 +191,4 @@ $mapiContactAsFileRequest = Models::mapiContactAsFileRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

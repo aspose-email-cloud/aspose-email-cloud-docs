@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 
 Parent class: [ClientAccountBaseRequest](/email/reference-model-client-account-base-request/)
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="client_folder_delete_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -107,5 +107,4 @@ $clientFolderDeleteRequest = Models::clientFolderDeleteRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

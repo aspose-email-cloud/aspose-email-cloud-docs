@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **Comments** | **string** | Usually empty; can contain extra message describing some issue occurred during processing              | [optional] 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="ai_name_weighted_variants_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -126,5 +126,4 @@ $aiNameWeightedVariants = Models::aiNameWeightedVariants()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

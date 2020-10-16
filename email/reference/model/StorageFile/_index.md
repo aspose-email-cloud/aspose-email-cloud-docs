@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **Path** | **string** | File or folder path. | [optional] 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="storage_file_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -99,5 +99,4 @@ $storageFile = Models::storageFile()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

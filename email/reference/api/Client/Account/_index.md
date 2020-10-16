@@ -9,69 +9,12 @@ Email server account for built-in client operations.
 
 ## Get
 
-Get email client account from storage.             
-
-Returns [**EmailClientAccount**](/email/reference-model-email-client-account/) model.
-
-{{< tabs tabTotal="6" tabID="client_account_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-var result = await api.Client.Account.GetAsync(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-EmailClientAccount result = api.client().account().get(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```python
-result = api.client.account.get(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-result = api.client.account.get(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```typescript
-let result = await api.client.account.get(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-```php
-$result = $api->client()->account()->get($request);
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-Input parameters:
+Get email client account from storage. 
+Returns [**EmailClientAccount**](/email/reference-model-email-client-account/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Get method request.
-
-Type: [**ClientAccountGetRequest**](/email/reference-model-client-account-get-request/).
+Get method request. Type: [**ClientAccountGetRequest**](/email/reference-model-client-account-get-request/).
 
 {{< tabs tabTotal="6" tabID="client_account_get_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -149,18 +92,13 @@ $request = Models::ClientAccountGetRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## GetMulti
 
-Get email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
-
-Returns [**EmailClientMultiAccount**](/email/reference-model-email-client-multi-account/) model.
-
-{{< tabs tabTotal="6" tabID="client_account_get_multi_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="client_account_get_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Client.Account.GetMultiAsync(request);
+var result = await api.Client.Account.GetAsync(request);
 ```
 
 {{< /tab >}}
@@ -168,7 +106,7 @@ var result = await api.Client.Account.GetMultiAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-EmailClientMultiAccount result = api.client().account().getMulti(request);
+EmailClientAccount result = api.client().account().get(request);
 ```
 
 {{< /tab >}}
@@ -176,7 +114,7 @@ EmailClientMultiAccount result = api.client().account().getMulti(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.client.account.get_multi(request)
+result = api.client.account.get(request)
 ```
 
 {{< /tab >}}
@@ -184,7 +122,7 @@ result = api.client.account.get_multi(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.client.account.get_multi(request)
+result = api.client.account.get(request)
 ```
 
 {{< /tab >}}
@@ -192,7 +130,7 @@ result = api.client.account.get_multi(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.client.account.getMulti(request);
+let result = await api.client.account.get(request);
 ```
 
 {{< /tab >}}
@@ -200,20 +138,20 @@ let result = await api.client.account.getMulti(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->client()->account()->getMulti($request);
+$result = $api->client()->account()->get($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## GetMulti
 
-Input parameters:
+Get email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\". 
+Returns [**EmailClientMultiAccount**](/email/reference-model-email-client-multi-account/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: GetMulti method request.
-
-Type: [**ClientAccountGetMultiRequest**](/email/reference-model-client-account-get-multi-request/).
+GetMulti method request. Type: [**ClientAccountGetMultiRequest**](/email/reference-model-client-account-get-multi-request/).
 
 {{< tabs tabTotal="6" tabID="client_account_get_multi_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -291,16 +229,13 @@ $request = Models::ClientAccountGetMultiRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Save
 
-Create/update email client account file (*.account) with credentials             
-
-{{< tabs tabTotal="6" tabID="client_account_save_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="client_account_get_multi_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.Client.Account.SaveAsync(request);
+var result = await api.Client.Account.GetMultiAsync(request);
 ```
 
 {{< /tab >}}
@@ -308,7 +243,7 @@ await api.Client.Account.SaveAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.client().account().save(request);
+EmailClientMultiAccount result = api.client().account().getMulti(request);
 ```
 
 {{< /tab >}}
@@ -316,7 +251,7 @@ api.client().account().save(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.client.account.save(request)
+result = api.client.account.get_multi(request)
 ```
 
 {{< /tab >}}
@@ -324,7 +259,7 @@ api.client.account.save(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.client.account.save(request)
+result = api.client.account.get_multi(request)
 ```
 
 {{< /tab >}}
@@ -332,7 +267,7 @@ api.client.account.save(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.client.account.save(request);
+let result = await api.client.account.getMulti(request);
 ```
 
 {{< /tab >}}
@@ -340,20 +275,19 @@ await api.client.account.save(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->client()->account()->save($request);
+$result = $api->client()->account()->getMulti($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Save
 
-Input parameters:
+Create/update email client account file (*.account) with credentials. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Email account information
-
-Type: [**ClientAccountSaveRequest**](/email/reference-model-client-account-save-request/).
+Email account information. Type: [**ClientAccountSaveRequest**](/email/reference-model-client-account-save-request/).
 
 {{< tabs tabTotal="6" tabID="client_account_save_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -512,16 +446,13 @@ $request = Models::clientAccountSaveRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## SaveMulti
 
-Create email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\".             
-
-{{< tabs tabTotal="6" tabID="client_account_save_multi_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="client_account_save_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-await api.Client.Account.SaveMultiAsync(request);
+await api.Client.Account.SaveAsync(request);
 ```
 
 {{< /tab >}}
@@ -529,7 +460,7 @@ await api.Client.Account.SaveMultiAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-api.client().account().saveMulti(request);
+api.client().account().save(request);
 ```
 
 {{< /tab >}}
@@ -537,7 +468,7 @@ api.client().account().saveMulti(request);
 {{< tab tabNum="3" >}}
 
 ```python
-api.client.account.save_multi(request)
+api.client.account.save(request)
 ```
 
 {{< /tab >}}
@@ -545,7 +476,7 @@ api.client.account.save_multi(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-api.client.account.save_multi(request)
+api.client.account.save(request)
 ```
 
 {{< /tab >}}
@@ -553,7 +484,7 @@ api.client.account.save_multi(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-await api.client.account.saveMulti(request);
+await api.client.account.save(request);
 ```
 
 {{< /tab >}}
@@ -561,20 +492,19 @@ await api.client.account.saveMulti(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$api->client()->account()->saveMulti($request);
+$api->client()->account()->save($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## SaveMulti
 
-Input parameters:
+Create email client multi account file (*.multi.account). Will respond error if file extension is not \".multi.account\". Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Email accounts information.
-
-Type: [**ClientAccountSaveMultiRequest**](/email/reference-model-client-account-save-multi-request/).
+Email accounts information. Type: [**ClientAccountSaveMultiRequest**](/email/reference-model-client-account-save-multi-request/).
 
 {{< tabs tabTotal="6" tabID="client_account_save_multi_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -857,6 +787,58 @@ $request = Models::clientAccountSaveMultiRequest()
 
 {{< /expand-list >}}
 
+{{< tabs tabTotal="6" tabID="client_account_save_multi_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+await api.Client.Account.SaveMultiAsync(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+api.client().account().saveMulti(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```python
+api.client.account.save_multi(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+```ruby
+api.client.account.save_multi(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```typescript
+await api.client.account.saveMulti(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```php
+$api->client()->account()->saveMulti($request);
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ## More APIs
-See more APIs:
+
 {{< list-of-articles-in-this-section >}}

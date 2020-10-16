@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **folder** |**string**|Path to folder on email server to append message to. |[optional] 
 **markAsSent** |**bool?**|Determines that appended message should be market as sent or not. |[optional] [default to true]
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="client_message_append_file_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -113,5 +113,4 @@ $request = Models::ClientMessageAppendFileRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **path** |**string**|File path e.g. '/file.ext' |
 **storageName** |**string**|Storage name |[optional] 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="get_file_versions_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -84,5 +84,4 @@ $request = Models::GetFileVersionsRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

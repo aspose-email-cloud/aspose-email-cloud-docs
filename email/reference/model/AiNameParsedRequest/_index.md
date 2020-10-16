@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **ParsedName** | [**List&lt;AiNameComponent&gt;**](/email/reference-model-ai-name-component/) | Parsed name              | 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="ai_name_parsed_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -197,5 +197,4 @@ $aiNameParsedRequest = Models::aiNameParsedRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

@@ -9,69 +9,12 @@ Storage operations controller
 
 ## GetDiscUsage
 
-Get disc usage
-
-Returns [**DiscUsage**](/email/reference-model-disc-usage/) model.
-
-{{< tabs tabTotal="6" tabID="get_disc_usage_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-var result = await api.CloudStorage.Storage.GetDiscUsageAsync(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-DiscUsage result = api.cloudStorage().storage().getDiscUsage(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```python
-result = api.cloud_storage.storage.get_disc_usage(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-result = api.cloud_storage.storage.get_disc_usage(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```typescript
-let result = await api.cloudStorage.storage.getDiscUsage(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-```php
-$result = $api->cloudStorage()->storage()->getDiscUsage($request);
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-Input parameters:
+Get disc usage. 
+Returns [**DiscUsage**](/email/reference-model-disc-usage/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: GetDiscUsage method request.
-
-Type: [**GetDiscUsageRequest**](/email/reference-model-get-disc-usage-request/).
+GetDiscUsage method request. Type: [**GetDiscUsageRequest**](/email/reference-model-get-disc-usage-request/).
 
 {{< tabs tabTotal="6" tabID="get_disc_usage_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -137,18 +80,13 @@ $request = Models::GetDiscUsageRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## GetFileVersions
 
-Get file versions
-
-Returns [**FileVersions**](/email/reference-model-file-versions/) model.
-
-{{< tabs tabTotal="6" tabID="get_file_versions_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="get_disc_usage_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.CloudStorage.Storage.GetFileVersionsAsync(request);
+var result = await api.CloudStorage.Storage.GetDiscUsageAsync(request);
 ```
 
 {{< /tab >}}
@@ -156,7 +94,7 @@ var result = await api.CloudStorage.Storage.GetFileVersionsAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-FileVersions result = api.cloudStorage().storage().getFileVersions(request);
+DiscUsage result = api.cloudStorage().storage().getDiscUsage(request);
 ```
 
 {{< /tab >}}
@@ -164,7 +102,7 @@ FileVersions result = api.cloudStorage().storage().getFileVersions(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.cloud_storage.storage.get_file_versions(request)
+result = api.cloud_storage.storage.get_disc_usage(request)
 ```
 
 {{< /tab >}}
@@ -172,7 +110,7 @@ result = api.cloud_storage.storage.get_file_versions(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.cloud_storage.storage.get_file_versions(request)
+result = api.cloud_storage.storage.get_disc_usage(request)
 ```
 
 {{< /tab >}}
@@ -180,7 +118,7 @@ result = api.cloud_storage.storage.get_file_versions(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.cloudStorage.storage.getFileVersions(request);
+let result = await api.cloudStorage.storage.getDiscUsage(request);
 ```
 
 {{< /tab >}}
@@ -188,20 +126,20 @@ let result = await api.cloudStorage.storage.getFileVersions(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->cloudStorage()->storage()->getFileVersions($request);
+$result = $api->cloudStorage()->storage()->getDiscUsage($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## GetFileVersions
 
-Input parameters:
+Get file versions. 
+Returns [**FileVersions**](/email/reference-model-file-versions/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: GetFileVersions method request.
-
-Type: [**GetFileVersionsRequest**](/email/reference-model-get-file-versions-request/).
+GetFileVersions method request. Type: [**GetFileVersionsRequest**](/email/reference-model-get-file-versions-request/).
 
 {{< tabs tabTotal="6" tabID="get_file_versions_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -273,18 +211,13 @@ $request = Models::GetFileVersionsRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## ObjectExists
 
-Check if file or folder exists
-
-Returns [**ObjectExist**](/email/reference-model-object-exist/) model.
-
-{{< tabs tabTotal="6" tabID="object_exists_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="get_file_versions_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.CloudStorage.Storage.ObjectExistsAsync(request);
+var result = await api.CloudStorage.Storage.GetFileVersionsAsync(request);
 ```
 
 {{< /tab >}}
@@ -292,7 +225,7 @@ var result = await api.CloudStorage.Storage.ObjectExistsAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-ObjectExist result = api.cloudStorage().storage().objectExists(request);
+FileVersions result = api.cloudStorage().storage().getFileVersions(request);
 ```
 
 {{< /tab >}}
@@ -300,7 +233,7 @@ ObjectExist result = api.cloudStorage().storage().objectExists(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.cloud_storage.storage.object_exists(request)
+result = api.cloud_storage.storage.get_file_versions(request)
 ```
 
 {{< /tab >}}
@@ -308,7 +241,7 @@ result = api.cloud_storage.storage.object_exists(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.cloud_storage.storage.object_exists(request)
+result = api.cloud_storage.storage.get_file_versions(request)
 ```
 
 {{< /tab >}}
@@ -316,7 +249,7 @@ result = api.cloud_storage.storage.object_exists(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.cloudStorage.storage.objectExists(request);
+let result = await api.cloudStorage.storage.getFileVersions(request);
 ```
 
 {{< /tab >}}
@@ -324,20 +257,20 @@ let result = await api.cloudStorage.storage.objectExists(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->cloudStorage()->storage()->objectExists($request);
+$result = $api->cloudStorage()->storage()->getFileVersions($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## ObjectExists
 
-Input parameters:
+Check if file or folder exists. 
+Returns [**ObjectExist**](/email/reference-model-object-exist/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: ObjectExists method request.
-
-Type: [**ObjectExistsRequest**](/email/reference-model-object-exists-request/).
+ObjectExists method request. Type: [**ObjectExistsRequest**](/email/reference-model-object-exists-request/).
 
 {{< tabs tabTotal="6" tabID="object_exists_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -409,18 +342,13 @@ $request = Models::ObjectExistsRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Exists
 
-Check if storage exists
-
-Returns [**StorageExist**](/email/reference-model-storage-exist/) model.
-
-{{< tabs tabTotal="6" tabID="storage_exists_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="object_exists_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.CloudStorage.Storage.ExistsAsync(request);
+var result = await api.CloudStorage.Storage.ObjectExistsAsync(request);
 ```
 
 {{< /tab >}}
@@ -428,7 +356,7 @@ var result = await api.CloudStorage.Storage.ExistsAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-StorageExist result = api.cloudStorage().storage().exists(request);
+ObjectExist result = api.cloudStorage().storage().objectExists(request);
 ```
 
 {{< /tab >}}
@@ -436,7 +364,7 @@ StorageExist result = api.cloudStorage().storage().exists(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.cloud_storage.storage.exists(request)
+result = api.cloud_storage.storage.object_exists(request)
 ```
 
 {{< /tab >}}
@@ -444,7 +372,7 @@ result = api.cloud_storage.storage.exists(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.cloud_storage.storage.exists(request)
+result = api.cloud_storage.storage.object_exists(request)
 ```
 
 {{< /tab >}}
@@ -452,7 +380,7 @@ result = api.cloud_storage.storage.exists(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.cloudStorage.storage.exists(request);
+let result = await api.cloudStorage.storage.objectExists(request);
 ```
 
 {{< /tab >}}
@@ -460,20 +388,20 @@ let result = await api.cloudStorage.storage.exists(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->cloudStorage()->storage()->exists($request);
+$result = $api->cloudStorage()->storage()->objectExists($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Exists
 
-Input parameters:
+Check if storage exists. 
+Returns [**StorageExist**](/email/reference-model-storage-exist/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Exists method request.
-
-Type: [**StorageExistsRequest**](/email/reference-model-storage-exists-request/).
+Exists method request. Type: [**StorageExistsRequest**](/email/reference-model-storage-exists-request/).
 
 {{< tabs tabTotal="6" tabID="storage_exists_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -540,7 +468,59 @@ $request = Models::StorageExistsRequest()
 
 {{< /expand-list >}}
 
+{{< tabs tabTotal="6" tabID="storage_exists_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+var result = await api.CloudStorage.Storage.ExistsAsync(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+StorageExist result = api.cloudStorage().storage().exists(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```python
+result = api.cloud_storage.storage.exists(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+```ruby
+result = api.cloud_storage.storage.exists(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```typescript
+let result = await api.cloudStorage.storage.exists(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```php
+$result = $api->cloudStorage()->storage()->exists($request);
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ## More APIs
-See more APIs:
+
 {{< list-of-articles-in-this-section >}}
 

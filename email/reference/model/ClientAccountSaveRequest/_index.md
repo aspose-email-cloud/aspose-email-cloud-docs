@@ -12,7 +12,7 @@ Class has no properties
 
 Parent class: [StorageModelOfEmailClientAccount](/email/reference-model-storage-model-of-email-client-account/)
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="client_account_save_request_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -169,5 +169,4 @@ $clientAccountSaveRequest = Models::clientAccountSaveRequest()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 

@@ -9,69 +9,12 @@ AI Name operations.
 
 ## Complete
 
-The call proposes k most probable names for given starting characters.             
-
-Returns [**AiNameWeightedVariants**](/email/reference-model-ai-name-weighted-variants/) model.
-
-{{< tabs tabTotal="6" tabID="ai_name_complete_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-var result = await api.Ai.Name.CompleteAsync(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-AiNameWeightedVariants result = api.ai().name().complete(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```python
-result = api.ai.name.complete(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-result = api.ai.name.complete(request)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```typescript
-let result = await api.ai.name.complete(request);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-```php
-$result = $api->ai()->name()->complete($request);
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-Input parameters:
+The call proposes k most probable names for given starting characters. 
+Returns [**AiNameWeightedVariants**](/email/reference-model-ai-name-weighted-variants/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Complete method request.
-
-Type: [**AiNameCompleteRequest**](/email/reference-model-ai-name-complete-request/).
+Complete method request. Type: [**AiNameCompleteRequest**](/email/reference-model-ai-name-complete-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_complete_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -137,18 +80,13 @@ $request = Models::AiNameCompleteRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Expand
 
-Expands a person's name into a list of possible alternatives using options for expanding instructions.             
-
-Returns [**AiNameWeightedVariants**](/email/reference-model-ai-name-weighted-variants/) model.
-
-{{< tabs tabTotal="6" tabID="ai_name_expand_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="ai_name_complete_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Ai.Name.ExpandAsync(request);
+var result = await api.Ai.Name.CompleteAsync(request);
 ```
 
 {{< /tab >}}
@@ -156,7 +94,7 @@ var result = await api.Ai.Name.ExpandAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-AiNameWeightedVariants result = api.ai().name().expand(request);
+AiNameWeightedVariants result = api.ai().name().complete(request);
 ```
 
 {{< /tab >}}
@@ -164,7 +102,7 @@ AiNameWeightedVariants result = api.ai().name().expand(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.ai.name.expand(request)
+result = api.ai.name.complete(request)
 ```
 
 {{< /tab >}}
@@ -172,7 +110,7 @@ result = api.ai.name.expand(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.ai.name.expand(request)
+result = api.ai.name.complete(request)
 ```
 
 {{< /tab >}}
@@ -180,7 +118,7 @@ result = api.ai.name.expand(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.ai.name.expand(request);
+let result = await api.ai.name.complete(request);
 ```
 
 {{< /tab >}}
@@ -188,20 +126,20 @@ let result = await api.ai.name.expand(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->ai()->name()->expand($request);
+$result = $api->ai()->name()->complete($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Expand
 
-Input parameters:
+Expands a person's name into a list of possible alternatives using options for expanding instructions. 
+Returns [**AiNameWeightedVariants**](/email/reference-model-ai-name-weighted-variants/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Expand method request.
-
-Type: [**AiNameExpandRequest**](/email/reference-model-ai-name-expand-request/).
+Expand method request. Type: [**AiNameExpandRequest**](/email/reference-model-ai-name-expand-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_expand_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -267,18 +205,13 @@ $request = Models::AiNameExpandRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## ExpandParsed
 
-Expands a person's parsed name into a list of possible alternatives using options for expanding instructions.             
-
-Returns [**AiNameWeightedVariants**](/email/reference-model-ai-name-weighted-variants/) model.
-
-{{< tabs tabTotal="6" tabID="ai_name_expand_parsed_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="ai_name_expand_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Ai.Name.ExpandParsedAsync(request);
+var result = await api.Ai.Name.ExpandAsync(request);
 ```
 
 {{< /tab >}}
@@ -286,7 +219,7 @@ var result = await api.Ai.Name.ExpandParsedAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-AiNameWeightedVariants result = api.ai().name().expandParsed(request);
+AiNameWeightedVariants result = api.ai().name().expand(request);
 ```
 
 {{< /tab >}}
@@ -294,7 +227,7 @@ AiNameWeightedVariants result = api.ai().name().expandParsed(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.ai.name.expand_parsed(request)
+result = api.ai.name.expand(request)
 ```
 
 {{< /tab >}}
@@ -302,7 +235,7 @@ result = api.ai.name.expand_parsed(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.ai.name.expand_parsed(request)
+result = api.ai.name.expand(request)
 ```
 
 {{< /tab >}}
@@ -310,7 +243,7 @@ result = api.ai.name.expand_parsed(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.ai.name.expandParsed(request);
+let result = await api.ai.name.expand(request);
 ```
 
 {{< /tab >}}
@@ -318,20 +251,20 @@ let result = await api.ai.name.expandParsed(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->ai()->name()->expandParsed($request);
+$result = $api->ai()->name()->expand($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## ExpandParsed
 
-Input parameters:
+Expands a person's parsed name into a list of possible alternatives using options for expanding instructions. 
+Returns [**AiNameWeightedVariants**](/email/reference-model-ai-name-weighted-variants/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Parsed name with options.
-
-Type: [**AiNameParsedRequest**](/email/reference-model-ai-name-parsed-request/).
+Parsed name with options. Type: [**AiNameParsedRequest**](/email/reference-model-ai-name-parsed-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_expand_parsed_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -515,18 +448,13 @@ $request = Models::aiNameParsedRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Format
 
-Formats a person's name in correct case and name order using options for formatting instructions.             
-
-Returns [**AiNameFormatted**](/email/reference-model-ai-name-formatted/) model.
-
-{{< tabs tabTotal="6" tabID="ai_name_format_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="ai_name_expand_parsed_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Ai.Name.FormatAsync(request);
+var result = await api.Ai.Name.ExpandParsedAsync(request);
 ```
 
 {{< /tab >}}
@@ -534,7 +462,7 @@ var result = await api.Ai.Name.FormatAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-AiNameFormatted result = api.ai().name().format(request);
+AiNameWeightedVariants result = api.ai().name().expandParsed(request);
 ```
 
 {{< /tab >}}
@@ -542,7 +470,7 @@ AiNameFormatted result = api.ai().name().format(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.ai.name.format(request)
+result = api.ai.name.expand_parsed(request)
 ```
 
 {{< /tab >}}
@@ -550,7 +478,7 @@ result = api.ai.name.format(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.ai.name.format(request)
+result = api.ai.name.expand_parsed(request)
 ```
 
 {{< /tab >}}
@@ -558,7 +486,7 @@ result = api.ai.name.format(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.ai.name.format(request);
+let result = await api.ai.name.expandParsed(request);
 ```
 
 {{< /tab >}}
@@ -566,20 +494,20 @@ let result = await api.ai.name.format(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->ai()->name()->format($request);
+$result = $api->ai()->name()->expandParsed($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Format
 
-Input parameters:
+Formats a person's name in correct case and name order using options for formatting instructions. 
+Returns [**AiNameFormatted**](/email/reference-model-ai-name-formatted/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Format method request.
-
-Type: [**AiNameFormatRequest**](/email/reference-model-ai-name-format-request/).
+Format method request. Type: [**AiNameFormatRequest**](/email/reference-model-ai-name-format-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_format_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -651,18 +579,13 @@ $request = Models::AiNameFormatRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## FormatParsed
 
-Formats a person's parsed name in correct case and name order using options for formatting instructions.             
-
-Returns [**AiNameFormatted**](/email/reference-model-ai-name-formatted/) model.
-
-{{< tabs tabTotal="6" tabID="ai_name_format_parsed_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="ai_name_format_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Ai.Name.FormatParsedAsync(request);
+var result = await api.Ai.Name.FormatAsync(request);
 ```
 
 {{< /tab >}}
@@ -670,7 +593,7 @@ var result = await api.Ai.Name.FormatParsedAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-AiNameFormatted result = api.ai().name().formatParsed(request);
+AiNameFormatted result = api.ai().name().format(request);
 ```
 
 {{< /tab >}}
@@ -678,7 +601,7 @@ AiNameFormatted result = api.ai().name().formatParsed(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.ai.name.format_parsed(request)
+result = api.ai.name.format(request)
 ```
 
 {{< /tab >}}
@@ -686,7 +609,7 @@ result = api.ai.name.format_parsed(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.ai.name.format_parsed(request)
+result = api.ai.name.format(request)
 ```
 
 {{< /tab >}}
@@ -694,7 +617,7 @@ result = api.ai.name.format_parsed(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.ai.name.formatParsed(request);
+let result = await api.ai.name.format(request);
 ```
 
 {{< /tab >}}
@@ -702,20 +625,20 @@ let result = await api.ai.name.formatParsed(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->ai()->name()->formatParsed($request);
+$result = $api->ai()->name()->format($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## FormatParsed
 
-Input parameters:
+Formats a person's parsed name in correct case and name order using options for formatting instructions. 
+Returns [**AiNameFormatted**](/email/reference-model-ai-name-formatted/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Parsed name with options.
-
-Type: [**AiNameParsedRequest**](/email/reference-model-ai-name-parsed-request/).
+Parsed name with options. Type: [**AiNameParsedRequest**](/email/reference-model-ai-name-parsed-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_format_parsed_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -899,18 +822,13 @@ $request = Models::aiNameParsedRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Genderize
 
-Detect person's gender from name string.             
-
-Returns [**AiNameGenderHypothesisList**](/email/reference-model-ai-name-gender-hypothesis-list/) model.
-
-{{< tabs tabTotal="6" tabID="ai_name_genderize_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="ai_name_format_parsed_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Ai.Name.GenderizeAsync(request);
+var result = await api.Ai.Name.FormatParsedAsync(request);
 ```
 
 {{< /tab >}}
@@ -918,7 +836,7 @@ var result = await api.Ai.Name.GenderizeAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-AiNameGenderHypothesisList result = api.ai().name().genderize(request);
+AiNameFormatted result = api.ai().name().formatParsed(request);
 ```
 
 {{< /tab >}}
@@ -926,7 +844,7 @@ AiNameGenderHypothesisList result = api.ai().name().genderize(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.ai.name.genderize(request)
+result = api.ai.name.format_parsed(request)
 ```
 
 {{< /tab >}}
@@ -934,7 +852,7 @@ result = api.ai.name.genderize(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.ai.name.genderize(request)
+result = api.ai.name.format_parsed(request)
 ```
 
 {{< /tab >}}
@@ -942,7 +860,7 @@ result = api.ai.name.genderize(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.ai.name.genderize(request);
+let result = await api.ai.name.formatParsed(request);
 ```
 
 {{< /tab >}}
@@ -950,20 +868,20 @@ let result = await api.ai.name.genderize(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->ai()->name()->genderize($request);
+$result = $api->ai()->name()->formatParsed($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Genderize
 
-Input parameters:
+Detect person's gender from name string. 
+Returns [**AiNameGenderHypothesisList**](/email/reference-model-ai-name-gender-hypothesis-list/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Genderize method request.
-
-Type: [**AiNameGenderizeRequest**](/email/reference-model-ai-name-genderize-request/).
+Genderize method request. Type: [**AiNameGenderizeRequest**](/email/reference-model-ai-name-genderize-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_genderize_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1029,18 +947,13 @@ $request = Models::AiNameGenderizeRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## GenderizeParsed
 
-Detect person's gender from parsed name.             
-
-Returns [**AiNameGenderHypothesisList**](/email/reference-model-ai-name-gender-hypothesis-list/) model.
-
-{{< tabs tabTotal="6" tabID="ai_name_genderize_parsed_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="ai_name_genderize_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Ai.Name.GenderizeParsedAsync(request);
+var result = await api.Ai.Name.GenderizeAsync(request);
 ```
 
 {{< /tab >}}
@@ -1048,7 +961,7 @@ var result = await api.Ai.Name.GenderizeParsedAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-AiNameGenderHypothesisList result = api.ai().name().genderizeParsed(request);
+AiNameGenderHypothesisList result = api.ai().name().genderize(request);
 ```
 
 {{< /tab >}}
@@ -1056,7 +969,7 @@ AiNameGenderHypothesisList result = api.ai().name().genderizeParsed(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.ai.name.genderize_parsed(request)
+result = api.ai.name.genderize(request)
 ```
 
 {{< /tab >}}
@@ -1064,7 +977,7 @@ result = api.ai.name.genderize_parsed(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.ai.name.genderize_parsed(request)
+result = api.ai.name.genderize(request)
 ```
 
 {{< /tab >}}
@@ -1072,7 +985,7 @@ result = api.ai.name.genderize_parsed(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.ai.name.genderizeParsed(request);
+let result = await api.ai.name.genderize(request);
 ```
 
 {{< /tab >}}
@@ -1080,20 +993,20 @@ let result = await api.ai.name.genderizeParsed(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->ai()->name()->genderizeParsed($request);
+$result = $api->ai()->name()->genderize($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## GenderizeParsed
 
-Input parameters:
+Detect person's gender from parsed name. 
+Returns [**AiNameGenderHypothesisList**](/email/reference-model-ai-name-gender-hypothesis-list/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Gender detection request data.
-
-Type: [**AiNameParsedRequest**](/email/reference-model-ai-name-parsed-request/).
+Gender detection request data. Type: [**AiNameParsedRequest**](/email/reference-model-ai-name-parsed-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_genderize_parsed_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1277,18 +1190,13 @@ $request = Models::aiNameParsedRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Match
 
-Compare people's names. Uses options for comparing instructions.             
-
-Returns [**AiNameMatchResult**](/email/reference-model-ai-name-match-result/) model.
-
-{{< tabs tabTotal="6" tabID="ai_name_match_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="ai_name_genderize_parsed_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Ai.Name.MatchAsync(request);
+var result = await api.Ai.Name.GenderizeParsedAsync(request);
 ```
 
 {{< /tab >}}
@@ -1296,7 +1204,7 @@ var result = await api.Ai.Name.MatchAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-AiNameMatchResult result = api.ai().name().match(request);
+AiNameGenderHypothesisList result = api.ai().name().genderizeParsed(request);
 ```
 
 {{< /tab >}}
@@ -1304,7 +1212,7 @@ AiNameMatchResult result = api.ai().name().match(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.ai.name.match(request)
+result = api.ai.name.genderize_parsed(request)
 ```
 
 {{< /tab >}}
@@ -1312,7 +1220,7 @@ result = api.ai.name.match(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.ai.name.match(request)
+result = api.ai.name.genderize_parsed(request)
 ```
 
 {{< /tab >}}
@@ -1320,7 +1228,7 @@ result = api.ai.name.match(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.ai.name.match(request);
+let result = await api.ai.name.genderizeParsed(request);
 ```
 
 {{< /tab >}}
@@ -1328,20 +1236,20 @@ let result = await api.ai.name.match(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->ai()->name()->match($request);
+$result = $api->ai()->name()->genderizeParsed($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Match
 
-Input parameters:
+Compare people's names. Uses options for comparing instructions. 
+Returns [**AiNameMatchResult**](/email/reference-model-ai-name-match-result/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Match method request.
-
-Type: [**AiNameMatchRequest**](/email/reference-model-ai-name-match-request/).
+Match method request. Type: [**AiNameMatchRequest**](/email/reference-model-ai-name-match-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_match_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1413,18 +1321,13 @@ $request = Models::AiNameMatchRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## MatchParsed
 
-Compare people's parsed names and attributes. Uses options for comparing instructions.             
-
-Returns [**AiNameMatchResult**](/email/reference-model-ai-name-match-result/) model.
-
-{{< tabs tabTotal="6" tabID="ai_name_match_parsed_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="ai_name_match_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Ai.Name.MatchParsedAsync(request);
+var result = await api.Ai.Name.MatchAsync(request);
 ```
 
 {{< /tab >}}
@@ -1432,7 +1335,7 @@ var result = await api.Ai.Name.MatchParsedAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-AiNameMatchResult result = api.ai().name().matchParsed(request);
+AiNameMatchResult result = api.ai().name().match(request);
 ```
 
 {{< /tab >}}
@@ -1440,7 +1343,7 @@ AiNameMatchResult result = api.ai().name().matchParsed(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.ai.name.match_parsed(request)
+result = api.ai.name.match(request)
 ```
 
 {{< /tab >}}
@@ -1448,7 +1351,7 @@ result = api.ai.name.match_parsed(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.ai.name.match_parsed(request)
+result = api.ai.name.match(request)
 ```
 
 {{< /tab >}}
@@ -1456,7 +1359,7 @@ result = api.ai.name.match_parsed(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.ai.name.matchParsed(request);
+let result = await api.ai.name.match(request);
 ```
 
 {{< /tab >}}
@@ -1464,20 +1367,20 @@ let result = await api.ai.name.matchParsed(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->ai()->name()->matchParsed($request);
+$result = $api->ai()->name()->match($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## MatchParsed
 
-Input parameters:
+Compare people's parsed names and attributes. Uses options for comparing instructions. 
+Returns [**AiNameMatchResult**](/email/reference-model-ai-name-match-result/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Parsed names to match.
-
-Type: [**AiNameMatchParsedRequest**](/email/reference-model-ai-name-match-parsed-request/).
+Parsed names to match. Type: [**AiNameMatchParsedRequest**](/email/reference-model-ai-name-match-parsed-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_match_parsed_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1785,18 +1688,13 @@ $request = Models::aiNameMatchParsedRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## Parse
 
-Parse name to components.             
-
-Returns [**AiNameComponentList**](/email/reference-model-ai-name-component-list/) model.
-
-{{< tabs tabTotal="6" tabID="ai_name_parse_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="ai_name_match_parsed_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Ai.Name.ParseAsync(request);
+var result = await api.Ai.Name.MatchParsedAsync(request);
 ```
 
 {{< /tab >}}
@@ -1804,7 +1702,7 @@ var result = await api.Ai.Name.ParseAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-AiNameComponentList result = api.ai().name().parse(request);
+AiNameMatchResult result = api.ai().name().matchParsed(request);
 ```
 
 {{< /tab >}}
@@ -1812,7 +1710,7 @@ AiNameComponentList result = api.ai().name().parse(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.ai.name.parse(request)
+result = api.ai.name.match_parsed(request)
 ```
 
 {{< /tab >}}
@@ -1820,7 +1718,7 @@ result = api.ai.name.parse(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.ai.name.parse(request)
+result = api.ai.name.match_parsed(request)
 ```
 
 {{< /tab >}}
@@ -1828,7 +1726,7 @@ result = api.ai.name.parse(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.ai.name.parse(request);
+let result = await api.ai.name.matchParsed(request);
 ```
 
 {{< /tab >}}
@@ -1836,20 +1734,20 @@ let result = await api.ai.name.parse(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->ai()->name()->parse($request);
+$result = $api->ai()->name()->matchParsed($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## Parse
 
-Input parameters:
+Parse name to components. 
+Returns [**AiNameComponentList**](/email/reference-model-ai-name-component-list/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: Parse method request.
-
-Type: [**AiNameParseRequest**](/email/reference-model-ai-name-parse-request/).
+Parse method request. Type: [**AiNameParseRequest**](/email/reference-model-ai-name-parse-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_parse_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -1927,18 +1825,13 @@ $request = Models::AiNameParseRequest()
 {{< /tabs >}}
 
 {{< /expand-list >}}
-## ParseEmailAddress
 
-Parse person's name out of an email address.             
-
-Returns [**AiNameExtractedList**](/email/reference-model-ai-name-extracted-list/) model.
-
-{{< tabs tabTotal="6" tabID="ai_name_parse_email_address_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="ai_name_parse_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
-var result = await api.Ai.Name.ParseEmailAddressAsync(request);
+var result = await api.Ai.Name.ParseAsync(request);
 ```
 
 {{< /tab >}}
@@ -1946,7 +1839,7 @@ var result = await api.Ai.Name.ParseEmailAddressAsync(request);
 {{< tab tabNum="2" >}}
 
 ```java
-AiNameExtractedList result = api.ai().name().parseEmailAddress(request);
+AiNameComponentList result = api.ai().name().parse(request);
 ```
 
 {{< /tab >}}
@@ -1954,7 +1847,7 @@ AiNameExtractedList result = api.ai().name().parseEmailAddress(request);
 {{< tab tabNum="3" >}}
 
 ```python
-result = api.ai.name.parse_email_address(request)
+result = api.ai.name.parse(request)
 ```
 
 {{< /tab >}}
@@ -1962,7 +1855,7 @@ result = api.ai.name.parse_email_address(request)
 {{< tab tabNum="4" >}}
 
 ```ruby
-result = api.ai.name.parse_email_address(request)
+result = api.ai.name.parse(request)
 ```
 
 {{< /tab >}}
@@ -1970,7 +1863,7 @@ result = api.ai.name.parse_email_address(request)
 {{< tab tabNum="5" >}}
 
 ```typescript
-let result = await api.ai.name.parseEmailAddress(request);
+let result = await api.ai.name.parse(request);
 ```
 
 {{< /tab >}}
@@ -1978,20 +1871,20 @@ let result = await api.ai.name.parseEmailAddress(request);
 {{< tab tabNum="6" >}}
 
 ```php
-$result = $api->ai()->name()->parseEmailAddress($request);
+$result = $api->ai()->name()->parse($request);
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+## ParseEmailAddress
 
-Input parameters:
+Parse person's name out of an email address. 
+Returns [**AiNameExtractedList**](/email/reference-model-ai-name-extracted-list/) model. Requires:
 
 {{< expand-list title="request" >}}
 
-Description: ParseEmailAddress method request.
-
-Type: [**AiNameParseEmailAddressRequest**](/email/reference-model-ai-name-parse-email-address-request/).
+ParseEmailAddress method request. Type: [**AiNameParseEmailAddressRequest**](/email/reference-model-ai-name-parse-email-address-request/).
 
 {{< tabs tabTotal="6" tabID="ai_name_parse_email_address_2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -2058,6 +1951,58 @@ $request = Models::AiNameParseEmailAddressRequest()
 
 {{< /expand-list >}}
 
+{{< tabs tabTotal="6" tabID="ai_name_parse_email_address_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+var result = await api.Ai.Name.ParseEmailAddressAsync(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```java
+AiNameExtractedList result = api.ai().name().parseEmailAddress(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+```python
+result = api.ai.name.parse_email_address(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+```ruby
+result = api.ai.name.parse_email_address(request)
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+```typescript
+let result = await api.ai.name.parseEmailAddress(request);
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+```php
+$result = $api->ai()->name()->parseEmailAddress($request);
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ## More APIs
-See more APIs:
+
 {{< list-of-articles-in-this-section >}}

@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **IsFolder** | **bool?** | True if it is a folder, false if it is a file. | 
 
 
-{{< expand-list title="Example" >}}
+## Example
 
 {{< tabs tabTotal="6" tabID="object_exist_1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -78,5 +78,4 @@ $objectExist = Models::objectExist()
 {{< /tab >}}
 
 {{< /tabs >}}
-{{< /expand-list >}}
 
