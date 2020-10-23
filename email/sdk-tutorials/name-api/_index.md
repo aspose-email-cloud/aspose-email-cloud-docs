@@ -105,7 +105,7 @@ $this->assertEquals('Male', $result->getValue()[0]->getGender());
 
 The AI feature of Aspose.Email Cloud API enables you to compare the names to find out if they belong to the same person or not. As a result of the comparison, the answer is the similarity score and the list of mismatches.
 
-{{< tabs tabTotal="6" tabID="1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -187,7 +187,7 @@ $this->assertGreaterThan(0.5, $result->getSimilarity());
 
 Aspose.Email Cloud is also capable of formatting a person's name in a correct case and name order using options for formatting instructions. So based on the instructions provided, the name sequence and case format are adjusted.
 
-{{< tabs tabTotal="6" tabID="1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="3" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -275,7 +275,7 @@ $this->assertEquals("Mr. Cane J. M.", $result->getName());
 
 The AI feature of API provides a unique feature to display the person's name into a list of possible alternatives.
 
-{{< tabs tabTotal="6" tabID="1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="4" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -374,7 +374,7 @@ $this->assertContains("B. Smith", $expandedNames);
 
 Get the most probable names for given starting characters. The feature is similar to the recipient field in email client software. You start typing the name and based on initials provided, the possible names are listed. Please take a look over the following example where possible names starting with "**Dav**".
 
-{{< tabs tabTotal="6" tabID="1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="5" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -476,7 +476,7 @@ $this->assertContains("Davis", $names);
 
 The API enables you to determine the name of the person through an email address. It tries to identify the Firstname and Lastname while parsing the given email address.
 
-{{< tabs tabTotal="6" tabID="1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
+{{< tabs tabTotal="6" tabID="6" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
 {{< tab tabNum="1" >}}
 
