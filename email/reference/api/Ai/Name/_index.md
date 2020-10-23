@@ -7,6 +7,16 @@ weight: 1
 
 AI Name operations.
 
+
+AI-powered Name API.
+
+This API should be used to:
+ - Determine a person's gender from the name.
+ - Complete name using given starting characters.
+ - Compare names to determine similarity.
+ - Format name.
+ - Parse a name from the email address.
+
 ## Complete
 
 The call proposes k most probable names for given starting characters. 

@@ -7,6 +7,22 @@ weight: 1
 
 Email server account for built-in client operations.
 
+
+Email client account configuration management API.
+
+Email client uses account configurations stored in files on Aspose Cloud Storage.
+These files should include email account credentials and email server configuration.
+
+There are two types of email account configuration files.
+One of them stores a single email account and has a '*.account' extension.
+Another one has a '*.multi.account' extension and used for virtual multi-account
+client functions. The multi-account client should be used to manage several email
+accounts as a single one. For example, you can use one request to find messages
+in all accounts attached to the multi-account client.
+
+Link to email account configuration should be provided in most email client
+API functions.
+
 ## Get
 
 Get email client account from storage. 

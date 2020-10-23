@@ -7,6 +7,8 @@ weight: 1
 
 MAPI contact operations
 
+
+
 ## AsContactDto
 
 Converts MAPI contact model to ContactDto model. 

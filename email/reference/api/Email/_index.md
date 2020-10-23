@@ -7,6 +7,8 @@ weight: 1
 
 Email document (*.eml) operations.
 
+
+
 ## AsFile
 
 Converts Email model to specified format and returns as file. 
@@ -540,7 +542,13 @@ $result = $api->email()->asMapi($email_dto);
 {{< /tabs >}}
 ## Convert
 
-Converts email document to specified format and returns as file. 
+Converts email document to specified format and returns as file.
+
+
+Email documents could be stored in different formats including EML, and Outlook MSG formats.
+Also sometimes users need to convert email messages to HTML format, to view them in web browser.
+
+     
 Returns a **File**. Requires:
 
 {{< expand-list title="request" >}}
