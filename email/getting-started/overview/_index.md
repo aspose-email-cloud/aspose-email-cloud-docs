@@ -59,6 +59,6 @@ Aspose.Email Cloud has the following SDKs:
 ## **See also**
 To find more about Aspose.Email Cloud methods and their usage take a look at:
 
-- [Developer Guide](/email/developer-guide/)
-- [API Reference](https://apireference.aspose.cloud/email/)
+- [Reference documentation](/email/reference/)
+- [Swagger UI](https://apireference.aspose.cloud/email/)
 - [Supported Formats](/email/supported-file-formats/)
