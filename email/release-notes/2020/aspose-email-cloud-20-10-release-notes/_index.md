@@ -7,7 +7,7 @@ weight: 100
 
 ## **SDK Changes**
 
-Typescript, PHP, Java SDKs now have model builders to simplify their initialization.
+Model builders have been added for Typescript, PHP, Java SDKs to simplify the initialization.
 
 {{< expand-list title="Model builder example" >}}
 
@@ -79,6 +79,6 @@ EmailDto emailDto = Models.emailDto()
 
 ## **Documentation improvements**
 
-- SDK reference documentation now available at url [docs.aspose.cloud/email/reference-api](https://docs.aspose.cloud/email/reference-api/)
-- All SDK methods now have code examples with parameters initialization (for example see [EmailCloud.Email.AsFile](http://localhost:1313/email/reference-email-api/#asfile) method).
-- Some models now have initialization examples for all SDKs (for example see [EmailDto](http://localhost:1313/email/reference-model-email-dto/#example)).
+- SDK reference documentation is now available at [docs.aspose.cloud/email/reference-api](https://docs.aspose.cloud/email/reference-api/)
+- All SDK methods have code examples with parameters initialization (for example: [EmailCloud.Email.AsFile](http://localhost:1313/email/reference-email-api/#asfile) method).
+- Initialization examples have been added for some of the models in all SDKs (for example: [EmailDto](http://localhost:1313/email/reference-model-email-dto/#example) model).
