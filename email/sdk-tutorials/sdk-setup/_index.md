@@ -113,49 +113,49 @@ composer require aspose/aspose-email-cloud
 {{< /tab >}}
 
 {{< /tabs >}}
-## **Get Your App Key and App SID**
-Before we will get our **app Key** and **app SID**, let’s find out: what is it and what are they for?
+## **Get Your Client secret and Client id**
+Before we will get our **Client secret** and **Client id**, let’s find out: what is it and what are they for?
 
-Simply put, **app Key** is a login and **app SID** is a password. You can create more than one app and each one will have it’s own **app Key** and **app SID**. You can use these apps within your services. Using the [Aspose.Cloud Dashboard](https://dashboard.aspose.cloud/#/) helps you to filter the statistics of your applications in [**My Usage** section](https://dashboard.aspose.cloud/#/usage).
+Simply put, **Client id** is a login and **Client secret** is a password. You can create more than one app and each one will have it’s own **Client secret** and **Client id**. You can use these apps within your services. Using the [Aspose.Cloud Dashboard](https://dashboard.aspose.cloud/) helps you to filter the statistics of your applications in [**My Usage** section](https://dashboard.aspose.cloud/billing/api-usage).
 
-Here, you see the example of the apps’ statistics. In the APP column, you can see from which application was a request, also, there are details, size and sender’s IP address of a request.
+Here, you see the example of the apps’ statistics. In the Application column, you can see from which application was a request, also, there are details, status, and sender’s IP address of a request.
 
 ![My Usage section](sdk-setup_1.png)
 
-**App Key** and **app SID** are used to get the temporary **JWT token**, which provides access to the API methods of Aspose.Email Cloud. These tokens can be seen in curl requests generated in the [Swagger UI](https://apireference.aspose.cloud/email/).
+**Client secret** and **Client id** are used to get the temporary **JWT token**, which provides access to the API methods of Aspose.Email Cloud. These tokens can be seen in curl requests generated in the [Swagger UI](https://apireference.aspose.cloud/email/).
 
 {{% alert color="primary" %}}
 Here you can see a screenshot of the Curl with JWT token:
 ![Curl with JWT token](sdk-setup_3.png)
 {{% /alert %}}
 
-Our SDKs do not require you to receive these tokens again and again as they become obsolete. Instead, the **EmailCloud** class stores **app Key** and **app SID** in itself and receive a token by itself. If the token is out of date, Aspose.Email SDKs automatically receive a new one.
+Our SDKs do not require you to receive these tokens again and again as they become obsolete. Instead, the **EmailCloud** class stores **Client secret** and **Client id** in itself and receive a token by itself. If the token is out of date, Aspose.Email SDKs automatically receive a new one.
 
-To get your **app Key** and **app SID** follow these steps:
+To get your **Client secret** and **Client id** follow these steps:
 
-1. Open the link of [Aspose.Cloud Dashboard](https://dashboard.aspose.cloud/#/)
+1. Open the link of [Aspose.Cloud Dashboard](https://dashboard.aspose.cloud/)
 1. Sign in or sign up
-1. Open [link](https://dashboard.aspose.cloud/#/apps)
+1. Open [link](https://dashboard.aspose.cloud/applications)
 1. Now you can create a new app or use First App, which is already created for you.
-1. Get **App SID** and **App Key** for your application to use them in SDK (you can also use them in our [Swagger UI](https://apireference.aspose.cloud/email/))
+1. Get **Client id** and **Client secret** for your application to use them in SDK (you can also use them in our [Swagger UI](https://apireference.aspose.cloud/email/))
 
-[Aspose.Cloud Dashboard](https://dashboard.aspose.cloud/#/) is a powerful tool where you can control your apps, storages and files.
+[Aspose.Cloud Dashboard](https://dashboard.aspose.cloud/) is a powerful tool where you can control your apps, storages and files.
 
 {{% alert color="primary" %}} 
 
 For example, you can:
 
-- **See all files** uploaded to the Storage [here](https://dashboard.aspose.cloud/#/files). 
-- **Create** new storage [here](https://dashboard.aspose.cloud/#/storages).
-- **Analyze** API usage [here](https://dashboard.aspose.cloud/#/usage).
+- **See all files** uploaded to the Storage [here](https://dashboard.aspose.cloud/files). 
+- **Create** new storage [here](https://dashboard.aspose.cloud/storages).
+- **Analyze** API usage [here](https://dashboard.aspose.cloud/billing/api-usage).
 
 {{% /alert %}} 
 
 
 ## **Set up EmailCloud Object**
-It is always convenient when everything is in one place. In our case, one of the main classes that will help us in development - [**EmailCloud**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/README.md).
+It is always convenient when everything is in one place. In our case, one of the main classes that will help us in development - **EmailCloud**.
 
-All API methods are available in one [**EmailCloud**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/README.md) class. To initialize EmailCloud object we need to pass into it 2 required parameters: **App Key** and **App SID** (which are strings).
+All API methods are available in one **EmailCloud** class. To initialize EmailCloud object we need to pass into it 2 required parameters: **Client secret** and **Client id** (which are strings).
 
 So, what are we waiting for, let's create an instance of it:
 
@@ -166,14 +166,14 @@ So, what are we waiting for, let's create an instance of it:
 {{< tab tabNum="1" >}}
 
 ```csharp
-using Aspose.Email.Cloud.Sdk.Api; //EmailApi class is here
+using Aspose.Email.Cloud.Sdk.Api; //EmailCloud class is here
 using Aspose.Email.Cloud.Sdk.Model; //REST API models are here
 
 ...
 
-var appKey = "Your App Key";
-var appSid = "Your App SID";
-var api = new EmailCloud(appKey, appSid);
+var clientSecret = "Your Client secret";
+var clientId = "Your Client id";
+var api = new EmailCloud(clientSecret, clientId);
 ```
 
 {{< /tab >}}
@@ -187,7 +187,7 @@ import com.aspose.email.cloud.sdk.api.*;
 
 ...
 
-EmailCloud api = new EmailCloud("Your App Key", "Your App SID");
+EmailCloud api = new EmailCloud("Your Client secret", "Your Client id");
 ```
 
 {{< /tab >}}
@@ -199,7 +199,7 @@ from AsposeEmailCloudSdk import api, models
 
 ...
 
-api = api.EmailCloud("app_key", "app_sid")
+api = api.EmailCloud("client_secret", "client_id")
 ```
 
 {{< /tab >}}
@@ -212,7 +212,7 @@ include AsposeEmailCloud
 
 ...
 
-@api = EmailCloud.new('appKey', 'appSid')
+@api = EmailCloud.new('client_secret', 'client_id')
 ```
 
 {{< /tab >}}
@@ -224,7 +224,7 @@ import * as email from "@asposecloud/aspose-email-cloud";
 
 ...
 
-var api = new email.EmailCloud('appSid', 'appKey');
+var api = new email.EmailCloud('clientId', 'clientSecret');
 ```
 
 {{< /tab >}}
@@ -240,8 +240,8 @@ use Aspose\Email\Model;
 
 $configuration = new Configuration();
 $configuration
-	->setAppKey("appKey")
-	->setAppSid("appSid");
+	->setClientSecret("clientSecret")
+	->setClientId("clientId");
 
 $api = new EmailCloud($configuration);
 ```
@@ -250,16 +250,16 @@ $api = new EmailCloud($configuration);
 
 {{< /tabs >}}
 
-Our SDK automatically gets API token using your **AppKey** and **AppSid**. Also, it automatically gets a new token, if previous one is expired.
+Our SDK automatically gets API token using your **clientSecret** and **ClientId**. Also, it automatically gets a new token, if previous one is expired.
 
 ## **Check Everything Works**
 After setting up Aspose.Email Cloud API SDK, it's time to start using it. The API has numerous functions for working with email messages, calendars, contacts, etc.. Also, the API includes AI functions such as the [Business Card Recognition API](/email/business-cards-recognition-api/) and [Name API](/email/working-with-name-api/). These features will facilitate and speed up the development of your application. 
 
 Let’s call some SDK methods to see that everything set up properly. For example, you can easily convert an **EML** file to **MSG** format with our API.
 
-[EmailApi](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md) object has a function to convert email messages, it’s called [*ConvertAsync*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#ConvertAsync) which converts email document to the specified format and returns as the file.
+[EmailApi](/email/reference-email-api/) object has a function to convert email messages, it’s called [*Convert*](/email/reference-email-api/#convert) which converts email document to the specified format and returns as the file.
 
-This function requires only one parameter — [*ConvertEmailRequest*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/Model/EmailConvertRequest.cs), which requests a model for conversion. To create a request you need to pass **3 parameters**:
+This function requires only one parameter — [*EmailConvertRequest*](/email/reference-model-email-convert-request/), which requests a model for conversion. To create a request you need to pass **3 parameters**:
 - toFormat - a **file format** you want to convert to (Enum: Eml, Msg, MsgUnicode, Mhtml, Html).
 - fromFormat - a file format you want to convert from.
 - file - a **file to upload** for the further converting. 
