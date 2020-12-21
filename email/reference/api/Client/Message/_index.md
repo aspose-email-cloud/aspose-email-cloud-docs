@@ -7,6 +7,11 @@ weight: 1
 
 Email client message operations.
 
+
+The most important part of the email client is Message management API.
+
+Use this API to send, search, fetch, append, move, mark as read, or delete messages.
+
 ## Append
 
 Add email message to specified folder in email account. 

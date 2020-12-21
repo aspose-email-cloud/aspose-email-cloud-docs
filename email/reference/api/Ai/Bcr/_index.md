@@ -7,6 +7,18 @@ weight: 1
 
 AI Business card recognition operations.
 
+
+AiBcrApi module provides Business card recognition functions.
+Using these functions you can convert captured business card images to files in vCard format.
+
+Business card parser recognizes:
+ - Name.
+ - Phone number.
+ - Email address.
+ - Website URL.
+ - Job title.
+ - Postal address.
+
 ## Parse
 
 Parse images to vCard document models. 
@@ -152,7 +164,13 @@ $result = $api->ai()->bcr()->parse($request);
 {{< /tabs >}}
 ## ParseStorage
 
-Parse images from storage to vCard files. 
+Parse images from storage to vCard files.
+
+
+Function recognizes images from Cloud Storage.
+All recognized business cards will be saved as vCard *.vcf files and uploaded to Cloud Storage.
+
+     
 Returns [**StorageFileLocationList**](/email/reference-model-storage-file-location-list/) model. Requires:
 
 {{< expand-list title="request" >}}

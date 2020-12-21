@@ -7,6 +7,8 @@ weight: 1
 
 Contact document operations. Supported formats: VCard, MSG, WebDav
 
+
+
 ## AsFile
 
 Converts contact model to specified format and returns as file. 
