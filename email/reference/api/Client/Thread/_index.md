@@ -17,7 +17,7 @@ Email client provides functions to:
  - Delete an entire thread or move it to another folder.
  - Mark all messages in the given thread as read or unread.
 
-Email threads are supported even if the email server does not support such a function.
+Email threads are supported even if the email server does not support such function.
 Just add a cache file location to the account configuration if you need to support
 emulated email threads.
 

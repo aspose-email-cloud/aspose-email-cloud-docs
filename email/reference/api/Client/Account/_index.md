@@ -20,7 +20,7 @@ client functions. The multi-account client should be used to manage several emai
 accounts as a single one. For example, you can use one request to find messages
 in all accounts attached to the multi-account client.
 
-Link to email account configuration should be provided in most email client
+Link to email account configuration should be provided in most of email client
 API functions.
 
 ## Get

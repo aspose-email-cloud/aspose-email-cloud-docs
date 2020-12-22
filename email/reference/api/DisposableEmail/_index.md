@@ -5,7 +5,7 @@ url: /reference-disposable-email-api/
 weight: 1
 ---
 
-Check email address is disposable operations
+Checks if an email is a disposable one
 
 
 

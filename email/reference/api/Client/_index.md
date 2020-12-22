@@ -6,7 +6,7 @@ weight: 2
 ---
 
 
-Aspose.Email Cloud API provides a builtin Email Client with unified API for 
+Aspose.Email Cloud API provides a **built-in Email Client** with a unified API for 
 different protocols: IMAP, SMTP, POP3, Exchange.
 
 Email Client allows to:

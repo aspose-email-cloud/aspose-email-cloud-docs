@@ -7,7 +7,7 @@ weight: 90
 
 ## **SDK Changes**
 
-EmailCloud constructor parameters renamed:
+**EmailCloud** constructor parameters renamed:
 - `AppKey` is now `ClientSecret`.
 - `AppSid` is now `ClientId`.
 
