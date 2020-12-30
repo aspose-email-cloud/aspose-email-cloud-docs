@@ -7,6 +7,8 @@ weight: 1
 
 Email server configuration discovery.
 
+
+
 ## Discover
 
 Discover email accounts by email address. Does not validate discovered accounts. 
@@ -23,6 +25,7 @@ Discover method request. Type: [**EmailConfigDiscoverRequest**](/email/reference
 ```csharp
 var request = new EmailConfigDiscoverRequest
 { 
+    Address = "address@gmail.com"
 };
 ```
 
@@ -32,6 +35,7 @@ var request = new EmailConfigDiscoverRequest
 
 ```java
 EmailConfigDiscoverRequest request = Models.emailConfigDiscoverRequest()
+    .address("address@gmail.com")
     .build();
 ```
 
@@ -40,7 +44,8 @@ EmailConfigDiscoverRequest request = Models.emailConfigDiscoverRequest()
 {{< tab tabNum="3" >}}
 
 ```python
-request = models.EmailConfigDiscoverRequest()
+request = models.EmailConfigDiscoverRequest(
+    address='address@gmail.com')
 ```
 
 {{< /tab >}}
@@ -48,7 +53,8 @@ request = models.EmailConfigDiscoverRequest()
 {{< tab tabNum="4" >}}
 
 ```ruby
-request = EmailConfigDiscoverRequest.new()
+request = EmailConfigDiscoverRequest.new(
+    address: 'address@gmail.com')
 ```
 
 {{< /tab >}}
@@ -57,6 +63,7 @@ request = EmailConfigDiscoverRequest.new()
 
 ```typescript
 let request = Models.EmailConfigDiscoverRequest()
+    .address('address@gmail.com')
     .build();
 ```
 
@@ -66,6 +73,7 @@ let request = Models.EmailConfigDiscoverRequest()
 
 ```php
 $request = Models::EmailConfigDiscoverRequest()
+    ->address('address@gmail.com')
     ->build();
 ```
 

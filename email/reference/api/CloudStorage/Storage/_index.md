@@ -5,7 +5,9 @@ url: /reference-storage-api/
 weight: 1
 ---
 
-Storage operations controller
+This is a **storage operations controller**.
+
+
 
 ## GetDiscUsage
 

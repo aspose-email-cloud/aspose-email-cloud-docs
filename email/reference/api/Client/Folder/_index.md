@@ -7,6 +7,14 @@ weight: 1
 
 Email client folder operations.
 
+
+Most of the email protocols support grouping messages in folders.
+
+The email client supports different functions to manage such folders:
+ - Create a folder.
+ - Get a list of folders.
+ - Delete folder.
+
 ## Create
 
 Create new folder in email account. Requires:

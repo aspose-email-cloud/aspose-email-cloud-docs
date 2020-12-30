@@ -7,6 +7,20 @@ weight: 1
 
 Email client thread operations.
 
+
+An email thread is a conversation that starts from the original email and includes
+all of the replies to it.
+
+Email client provides functions to:
+ - Get a list of all email threads in the given folder.
+ - Fetch all messages from the given thread.
+ - Delete an entire thread or move it to another folder.
+ - Mark all messages in the given thread as read or unread.
+
+Email threads are supported even if the email server does not support such function.
+Just add a cache file location to the account configuration if you need to support
+emulated email threads.
+
 ## Delete
 
 Delete thread by id. All messages from thread will also be deleted. Requires:

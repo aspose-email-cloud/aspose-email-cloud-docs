@@ -7,6 +7,8 @@ weight: 1
 
 MAPI calendar operations.
 
+
+
 ## AsCalendarDto
 
 Converts MAPI calendar model to CalendarDto model. 
