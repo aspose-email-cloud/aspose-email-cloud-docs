@@ -36,7 +36,7 @@ var aiNameExtracted = new AiNameExtracted
             Value = "John"
         }
     },
-    Score = 0.5
+    Score = 0,5
 };
 ```
 
@@ -55,7 +55,7 @@ AiNameExtracted aiNameExtracted = Models.aiNameExtracted()
             .category("SomeName")
             .value("John")
             .build()))
-    .score(0.5)
+    .score(0,5)
     .build();
 ```
 
@@ -72,7 +72,7 @@ ai_name_extracted = models.AiNameExtracted(
         models.AiNameExtractedComponent(
             category='SomeName',
             value='John')],
-    score=0.5)
+    score=0,5)
 ```
 
 {{< /tab >}}
@@ -88,7 +88,7 @@ ai_name_extracted = AiNameExtracted.new(
     AiNameExtractedComponent.new(
       category: 'SomeName',
       value: 'John')],
-  score: 0.5)
+  score: 0,5)
 ```
 
 {{< /tab >}}
@@ -106,7 +106,7 @@ let aiNameExtracted = Models.aiNameExtracted()
             .category('SomeName')
             .value('John')
             .build()])
-    .score(0.5)
+    .score(0,5)
     .build();
 ```
 
@@ -125,7 +125,7 @@ $aiNameExtracted = Models::aiNameExtracted()
             ->category('SomeName')
             ->value('John')
             ->build()))
-    ->score(0.5)
+    ->score(0,5)
     ->build();
 ```
 

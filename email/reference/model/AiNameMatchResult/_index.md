@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 ```csharp
 var aiNameMatchResult = new AiNameMatchResult
 {
-    Similarity = 0.6,
+    Similarity = 0,6,
     Mismatches = new List<AiNameMismatch>
     {
         new AiNameMismatch
@@ -41,7 +41,7 @@ var aiNameMatchResult = new AiNameMatchResult
 
 ```java
 AiNameMatchResult aiNameMatchResult = Models.aiNameMatchResult()
-    .similarity(0.6)
+    .similarity(0,6)
     .mismatches(Arrays.<AiNameMismatch>asList(
         Models.aiNameMismatch()
             .category("Gender")
@@ -56,7 +56,7 @@ AiNameMatchResult aiNameMatchResult = Models.aiNameMatchResult()
 
 ```python
 ai_name_match_result = models.AiNameMatchResult(
-    similarity=0.6,
+    similarity=0,6,
     mismatches=[
         models.AiNameMismatch(
             category='Gender',
@@ -69,7 +69,7 @@ ai_name_match_result = models.AiNameMatchResult(
 
 ```ruby
 ai_name_match_result = AiNameMatchResult.new(
-  similarity: 0.6,
+  similarity: 0,6,
   mismatches: [
     AiNameMismatch.new(
       category: 'Gender',
@@ -82,7 +82,7 @@ ai_name_match_result = AiNameMatchResult.new(
 
 ```typescript
 let aiNameMatchResult = Models.aiNameMatchResult()
-    .similarity(0.6)
+    .similarity(0,6)
     .mismatches([
         Models.aiNameMismatch()
             .category('Gender')
@@ -97,7 +97,7 @@ let aiNameMatchResult = Models.aiNameMatchResult()
 
 ```php
 $aiNameMatchResult = Models::aiNameMatchResult()
-    ->similarity(0.6)
+    ->similarity(0,6)
     ->mismatches(array(
         Models::aiNameMismatch()
             ->category('Gender')

@@ -37,6 +37,12 @@ var emailClientAccount = new EmailClientAccount
         ClientSecret = "clientSecret",
         RefreshToken = "refreshToken",
         Login = "example@example.com"
+    },
+    CacheFile = new StorageFileLocation
+    {
+        FileName = "account.cache",
+        Storage = "First Storage",
+        FolderPath = "file/location/folder/on/storage"
     }
 };
 ```
@@ -57,6 +63,11 @@ EmailClientAccount emailClientAccount = Models.emailClientAccount()
         .refreshToken("refreshToken")
         .login("example@example.com")
         .build())
+    .cacheFile(Models.storageFileLocation()
+        .fileName("account.cache")
+        .storage("First Storage")
+        .folderPath("file/location/folder/on/storage")
+        .build())
     .build();
 ```
 
@@ -74,7 +85,11 @@ email_client_account = models.EmailClientAccount(
         client_id='clientId',
         client_secret='clientSecret',
         refresh_token='refreshToken',
-        login='example@example.com'))
+        login='example@example.com'),
+    cache_file=models.StorageFileLocation(
+        file_name='account.cache',
+        storage='First Storage',
+        folder_path='file/location/folder/on/storage'))
 ```
 
 {{< /tab >}}
@@ -91,7 +106,11 @@ email_client_account = EmailClientAccount.new(
     client_id: 'clientId',
     client_secret: 'clientSecret',
     refresh_token: 'refreshToken',
-    login: 'example@example.com'))
+    login: 'example@example.com'),
+  cache_file: StorageFileLocation.new(
+    file_name: 'account.cache',
+    storage: 'First Storage',
+    folder_path: 'file/location/folder/on/storage'))
 ```
 
 {{< /tab >}}
@@ -109,6 +128,11 @@ let emailClientAccount = Models.emailClientAccount()
         .clientSecret('clientSecret')
         .refreshToken('refreshToken')
         .login('example@example.com')
+        .build())
+    .cacheFile(Models.storageFileLocation()
+        .fileName('account.cache')
+        .storage('First Storage')
+        .folderPath('file/location/folder/on/storage')
         .build())
     .build();
 ```
@@ -128,6 +152,11 @@ $emailClientAccount = Models::emailClientAccount()
         ->clientSecret('clientSecret')
         ->refreshToken('refreshToken')
         ->login('example@example.com')
+        ->build())
+    ->cacheFile(Models::storageFileLocation()
+        ->fileName('account.cache')
+        ->storage('First Storage')
+        ->folderPath('file/location/folder/on/storage')
         ->build())
     ->build();
 ```

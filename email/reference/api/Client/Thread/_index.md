@@ -488,6 +488,7 @@ Move thread request. Type: [**ClientThreadMoveRequest**](/email/reference-model-
 var request = new ClientThreadMoveRequest
 {
     DestinationFolder = "INBOX/SubFolder",
+    SourceFolder = "INBOX",
     ThreadId = "5",
     AccountLocation = new StorageFileLocation
     {
@@ -505,6 +506,7 @@ var request = new ClientThreadMoveRequest
 ```java
 ClientThreadMoveRequest request = Models.clientThreadMoveRequest()
     .destinationFolder("INBOX/SubFolder")
+    .sourceFolder("INBOX")
     .threadId("5")
     .accountLocation(Models.storageFileLocation()
         .fileName("email.account")
@@ -521,6 +523,7 @@ ClientThreadMoveRequest request = Models.clientThreadMoveRequest()
 ```python
 request = models.ClientThreadMoveRequest(
     destination_folder='INBOX/SubFolder',
+    source_folder='INBOX',
     thread_id='5',
     account_location=models.StorageFileLocation(
         file_name='email.account',
@@ -535,6 +538,7 @@ request = models.ClientThreadMoveRequest(
 ```ruby
 request = ClientThreadMoveRequest.new(
   destination_folder: 'INBOX/SubFolder',
+  source_folder: 'INBOX',
   thread_id: '5',
   account_location: StorageFileLocation.new(
     file_name: 'email.account',
@@ -549,6 +553,7 @@ request = ClientThreadMoveRequest.new(
 ```typescript
 let request = Models.clientThreadMoveRequest()
     .destinationFolder('INBOX/SubFolder')
+    .sourceFolder('INBOX')
     .threadId('5')
     .accountLocation(Models.storageFileLocation()
         .fileName('email.account')
@@ -565,6 +570,7 @@ let request = Models.clientThreadMoveRequest()
 ```php
 $request = Models::clientThreadMoveRequest()
     ->destinationFolder('INBOX/SubFolder')
+    ->sourceFolder('INBOX')
     ->threadId('5')
     ->accountLocation(Models::storageFileLocation()
         ->fileName('email.account')

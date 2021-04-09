@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 ```csharp
 var aiNameGenderHypothesis = new AiNameGenderHypothesis
 {
-    Score = 0.8
+    Score = 0,8
 };
 ```
 
@@ -33,7 +33,7 @@ var aiNameGenderHypothesis = new AiNameGenderHypothesis
 
 ```java
 AiNameGenderHypothesis aiNameGenderHypothesis = Models.aiNameGenderHypothesis()
-    .score(0.8)
+    .score(0,8)
     .build();
 ```
 
@@ -43,7 +43,7 @@ AiNameGenderHypothesis aiNameGenderHypothesis = Models.aiNameGenderHypothesis()
 
 ```python
 ai_name_gender_hypothesis = models.AiNameGenderHypothesis(
-    score=0.8)
+    score=0,8)
 ```
 
 {{< /tab >}}
@@ -52,7 +52,7 @@ ai_name_gender_hypothesis = models.AiNameGenderHypothesis(
 
 ```ruby
 ai_name_gender_hypothesis = AiNameGenderHypothesis.new(
-  score: 0.8)
+  score: 0,8)
 ```
 
 {{< /tab >}}
@@ -61,7 +61,7 @@ ai_name_gender_hypothesis = AiNameGenderHypothesis.new(
 
 ```typescript
 let aiNameGenderHypothesis = Models.aiNameGenderHypothesis()
-    .score(0.8)
+    .score(0,8)
     .build();
 ```
 
@@ -71,7 +71,7 @@ let aiNameGenderHypothesis = Models.aiNameGenderHypothesis()
 
 ```php
 $aiNameGenderHypothesis = Models::aiNameGenderHypothesis()
-    ->score(0.8)
+    ->score(0,8)
     ->build();
 ```
 

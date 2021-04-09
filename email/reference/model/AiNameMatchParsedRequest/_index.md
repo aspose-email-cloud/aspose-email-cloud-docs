@@ -35,7 +35,7 @@ var aiNameMatchParsedRequest = new AiNameMatchParsedRequest
         {
             Value = "Cane",
             Category = "LastName",
-            Score = 0.5,
+            Score = 0,5,
             Position = 3
         },
         new AiNameComponent
@@ -47,7 +47,7 @@ var aiNameMatchParsedRequest = new AiNameMatchParsedRequest
         {
             Value = "0.5",
             Category = "Score",
-            Score = 0.5
+            Score = 0,5
         }
     },
     ParsedName = new List<AiNameComponent>
@@ -56,13 +56,13 @@ var aiNameMatchParsedRequest = new AiNameMatchParsedRequest
         {
             Value = "John",
             Category = "FirstName",
-            Score = 0.95
+            Score = 0,95
         },
         new AiNameComponent
         {
             Value = "Cane",
             Category = "LastName",
-            Score = 0.5,
+            Score = 0,5,
             Position = 5
         },
         new AiNameComponent
@@ -74,7 +74,7 @@ var aiNameMatchParsedRequest = new AiNameMatchParsedRequest
         {
             Value = "0.5",
             Category = "Score",
-            Score = 0.5
+            Score = 0,5
         }
     }
 };
@@ -95,7 +95,7 @@ AiNameMatchParsedRequest aiNameMatchParsedRequest = Models.aiNameMatchParsedRequ
         Models.aiNameComponent()
             .value("Cane")
             .category("LastName")
-            .score(0.5)
+            .score(0,5)
             .position(3)
             .build(),
         Models.aiNameComponent()
@@ -105,18 +105,18 @@ AiNameMatchParsedRequest aiNameMatchParsedRequest = Models.aiNameMatchParsedRequ
         Models.aiNameComponent()
             .value("0.5")
             .category("Score")
-            .score(0.5)
+            .score(0,5)
             .build()))
     .parsedName(Arrays.<AiNameComponent>asList(
         Models.aiNameComponent()
             .value("John")
             .category("FirstName")
-            .score(0.95)
+            .score(0,95)
             .build(),
         Models.aiNameComponent()
             .value("Cane")
             .category("LastName")
-            .score(0.5)
+            .score(0,5)
             .position(5)
             .build(),
         Models.aiNameComponent()
@@ -126,7 +126,7 @@ AiNameMatchParsedRequest aiNameMatchParsedRequest = Models.aiNameMatchParsedRequ
         Models.aiNameComponent()
             .value("0.5")
             .category("Score")
-            .score(0.5)
+            .score(0,5)
             .build()))
     .build();
 ```
@@ -145,7 +145,7 @@ ai_name_match_parsed_request = models.AiNameMatchParsedRequest(
         models.AiNameComponent(
             value='Cane',
             category='LastName',
-            score=0.5,
+            score=0,5,
             position=3),
         models.AiNameComponent(
             value='%f%L',
@@ -153,16 +153,16 @@ ai_name_match_parsed_request = models.AiNameMatchParsedRequest(
         models.AiNameComponent(
             value='0.5',
             category='Score',
-            score=0.5)],
+            score=0,5)],
     parsed_name=[
         models.AiNameComponent(
             value='John',
             category='FirstName',
-            score=0.95),
+            score=0,95),
         models.AiNameComponent(
             value='Cane',
             category='LastName',
-            score=0.5,
+            score=0,5,
             position=5),
         models.AiNameComponent(
             value='%F%L',
@@ -170,7 +170,7 @@ ai_name_match_parsed_request = models.AiNameMatchParsedRequest(
         models.AiNameComponent(
             value='0.5',
             category='Score',
-            score=0.5)])
+            score=0,5)])
 ```
 
 {{< /tab >}}
@@ -187,7 +187,7 @@ ai_name_match_parsed_request = AiNameMatchParsedRequest.new(
     AiNameComponent.new(
       value: 'Cane',
       category: 'LastName',
-      score: 0.5,
+      score: 0,5,
       position: 3),
     AiNameComponent.new(
       value: '%f%L',
@@ -195,16 +195,16 @@ ai_name_match_parsed_request = AiNameMatchParsedRequest.new(
     AiNameComponent.new(
       value: '0.5',
       category: 'Score',
-      score: 0.5)],
+      score: 0,5)],
   parsed_name: [
     AiNameComponent.new(
       value: 'John',
       category: 'FirstName',
-      score: 0.95),
+      score: 0,95),
     AiNameComponent.new(
       value: 'Cane',
       category: 'LastName',
-      score: 0.5,
+      score: 0,5,
       position: 5),
     AiNameComponent.new(
       value: '%F%L',
@@ -212,7 +212,7 @@ ai_name_match_parsed_request = AiNameMatchParsedRequest.new(
     AiNameComponent.new(
       value: '0.5',
       category: 'Score',
-      score: 0.5)])
+      score: 0,5)])
 ```
 
 {{< /tab >}}
@@ -230,7 +230,7 @@ let aiNameMatchParsedRequest = Models.aiNameMatchParsedRequest()
         Models.aiNameComponent()
             .value('Cane')
             .category('LastName')
-            .score(0.5)
+            .score(0,5)
             .position(3)
             .build(),
         Models.aiNameComponent()
@@ -240,18 +240,18 @@ let aiNameMatchParsedRequest = Models.aiNameMatchParsedRequest()
         Models.aiNameComponent()
             .value('0.5')
             .category('Score')
-            .score(0.5)
+            .score(0,5)
             .build()])
     .parsedName([
         Models.aiNameComponent()
             .value('John')
             .category('FirstName')
-            .score(0.95)
+            .score(0,95)
             .build(),
         Models.aiNameComponent()
             .value('Cane')
             .category('LastName')
-            .score(0.5)
+            .score(0,5)
             .position(5)
             .build(),
         Models.aiNameComponent()
@@ -261,7 +261,7 @@ let aiNameMatchParsedRequest = Models.aiNameMatchParsedRequest()
         Models.aiNameComponent()
             .value('0.5')
             .category('Score')
-            .score(0.5)
+            .score(0,5)
             .build()])
     .build();
 ```
@@ -281,7 +281,7 @@ $aiNameMatchParsedRequest = Models::aiNameMatchParsedRequest()
         Models::aiNameComponent()
             ->value('Cane')
             ->category('LastName')
-            ->score(0.5)
+            ->score(0,5)
             ->position(3)
             ->build(),
         Models::aiNameComponent()
@@ -291,18 +291,18 @@ $aiNameMatchParsedRequest = Models::aiNameMatchParsedRequest()
         Models::aiNameComponent()
             ->value('0.5')
             ->category('Score')
-            ->score(0.5)
+            ->score(0,5)
             ->build()))
     ->parsedName(array(
         Models::aiNameComponent()
             ->value('John')
             ->category('FirstName')
-            ->score(0.95)
+            ->score(0,95)
             ->build(),
         Models::aiNameComponent()
             ->value('Cane')
             ->category('LastName')
-            ->score(0.5)
+            ->score(0,5)
             ->position(5)
             ->build(),
         Models::aiNameComponent()
@@ -312,7 +312,7 @@ $aiNameMatchParsedRequest = Models::aiNameMatchParsedRequest()
         Models::aiNameComponent()
             ->value('0.5')
             ->category('Score')
-            ->score(0.5)
+            ->score(0,5)
             ->build()))
     ->build();
 ```
