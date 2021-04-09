@@ -11,8 +11,7 @@ weight: 90
 
 First of all, the MSG file could be represented as a list of properties. See this JSON example:
 
-<details>
-  <summary>MSG file properties list represented as a JSON array</summary>
+{{< expand-list title="MSG file properties list represented as a JSON array" >}}
 
 ```json
 {
@@ -285,7 +284,7 @@ First of all, the MSG file could be represented as a list of properties. See thi
 }
 ```
 
-</details>
+{{< /expand-list >}}
 
 These properties could contain different values. It could be integers, strings, bytes, multiple strings, and a lot of other data types. All properties are identified using property Descriptors. Aspose.Email Cloud supports different types of property descriptors:
 
@@ -297,8 +296,7 @@ See all known properties [here](https://apireference.aspose.com/email/net/aspose
 
 Aspose.Email Cloud provides 3 different models to represent the MSG file. These models contain a list of all properties and extra fields for easier file operation. For example, [**MapiMessageDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/MapiMessageDto.md) has a string field named *Subject*, which contains a subject for an email message. But this field is just a copy of a property with a [TagSubject](https://apireference.aspose.com/email/net/aspose.email.mapi/knownpropertylist/fields/tagsubject) descriptor:
 
-<details>
-  <summary>Part of MapiMessageDto JSON with subject</summary>
+{{< expand-list title="Part of MapiMessageDto JSON with subject" >}}
 
 ```json
 {
@@ -321,7 +319,7 @@ Aspose.Email Cloud provides 3 different models to represent the MSG file. These 
 }
 ```
 
-</details>
+{{< /expand-list >}}
 
 These 3 MAPI models are:
 
