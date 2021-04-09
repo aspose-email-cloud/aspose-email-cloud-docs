@@ -30,13 +30,13 @@ var aiNameParsedRequest = new AiNameParsedRequest
         {
             Value = "John",
             Category = "FirstName",
-            Score = 0,95
+            Score = 0.95
         },
         new AiNameComponent
         {
             Value = "Cane",
             Category = "LastName",
-            Score = 0,5,
+            Score = 0.5,
             Position = 5
         },
         new AiNameComponent
@@ -48,7 +48,7 @@ var aiNameParsedRequest = new AiNameParsedRequest
         {
             Value = "0.5",
             Category = "Score",
-            Score = 0,5
+            Score = 0.5
         }
     }
 };
@@ -64,12 +64,12 @@ AiNameParsedRequest aiNameParsedRequest = Models.aiNameParsedRequest()
         Models.aiNameComponent()
             .value("John")
             .category("FirstName")
-            .score(0,95)
+            .score(0.95)
             .build(),
         Models.aiNameComponent()
             .value("Cane")
             .category("LastName")
-            .score(0,5)
+            .score(0.5)
             .position(5)
             .build(),
         Models.aiNameComponent()
@@ -79,7 +79,7 @@ AiNameParsedRequest aiNameParsedRequest = Models.aiNameParsedRequest()
         Models.aiNameComponent()
             .value("0.5")
             .category("Score")
-            .score(0,5)
+            .score(0.5)
             .build()))
     .build();
 ```
@@ -94,11 +94,11 @@ ai_name_parsed_request = models.AiNameParsedRequest(
         models.AiNameComponent(
             value='John',
             category='FirstName',
-            score=0,95),
+            score=0.95),
         models.AiNameComponent(
             value='Cane',
             category='LastName',
-            score=0,5,
+            score=0.5,
             position=5),
         models.AiNameComponent(
             value='%F%L',
@@ -106,7 +106,7 @@ ai_name_parsed_request = models.AiNameParsedRequest(
         models.AiNameComponent(
             value='0.5',
             category='Score',
-            score=0,5)])
+            score=0.5)])
 ```
 
 {{< /tab >}}
@@ -119,11 +119,11 @@ ai_name_parsed_request = AiNameParsedRequest.new(
     AiNameComponent.new(
       value: 'John',
       category: 'FirstName',
-      score: 0,95),
+      score: 0.95),
     AiNameComponent.new(
       value: 'Cane',
       category: 'LastName',
-      score: 0,5,
+      score: 0.5,
       position: 5),
     AiNameComponent.new(
       value: '%F%L',
@@ -131,7 +131,7 @@ ai_name_parsed_request = AiNameParsedRequest.new(
     AiNameComponent.new(
       value: '0.5',
       category: 'Score',
-      score: 0,5)])
+      score: 0.5)])
 ```
 
 {{< /tab >}}
@@ -144,12 +144,12 @@ let aiNameParsedRequest = Models.aiNameParsedRequest()
         Models.aiNameComponent()
             .value('John')
             .category('FirstName')
-            .score(0,95)
+            .score(0.95)
             .build(),
         Models.aiNameComponent()
             .value('Cane')
             .category('LastName')
-            .score(0,5)
+            .score(0.5)
             .position(5)
             .build(),
         Models.aiNameComponent()
@@ -159,7 +159,7 @@ let aiNameParsedRequest = Models.aiNameParsedRequest()
         Models.aiNameComponent()
             .value('0.5')
             .category('Score')
-            .score(0,5)
+            .score(0.5)
             .build()])
     .build();
 ```
@@ -174,12 +174,12 @@ $aiNameParsedRequest = Models::aiNameParsedRequest()
         Models::aiNameComponent()
             ->value('John')
             ->category('FirstName')
-            ->score(0,95)
+            ->score(0.95)
             ->build(),
         Models::aiNameComponent()
             ->value('Cane')
             ->category('LastName')
-            ->score(0,5)
+            ->score(0.5)
             ->position(5)
             ->build(),
         Models::aiNameComponent()
@@ -189,7 +189,7 @@ $aiNameParsedRequest = Models::aiNameParsedRequest()
         Models::aiNameComponent()
             ->value('0.5')
             ->category('Score')
-            ->score(0,5)
+            ->score(0.5)
             ->build()))
     ->build();
 ```

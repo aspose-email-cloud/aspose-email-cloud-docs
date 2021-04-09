@@ -33,7 +33,7 @@ var aiNameWeightedVariants = new AiNameWeightedVariants
         new AiNameWeighted
         {
             Name = "Mr. Cane",
-            Score = 0,75
+            Score = 0.75
         }
     }
 };
@@ -52,7 +52,7 @@ AiNameWeightedVariants aiNameWeightedVariants = Models.aiNameWeightedVariants()
             .build(),
         Models.aiNameWeighted()
             .name("Mr. Cane")
-            .score(0,75)
+            .score(0.75)
             .build()))
     .build();
 ```
@@ -69,7 +69,7 @@ ai_name_weighted_variants = models.AiNameWeightedVariants(
             score=1),
         models.AiNameWeighted(
             name='Mr. Cane',
-            score=0,75)])
+            score=0.75)])
 ```
 
 {{< /tab >}}
@@ -84,7 +84,7 @@ ai_name_weighted_variants = AiNameWeightedVariants.new(
       score: 1),
     AiNameWeighted.new(
       name: 'Mr. Cane',
-      score: 0,75)])
+      score: 0.75)])
 ```
 
 {{< /tab >}}
@@ -100,7 +100,7 @@ let aiNameWeightedVariants = Models.aiNameWeightedVariants()
             .build(),
         Models.aiNameWeighted()
             .name('Mr. Cane')
-            .score(0,75)
+            .score(0.75)
             .build()])
     .build();
 ```
@@ -118,7 +118,7 @@ $aiNameWeightedVariants = Models::aiNameWeightedVariants()
             ->build(),
         Models::aiNameWeighted()
             ->name('Mr. Cane')
-            ->score(0,75)
+            ->score(0.75)
             ->build()))
     ->build();
 ```
