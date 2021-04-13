@@ -967,7 +967,68 @@ $result = $api->client()->message()->fetchFile($request);
 {{< /tabs >}}
 ## List
 
-Get messages from folder, filtered by query. 
+Get messages from folder, filtered by query.
+
+
+**The queryString should have the following view.**
+
+The example of a simple expression:
+
+&#x60;&#39;&lt;Field name&gt;&#39; &lt;Comparison operator&gt; &#39;&lt;Field value&gt;&#39;&#x60;
+
+where
+- &lt;Field Name&gt; - the name of a message field through which filtering is made,
+- &lt;Comparison operator&gt; - comparison operators, as their name implies, allow to compare
+message field and specified value,
+- &lt;Field value&gt; - value to be compared with a message field.
+
+The number of simple expressions can make a compound one, ex.:
+
+&#x60;(&lt;Simple expression 1&gt; &amp; &lt;Simple expression 2&gt;) | &lt;Simple expression 3&gt;&#x60;
+
+where
+- &quot;&amp;&quot; - logical-AND operator,
+- &quot;|&quot; - logical-OR operator
+
+At present the following values are allowed as a field name (&lt;Field name&gt;):
+- &quot;To&quot; - represents a TO field of message,
+- &quot;Text&quot; - represents string in the header or body of the message,
+- &quot;Bcc&quot; - represents a BCC field of message,
+- &quot;Body&quot; - represents a string in the body of message,
+- &quot;Cc&quot; - represents a CC field of message,
+- &quot;From&quot; - represents a From field of message,
+- &quot;Subject&quot; - represents a string in the subject of message,
+- &quot;InternalDate&quot; - represents an internal date of message,
+- &quot;SentDate&quot; - represents a sent date of message
+
+Additionally, the following field names are allowed for IMAP-protocol:
+
+- &quot;Answered&quot; - represents an /Answered flag of message
+- &quot;Seen&quot; - represents a /Seen flag of message
+- &quot;Flagged&quot; - represents a /Flagged flag of message
+- &quot;Draft&quot; - represents a /Draft flag of message
+- &quot;Deleted&quot; - represents a Deleted/ flag of message
+- &quot;Recent&quot; - represents a Deleted/ flag of message
+- &quot;MessageSize&quot; - represents a size (in bytes) of message
+
+Additionally, the following field names are allowed for Exchange:
+
+- &quot;IsRead&quot; - Indicates whether the message has been read
+- &quot;HasAttachment&quot; - Indicates whether or not the message has attachments
+- &quot;IsSubmitted&quot; - Indicates whether the message has been submitted to the Outbox
+- &quot;ContentClass&quot; - represents a content class of item
+
+The field value (&lt;Field value&gt;) can take the following values:
+- For text fields - any string,
+- For date type fields - the string of &quot;d-MMM-yyy&quot; format, ex. &quot;10-Feb-2009&quot;,
+- For flags (fields of boolean type) - either &quot;True&quot;, or &quot;False&quot;
+
+***Example:***
+
+&#x60;((&#39;From&#39; Contains &#39;test@test.com&#39; | &#39;Seen&#39; &#x3D; &#39;True&#39;) &amp; &#39;SentDate&#39; &gt;&#x3D; &#39;12-May-2010&#39;)&#x60;
+
+
+     
 Returns [**MailMessageBaseList**](/email/reference-model-mail-message-base-list/) model. Requires:
 
 {{< expand-list title="request" >}}

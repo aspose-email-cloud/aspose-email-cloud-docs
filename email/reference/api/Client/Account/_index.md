@@ -330,6 +330,12 @@ var request = new ClientAccountSaveRequest
             ClientSecret = "clientSecret",
             RefreshToken = "refreshToken",
             Login = "example@example.com"
+        },
+        CacheFile = new StorageFileLocation
+        {
+            FileName = "account.cache",
+            Storage = "First Storage",
+            FolderPath = "file/location/folder/on/storage"
         }
     }
 };
@@ -357,6 +363,11 @@ ClientAccountSaveRequest request = Models.clientAccountSaveRequest()
             .refreshToken("refreshToken")
             .login("example@example.com")
             .build())
+        .cacheFile(Models.storageFileLocation()
+            .fileName("account.cache")
+            .storage("First Storage")
+            .folderPath("file/location/folder/on/storage")
+            .build())
         .build())
     .build();
 ```
@@ -380,7 +391,11 @@ request = models.ClientAccountSaveRequest(
             client_id='clientId',
             client_secret='clientSecret',
             refresh_token='refreshToken',
-            login='example@example.com')))
+            login='example@example.com'),
+        cache_file=models.StorageFileLocation(
+            file_name='account.cache',
+            storage='First Storage',
+            folder_path='file/location/folder/on/storage')))
 ```
 
 {{< /tab >}}
@@ -402,7 +417,11 @@ request = ClientAccountSaveRequest.new(
       client_id: 'clientId',
       client_secret: 'clientSecret',
       refresh_token: 'refreshToken',
-      login: 'example@example.com')))
+      login: 'example@example.com'),
+    cache_file: StorageFileLocation.new(
+      file_name: 'account.cache',
+      storage: 'First Storage',
+      folder_path: 'file/location/folder/on/storage')))
 ```
 
 {{< /tab >}}
@@ -426,6 +445,11 @@ let request = Models.clientAccountSaveRequest()
             .clientSecret('clientSecret')
             .refreshToken('refreshToken')
             .login('example@example.com')
+            .build())
+        .cacheFile(Models.storageFileLocation()
+            .fileName('account.cache')
+            .storage('First Storage')
+            .folderPath('file/location/folder/on/storage')
             .build())
         .build())
     .build();
@@ -452,6 +476,11 @@ $request = Models::clientAccountSaveRequest()
             ->clientSecret('clientSecret')
             ->refreshToken('refreshToken')
             ->login('example@example.com')
+            ->build())
+        ->cacheFile(Models::storageFileLocation()
+            ->fileName('account.cache')
+            ->storage('First Storage')
+            ->folderPath('file/location/folder/on/storage')
             ->build())
         ->build())
     ->build();

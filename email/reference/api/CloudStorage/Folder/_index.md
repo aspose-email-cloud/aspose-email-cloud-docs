@@ -5,7 +5,7 @@ url: /reference-folder-api/
 weight: 1
 ---
 
-This is a **folder operations controller**.
+Folder operations controller
 
 
 

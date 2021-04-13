@@ -5,7 +5,7 @@ url: /reference-storage-api/
 weight: 1
 ---
 
-This is a **storage operations controller**.
+Storage operations controller
 
 
 
