@@ -8,21 +8,15 @@ weight: 20
 ## **Using Composer**
 Add the following line to your composer.json file:
 
-```java
-
 ```json
 
 // composer.json
 
 {
-
-require:
-
-{ "aspose/email-sdk-php": "dev-master" }
-
+    require: {
+        "aspose/email-sdk-php": "dev-master"
+    }
 }
-
-```
 
 ```
 

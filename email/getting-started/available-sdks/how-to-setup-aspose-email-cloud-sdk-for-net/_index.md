@@ -17,4 +17,4 @@ PM> Install-Package Aspose.Email-Cloud
 
 Or In Microsoft Visual Studio -> “Tools” -> “NuGet Package Manager” -> “Manage NuGet Packages for Solution” Search “Aspose.Email-Cloud” and then Press “Install”
 ## **Source Code**
-The Source code and Dlls can also be downloaded from [GitHub](https://github.com/aspose-email/Aspose.Email-for-Cloud/releases/) and [CodePlex](https://asposeemailcloud.codeplex.com/releases/).
+The Source code and Dlls can also be downloaded from [GitHub](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet).codeplex.com/releases/).

@@ -21,6 +21,7 @@ weight: 20
 - [MSG](https://wiki.fileformat.com/email/msg/)
 ## **iCalendar**
 - [ICS](https://wiki.fileformat.com/email/ics/)
+- [MSG](https://wiki.fileformat.com/email/msg/)
 ## **MAPI**
 - [MSG](https://wiki.fileformat.com/email/msg/)
 - [TNEF](https://wiki.fileformat.com/email/tnef/)
