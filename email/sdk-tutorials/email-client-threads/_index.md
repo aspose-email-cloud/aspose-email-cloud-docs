@@ -23,7 +23,7 @@ Using threads, you can easily structure emails in the mailbox. Instead of workin
 
 ![todo:image_alt_text](email-client-threads_1.png)
 ## **Built-In Email Client**
-[**Aspose.Email Cloud API**](https://products.aspose.cloud/email/family) provides a [built-in email client](/email/email-client/) with a unified API, which supports different account types like **SMTP**, **POP3**, **IMAP**, **EWS**.
+[**Aspose.Email Cloud API**](https://products.aspose.cloud/email/family) provides a [built-in email client](/email/quick-start-with-email-client/) with a unified API, which supports different account types like **SMTP**, **POP3**, **IMAP**, **EWS**.
 
 
 
@@ -42,9 +42,9 @@ Threads support by protocols:
 - **WebDav**: threads are not supported.
 - **Virtual Multi-account**: gets threads from underlying accounts and provides them as is.
 ## **Thread Support using Message Cache**
-Aspose.Email Cloud [built-in email client](/email/email-client/) supports native threads for **EWS** accounts. For **POP3** and **IMAP** accounts we provide this functionality using our own threads implementation. This implementation uses messages’ cache, located on [Aspose Storage](https://apireference.aspose.cloud/storage/) and our own threads algorithm, which generates threads based on message subject and participants.
+Aspose.Email Cloud [built-in email client](/email/quick-start-with-email-client/) supports native threads for **EWS** and **IMAP** accounts. For **POP3** accounts we provide this functionality using our own threads implementation. This implementation uses messages’ cache, located on [Aspose Storage](https://apireference.aspose.cloud/storage/) and our own threads algorithm, which generates threads based on message subject and participants.
 
-Native threads for **IMAP** will be added in future versions. Message cache will still be used for **IMAP** accounts if the **IMAP** server does not provide native threads.
+Message cache is also used for **IMAP** accounts if the **IMAP** server does not provide native threads.
 
 To support threads using cache, you should provide cache location during email account setup:
 
@@ -187,16 +187,16 @@ The **account.cache** file contains basic information about messages and threa
 
 Using **account.cache** file has some restrictions:
 
-- The file will be created automatically during [**EmailCloud.Client.Thread.GetList**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md#GetList) call if updateFolderCache is set to true.
-- [**GetList**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md#GetList) caches only messages for folders that were requested. So, to initialize cache for several folders, you should call [**GetList**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md#GetList) for every single folder. Folder cache initialization takes more time than updating cache in the future.
-- [**GetList**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md#GetList) is the only way to sync messages with the account. It finds all messages that were not cached before, and adds them to the existing threads or creates new ones. [**GetList**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md#GetList) also removes messages from the cache if they were removed from the account.
-- [**GetList**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md#GetList), [**Delete**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md#delete), [**Move**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md#move) methods lock **account.cache** file while processing. So, these methods will never run in parallel.
-- [**Delete**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md#delete) and [**Move**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md#move) methods delete/move messages in the email account and also update information about affected messages in **account.cache** file.
-- [**GetMessages**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md#getmessages) method does not update and lock **account.cache** file, this method returns only messages that exist in the cache.
+- The file will be created automatically during [**EmailCloud.Client.Thread.GetList**](/email/reference-client-thread-api/#getlist) call if updateFolderCache is set to true.
+- [**GetList**](/email/reference-client-thread-api/#getlist) caches only messages for folders that were requested. So, to initialize cache for several folders, you should call [**GetList**](/email/reference-client-thread-api/#getlist) for every single folder. Folder cache initialization takes more time than updating cache in the future.
+- [**GetList**](/email/reference-client-thread-api/#getlist) is the only way to sync messages with the account. It finds all messages that were not cached before, and adds them to the existing threads or creates new ones. [**GetList**](/email/reference-client-thread-api/#getlist) also removes messages from the cache if they were removed from the account.
+- [**GetList**](/email/reference-client-thread-api/#getlist), [**Delete**](/email/reference-client-thread-api/#delete), [**Move**](/email/reference-client-thread-api/#move) methods lock **account.cache** file while processing. So, these methods will never run in parallel.
+- [**Delete**](/email/reference-client-thread-api/#delete) and [**Move**](/email/reference-client-thread-api/#move) methods delete/move messages in the email account and also update information about affected messages in **account.cache** file.
+- [**GetMessages**](/email/reference-client-thread-api/#getmessages) method does not update and lock **account.cache** file, this method returns only messages that exist in the cache.
 
 {{% /alert %}} 
 ## **Get List of Threads**
-To get the list of threads for a given folder (folder parameter is ignored for **POP3** accounts), use [**GetList**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md#GetList) method from [**ClientThreadApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md):
+To get the list of threads for a given folder (folder parameter is ignored for **POP3** accounts), use [**GetList**](/email/reference-client-thread-api/#getlist) method from [**ClientThreadApi**](/email/reference-client-thread-api/):
 
 {{< tabs tabTotal="6" tabID="2" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -273,7 +273,7 @@ $threads = $api->client()->thread()->getList(
 
 Set parameter **updateFolderCache** to **false** if you don't need to sync threads cache with your email account.
 ## **Fetch Thread Messages**
-**GetList** method returns all email threads from the folder. All threads contain a lists of messages. However, these messages contain only basic information: *MessageId, Date, Subject, Participants* (*From, To, CC*). Use [**GetMessages**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md#getmessages) method from [**ClientThreadApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md) if you need to fetch full messages for a thread, including message bodies, attachments, alternate views, etc.
+**GetList** method returns all email threads from the folder. All threads contain a lists of messages. However, these messages contain only basic information: *MessageId, Date, Subject, Participants* (*From, To, CC*). Use [**GetMessages**](/email/reference-client-thread-api/#getmessages) method from [**ClientThreadApi**](/email/reference-client-thread-api/) if you need to fetch full messages for a thread, including message bodies, attachments, alternate views, etc.
 
 Some native thread implementations (such as **EWS** conversations) require **folder** argument. However, you can set this parameter to *null* if cached threads used (the thread's folder is already stored in the cache).
 
@@ -353,7 +353,7 @@ $threadMessages = $api->client()->thread()->getMessages(
 {{< /tabs >}}
 
 ## **Mark All Thread Messages as Read or Unread**
-The [**SetIsReadFlag**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md#SetIsRead) method from [**ClientThreadApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md) should be used to mark all thread messages as (un)read.
+The [**SetIsReadFlag**](/email/reference-client-thread-api/#setisread) method from [**ClientThreadApi**](/email/reference-client-thread-api/) should be used to mark all thread messages as (un)read.
 
 Some native thread implementations (such as **EWS** conversations) require **folder** argument. However, you can set this parameter to *null* if cached threads used (the thread's folder is already stored in the cache).
 
@@ -426,7 +426,7 @@ $api->client()->thread()->setIsRead(
 
 {{< /tabs >}}
 ## **Delete Thread**
-You can delete the thread and all corresponding messages using [**Delete**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md#delete) method from [**ClientThreadApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md).
+You can delete the thread and all corresponding messages using [**Delete**](/email/reference-client-thread-api/#delete) method from [**ClientThreadApi**](/email/reference-client-thread-api/).
 
 Some native thread implementations (such as **EWS** conversations) require **folder** argument. However, you can set this parameter to *null* if cached threads used (the thread's folder is already stored in the cache).
 
@@ -496,7 +496,7 @@ $api->client()->thread()->delete(
 
 {{< /tabs >}}
 ## **Move Thread to Another Folder**
-All thread messages can be moved from one folder to another using one single request of [**Move**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md#move) method from [**ClientThreadApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientThreadApi.md) (**POP3 is not supported**):
+All thread messages can be moved from one folder to another using one single request of [**Move**](/email/reference-client-thread-api/#move) method from [**ClientThreadApi**](/email/reference-client-thread-api/) (**POP3 is not supported**):
 
 {{< tabs tabTotal="6" tabID="6" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 

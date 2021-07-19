@@ -294,7 +294,7 @@ These properties could contain different values. It could be integers, strings, 
 - *MapiKnownPropertyDescriptor* - This descriptor implies one of three previous descriptors. It is a property, that is known to Aspose.Email Cloud, so it can be fully identified by the property name.
 See all known properties [here](https://apireference.aspose.com/email/net/aspose.email.mapi/knownpropertylist/fields/index).
 
-Aspose.Email Cloud provides 3 different models to represent the MSG file. These models contain a list of all properties and extra fields for easier file operation. For example, [**MapiMessageDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/MapiMessageDto.md) has a string field named *Subject*, which contains a subject for an email message. But this field is just a copy of a property with a [TagSubject](https://apireference.aspose.com/email/net/aspose.email.mapi/knownpropertylist/fields/tagsubject) descriptor:
+Aspose.Email Cloud provides 3 different models to represent the MSG file. These models contain a list of all properties and extra fields for easier file operation. For example, [**MapiMessageDto**](/email/reference-model-mapi-message-dto/) has a string field named *Subject*, which contains a subject for an email message. But this field is just a copy of a property with a [TagSubject](https://apireference.aspose.com/email/net/aspose.email.mapi/knownpropertylist/fields/tagsubject) descriptor:
 
 {{< expand-list title="Part of MapiMessageDto JSON with subject" >}}
 
@@ -323,15 +323,15 @@ Aspose.Email Cloud provides 3 different models to represent the MSG file. These 
 
 These 3 MAPI models are:
 
-1. [**MapiMessageDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/MapiMessageDto.md) - represents an email message. Has properties to represent a message's subject, body, sender, recipients, etc.
-1. [**MapiCalendarDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/MapiCalendarDto.md) - represents an appointment or a meeting object. Provides properties for meeting start and end, location, recurrence, busy status, etc.
-1. [**MapiContactDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/MapiContactDto.md) - represents a contact. Provides properties for name, telephone, email addresses, etc.
+1. [**MapiMessageDto**](/email/reference-model-mapi-message-dto/) - represents an email message. Has properties to represent a message's subject, body, sender, recipients, etc.
+1. [**MapiCalendarDto**](/email/reference-model-mapi-calendar-dto/) - represents an appointment or a meeting object. Provides properties for meeting start and end, location, recurrence, busy status, etc.
+1. [**MapiContactDto**](/email/reference-model-mapi-contact-dto/) - represents a contact. Provides properties for name, telephone, email addresses, etc.
 
 All these models can be converted to the corresponding usual models and back:
 
-- [**MapiMessageDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/MapiMessageDto.md) <-> [**EmailDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailDto.md)
-- [**MapiCalendarDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/MapiCalendarDto.md) <-> [**CalendarDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarDto.md)
-- [**MapiContactDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/MapiContactDto.md) <-> [**ContactDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactDto.md)
+- [**MapiMessageDto**](/email/reference-model-mapi-message-dto/) <-> [**EmailDto**](/email/reference-model-email-dto/)
+- [**MapiCalendarDto**](/email/reference-model-mapi-calendar-dto/) <-> [**CalendarDto**](/email/reference-model-calendar-dto/)
+- [**MapiContactDto**](/email/reference-model-mapi-contact-dto/) <-> [**ContactDto**](/email/reference-model-contact-dto/)
 
 Aspose.Email Cloud also provides methods to save these models to files in different formats and to read these files back to the corresponding models.
 

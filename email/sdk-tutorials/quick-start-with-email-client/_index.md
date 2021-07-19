@@ -9,14 +9,6 @@ weight: 30
 ## **Built-In Email Client**
 [Aspose.Email Cloud API ](https://products.aspose.cloud/email/family)contains a built-in email client.
 
-{{% alert color="primary" %}} 
-
-To get more information about the built-in email client, take a look at the [Email Client](/email/email-client/) article. 
-
-{{% /alert %}} 
-
-
-
 The built-in email client supports:
 
 - **SMTP**
@@ -36,16 +28,14 @@ To see how to setup SDKs use the [SDK setup](/email/sdk-setup/) tutorial.
 
 
 ## **How to Work With Email Client**
-Before we start, we should set up an email account. This allows you to process your messages with [built-in Email Client](/email/email-client/) which is developed by [Aspose.Email Cloud](https://products.aspose.cloud/email/family).
+Before we start, we should set up an email account. This allows you to process your messages with built-in Email Client which is developed by [Aspose.Email Cloud](https://products.aspose.cloud/email/family).
 
 The **created email account will be saved on storage**, so you don't have to repeat this operation later.
-### **Create Email Account File**
-You can create an email account online using the instructions from these guides: [Single Email Account Setup](/email/single-email-account-setup/) and [Multi Email Account Setup](/email/multi-email-account-setup/).
 
 ### **Setup email account**
-First of all, you need to set up your email account’s credentials with [**EmailClientAccountPasswordCredentials**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailClientAccountPasswordCredentials.md) class. Define two fields: *Login* (Email client account login) and *Password* (Email client account password).
+First of all, you need to set up your email account’s credentials with [**EmailClientAccountPasswordCredentials**](/email/reference-model-email-client-account-password-credentials/) class. Define two fields: *Login* (Email client account login) and *Password* (Email client account password).
 
-Then you need to initialize [**EmailClientAccount**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailClientAccount.md) object. Let’s define the following parameters:
+Then you need to initialize [**EmailClientAccount**](/email/reference-model-email-client-account/) object. Let’s define the following parameters:
 
 - *Host* — Mail server hostname or IP address.
 - *Port* — Mail server port.
@@ -53,10 +43,10 @@ Then you need to initialize [**EmailClientAccount**](https://github.com/aspose-e
 - *SecurityOptions* — Email account security mode Enum, available values: None, SSLExplicit, SSLImplicit, SSLAuto, Auto.
 - *Credentials* — Email client account credentials that we have created before.
 
-To save your email account use [**SaveAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientAccountApi.md#SaveAsync) from [**ClientAccountApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientAccountApi.md). You should create a request for this operation using [**ClientAccountSaveRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientAccountSaveRequest.md), which has **2 parameters**:
+To save your email account use [**SaveAsync**](/email/reference-client-account-api/#save) from [**ClientAccountApi**](/email/reference-client-account-api/). You should create a request for this operation using [**ClientAccountSaveRequest**](/email/reference-model-client-account-save-request/), which has **2 parameters**:
 
 - *Value* — Object we want to save on Storage.
-- StorageFile — [**StorageFileLocation**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/StorageFileLocation.md) object, which contains IMAP account’s file location information, including **storage name**, a path to an **account folder**, name of the file with **IMAP account’s** configurations.
+- StorageFile — [**StorageFileLocation**](/email/reference-model-storage-file-location/) object, which contains IMAP account’s file location information, including **storage name**, a path to an **account folder**, name of the file with **IMAP account’s** configurations.
 
 {{< tabs tabTotal="6" tabID="3" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -200,7 +190,7 @@ $api->client()->account()->save(new ClientAccountSaveRequest(
 
 ### **Search Emails**
 
-To search for emails in your email account’s folders you need to call [**ListAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageApi.md#listasync) from [**ClientMessageApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageApi.md). This method has one parameter — **ClientMessageListRequest**, which is a request model for this operation. In this model you should define the following fields:
+To search for emails in your email account’s folders you need to call [**ListAsync**](/email/reference-client-message-api/#list) from [**ClientMessageApi**](/email/reference-client-message-api/). This method has one parameter — [**ClientMessageListRequest**](/email/reference-model-client-message-list-request/), which is a request model for this operation. In this model you should define the following fields:
 
 - *Folder* — A folder in email account.
 - *Account* — Email account.
@@ -211,7 +201,7 @@ To search for emails in your email account’s folders you need to call [**ListA
 - *Type* - Using this property you can get messages in different formats (as EmailDto, MapiMessageDto or a file represented as Base64 string).
 - *Format* - Base64 data format. Used only if *Type* is set to Base64.
 
-After that, you will get a list of messages matching your search criteria as [**MailMessageBaseList**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/MailMessageBaseList.md).
+After that, you will get a list of messages matching your search criteria as [**MailMessageBaseList**](/email/reference-model-mail-message-base-list/).
 
 **Now you can search emails**
 
@@ -295,7 +285,7 @@ $messages = $api->client()->message()->list(new ClientMessageListRequest(
 ### **Fetch Message By Id**
 In the previous step, we have got a list of emails. Let’s fetch one of them by its Id.
 
-To do this you should use the **email’s Id**, obviously, and [**FetchAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageApi.md#FetchAsync) method from [**ClientMessageApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageApi.md). This method requires **1 parameter** — **ClientMessageFetchRequest**, which is a request model for this operation. 
+To do this you should use the **email’s Id**, obviously, and [**FetchAsync**](/email/reference-client-message-api/#fetch) method from [**ClientMessageApi**](/email/reference-client-message-api/). This method requires **1 parameter** — [**ClientMessageFetchRequest**](/email/reference-model-client-message-fetch-request/), which is a request model for this operation. 
 **ClientMessageFetchRequest** has the following parameters:
 - *MessageId* — Message identifier. 
 - *Account* — Email account.
@@ -305,7 +295,7 @@ To do this you should use the **email’s Id**, obviously, and [**FetchAsync**](
 - *Type* - Using this property you can get messages in different formats (as EmailDto, MapiMessageDto or a file represented as Base64 string).
 - *Format* - Base64 data format. Used only if *Type* is set to Base64.
 
-Аfter this operation you will receive an email as an object inherited from [**MailMessageBase**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/MailMessageBase.md).
+Аfter this operation you will receive an email as an object inherited from [**MailMessageBase**](/email/reference-model-mail-message-base/).
 
 **Fetch found message by id**
 
@@ -390,9 +380,9 @@ $message = $api->client()->message()->fetch(new ClientMessageFetchRequest(
 
 You need to know message’s Id to mark it as read. We have done it in previous steps.
 
-To mark a message as read use [**SetIsReadAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageApi.md#SetIsReadAsync) from [**ClientMessageApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageApi.md). This method requires **1 parameter** — [**ClientMessageSetIsReadRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageSetIsReadRequest.md), which is a request model for this operation.
+To mark a message as read use [**SetIsReadAsync**](/email/reference-client-message-api/#setisread) from [**ClientMessageApi**](/email/reference-client-message-api/). This method requires **1 parameter** — [**ClientMessageSetIsReadRequest**](/email/reference-model-client-message-set-is-read-request/), which is a request model for this operation.
 
-[**ClientMessageSetIsReadRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageSetIsReadRequest.md) has **3 parameters**:
+[**ClientMessageSetIsReadRequest**](/email/reference-model-client-message-set-is-read-request/) has **3 parameters**:
 
 - *AccountLocation* — Account location on storage.
 - *MessageId* — Message identifier.
@@ -471,9 +461,9 @@ $api->client()->message()->setIsRead(
 In an attempt to manage your messages, you may need to delete some of them.
 To remove a message, you should know the Id of the email you want to delete.
 
-To delete email use [**DeleteAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageApi.md#deleteasync) from [**ClientMessageApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageApi.md). This method requires **1 parameter** — [**ClientMessageDeleteRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageDeleteRequest.md), which is a request model for this operation.
+To delete email use [**DeleteAsync**](/email/reference-client-message-api/#delete) from [**ClientMessageApi**](/email/reference-client-message-api/). This method requires **1 parameter** — [**ClientMessageDeleteRequest**](/email/reference-model-client-message-delete-request/), which is a request model for this operation.
 
-[**ClientMessageDeleteRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageDeleteRequest.md) requires the following parameters:
+[**ClientMessageDeleteRequest**](/email/reference-model-client-message-delete-request/) requires the following parameters:
 
 - *AccountLocation* — Account location on storage.
 - *MessageId* — Message identifier.
@@ -545,9 +535,9 @@ $api->client()->message()->delete(
 
 
 ### **Append new message**
-To append a new message to your email account — use [**AppendAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageApi.md#appendasync) from [**ClientMessageApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageApi.md). This method requires **1 parameter** — [**ClientMessageAppendRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageAppendRequest.md), which is a request model for this operation.
+To append a new message to your email account — use [**AppendAsync**](/email/reference-client-message-api/#append) from [**ClientMessageApi**](/email/reference-client-message-api/). This method requires **1 parameter** — [**ClientMessageAppendRequest**](/email/reference-model-client-message-append-request/), which is a request model for this operation.
 
-[**ClientMessageAppendRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageAppendRequest.md) requires the following parameters:
+[**ClientMessageAppendRequest**](/email/reference-model-client-message-append-request/) requires the following parameters:
 
 - *AccountLocation* — Account location on storage.
 - *Folder* — Path to folder on email server to append message to.
@@ -663,12 +653,12 @@ $appendedMessageId = $api->client()->message()->append(
 
 ### **Setup email account for sending messages**
 
-All you have to do to setup your email account for sending messages is to use [**SaveAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientAccountApi.md#SaveAsync) from [**ClientAccountApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientAccountApi.md). This method requires **1 parameter** — [**ClientAccountSaveRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientAccountSaveRequest.md), which is a request model for this operation.
+All you have to do to setup your email account for sending messages is to use [**SaveAsync**](/email/reference-client-account-api/#save) from [**ClientAccountApi**](/email/reference-client-account-api/). This method requires **1 parameter** — [**ClientAccountSaveRequest**](/email/reference-model-client-account-save-request/), which is a request model for this operation.
 
-[**ClientAccountSaveRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientAccountSaveRequest.md) requires the following parameters:
+[**ClientAccountSaveRequest**](/email/reference-model-client-account-save-request/) requires the following parameters:
 
-- Value — [**EmailClientAccount**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailClientAccount.md) object.
-- StorageFile — [**StorageFileLocation**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/StorageFileLocation.md) object.
+- Value — [**EmailClientAccount**](/email/reference-model-email-client-account/) object.
+- StorageFile — [**StorageFileLocation**](/email/reference-model-storage-file-location/) object.
 
 {{< tabs tabTotal="6" tabID="19" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 
@@ -779,9 +769,9 @@ $api->client()->account()->save(
 
 ### **Send Email**
 
-To send a message using your email account — use [**SendAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageApi.md#sendasync) from [**ClientMessageApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageApi.md). This method requires **1 parameter** — [**ClientMessageSendRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageSendRequest.md), which is a request model for this operation.
+To send a message using your email account — use [**SendAsync**](/email/reference-client-message-api/#send) from [**ClientMessageApi**](/email/reference-client-message-api/). This method requires **1 parameter** — [**ClientMessageSendRequest**](/email/reference-model-client-message-send-request/), which is a request model for this operation.
 
-[**ClientMessageSendRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageSendRequest.md) requires the following parameters:
+[**ClientMessageSendRequest**](/email/reference-model-client-message-send-request/) requires the following parameters:
 
 - *AccountLocation* — Account location on storage.
 - *Message* — Email document to send.

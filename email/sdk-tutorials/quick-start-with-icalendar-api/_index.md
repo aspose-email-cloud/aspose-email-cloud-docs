@@ -7,7 +7,7 @@ weight: 40
 ---
 
 ## **iCalendar API**
-[Aspose.Email Cloud API](https://products.aspose.cloud/email/family) supports working with iCalendar files. You can use our API to read, edit and save iCalendar (.ics) files. Also, you can convert them to [**AlternateView**](/email/icalendar-to-alternateview-converter/) and add them to email messages.
+[Aspose.Email Cloud API](https://products.aspose.cloud/email/family) supports working with iCalendar files. You can use our API to read, edit and save iCalendar (.ics) files. Also, you can convert them to [**AlternateView**](/email/reference-model-alternate-view/) and add them to email messages.
 
 Our SDKs support two different ways of operating with iCalendar files using **MapiCalendarDto** and **CalendarDto**. This tutorial shows how to use **CalendarDto**.
 
@@ -15,19 +15,19 @@ Our SDKs support two different ways of operating with iCalendar files using **Ma
 
 
 ## **Create Calendar File Object and Save It to Storage**
-[**CalendarDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarDto.md) object contains all information about an appointment including attendees, start date, end date, description and etc.
+[**CalendarDto**](/email/reference-model-calendar-dto/) object contains all information about an appointment including attendees, start date, end date, description and etc.
 
 First, let’s create a **CalendarDto** object and save it to Storage.
 
-To save a **CalendarDto** to Storage use [**SaveAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarApi.md#saveasync) 
-from [**CalendarApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarApi.md). 
+To save a **CalendarDto** to Storage use [**SaveAsync**](/email/reference-calendar-api/#save) 
+from [**CalendarApi**](/email/reference-calendar-api/#save). 
 This method requires **1 parameter** — 
-[**CalendarSaveRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarSaveRequest.md), which is a request model for this operation. 
+[**CalendarSaveRequest**](/email/reference-model-calendar-save-request/), which is a request model for this operation. 
 
-[**CalendarSaveRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarSaveRequest.md) requires **3 parameters**: 
+[**CalendarSaveRequest**](/email/reference-model-calendar-save-request/) requires **3 parameters**: 
 - *Format* — Calendar file format (Ics or Msg).
-- *StorageFile* — [**StorageFileLocation**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/StorageFileLocation.md) object that determines iCalendar file location on storage.
-- *Value* — [**CalendarDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarDto.md) object to save.
+- *StorageFile* — [**StorageFileLocation**](/email/reference-model-storage-file-location/) object that determines iCalendar file location on storage.
+- *Value* — [**CalendarDto**](/email/reference-model-calendar-dto/) object to save.
 
 **How to create a CalendarDto object and save it to the Storage?**
 
@@ -192,7 +192,7 @@ $api->calendar()->save(new CalendarSaveRequest(
 ## **Download iCalendar File From Storage**
 You can find the saved file on [Aspose.Cloud Dashboard](https://dashboard.aspose.cloud/#/files), or download it using SDK.
 
-To download a file from the storage use [**DownloadFileAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/FileApi.md#downloadfileasync) from [**FileApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/FileApi.md). This method requires 1 parameter — **DownloadFileRequest**, which is a request for this operation.
+To download a file from the storage use [**DownloadFileAsync**](/email/reference-file-api/#downloadfile) from [**FileApi**](/email/reference-file-api/). This method requires 1 parameter — [**DownloadFileRequest**](/email/reference-model-download-file-request/), which is a request for this operation.
 
 **DownloadFileRequest** has **3 parameters**:
 
@@ -265,10 +265,10 @@ $fileContent = $calendarTempFile->fread($calendarTempFile->getSize());
 ## **Get Calendar File From Storage as CalendarDto Object**
 Let's get this file from storage as a **CalendarDto** object.
 
-To get a calendar file from Storage use [**GetAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarApi.md#getasync) 
-from [**CalendarApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarApi.md). 
+To get a calendar file from Storage use [**GetAsync**](/email/reference-calendar-api/#get) 
+from [**CalendarApi**](/email/reference-calendar-api/). 
 This method requires **1 parameter** — 
-**CalendarGetRequest**, which is a request for this operation.
+[**CalendarGetRequest**](/email/reference-model-calendar-get-request/), which is a request for this operation.
 
 **CalendarGetRequest** has **3 parameters**:
 
@@ -349,7 +349,7 @@ To get more information about built-in email client — take a look at the [Emai
 
 
 
-To convert a **CalendarDto** object to **AlternateView** use [**AsAlternateAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarApi.md#asalternateasync) from [**CalendarApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarApi.md). This method has **3 parameters**:
+To convert a **CalendarDto** object to **AlternateView** use [**AsAlternateAsync**](/email/reference-calendar-api/#asalternate) from [**CalendarApi**](/email/reference-calendar-api/). This method has **3 parameters**:
 - *Value* — iCalendar document model.
 - *Action* — iCalendar actions. Enum, available values: Create, Update, Cancel.
 - *SequenceId* — iCalendar sequence id.
@@ -614,7 +614,7 @@ $api->client()->message()->send(new ClientMessageSendRequest(
 ## **Get a List of iCalendar Files From One Folder**
 You can get a list of iCalendar files stored in one folder on storage using a single API request. Files will be filtered by ".ics" extension and read to list of CalendarDto object. The method supports pagination.
 
-To get a list of iCalendar files use [**GetListAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarApi.md#GetListAsync) from [**CalendarApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarApi.md). This method requires **1 parameter** — **CalendarGetListRequest**, which is a request for this operation.
+To get a list of iCalendar files use [**GetListAsync**](/email/reference-calendar-api/#getlist) from [**CalendarApi**](/email/reference-calendar-api/). This method requires **1 parameter** — **CalendarGetListRequest**, which is a request for this operation.
 
 **CalendarGetListRequest** has **4 parameters**:
 

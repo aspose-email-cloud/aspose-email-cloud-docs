@@ -24,18 +24,12 @@ This is a modern approach, which provides you numerous useful functions to proce
 - Expand a person's name into a list of possible alternatives
 - Get several different names, starting with certain letters.
 - Parse out person's name from an email address.
-- See AI features usage examples for all supported SDKs:
-  •[C# SDK README](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet)
-  • [Java SDK README](https://github.com/aspose-email-cloud/aspose-email-cloud-java)
-  • [Typescript SDK README](https://github.com/aspose-email-cloud/aspose-email-cloud-node)
-  • [Ruby SDK README](https://github.com/aspose-email-cloud/aspose-email-cloud-ruby)
-  • [Python SDK README](https://github.com/aspose-email-cloud/aspose-email-cloud-python)
-  • [PHP SDK README](https://github.com/aspose-email-cloud/aspose-email-cloud-php)
+- See AI features usage tutorials for all supported SDKs: [Name API](/email/name-api/) and [Business card recognition](/email/business-cards-recognition/).
 ## **SDK changes**
 - All SDKs now have full-reference documentation in markdown files (including PHP and Typescript SDKs).
-- PHP SDK model names fixed (classes renamed according to the code style)
-- Added type hints to Ruby SDK
-- Constructors with parameters added to Models in C#, Java, PHP SDKs
-- Added examples and autotests
-- Resolved bugs with file handling in Typescript, PHP SDKs
-- Enum handling improved, all accepted values enumerated in documentation
+- PHP SDK model names fixed (classes renamed according to the code style).
+- Added type hints to Ruby SDK.
+- Constructors with parameters added to Models in C#, Java, PHP SDKs.
+- Added examples and autotests.
+- Resolved bugs with file handling in Typescript, PHP SDKs.
+- Enum handling improved, all accepted values enumerated in documentation.

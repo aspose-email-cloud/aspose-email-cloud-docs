@@ -9,61 +9,46 @@ weight: 20
 Aspose.Email Cloud 19.11 comes with new v3.0 API, which includes:
 
 - SaaSposeResponse model was removed.
-- ` `All POST, PUT, DELETE actions parameters were moved from query to the request`s body 
+- All POST, PUT, DELETE actions parameters were moved from query to the request`s body 
 ## **New features**
 Introducing new APIs for VCard, iCalendar ﬁles and MAPI messages
 
 - **VCard**, also known as VCF (Virtual Contact File), is a ﬁle format standard for electronic business cards, which is popular.  VCards are often attached to e-mail messages. They can contain name and address information, telephone numbers, e-mail addresses, URLs, logos, photographs, and audio clips. 
 - **Messaging Application Programming Interface** (MAPI) is an API for Microsoft Windows which allows programs to become email-aware. While MAPI is designed to be independent of the protocol, it is usually used to communicate with Microsoft Exchange Server.
-- ` `**iCalendar** allows users to store and exchange calendaring and scheduling information such as events, to-dos, journal entries, and free/busy information.  For example, you need to get iCalendar properties using .NET SDK. You can use the following code to achieve this. 
+- **iCalendar** allows users to store and exchange calendaring and scheduling information such as events, to-dos, journal entries, and free/busy information.  For example, you need to get iCalendar properties using .NET SDK. You can use the following code to achieve this. 
 
 ```csharp
-
 using System;
-
 using System.Collections.Generic;
-
 using System.Threading.Tasks;
-
 using Aspose.Email.Cloud.Sdk.Api;
-
 using Aspose.Email.Cloud.Sdk.Client;
-
 using Aspose.Email.Cloud.Sdk.Model;
-
 using Aspose.Email.Cloud.Sdk.Model.Requests;
 
-namespace Example {
-
- internal static class Program {
-
-  public static async Task Main(string[] args) {
-
-   var conﬁguration = new Conﬁguration {
-
-    AppKey = "app key", AppSid = "app secret", ApiVersion = "v3.0", ApiBaseUrl = "https://api.aspose.cloud"
-
-   };
-
-   var api = new EmailApi(conﬁguration);
-
-   var response = await api.GetCalendarAsync(new GetCalendarRequest("sample.ics", "1", "First Storage"));
-
-   Console.WriteLine(response.Name); /\* Prints "CALENDAR" \*/
-
-   foreach(var property in response.InternalProperties) {
-
-    Console.WriteLine(property.Name); /\* Prints iCalendar property names \*/
-
-   }
-
-  }
-
- }
-
+namespace Example
+{
+    internal static class Program
+    {
+        public static async Task Main(string[] args)
+        {
+            var conﬁguration = new Conﬁguration
+            {
+                AppKey = "app key",
+                AppSid = "app secret",
+                ApiVersion = "v3.0",
+                ApiBaseUrl = "https://api.aspose.cloud"
+            };
+            var api = new EmailApi(conﬁguration);
+            var response = await api.GetCalendarAsync(new GetCalendarRequest("sample.ics", "1", "First Storage"));
+            Console.WriteLine(response.Name); /\* Prints "CALENDAR" \*/
+            foreach(var property in response.InternalProperties)
+            {
+                Console.WriteLine(property.Name); /\* Prints iCalendar property names \*/
+            }
+        }
+    }
 }
-
-
 ```
 
 - **GetCalendarAsync** This method gets iCalendar ﬁles list in the folder on the storage.  To use this method you need to pass three requirement parameters: **folder path in the storage**, **items count on the page** and **page number**. 
@@ -72,15 +57,10 @@ namespace Example {
 To provide a better user experience and uniﬁcation, we added storage APIs into Email. For example, to upload a ﬁle with .NET SDK, you just need to use EmailApi class. This approach makes developing easier.
 
 ```csharp
-
 using(var stream = File.OpenRead("someFile.ext")) {
-
- var uploadRequest = new UploadFileRequest("folder/on/storage/ﬁleName.ext", stream, "Storage Name");
-
- await api.UploadFileAsync(uploadRequest);
-
+    var uploadRequest = new UploadFileRequest("folder/on/storage/ﬁleName.ext", stream, "Storage Name");
+    await api.UploadFileAsync(uploadRequest);
 }
-
 ```
 ## **SDK changes**
 - PHP SDK package renamed to "aspose/aspose-email-cloud" 

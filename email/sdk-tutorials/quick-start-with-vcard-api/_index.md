@@ -17,13 +17,13 @@ The SDKs support two different ways of operating with VCard files using **MapiCo
 
 Let’s create a **ContactDto** object and save it to the Storage as **.vcf** file.
 
-To save **ContactDto** use [**SaveAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactApi.md#SaveAsync) from [**ContactApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactApi.md). This method requires **1 parameter** — [**ContactSaveRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactSaveRequest.md), which is a request for this operation.
+To save **ContactDto** use [**SaveAsync**](/email/reference-contact-api/#save) from [**ContactApi**](/email/reference-contact-api/). This method requires **1 parameter** — [**ContactSaveRequest**](/email/reference-model-contact-save-request/), which is a request for this operation.
 
-[**ContactSaveRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactSaveRequest.md) has **3 parameters**:
+[**ContactSaveRequest**](/email/reference-model-contact-save-request/) has **3 parameters**:
 
 - *Format* — Contact document format. Enum, available values: VCard, WebDav, Msg.
-- *StorageFile* — Contact document location on storage. This parameter accepts [**StorageFileLocation**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/StorageFileLocation.md) object.
-- *Value* — [**ContactDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactDto.md) object.
+- *StorageFile* — Contact document location on storage. This parameter accepts [**StorageFileLocation**](/email/reference-model-storage-file-location/) object.
+- *Value* — [**ContactDto**](/email/reference-model-contact-dto/) object.
 
 **How to create ContactDto object and save it to the Storage?**
 
@@ -199,9 +199,9 @@ api->contact()->save(new ContactSaveRequest(
 ## **How to Download VCard File From Storage**
 You can find the saved file on [Aspose.Cloud Dashboard](https://dashboard.aspose.cloud/#/files), or download it using SDK.
 
-To find the contact card file on Storage use [**DownloadFileAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/FileApi.md#downloadfileasync) from [**FileApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/FileApi.md). This method requires **1 parameter** — [**DownloadFileRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/Model/DownloadFileRequest.cs), which is a request for this operation.
+To find the contact card file on Storage use [**DownloadFileAsync**](/email/reference-file-api/#downloadfile) from [**FileApi**](/email/reference-file-api/). This method requires **1 parameter** — [**DownloadFileRequest**](/email/reference-model-download-file-request/), which is a request for this operation.
 
-[**DownloadFileRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/Model/DownloadFileRequest.cs) has **3 parameters**:
+[**DownloadFileRequest**](/email/reference-model-download-file-request/) has **3 parameters**:
 
 - *Path* — File path e.g. "/folder/contact.vcf".
 - *StorageName* — Storage name.
@@ -270,7 +270,7 @@ $fileContent = $downloaded->fread($downloaded->getSize());
 ## **How to Get VCard File From Storage as ContactDto Object**
 Let's get this file from storage as a ContactDto object.
 
-To get a contact card file from Storage as **ContactDto** use [**GetAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactApi.md#GetAsync) from [**ContactApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactApi.md). This method requires **1 parameter** — **ContactGetRequest**, which is a request for this operation.
+To get a contact card file from Storage as **ContactDto** use [**GetAsync**](/email/reference-contact-api/#get) from [**ContactApi**](/email/reference-contact-api/). This method requires **1 parameter** — **ContactGetRequest**, which is a request for this operation.
 
 **ContactGetRequest** has **4 parameters**:
 
@@ -346,7 +346,7 @@ $contactDto = api->contact()->get(new ContactGetRequest(
 You can change model fields and save it again. The file will be rewritten if you don't change file name and location.
 ## **How to Use Business Card Recognition API**
 
-{{% alert color="primary" %}} To get more information take a look at the [Business Cards Recognition API](/email/business-cards-recognition-api/). {{% /alert %}} 
+{{% alert color="primary" %}} To get more information take a look at the [Business Cards Recognition API](/email/business-cards-recognition/). {{% /alert %}} 
 
 Now, let's use our **Business Card Recognition API**.
 
@@ -356,7 +356,7 @@ First, we need an image of a business card. Something like this:
 
 This file should be placed somewhere on the disk, for example at "*/tmp/alex.png*".
 
-To parse an image of a contact card use [**ParseAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AiBcrApi.md#ParseAsync) from [**AiBcrApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AiBcrApi.md). This method requires **1 parameter** — **AiBcrParseRequest**, which is a request for this operation.
+To parse an image of a contact card use [**ParseAsync**](/email/reference-ai-bcr-api/#parse) from [**AiBcrApi**](/email/reference-ai-bcr-api/). This method requires **1 parameter** — **AiBcrParseRequest**, which is a request for this operation.
 
 **AiBcrParseRequest** has **4 parameters**:
 
@@ -436,7 +436,7 @@ $result = $api->ai()->bcr()->parse(
 ## **How to Get a List of VCard Files From One Folder**
 You can get a list of VCard files stored in one folder on storage using a single API request. Files will be filtered by an extension (**.msg** for Msg format and **.vcf** for VCard) and read to list of ContactDto object. The method supports pagination.
 
-To get a list of VCard files use [**GetListAsync**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactApi.md#GetListAsync) from [**ContactApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactApi.md). This method requires **1 parameter** — **ContactGetListRequest**, which is a request for this operation.
+To get a list of VCard files use [**GetListAsync**](/email/reference-contact-api/#getlist) from [**ContactApi**](/email/reference-contact-api/). This method requires **1 parameter** — **ContactGetListRequest**, which is a request for this operation.
 
 **ContactGetListRequest** has **5 parameters**:
 
