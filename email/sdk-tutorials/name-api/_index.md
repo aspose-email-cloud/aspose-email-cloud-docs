@@ -12,13 +12,13 @@ description: "Process names with Artificial Intelligence functionality called Na
 [Aspose.Email Cloud](https://products.aspose.cloud/email/family) now supports Artificial Intelligence functionalities and below we are going to emphasize **Name API** features.
 
 **Name API** supports:
-- Person's gender detection ([Genderize](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AiNameApi.md#Genderize))
-- Format name ([Format](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AiNameApi.md#Format))
-- Compare names ([Match](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AiNameApi.md#Match))
-- Expand name into list of possible alternatives ([AiNameExpand](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AiNameApi.md#AiNameExpand))
-- Complete name ([Complete](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AiNameApi.md#Complete))
-- Parse out a person's name from an email address ([ParseEmailAddress](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AiNameApi.md#ParseEmailAddress))
-- Parse name to components ([Parse](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AiNameApi.md#Parse))
+- Person's gender detection ([Genderize](/email/reference-ai-name-api/#genderize))
+- Format name ([Format](/email/reference-ai-name-api/#format))
+- Compare names ([Match](/email/reference-ai-name-api/#match))
+- Expand name into list of possible alternatives ([Expand](/email/reference-ai-name-api/#expand))
+- Complete name ([Complete](/email/reference-ai-name-api/#complete))
+- Parse out a person's name from an email address ([ParseEmailAddress](/email/reference-ai-name-api/#parseemailaddress))
+- Parse name to components ([Parse](/email/reference-ai-name-api/#parse))
 
 
 {{% alert color="primary" %}} 

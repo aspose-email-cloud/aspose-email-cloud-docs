@@ -10,19 +10,8 @@ First download / install npm module. For details [click here](https://docs.npmjs
 
 ```java
 
-npm install asposeemailcloud
+npm install @asposecloud/aspose-email-cloud
 
 ```
 
-You can also [checkout](https://www.npmjs.com/package/asposeemailcloud) Aspose.Email Cloud SDK for Node.js package from npm directly.
-## **Direct Method**
-1. Download the latest package from [Github](https://github.com/aspose-email/Aspose.Email-for-Cloud/archive/master.zip) or [CodePlex](https://asposeemailcloud.codeplex.com/downloads/get/1546329)
-2. Unpack and run following command
-
-```java
-
-cd SDKs/Aspose.Email_Cloud_SDK_for_NodeJS
-
-npm install .
-
-```
+You can also [checkout](https://www.npmjs.com/package/@asposecloud/aspose-email-cloud) Aspose.Email Cloud SDK for Node.js package from npm directly.

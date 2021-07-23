@@ -20,7 +20,7 @@ You can process files via MAPI with the following formats:
 
 {{% alert color="primary" %}} 
 
-If you want to know how to work with MAPI files take a look at the [Working with MAPI](/email/working-with-mapi/) article.
+If you want to know how to work with MAPI files take a look at the [Introduction to MAPI Message Files API](/email/introduction-to-mapi-message-files-api/) article.
 
 {{% /alert %}} 
 
@@ -36,7 +36,7 @@ MAPI provides a universal way to work with different files such as:
 
 {{% alert color="primary" %}} 
 
-The best thing in using MAPI with Aspose.Email Cloud API is that built-in [Email Client](/email/email-client/) allows you to send MAPI files.
+The best thing in using MAPI with Aspose.Email Cloud API is that built-in [Email Client](/email/quick-start-with-email-client/) allows you to send MAPI files.
 
 {{% /alert %}} 
 
@@ -46,8 +46,7 @@ Aspose.Email Cloud API allows working with MAPI in your applications. 
 
 With Aspose.Email Cloud API you can:
 
-- **[Create a new document](/email/add-an-attachment-to-the-document/)**.
-- **[Add an attachment to the document](/email/create-a-new-document/)**.
-- **[Get document properties](/email/get-document-properties/)**.
+- **[Create a new document](/email/introduction-to-mapi-message-files-api/#mapimessagedto-and-cloud-storage)**.
+- **[Get document properties](/email/introduction-to-mapi-message-files-api/#convert-mapimessagedto-to-a-file-and-back)**.
 
 You can also use all of the methods above asynchronous.

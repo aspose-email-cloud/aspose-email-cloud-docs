@@ -13,7 +13,7 @@ This is an automated email configuration discovery API. It performs more than 5 
 
 
 ## **Discover Without Validation**
-The simplest way to discover email configuration is calling [**Discover**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailConfigApi.md#Discover) method from [**EmailConfigApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailConfigApi.md) class. This method requires **1 parameter** — **EmailConfigDiscoverRequest**, which is a request model for this operation. 
+The simplest way to discover email configuration is calling [**Discover**](/email/reference-email-config-api/#discover) method from [**EmailConfigApi**](/email/reference-email-config-api/) class. This method requires **1 parameter** — **EmailConfigDiscoverRequest**, which is a request model for this operation. 
 
  **EmailConfigDiscoverRequest** has 2 parameters:
 
@@ -157,9 +157,9 @@ This method performs email configuration discovery using all methods that do not
 ## **Discover With Validation**
 To discover email configuration with validation, use methods **DiscoverOauth** and **DiscoverPassword**. These methods use all algorithms from **Discover** and some extra. Also, the discovered configuration will be validated, if it is possible. Service will try to connect to all discovered protocols using provided auth data.
 ### **Discover using password**
-To discover email configuration using password authentication use [**DiscoverPassword**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailConfigApi.md#discoverpassword) method. This method requires **1 parameter** — [**EmailConfigDiscoverPasswordRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailConfigDiscoverPasswordRequest.md), which is a request model for this operation. 
+To discover email configuration using password authentication use [**DiscoverPassword**](/email/reference-email-config-api/#discoverpassword) method. This method requires **1 parameter** — [**EmailConfigDiscoverPasswordRequest**](/email/reference-model-email-config-discover-password-request/), which is a request model for this operation. 
 
-[**EmailConfigDiscoverPasswordRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailConfigDiscoverPasswordRequest.md) has **4 parameters**:
+[**EmailConfigDiscoverPasswordRequest**](/email/reference-model-email-config-discover-password-request/) has **4 parameters**:
 
 - *Address* — Email address.
 - *FastProcessing* [**optional**] — Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned.
@@ -243,9 +243,9 @@ $configs = $api->emailConfig()->discoverPassword(
 
 You can also provide **login** if it is not same as the **address**.
 ### **Discover using OAuth 2.0**
-To discover email configuration using OAuth 2.0 use [**DiscoverOauth**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailConfigApi.md#discoveroauth) method. This method requires **1 parameter** — [**EmailConfigDiscoverOauthRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailConfigDiscoverOauthRequest.md), which is a request model for this operation. 
+To discover email configuration using OAuth 2.0 use [**DiscoverOauth**](/email/reference-email-config-api/#discoveroauth) method. This method requires **1 parameter** — [**EmailConfigDiscoverOauthRequest**](/email/reference-model-email-config-discover-oauth-request/), which is a request model for this operation. 
 
-[**EmailConfigDiscoverOauthRequest**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailConfigDiscoverOauthRequest.md) has 7 **parameters**:
+[**EmailConfigDiscoverOauthRequest**](/email/reference-model-email-config-discover-oauth-request/) has 7 **parameters**:
 
 - *Address* — Email address.
 - *FastProcessing* [**optional**] — Turns on fast processing. All discover systems will run in parallel. First discovered result will be returned.

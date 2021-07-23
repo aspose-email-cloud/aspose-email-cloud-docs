@@ -10,11 +10,8 @@ weight: 150
 An email [**conversation threads**](https://en.wikipedia.org/wiki/Conversation_threading) support has been added to Aspose.Email Cloud build-in client. Using conversation threads, you can get more structured emails in the mailbox. With the new API for conversation threads you can visually group your messages with their replies.
 
 ```csharp
-
 var threads = await emailApi.ListEmailThreadsAsync(new ListEmailThreadsRequest(
-
     "INBOX", "email.account", null, storage, folder, true, 200));
-
 ```
 
 Conversation threads are supported for POP3, IMAP, EWS, and virtual multi accounts.

@@ -116,7 +116,7 @@ $displayName = $contact->getDisplayName();
 
 
 ## **Image Located on Storage**
-Please try using [**ParseStorage**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AiBcrApi.md#ParseStorage) method from [**AiBcrApi**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/AiBcrApi.md) to recognize VCard from an image located on storage.
+Please try using [**ParseStorage**](/email/reference-ai-bcr-api/#parsestorage) method from [**AiBcrApi**](/email/reference-ai-bcr-api/) to recognize VCard from an image located on storage.
 
 {{< tabs tabTotal="6" tabID="1" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 

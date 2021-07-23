@@ -79,6 +79,6 @@ EmailDto emailDto = Models.emailDto()
 
 ## **Documentation improvements**
 
-- SDK reference documentation is now available at [docs.aspose.cloud/email/reference-api](https://docs.aspose.cloud/email/reference-api/)
+- SDK reference documentation is now available at [docs.aspose.cloud/email/reference-api](/email/reference-api/)
 - All SDK methods have code examples with parameters initialization (for example: [EmailCloud.Email.AsFile](http://localhost:1313/email/reference-email-api/#asfile) method).
 - Initialization examples have been added for some of the models in all SDKs (for example: [EmailDto](http://localhost:1313/email/reference-model-email-dto/#example) model).

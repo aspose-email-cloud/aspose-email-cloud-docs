@@ -13,7 +13,7 @@ This tutorial describes only the file conversion API. To get more information ab
 
 {{% /alert %}} 
 
-**iCalendar** file can be reproduced as a [**CalendarDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/CalendarDto.md) object. This object can be converted to **iCalendar** or Microsoft Outlook **MSG** file.
+**iCalendar** file can be reproduced as a [**CalendarDto**](/email/reference-model-calendar-dto/) object. This object can be converted to **iCalendar** or Microsoft Outlook **MSG** file.
 ### **Create CalendarDto Object**
 Let's create a **CalendarDto** object:
 
@@ -376,7 +376,7 @@ This tutorial describes only the file conversion API. To get more information ab
 
 {{% /alert %}} 
 
-VCard files conversion API looks the same as iCalendar API. VCard file can be represented using a [**ContactDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactDto.md) object. This object can be converted to a VCard or MAPI contact file. Both contact formats can be converted to each other and back to the [**ContactDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ContactDto.md) object. You can see all the available methods in the examples below:
+VCard files conversion API looks the same as iCalendar API. VCard file can be represented using a [**ContactDto**](/email/reference-model-contact-dto/) object. This object can be converted to a VCard or MAPI contact file. Both contact formats can be converted to each other and back to the [**ContactDto**](/email/reference-model-contact-dto/) object. You can see all the available methods in the examples below:
 
 **Convert VCard Files**
 
@@ -578,7 +578,7 @@ This tutorial describes only the file conversion API. To get more information ab
 
 {{% /alert %}} 
 
-The email message can be represented as an [**EmailDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailDto.md) object. This object can be converted into an EML, MSG, MHTM, HTML file. Files can be converted to each other and back to the [**EmailDto**](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailDto.md) object. The code below demonstrates all email message conversion methods:
+The email message can be represented as an [**EmailDto**](/email/reference-model-email-dto/) object. This object can be converted into an EML, MSG, MHTM, HTML file. Files can be converted to each other and back to the [**EmailDto**](/email/reference-model-email-dto/) object. The code below demonstrates all email message conversion methods:
 
 {{< tabs tabTotal="6" tabID="6" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Ruby" tabName5="Typescript" tabName6="PHP" >}}
 

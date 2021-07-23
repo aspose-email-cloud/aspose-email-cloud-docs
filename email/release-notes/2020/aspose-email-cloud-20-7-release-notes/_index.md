@@ -30,34 +30,21 @@ Also, the methods to save these models to MSG files are provided now.
 In the previous versions, there was the only method to set recurrence in CalendarDto using RecurrenceString. For example, to set daily recurrence:
 
 ```csharp
-
 calendar.RecurrenceString = "FREQ=DAILY;COUNT=10;WKST=MO";
-
 ```
-
-
 
 In the current version, a new Recurrence property has been added, so there is a better way to set recurrence patterns:
 
 ```csharp
-
 calendar.Recurrence = new DailyRecurrencePatternDto
-
 {
-
     Occurs = 10,
-
     WeekStart = "Monday"
-
 };
-
 ```
-
 
 ## **SDK changes**
 - Some corrections in null value handling during a model serialization.
 - Discriminator property has been added to ContactPhoto because it is now inherited by MapiContactPhotoDto.
 - Bug with the lost model property types information has been fixed.
 - Added TNEF format support to email message converters.
-
-

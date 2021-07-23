@@ -14,4 +14,4 @@ gem install aspose_email_cloud
 
 ```
 ## **Source Code**
-This SDK is open source and available at [GitHub](https://github.com/aspose-email/Aspose.Email-for-Cloud/tree/master/SDKs/Aspose.Email_Cloud_SDK_for_Ruby) and [CodePlex](https://asposeemailcloud.codeplex.com/SourceControl/latest#SDKs/Aspose.Email_Cloud_SDK_for_Ruby/).
+This SDK is open source and available at [GitHub](https://github.com/aspose-email-cloud/aspose-email-cloud-ruby).

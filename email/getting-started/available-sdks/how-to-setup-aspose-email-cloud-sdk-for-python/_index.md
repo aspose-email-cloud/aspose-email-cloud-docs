@@ -10,13 +10,13 @@ First download / install PyPi Package Manager. For details [click here](https://
 
 ```java
 
-pip install asposeemailcloud
+pip install aspose-email-cloud
 
 ```
 
-You can also [download](https://pypi.python.org/pypi/asposeemailcloud) Aspose.Email Cloud SDK for Python Package from Python Package Index directly
+You can also [download](https://pypi.python.org/pypi/aspose-email-cloud) Aspose.Email Cloud SDK for Python Package from Python Package Index directly
 ## **Direct Method**
-1. Download the latest package from [github](https://github.com/aspose-email/Aspose.Email-for-Cloud/archive/master.zip)
+1. Download the latest package from [pypi](https://pypi.org/project/aspose-email-cloud/#files)
 2. Unpack and run following command
 
 ```java

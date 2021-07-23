@@ -87,5 +87,3 @@ $ mvn eclipse:eclipse -DdownloadSources=true -DdownloadJavadocs=false
 ```
 ## **Direct Download**
 <http://repository.aspose.cloud/repo/com/aspose/aspose-email-cloud/>
-## **Data**
-In order to manipulate any files, you first need to upload them to the Aspose cloud storage or 3th party cloud storage using [Aspose.Storage Cloud SDK for Java](https://github.com/asposemarketplace/Aspose.Storage_Cloud_SDK_For_Java).

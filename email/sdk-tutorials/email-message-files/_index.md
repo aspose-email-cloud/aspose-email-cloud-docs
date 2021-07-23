@@ -7,7 +7,7 @@ weight: 20
 ---
 
 ## **How to Work With Email Message Files via Aspose.Email Cloud API**
-[Aspose.Email Cloud API](https://products.aspose.cloud/email/family) supports email message files with EML, MSG, MHTML and HTML format. We have API for creating, editing, converting such files. Also, email message files can be used in the [built-in email client](/email/email-client/).
+[Aspose.Email Cloud API](https://products.aspose.cloud/email/family) supports email message files with EML, MSG, MHTML and HTML format. We have API for creating, editing, converting such files. Also, email message files can be used in the [built-in email client](/email/quick-start-with-email-client/).
 
 Our SDKs support two different ways of operating with email message files using MapiMessageDto and EmailDto. This tutorial shows how to use an **EmailDto**.
 
@@ -56,14 +56,14 @@ Email’s data that is contained in EmailDto
 ## **Create Email File — EmailDto Object**
 First, let's create an **EmailDto** object and save it as a file on the Storage.
 
-To create an email file (EML, MSG, MHTML, HTML) you need to create [EmailDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailDto.md) object. To initialize [EmailDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailDto.md) object let’s define main fields: ***From*** (accepts [MailAddress](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/MailAddress.md) object which contains the email address of a sender), ***To*** (accepts List of [MailAddress](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/MailAddress.md) objects; parameter ***To*** can contain several email addresses), ***Subject*** (accepts a string with a subject of an email), ***Body*** (accepts a string with a body’s content).
+To create an email file (EML, MSG, MHTML, HTML) you need to create [EmailDto](/email/reference-model-email-dto/) object. To initialize [EmailDto](/email/reference-model-email-dto/) object let’s define main fields: ***From*** (accepts [MailAddress](/email/reference-model-mail-address/) object which contains the email address of a sender), ***To*** (accepts List of [MailAddress](/email/reference-model-mail-address/) objects; parameter ***To*** can contain several email addresses), ***Subject*** (accepts a string with a subject of an email), ***Body*** (accepts a string with a body’s content).
 
-After creating [EmailDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailDto.md) object we save it to [Storage](https://dashboard.aspose.cloud/#/storages). To save it we need to choose storage and folder where we want to save our created email file. Also, we need to create a name for this email file. [EmailApi](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md) class has a function called [*SaveAsync*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#saveasync) which requires one parameter — [*EmailSaveRequest*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailSaveRequest.md). 
+After creating [EmailDto](/email/reference-model-email-dto/) object we save it to [Storage](https://dashboard.aspose.cloud/#/storages). To save it we need to choose storage and folder where we want to save our created email file. Also, we need to create a name for this email file. [EmailApi](/email/reference-email-api/) class has a function called [*SaveAsync*](/email/reference-email-api/#save) which requires one parameter — [*EmailSaveRequest*](/email/reference-model-email-save-request/). 
 
-[EmailSaveRequest](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailSaveRequest.md) has 3 fields:
+[EmailSaveRequest](/email/reference-model-email-save-request/) has 3 fields:
 - **Format** defines a file format.
-- **Value** is an [EmailDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailDto.md) object.
-- **StorageFile** is an [StorageFileLocation](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/StorageFileLocation.md) object that defines the email file location on [Storage](https://dashboard.aspose.cloud/#/storages).
+- **Value** is an [EmailDto](/email/reference-model-email-dto/) object.
+- **StorageFile** is an [StorageFileLocation](/email/reference-model-storage-file-location/) object that defines the email file location on [Storage](https://dashboard.aspose.cloud/#/storages).
 
 Look at the following code examples:
 
@@ -209,7 +209,7 @@ You can edit the EmailDto object and save it again. If file name and location wi
 ## **How to Download Email File From Storage**
 You can download files from the [Storage](https://dashboard.aspose.cloud/#/storages).
 
-[FileApi](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/FileApi.md) class has [DownloadFileAsync](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/FileApi.md#downloadfileasync) function which allows to download files from [Storage](https://dashboard.aspose.cloud/#/storages) asynchronous as a Stream. This function has one required parameter — [*DownloadFileRequest*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/Model/DownloadFileRequest.cs). To define it you need to pass **2 parameters** into it: a file’s path as a string and a name of [Storage](https://dashboard.aspose.cloud/#/storages) you want to download from.
+[FileApi](/email/reference-file-api/) class has [DownloadFileAsync](/email/reference-file-api/#downloadfile) function which allows to download files from [Storage](https://dashboard.aspose.cloud/#/storages) asynchronous as a Stream. This function has one required parameter — [*DownloadFileRequest*](/email/reference-model-download-file-request/). To define it you need to pass **2 parameters** into it: a file’s path as a string and a name of [Storage](https://dashboard.aspose.cloud/#/storages) you want to download from.
 
 To download the file that we created in the previous step from the Storage, use the following steps:
 
@@ -278,9 +278,9 @@ $fileContent = $downloaded->fread($downloaded->getSize());
 
 Aspose.Email Cloud allows you to download email messages from [Storage](https://dashboard.aspose.cloud/#/storages) in many different file formats. For example, you have an EML file, you want to download it but in MSG. You can download it immediately without separate converting.
 
-To download email file from [Storage](https://dashboard.aspose.cloud/#/storages) you need to call [*GetAsFile*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#getasfile) function from EmailApi. [*GetAsFile*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#getasfile) accepts only one required parameter — [*EmailGetAsFileRequest*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/Model/EmailGetAsFileRequest.cs). 
+To download email file from [Storage](https://dashboard.aspose.cloud/#/storages) you need to call [*GetAsFile*](/email/reference-email-api/#getasfile) function from EmailApi. [*GetAsFile*](/email/reference-email-api/#getasfile) accepts only one required parameter — [*EmailGetAsFileRequest*](/email/reference-model-email-get-as-file-request/). 
 
-To initialize [*EmailGetAsFileRequest*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/Model/EmailGetAsFileRequest.cs) you need to pass **4 parameters** into it: a name of an email file on [Storage](https://dashboard.aspose.cloud/#/storages) as a string, a result file’s extension as an Enum (EML, MSG, MsgUnicode, MHTML, HTML), storage’s name as a string and a path to a folder on [Storage](https://dashboard.aspose.cloud/#/storages) where email file is.
+To initialize [*EmailGetAsFileRequest*](/email/reference-model-email-get-as-file-request/) you need to pass **4 parameters** into it: a name of an email file on [Storage](https://dashboard.aspose.cloud/#/storages) as a string, a result file’s extension as an Enum (EML, MSG, MsgUnicode, MHTML, HTML), storage’s name as a string and a path to a folder on [Storage](https://dashboard.aspose.cloud/#/storages) where email file is.
 
 If you do everything right you will get the email file as a Stream.
 
@@ -348,13 +348,13 @@ $file = $api->email()->getAsFile(new EmailGetAsFileRequest(
 
 **EmailDto** provides you with an easier way to work with emails. It allows to change and get data from an email file in several code lines.
 
-If you want to get an email from [Storage](https://dashboard.aspose.cloud/#/storages) as an [EmailDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailDto.md) object — you need to use [GetAsync](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#GetAsync) from [EmailApi](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md). 
+If you want to get an email from [Storage](https://dashboard.aspose.cloud/#/storages) as an [EmailDto](/email/reference-model-email-dto/) object — you need to use [GetAsync](/email/reference-email-api/#get) from [EmailApi](/email/reference-email-api/). 
 
-Unlike the previous case, here we need to pass [*EmailGetRequest*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/Model/EmailGetRequest.cs) into [GetAsync](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#GetAsync). 
+Unlike the previous case, here we need to pass [*EmailGetRequest*](/email/reference-model-email-get-request/) into [GetAsync](/email/reference-email-api/#get). 
 
-[*EmailGetRequest*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/Model/EmailGetRequest.cs) accepts **2 required parameters**: an email document format as Enum (EML, MSG, MsgUnicode, MHTML, HTML), email document file name as a string; and 2 optional parameters: storage’s name as a string and a path to a folder on [Storage](https://dashboard.aspose.cloud/#/storages) where email file is as a string too.
+[*EmailGetRequest*](/email/reference-model-email-get-request/) accepts **2 required parameters**: an email document format as Enum (EML, MSG, MsgUnicode, MHTML, HTML), email document file name as a string; and 2 optional parameters: storage’s name as a string and a path to a folder on [Storage](https://dashboard.aspose.cloud/#/storages) where email file is as a string too.
 
-After calling [GetAsync](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#GetAsync) you get [EmailDto](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailDto.md) object.
+After calling [GetAsync](/email/reference-email-api/#get) you get [EmailDto](/email/reference-model-email-dto/) object.
 
 **How to download a file as EmailDto object?**
 
@@ -424,16 +424,16 @@ See how to setup and use email client in the [Quickstart with an email client 
 
 {{% /alert %}} 
 
-To append an email to the "INBOX" folder of an IMAP account, **you should create \*.account file with IMAP account credentials at first**. Then you need to call [*AppendAsync*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageApi.md#AppendAsync) function from [ClientMessageApi](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageApi.md).
+To append an email to the "INBOX" folder of an IMAP account, **you should create \*.account file with IMAP account credentials at first**. Then you need to call [*AppendAsync*](/email/reference-client-message-api/#append) function from [ClientMessageApi](/email/reference-client-message-api/).
 
-[*AppendAsync*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageApi.md#AppendAsync) has only one required parameter — [*ClientMessageAppendRequest*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageAppendRequest.md).
+[*AppendAsync*](/email/reference-client-message-api/#append) has only one required parameter — [*ClientMessageAppendRequest*](/email/reference-model-client-message-append-request/).
 
-[*ClientMessageAppendRequest*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/ClientMessageAppendRequest.md) object has 4 parameters:
+[*ClientMessageAppendRequest*](/email/reference-model-client-message-append-request/) object has 4 parameters:
 
-1. Account location on storage represented as a [StorageFileLocation](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/StorageFileLocation.md) object.
+1. Account location on storage represented as a [StorageFileLocation](/email/reference-model-storage-file-location/) object.
 1. Email account folder to store a message as a **string**. For example, "INBOX".
 1. Mark message as sent. Nullable bool parameter.
-1. Email document. In our case it should be represented as a [*MailMessageDto*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/MailMessageDto.md) object.
+1. Email document. In our case it should be represented as a [*MailMessageDto*](/email/reference-model-mail-message-dto/) object.
 
 As a result, you will add an email from model to a specified folder in an email account. 
 
@@ -532,7 +532,7 @@ $messageId = $api->client()->message()->append(
 ## **How to Convert Email From One Format to Another**
 If you don't want to use all these models and storages, and just want to convert email file from one format to another, use the fast and convenient Converter developed by Aspose.
 
-To convert email file use [ConvertAsync](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md#ConvertAsync) from [EmailApi](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/docs/EmailApi.md). This function requires only one parameter — [*EmailConvertRequest*](https://github.com/aspose-email-cloud/aspose-email-cloud-dotnet/blob/master/Model/EmailConvertRequest.cs) which requests a file for converting.
+To convert email file use [ConvertAsync](/email/reference-email-api/#convert) from [EmailApi](/email/reference-email-api/). This function requires only one parameter — [*EmailConvertRequest*](/email/reference-model-email-convert-request/) which requests a file for converting.
 
 It has **3 required parameters**:
 
