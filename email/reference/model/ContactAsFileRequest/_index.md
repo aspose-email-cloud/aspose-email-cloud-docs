@@ -10,7 +10,7 @@ Properties:
 
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
-**Format** | **string** | Enumerates contact formats. Enum, available values: VCard, WebDav, Msg | 
+**Format** | **string** | Enumerates contact formats./nEnum, available values: VCard, WebDav, Msg | 
 **Value** | [**ContactDto**](/email/reference-model-contact-dto/) | Contact model.              | 
 
 

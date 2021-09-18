@@ -9,7 +9,7 @@ Properties:
 
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
-**Value** | **string** | Address category. Enum, available values: Home, Work, Custom | 
+**Value** | **string** | Address category./nEnum, available values: Home, Work, Custom | 
 **Description** | **string** |  | [optional] 
 
 

@@ -11,7 +11,7 @@ Properties:
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
 **ValueBase64** | **string** | Email message file data encoded to Base64 string.              | 
-**Format** | **string** | Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
+**Format** | **string** | Email document format./nEnum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft | 
 
 Parent class: [MailMessageBase](/email/reference-model-mail-message-base/)
 

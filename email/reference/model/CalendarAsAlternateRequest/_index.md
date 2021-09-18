@@ -11,7 +11,7 @@ Properties:
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
 **Value** | [**CalendarDto**](/email/reference-model-calendar-dto/) | iCalendar document model              | 
-**Action** | **string** | iCalendar actions. Enum, available values: Create, Update, Cancel | 
+**Action** | **string** | iCalendar actions./nEnum, available values: Create, Update, Cancel | 
 **SequenceId** | **string** | iCalendar sequence id              | [optional] 
 
 

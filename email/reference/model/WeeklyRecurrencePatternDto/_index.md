@@ -10,7 +10,7 @@ Properties:
 
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
-**StartDays** | **List&lt;string&gt;** | Start days              Items: Represents the day of the week. Enum, available values: None, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Day, WeekDay, WeekendDay | [optional] 
+**StartDays** | **List&lt;string&gt;** | Start days              Items: Represents the day of the week./nEnum, available values: None, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Day, WeekDay, WeekendDay | [optional] 
 
 Parent class: [RecurrencePatternDto](/email/reference-model-recurrence-pattern-dto/)
 

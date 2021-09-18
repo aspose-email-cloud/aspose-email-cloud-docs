@@ -11,7 +11,7 @@ Properties:
 
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
-**format** |**string**|Contact document format. Enum, available values: VCard, WebDav, Msg |
+**format** |**string**|Contact document format./nEnum, available values: VCard, WebDav, Msg |
 **fileName** |**string**|Contact document file name. |
 **folder** |**string**|Path to folder in storage. |[optional] 
 **storage** |**string**|Storage name. |[optional] 

@@ -10,7 +10,7 @@ Properties:
 
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
-**Action** | **string** | Defines the action to be invoked when an alarm is triggered. Enum, available values: Audio, Display, Email, Procedure, None | 
+**Action** | **string** | Defines the action to be invoked when an alarm is triggered./nEnum, available values: Audio, Display, Email, Procedure, None | 
 **Attachments** | **List&lt;string&gt;** | Collection of Reminder Attachments. Could be an absolute URI or Base64 string representation of attachment content              | [optional] 
 **Attendees** | [**List&lt;ReminderAttendee&gt;**](/email/reference-model-reminder-attendee/) | Contains collection of ReminderAttendee objects.              | [optional] 
 **Description** | **string** | Provides a more complete description of the alarm. | [optional] 

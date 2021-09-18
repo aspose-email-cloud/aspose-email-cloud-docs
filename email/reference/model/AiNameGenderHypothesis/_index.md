@@ -10,7 +10,7 @@ Properties:
 
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
-**Gender** | **string** | Recognized name gender. Enum, available values: Male, Female, Unknown | 
+**Gender** | **string** | Recognized name gender./nEnum, available values: Male, Female, Unknown | 
 **Score** | **double?** | Hypothesis score              | 
 
 

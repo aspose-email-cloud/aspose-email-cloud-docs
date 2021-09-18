@@ -11,7 +11,7 @@ Properties:
 
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
-**format** |**string**|File format. Enum, available values: Ics, Msg |
+**format** |**string**|File format./nEnum, available values: Ics, Msg |
 **file** |**System.IO.Stream**|File to convert |
 
 ## Example

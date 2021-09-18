@@ -11,7 +11,7 @@ Properties:
 
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
-**format** |**string**|Email document format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft |
+**format** |**string**|Email document format./nEnum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft |
 **folder** |**string**|Path to folder in storage. |[optional] 
 **storage** |**string**|Storage name. |[optional] 
 **itemsPerPage** |**int?**|Count of items on page. |[optional] [default to 10]

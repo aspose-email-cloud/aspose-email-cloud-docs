@@ -10,7 +10,7 @@ Properties:
 
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
-**RegeneratingType** | **string** | Enumerates the types of regenerating pattern. Enum, available values: Daily, Weekly, Monthly, Yearly | 
+**RegeneratingType** | **string** | Enumerates the types of regenerating pattern./nEnum, available values: Daily, Weekly, Monthly, Yearly | 
 
 Parent class: [RecurrencePatternDto](/email/reference-model-recurrence-pattern-dto/)
 

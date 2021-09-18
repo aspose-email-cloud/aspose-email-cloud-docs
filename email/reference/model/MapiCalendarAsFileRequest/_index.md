@@ -10,7 +10,7 @@ Properties:
 
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
-**Format** | **string** | Calendar file format Enum, available values: Ics, Msg | 
+**Format** | **string** | Calendar file format./nEnum, available values: Ics, Msg | 
 **Value** | [**MapiCalendarDto**](/email/reference-model-mapi-calendar-dto/) | MAPI calendar model.              | 
 
 

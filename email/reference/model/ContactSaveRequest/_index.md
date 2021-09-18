@@ -10,7 +10,7 @@ Properties:
 
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
-**Format** | **string** | Enumerates contact formats. Enum, available values: VCard, WebDav, Msg | 
+**Format** | **string** | Enumerates contact formats./nEnum, available values: VCard, WebDav, Msg | 
 
 Parent class: [StorageModelOfContactDto](/email/reference-model-storage-model-of-contact-dto/)
 

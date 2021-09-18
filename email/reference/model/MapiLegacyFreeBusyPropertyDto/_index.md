@@ -10,7 +10,7 @@ Properties:
 
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
-**Value** | **string** | Represents the free/busy status for a calendar event. Enum, available values: Free, Tentative, Busy, Oof, WorkingElsewhere, NoData | 
+**Value** | **string** | Represents the free/busy status for a calendar event./nEnum, available values: Free, Tentative, Busy, Oof, WorkingElsewhere, NoData | 
 
 Parent class: [MapiPropertyDto](/email/reference-model-mapi-property-dto/)
 
