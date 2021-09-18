@@ -19,10 +19,10 @@ Name | Type | Description | Notes
 **DisplayName** | **string** | Display name for the message.              | [optional] 
 **DisplayNamePrefix** | **string** | Prefix of the display name.              | [optional] 
 **DisplayTo** | **string** | List of the display names of the primary (To) message recipients, separated by semicolons (;).              | [optional] 
-**Flags** | **List&lt;string&gt;** | Message flags.              Items: Mapi message flags./nEnum, available values: MsgFlagZero, MsgFlagRead, MsgFlagUnmodified, MsgFlagSubmit, MsgFlagUnsent, MsgFlagHasAttach, MsgFlagFromMe, MsgFlagAssociated, MsgFlagResend, MsgFlagNotifyRead, MsgFlagNotifyUnread, MsgFlagEverRead, MsgFlagOriginX400, MsgFlagOriginInternet, MsgFlagOriginMiscExt | [optional] 
+**Flags** | **List&lt;string&gt;** | Message flags.              Items: Mapi message flags. Enum, available values: MsgFlagZero, MsgFlagRead, MsgFlagUnmodified, MsgFlagSubmit, MsgFlagUnsent, MsgFlagHasAttach, MsgFlagFromMe, MsgFlagAssociated, MsgFlagResend, MsgFlagNotifyRead, MsgFlagNotifyUnread, MsgFlagEverRead, MsgFlagOriginX400, MsgFlagOriginInternet, MsgFlagOriginMiscExt | [optional] 
 **Headers** | **Dictionary&lt;string, string&gt;** | Transport message headers              | [optional] 
 **InternetMessageId** | **string** | Internet message id of the message.              | [optional] 
-**MessageFormat** | **string** | Represents outlook message format./nEnum, available values: Ascii, Unicode | 
+**MessageFormat** | **string** | Represents outlook message format. Enum, available values: Ascii, Unicode | 
 **NormalizedSubject** | **string** | Normalized subject of the message.              | [optional] 
 **ReadReceiptRequested** | **bool?** | Value indicating whether the read receipt is requested. | 
 **ReplyTo** | **string** | Reply to names. | [optional] 

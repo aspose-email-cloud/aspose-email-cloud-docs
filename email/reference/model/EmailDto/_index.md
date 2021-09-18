@@ -15,10 +15,10 @@ Name | Type | Description | Notes
 **Bcc** | [**List&lt;MailAddress&gt;**](/email/reference-model-mail-address/) | BCC recipients.              | [optional] 
 **Body** | **string** | Email message body as plain text.              | [optional] 
 **BodyEncoding** | **string** | Body encoding.              | [optional] 
-**BodyType** | **string** | The content type of message body./nEnum, available values: PlainText, Html, Rtf | 
+**BodyType** | **string** | The content type of message body. Enum, available values: PlainText, Html, Rtf | 
 **Cc** | [**List&lt;MailAddress&gt;**](/email/reference-model-mail-address/) | CC recipients.              | [optional] 
 **Date** | **DateTime?** | Message date.              | 
-**DeliveryNotificationOptions** | **List&lt;string&gt;** | Delivery notifications. Items: Email delivery notification options./nEnum, available values: Delay, Never, None, OnFailure, OnSuccess | [optional] 
+**DeliveryNotificationOptions** | **List&lt;string&gt;** | Delivery notifications. Items: Email delivery notification options. Enum, available values: Delay, Never, None, OnFailure, OnSuccess | [optional] 
 **From** | [**MailAddress**](/email/reference-model-mail-address/) | From address.              | [optional] 
 **Headers** | **Dictionary&lt;string, string&gt;** | Document headers.              | [optional] 
 **HtmlBody** | **string** | HTML body.              | [optional] 
@@ -31,12 +31,12 @@ Name | Type | Description | Notes
 **MessageId** | **string** | Message id.              | [optional] 
 **OriginalIsTnef** | **bool?** | Indicates whether original EML message is in TNEF format. Read only.              | 
 **PreferredTextEncoding** | **string** | Preferred encoding.              | [optional] 
-**Priority** | **string** | Email priority status./nEnum, available values: High, Low, Normal | 
+**Priority** | **string** | Email priority status. Enum, available values: High, Low, Normal | 
 **ReadReceiptTo** | [**List&lt;MailAddress&gt;**](/email/reference-model-mail-address/) | Read receipt addresses.              | [optional] 
 **ReplyToList** | [**List&lt;MailAddress&gt;**](/email/reference-model-mail-address/) | The list of addresses to reply to for the mail message.              | [optional] 
 **ReversePath** | [**MailAddress**](/email/reference-model-mail-address/) | ReversePath address.              | [optional] 
 **Sender** | [**MailAddress**](/email/reference-model-mail-address/) | Sender address.              | [optional] 
-**Sensitivity** | **string** | Specifies the sensitivity of a MailMessage./nEnum, available values: None, Normal, Personal, Private, CompanyConfidential | 
+**Sensitivity** | **string** | Specifies the sensitivity of a MailMessage. Enum, available values: None, Normal, Personal, Private, CompanyConfidential | 
 **Subject** | **string** | Message subject.              | [optional] 
 **SubjectEncoding** | **string** | Subject encoding.              | [optional] 
 **TimeZoneOffset** | **long?** | Coordinated Universal Time (UTC) offset for the message dates. This property defines the time zone difference, between the local time and UTC represented as count of ticks (10 000 per millisecond).              | [optional] 

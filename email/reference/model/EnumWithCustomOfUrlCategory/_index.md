@@ -9,7 +9,7 @@ Properties:
 
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
-**Value** | **string** | Url category./nEnum, available values: Profile, HomePage, Home, Work, Blog, Ftp, Custom | 
+**Value** | **string** | Url category. Enum, available values: Profile, HomePage, Home, Work, Blog, Ftp, Custom | 
 **Description** | **string** |  | [optional] 
 
 

@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **folder** |**string**|Account folder to fetch from (should be specified for some protocols such as IMAP)              |[optional] 
 **storage** |**string**|Storage name where account file located. |[optional] 
 **accountStorageFolder** |**string**|Folder in storage where account file located. |[optional] 
-**format** |**string**|Fetched message file format./nEnum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft |[optional] [default to 0]
+**format** |**string**|Fetched message file format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft |[optional] [default to 0]
 
 ## Example
 

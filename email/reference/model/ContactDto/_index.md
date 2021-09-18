@@ -20,9 +20,9 @@ Name | Type | Description | Notes
 **EmailAddresses** | [**List&lt;EmailAddress&gt;**](/email/reference-model-email-address/) | Person&#39;s email addresses.              | [optional] 
 **Events** | [**List&lt;CustomerEvent&gt;**](/email/reference-model-customer-event/) | Person&#39;s events.              | [optional] 
 **FileAs** | **string** | A name used for sorting.              | [optional] 
-**FileAsMapping** | **string** | Specifies how to generate and recompute the value of the dispidFileAs property when other contact name properties change. Coincides MS-OXPROPS revision 16.2 from 7/31/2014./nEnum, available values: Empty, DisplayName, FirstName, LastName, Organization, LastFirstMiddle, OrgLastFirstMiddle, LastFirstMiddleOrg, LastFirstMiddle2, LastFirstMiddle3, OrgLastFirstMiddle2, OrgLastFirstMiddle3, LastFirstMiddleOrg2, LastFirstMiddleOrg3, LastFirstMiddleGen, FirstMiddleLastGen, LastFirstMiddleGen2, BestMatch, AccordingToLocale, None | 
+**FileAsMapping** | **string** | Specifies how to generate and recompute the value of the dispidFileAs property when other contact name properties change. Coincides MS-OXPROPS revision 16.2 from 7/31/2014. Enum, available values: Empty, DisplayName, FirstName, LastName, Organization, LastFirstMiddle, OrgLastFirstMiddle, LastFirstMiddleOrg, LastFirstMiddle2, LastFirstMiddle3, OrgLastFirstMiddle2, OrgLastFirstMiddle3, LastFirstMiddleOrg2, LastFirstMiddleOrg3, LastFirstMiddleGen, FirstMiddleLastGen, LastFirstMiddleGen2, BestMatch, AccordingToLocale, None | 
 **FreeBusyLocation** | **string** | URL path from which a client can retrieve free/busy information for the contact as an iCal file.              | [optional] 
-**Gender** | **string** | Enum defines gender of a person./nEnum, available values: Unspecified, Female, Male | 
+**Gender** | **string** | Enum defines gender of a person. Enum, available values: Unspecified, Female, Male | 
 **GivenName** | **string** | Person&#39;s given name.              | [optional] 
 **GovernmentIdNumber** | **string** | Government id number.              | [optional] 
 **Hobbies** | **string** | Person&#39;s hobbies.              | [optional] 
@@ -34,7 +34,7 @@ Name | Type | Description | Notes
 **MiddleName** | **string** | Person&#39;s middle name.              | [optional] 
 **Nickname** | **string** | Person&#39;s nickname.              | [optional] 
 **Notes** | **string** | Notes.              | [optional] 
-**NotesFormat** | **string** | Defines format of a text./nEnum, available values: Text, Html | 
+**NotesFormat** | **string** | Defines format of a text. Enum, available values: Text, Html | 
 **OfficeLocation** | **string** | Office location.              | [optional] 
 **OrganizationalIdNumber** | **string** | Contains an identifier for the mail user used within the mail user&#39;s organization.              | [optional] 
 **PhoneNumbers** | [**List&lt;PhoneNumber&gt;**](/email/reference-model-phone-number/) | Person&#39;s phone numbers.              | [optional] 

@@ -10,7 +10,7 @@ Properties:
 
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
-**PhotoImageFormat** | **string** | MapiContact photo image format./nEnum, available values: Undefined, Jpeg, Gif, Wmf, Bmp, Tiff | 
+**PhotoImageFormat** | **string** | MapiContact photo image format. Enum, available values: Undefined, Jpeg, Gif, Wmf, Bmp, Tiff | 
 **Base64Data** | **string** | Photo serialized as base64 string.              | 
 **Discriminator** | **string** |  | 
 

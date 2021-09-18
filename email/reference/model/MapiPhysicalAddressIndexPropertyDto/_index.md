@@ -10,7 +10,7 @@ Properties:
 
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
-**Value** | **string** | Identifies the display types for physical addresses./nEnum, available values: None, Home, Business, Other | 
+**Value** | **string** | Identifies the display types for physical addresses. Enum, available values: None, Home, Business, Other | 
 
 Parent class: [MapiPropertyDto](/email/reference-model-mapi-property-dto/)
 

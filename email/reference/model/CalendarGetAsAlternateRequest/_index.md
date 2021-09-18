@@ -12,7 +12,7 @@ Properties:
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
 **fileName** |**string**|iCalendar file name in storage |
-**calendarAction** |**string**|iCalendar method type./nEnum, available values: Create, Update, Cancel |
+**calendarAction** |**string**|iCalendar method type. Enum, available values: Create, Update, Cancel |
 **sequenceId** |**string**|The sequence id |[optional] 
 **folder** |**string**|Path to folder in storage |[optional] 
 **storage** |**string**|Storage name |[optional] 
