@@ -32,6 +32,8 @@ Name | Type | Description | Notes
 **Status** | **string** | Defines the overall status or confirmation for the calendar document. Enum, available values: NotDefined, Cancelled, Tentative, Confirmed | 
 **Summary** | **string** | Summary. | [optional] 
 **Transparency** | **string** | Specifies whether or not this appointment is intended to be visible in availability searches. Enum, available values: NotDefined, Transparent, Opaque | 
+**Class** | **string** | Defines the access classification for the calendar. Enum, available values: Public, Private, Confidential, NotDefined | 
+**MicrosoftImportance** | **string** | Specifies the importance of a calendar object. Enum, available values: Low, Normal, High, NotDefined | 
 
 
 ## Example

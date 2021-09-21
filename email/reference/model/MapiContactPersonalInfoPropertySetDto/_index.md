@@ -26,7 +26,7 @@ Name | Type | Description | Notes
 **BusinessHomePage** | **string** | Specifies the contact&#39;s business web page URL              | [optional] 
 **FtpSite** | **string** | Specifies the contact&#39;s File Transfer Protocol (FTP) URL              | [optional] 
 **ComputerNetworkName** | **string** | Specifies the name of the network to which the contact&#39;s computer is connected              | [optional] 
-**Gender** | **string** | Gender of the contact Enum, available values: Unspecified, Female, Male | 
+**Gender** | **string** | Gender of the contact. Enum, available values: Unspecified, Female, Male | 
 **ReferredByName** | **string** | Specifies the name of the person who referred this contact to the user              | [optional] 
 **Children** | **List&lt;string&gt;** | Contains a list of names of children.              | [optional] 
 

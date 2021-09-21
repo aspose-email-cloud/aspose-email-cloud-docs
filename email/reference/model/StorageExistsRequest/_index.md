@@ -41,8 +41,7 @@ StorageExistsRequest request = Models.storageExistsRequest()
 {{< tab tabNum="3" >}}
 
 ```python
-request = models.StorageExistsRequest(
-    storage_name='First Storage')
+
 ```
 
 {{< /tab >}}

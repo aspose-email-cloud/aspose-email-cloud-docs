@@ -42,6 +42,8 @@ Name | Type | Description | Notes
 **TimeZoneOffset** | **long?** | Coordinated Universal Time (UTC) offset for the message dates. This property defines the time zone difference, between the local time and UTC represented as count of ticks (10 000 per millisecond).              | [optional] 
 **To** | [**List&lt;MailAddress&gt;**](/email/reference-model-mail-address/) | The address collection that contains the recipients of message.              | [optional] 
 **XMailer** | **string** | The X-Mailer the software that created the e-mail message.              | [optional] 
+**Epilogue** | **string** | Gets or sets an epilogue text. It is located after the last boundary. | [optional] 
+**Preamble** | **string** | Gets or sets a preamble text. It is located before the first boundary and generally includes an explanatory note to non-MIME conformant readers. | [optional] 
 
 
 ## Example

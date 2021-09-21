@@ -11,7 +11,7 @@ Properties:
 
 Name | Type | Description | Notes
 ---- | ---- | ----------- | -----
-**format** |**string**|File format Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft |
+**format** |**string**|File format. Enum, available values: Eml, Msg, MsgUnicode, Mhtml, Html, Tnef, Oft |
 **file** |**System.IO.Stream**|File to convert |
 
 ## Example
